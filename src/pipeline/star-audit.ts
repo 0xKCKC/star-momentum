@@ -50,13 +50,18 @@ export interface Stargazer {
 
 type GraphqlRequest = (query: string) => Promise<Record<string, RepositoryStargazers | null>>
 
+interface GraphqlBody {
+  data?: Record<string, RepositoryStargazers | null> | null
+  errors?: Array<{ message: string, type?: string, path?: string[] }>
+}
+
 interface AuditOptions {
   token?: string
   request?: GraphqlRequest
   log?: (message: string) => void
 }
 
-function graphqlRequest(token: string): GraphqlRequest {
+function graphqlRequest(token: string, log: (message: string) => void): GraphqlRequest {
   return async (query) => {
     const response = await fetch('https://api.github.com/graphql', {
       method: 'POST',
@@ -68,10 +73,11 @@ function graphqlRequest(token: string): GraphqlRequest {
       body: JSON.stringify({ query }),
       signal: AbortSignal.timeout(30_000)
     })
-    const body = await response.json() as { data?: Record<string, RepositoryStargazers | null>, errors?: Array<{ message: string }> }
-    if (!response.ok || !body.data) {
-      throw new Error(`GitHub GraphQL ${response.status}: ${body.errors?.map(({ message }) => message).join('; ') ?? 'no data'}`)
-    }
+    const body = await response.json() as GraphqlBody
+    const errors = body.errors?.map(({ type, message }) => `${type ?? 'ERROR'}: ${message}`).slice(0, 3).join('; ')
+    if (!response.ok || !body.data) throw new Error(`GitHub GraphQL ${response.status}: ${errors ?? 'no data'}`)
+    // GraphQL can answer 200 with partial data; report the errors instead of silently sampling nothing.
+    if (errors) log(`Star audit GraphQL errors: ${errors}`)
     return body.data
   }
 }
@@ -140,7 +146,7 @@ export async function auditTopStargazers(
     log('Star audit skipped: no GITHUB_TOKEN.')
     return repositories
   }
-  const request = options.request ?? graphqlRequest(options.token!)
+  const request = options.request ?? graphqlRequest(options.token!, log)
   const targets = repositories.filter(({ stars }) => stars >= MIN_STARS_TO_AUDIT)
   const samples = new Map<number, Stargazer[]>()
 
@@ -199,6 +205,8 @@ export async function auditTopStargazers(
       }
     }
   })
-  log(`Star audit sampled ${samples.size}/${targets.length} repositories; ${sharedLogins.size} hollow accounts starred 3+ of the Top 50; ${flagged} flagged.`)
+  const empty = [...samples.values()].filter((stargazers) => stargazers.length === 0).length
+  if (empty > 0) log(`Star audit: ${empty} repositories returned no stargazers.`)
+  log(`Star audit sampled ${samples.size - empty}/${targets.length} repositories; ${sharedLogins.size} hollow accounts starred 3+ of the Top 50; ${flagged} flagged.`)
   return result
 }
