@@ -143,7 +143,7 @@ export async function auditTopStargazers(
 ): Promise<RankedRepository[]> {
   const log = options.log ?? (() => undefined)
   if (!options.request && !options.token) {
-    log('Star audit skipped: no GITHUB_TOKEN.')
+    log('Star audit skipped: no STAR_AUDIT_TOKEN.')
     return repositories
   }
   const request = options.request ?? graphqlRequest(options.token!, log)

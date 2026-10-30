@@ -135,6 +135,7 @@ Top 50 的分類和風險提示交由 TypeSafe 的 [Jev](https://docs.typesafe.a
 - 可疑帳戶：在加星前 30 日內才建立的空殼帳戶，或同時為 3 個以上當日上榜項目加星的空殼帳戶（StarScout「同步加星」的簡化版）。
 - 可疑帳戶 ≥ 15 個且佔抽樣 ≥ 25% 時標記「疑似刷星」，並在「採用前注意」說明比例；抽樣乾淨（< 10%）時移除較粗糙的 fork 比例提示。
 - 門檻刻意保守，每個項目的抽樣數字都寫入運行日誌，累積實際分佈後再校準。只作提示，不影響分數和排名；設 `STAR_AUDIT=off` 可停用。
+- 需要 repository secret `STAR_AUDIT_TOKEN`：一個只讀公開資料的 fine-grained personal access token（Repository access 選「Public repositories」，不需任何權限）。Actions 自帶的 `GITHUB_TOKEN` 無法經 GraphQL 讀取其他倉庫的 stargazers。沒有這個 secret 時會略過抽樣。
 
 ## Hacker News 曝光
 
