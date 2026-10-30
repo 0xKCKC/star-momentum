@@ -46,7 +46,9 @@ async function run(): Promise<void> {
     researched = await researchWithJev(researched, { apiKey: process.env.TYPESAFE_API_KEY, log })
   }
   if (!useFixtures && process.env.STAR_AUDIT !== 'off') {
-    researched = await auditTopStargazers(researched, { token: process.env.GITHUB_TOKEN, log })
+    // The workflow's GITHUB_TOKEN cannot read other repositories' stargazers through GraphQL
+    // ("Resource not accessible by integration"), so this needs a read-only personal token.
+    researched = await auditTopStargazers(researched, { token: process.env.STAR_AUDIT_TOKEN, log })
   }
   if (!useFixtures && process.env.HACKER_NEWS !== 'off') {
     researched = await addHackerNewsExposure(researched, { now, log })
