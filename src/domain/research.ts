@@ -29,6 +29,9 @@ function momentumText(repository: GithubRepository, signals: RankingSignals): st
   return `${ageText}，平均每日累積約 ${signals.starsPerDay.toFixed(1)} 個 stars。明日快照後會改用真實 24 小時增量。`
 }
 
+export const FORK_SHARE_CAUTION_PREFIX = '近 7 日新增 forks '
+export const DEFAULT_CAUTION = '熱門度不等於適合生產環境，採用前仍要檢查文件、測試和安全紀錄。'
+
 function cautionText(repository: GithubRepository, signals: RankingSignals): string[] {
   const cautions: string[] = []
 
@@ -46,10 +49,10 @@ function cautionText(repository: GithubRepository, signals: RankingSignals): str
   }
   if (signals.forkRatio7d != null && signals.forkRatio7d < 0.03) {
     const share = (signals.forkRatio7d * 100).toFixed(1)
-    cautions.push(`近 7 日新增 forks 只有新增 stars 的 ${share}%（一般約 10%），可能是收藏型清單，亦可能有刷星，宜先核實 stargazers。`)
+    cautions.push(`${FORK_SHARE_CAUTION_PREFIX}只有新增 stars 的 ${share}%（一般約 10%），可能是收藏型清單，亦可能有刷星，宜先核實 stargazers。`)
   }
 
-  return cautions.length > 0 ? cautions : ['熱門度不等於適合生產環境，採用前仍要檢查文件、測試和安全紀錄。']
+  return cautions.length > 0 ? cautions : [DEFAULT_CAUTION]
 }
 
 export function buildResearch(

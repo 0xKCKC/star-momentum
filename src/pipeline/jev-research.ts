@@ -60,7 +60,10 @@ const alsoQuestions = Object.fromEntries(secondaryCategories.map((category) => [
 ])) as Record<`also_${SecondaryCategory}`, NoulQuestion>
 
 // One self-contained yes/no question per risk, asked in the same request as the categories.
-const riskQuestions: Record<RiskFlag, NoulQuestion> = {
+// Star inflation comes from the stargazer audit, not from Jev.
+type JevRiskFlag = Exclude<RiskFlag, 'starInflation'>
+
+const riskQuestions: Record<JevRiskFlag, NoulQuestion> = {
   piracy: noul(
     'Does `repository` help pirate, crack, keygen or activate paid software or media, or bypass DRM or license checks?',
     { true: 'Cracking, activation, piracy or DRM/license bypass is a main purpose', false: 'It does not, or only mentions such things in passing' }
@@ -86,9 +89,9 @@ const riskQuestions: Record<RiskFlag, NoulQuestion> = {
     { true: 'It is mainly a tool for attacking systems or people, or for surveillance without consent', false: 'It is defensive, educational at a conceptual level, or unrelated to attacks' }
   )
 }
-const riskFlags = Object.keys(riskQuestions) as RiskFlag[]
+const riskFlags = Object.keys(riskQuestions) as JevRiskFlag[]
 const riskQuestionsById = Object.fromEntries(riskFlags.map((flag) => [`risk_${flag}`, riskQuestions[flag]])) as
-  Record<`risk_${RiskFlag}`, NoulQuestion>
+  Record<`risk_${JevRiskFlag}`, NoulQuestion>
 
 interface JevClient {
   systemOne: TypeSafeClient['systemOne']
@@ -102,10 +105,10 @@ interface JevOptions {
 
 export interface JevJudgment {
   categories: RepositoryCategory[] | null
-  risks: Array<{ flag: RiskFlag, yes: number }>
+  risks: Array<{ flag: JevRiskFlag, yes: number }>
 }
 
-export function risksFromAnswers(yes: Partial<Record<RiskFlag, number>>): Array<{ flag: RiskFlag, yes: number }> {
+export function risksFromAnswers(yes: Partial<Record<JevRiskFlag, number>>): Array<{ flag: JevRiskFlag, yes: number }> {
   return riskFlags
     .map((flag) => ({ flag, yes: yes[flag] ?? 0 }))
     .filter(({ yes: probability }) => probability >= RISK_MIN_YES)

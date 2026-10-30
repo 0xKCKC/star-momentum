@@ -468,6 +468,20 @@
   font-weight: 600;
 }
 
+.hn-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: color-mix(in srgb, #ff6600 14%, transparent);
+  color: color-mix(in srgb, #ff6600 75%, var(--text));
+  font-weight: 700;
+}
+
+.hn-badge:hover {
+  text-decoration: underline;
+}
+
 .research-cautions p.is-risk {
   color: var(--warning);
 }
