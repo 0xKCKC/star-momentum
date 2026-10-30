@@ -4,8 +4,10 @@ import type { RankingDocument, RepositorySnapshot } from '../domain/repository'
 import { discoverRepositories } from './discovery'
 import { fixtureRepositories } from './fixtures'
 import { GithubClient } from './github-client'
+import { addHackerNewsExposure } from './hacker-news'
 import { researchWithJev } from './jev-research'
 import { buildMarkdownReport } from './report'
+import { auditTopStargazers } from './star-audit'
 import { loadCurrentRanking, loadSnapshotHistory, saveDailyOutputs } from './storage'
 
 async function run(): Promise<void> {
@@ -37,12 +39,18 @@ async function run(): Promise<void> {
     history,
     previousRanking: previousDocument?.repositories
   }).slice(0, 50)
-  const researched = useFixtures || process.env.JEV === 'off'
-    ? ranked
-    : await researchWithJev(ranked, {
-      apiKey: process.env.TYPESAFE_API_KEY,
-      log: (message) => process.stdout.write(`${message}\n`)
-    })
+  const log = (message: string) => process.stdout.write(`${message}\n`)
+  // Each step only adds research and warnings; scores and ranks are already final.
+  let researched = ranked
+  if (!useFixtures && process.env.JEV !== 'off') {
+    researched = await researchWithJev(researched, { apiKey: process.env.TYPESAFE_API_KEY, log })
+  }
+  if (!useFixtures && process.env.STAR_AUDIT !== 'off') {
+    researched = await auditTopStargazers(researched, { token: process.env.GITHUB_TOKEN, log })
+  }
+  if (!useFixtures && process.env.HACKER_NEWS !== 'off') {
+    researched = await addHackerNewsExposure(researched, { now, log })
+  }
   const snapshot: RepositorySnapshot = {
     capturedAt: nowIso,
     repositories: repositories.map((repository) => ({

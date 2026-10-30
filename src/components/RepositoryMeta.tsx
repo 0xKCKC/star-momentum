@@ -25,6 +25,17 @@ export function RepositoryMeta({ repository, compact = false }: RepositoryMetaPr
       <span title="總 forks"><GitFork size={16} />{formatCompactNumber(repository.forks)}</span>
       <span className="momentum" title="star 動能"><TrendUp size={16} />{momentum}</span>
       {!compact && <RankMovement change={repository.rankChange} />}
+      {repository.research.hackerNews && (
+        <a
+          className="hn-badge"
+          href={repository.research.hackerNews.url}
+          target="_blank"
+          rel="noreferrer"
+          title={`Hacker News：${repository.research.hackerNews.points} 分、${repository.research.hackerNews.comments} 則評論`}
+        >
+          HN {repository.research.hackerNews.points}
+        </a>
+      )}
       {repository.research.risks?.length ? (
         <span className="risk-badge" title="由 Jev 判斷，詳情見研究摘要的「採用前注意」">
           <Warning size={13} weight="bold" aria-hidden="true" />
