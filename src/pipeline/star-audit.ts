@@ -1,44 +1,51 @@
 import { DEFAULT_CAUTION, FORK_SHARE_CAUTION_PREFIX } from '../domain/research'
 import type { RankedRepository, StarAudit } from '../domain/repository'
 
-// Samples each Top 50 repository's most recent stargazers through the GitHub GraphQL API and
+// Samples each Top 50 repository's most recent stargazers through the GitHub REST API and
 // looks for the account patterns found in fake-star studies:
 // - "obvious fakes" (Dagster 2023): at most 4 repositories, at most 1 follower, an empty profile,
 //   and an account created shortly before it starred;
 // - accounts that starred several of today's Top 50 in the same recent window, a cheap stand-in
 //   for StarScout's lockstep detection (He et al., ICSE 2026);
 // - many stars landing in the same minute.
+// GraphQL would fetch profiles in one query, but GitHub refuses `stargazers` to fine-grained
+// tokens there, so this uses REST. To stay within 5,000 requests an hour, profiles are only
+// fetched for accounts whose id (GitHub assigns ids in creation order) suggests they are new,
+// or that starred several of today's Top 50.
 // Thresholds start conservative and are logged per repository for calibration. Any failure
 // leaves the ranking untouched; nothing here changes scores or ranks.
 
 const SAMPLE_SIZE = 100
 const MIN_STARS_TO_AUDIT = 50
-const REPOSITORIES_PER_QUERY = 5
+/** REST lists at most 400 pages of stargazers, so the newest are out of reach above this. */
+const MAX_STARS_TO_AUDIT = 40_000
+const CONCURRENCY = 5
 const FRESH_ACCOUNT_DAYS = 30
+/** Profiles are fetched when the id-based creation estimate is within this many days of the star. */
+const ESTIMATE_MARGIN_DAYS = 60
+const ANCHOR_COUNT = 9
+const MAX_PROFILE_LOOKUPS = 1500
 const SHARED_ACCOUNT_MIN_REPOSITORIES = 3
 /** A repository is flagged when this share of sampled stargazers is suspicious... */
 const FLAG_SHARE = 0.25
 /** ...and at least this many of them are. */
 const FLAG_MIN_ACCOUNTS = 15
+const DAY = 86_400_000
 
-interface StargazerNode {
+interface StargazerItem {
+  starred_at: string
+  user: { login: string, id: number } | null
+}
+
+interface UserProfile {
   login: string
-  createdAt: string
+  created_at: string
+  public_repos: number
+  followers: number
   bio: string | null
   company: string | null
   location: string | null
-  websiteUrl: string | null
-  followers: { totalCount: number }
-  repositories: { totalCount: number }
-}
-
-export interface StargazerEdge {
-  starredAt: string
-  node: StargazerNode | null
-}
-
-interface RepositoryStargazers {
-  stargazers: { edges: StargazerEdge[] }
+  blog: string | null
 }
 
 export interface Stargazer {
@@ -48,68 +55,79 @@ export interface Stargazer {
   hollow: boolean
 }
 
-type GraphqlRequest = (query: string) => Promise<Record<string, RepositoryStargazers | null>>
-
-interface GraphqlBody {
-  data?: Record<string, RepositoryStargazers | null> | null
-  errors?: Array<{ message: string, type?: string, path?: Array<string | number> }>
-}
+/** GETs a GitHub REST path and returns the parsed body, or null on 404. */
+export type GetJson = (path: string, accept?: string) => Promise<unknown>
 
 interface AuditOptions {
   token?: string
-  request?: GraphqlRequest
+  getJson?: GetJson
   log?: (message: string) => void
 }
 
-function graphqlRequest(token: string, log: (message: string) => void): GraphqlRequest {
-  return async (query) => {
-    const response = await fetch('https://api.github.com/graphql', {
-      method: 'POST',
+function restClient(token: string, onRemaining: (remaining: string) => void): GetJson {
+  return async (path, accept = 'application/vnd.github+json') => {
+    const response = await fetch(`https://api.github.com${path}`, {
       headers: {
+        Accept: accept,
         Authorization: `Bearer ${token}`,
-        'Content-Type': 'application/json',
-        'User-Agent': 'star-momentum'
+        'User-Agent': 'star-momentum',
+        'X-GitHub-Api-Version': '2022-11-28'
       },
-      body: JSON.stringify({ query }),
       signal: AbortSignal.timeout(30_000)
     })
-    const body = await response.json() as GraphqlBody
-    // Summarise errors by field path with indices removed, e.g. "r.stargazers.edges.node.bio x500".
-    const counts = new Map<string, number>()
-    for (const { type, message, path } of body.errors ?? []) {
-      const field = (path ?? []).filter((part) => typeof part === 'string').map((part) => part.replace(/^r\d+$/, 'r')).join('.')
-      const key = `${type ?? 'ERROR'} ${field || '(no path)'}: ${message}`
-      counts.set(key, (counts.get(key) ?? 0) + 1)
-    }
-    const errors = counts.size > 0 ? [...counts].map(([key, count]) => `${key} x${count}`).join('; ') : undefined
-    if (!response.ok || !body.data) throw new Error(`GitHub GraphQL ${response.status}: ${errors ?? 'no data'}`)
-    // GraphQL can answer 200 with partial data; report the errors instead of silently sampling nothing.
-    if (errors) log(`Star audit GraphQL errors: ${errors}`)
-    return body.data
+    const remaining = response.headers.get('x-ratelimit-remaining')
+    if (remaining) onRemaining(remaining)
+    if (response.status === 404) return null
+    if (!response.ok) throw new Error(`GitHub REST ${response.status} ${path}: ${(await response.text()).slice(0, 160)}`)
+    return response.json()
   }
 }
 
-function queryFor(repositories: RankedRepository[]): string {
-  const parts = repositories.map((repository, index) => {
-    const [owner, name] = repository.fullName.split('/')
-    return `r${index}: repository(owner: ${JSON.stringify(owner)}, name: ${JSON.stringify(name)}) {
-      stargazers(first: ${SAMPLE_SIZE}, orderBy: { field: STARRED_AT, direction: DESC }) {
-        edges { starredAt node { login createdAt bio company location websiteUrl
-          followers { totalCount } repositories { totalCount } } }
-      }
-    }`
-  })
-  return `query { ${parts.join('\n')} }`
+async function mapLimit<T, R>(items: T[], limit: number, task: (item: T) => Promise<R>): Promise<R[]> {
+  const results: R[] = new Array(items.length)
+  let next = 0
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, async () => {
+    while (next < items.length) {
+      const index = next
+      next += 1
+      results[index] = await task(items[index])
+    }
+  }))
+  return results
 }
 
-function toStargazers(result: RepositoryStargazers | null): Stargazer[] {
-  return (result?.stargazers.edges ?? []).flatMap(({ starredAt, node }) => node ? [{
-    login: node.login,
-    starredAt,
-    createdAt: node.createdAt,
-    hollow: node.repositories.totalCount <= 4 && node.followers.totalCount <= 1 &&
-      ![node.bio, node.company, node.location, node.websiteUrl].some((value) => value?.trim())
-  }] : [])
+// Stargazers are listed oldest first, so the newest are on the last page or two.
+async function recentStargazers(getJson: GetJson, repository: RankedRepository): Promise<StargazerItem[]> {
+  const accept = 'application/vnd.github.star+json'
+  const lastPage = Math.max(1, Math.ceil(repository.stars / SAMPLE_SIZE))
+  const page = async (number: number) =>
+    (await getJson(`/repos/${repository.fullName}/stargazers?per_page=${SAMPLE_SIZE}&page=${number}`, accept) ?? []) as StargazerItem[]
+  let items = await page(lastPage)
+  if (items.length < SAMPLE_SIZE && lastPage > 1) items = [...await page(lastPage - 1), ...items]
+  return items.filter((item) => item.user).slice(-SAMPLE_SIZE)
+}
+
+function isHollow(profile: UserProfile): boolean {
+  return profile.public_repos <= 4 && profile.followers <= 1 &&
+    ![profile.bio, profile.company, profile.location, profile.blog].some((value) => value?.trim())
+}
+
+/** Piecewise-linear id -> creation time from a few known accounts; clamps outside their range. */
+export function creationEstimator(anchors: Array<{ id: number, createdAt: number }>): (id: number) => number {
+  const points = [...anchors].sort((left, right) => left.id - right.id)
+  return (id) => {
+    if (points.length === 0) return 0
+    if (id <= points[0].id) return points[0].createdAt
+    for (let index = 1; index < points.length; index += 1) {
+      const low = points[index - 1]
+      const high = points[index]
+      if (id <= high.id) {
+        const fraction = (id - low.id) / Math.max(high.id - low.id, 1)
+        return low.createdAt + fraction * (high.createdAt - low.createdAt)
+      }
+    }
+    return points[points.length - 1].createdAt
+  }
 }
 
 export function auditStargazers(stargazers: Stargazer[], sharedLogins: Set<string>): StarAudit {
@@ -149,37 +167,83 @@ export async function auditTopStargazers(
   options: AuditOptions = {}
 ): Promise<RankedRepository[]> {
   const log = options.log ?? (() => undefined)
-  if (!options.request && !options.token) {
+  if (!options.getJson && !options.token) {
     log('Star audit skipped: no STAR_AUDIT_TOKEN.')
     return repositories
   }
-  const request = options.request ?? graphqlRequest(options.token!, log)
-  const targets = repositories.filter(({ stars }) => stars >= MIN_STARS_TO_AUDIT)
-  const samples = new Map<number, Stargazer[]>()
+  let remaining = 'unknown'
+  const getJson = options.getJson ?? restClient(options.token!, (value) => { remaining = value })
+  const targets = repositories.filter(({ stars }) => stars >= MIN_STARS_TO_AUDIT && stars <= MAX_STARS_TO_AUDIT)
+  const tooLarge = repositories.filter(({ stars }) => stars > MAX_STARS_TO_AUDIT).length
 
-  for (let start = 0; start < targets.length; start += REPOSITORIES_PER_QUERY) {
-    const batch = targets.slice(start, start + REPOSITORIES_PER_QUERY)
+  // 1. The newest stargazers of each repository.
+  const items = new Map<number, StargazerItem[]>()
+  let failures = 0
+  await mapLimit(targets, CONCURRENCY, async (repository) => {
     try {
-      const data = await request(queryFor(batch))
-      batch.forEach((repository, index) => samples.set(repository.id, toStargazers(data[`r${index}`] ?? null)))
+      items.set(repository.id, await recentStargazers(getJson, repository))
     } catch (error) {
-      log(`Star audit batch ${start / REPOSITORIES_PER_QUERY + 1} failed: ${error instanceof Error ? error.message : String(error)}`)
-      if (samples.size === 0 && start === 0) {
-        log('Star audit stopped after the first batch failed.')
-        return repositories
-      }
+      failures += 1
+      if (failures <= 3) log(`Star audit failed for ${repository.fullName}: ${error instanceof Error ? error.message : String(error)}`)
     }
+  })
+  if (items.size === 0) {
+    log(`Star audit stopped: no stargazers could be read (${failures} failures).`)
+    return repositories
   }
 
-  // Hollow accounts that recently starred several of today's Top 50.
+  // 2. Estimate account age from ids, anchored on a few profiles spread across the id range.
+  const users = new Map<string, number>()
   const repositoriesPerLogin = new Map<string, number>()
-  for (const stargazers of samples.values()) {
-    for (const login of new Set(stargazers.filter(({ hollow }) => hollow).map(({ login }) => login))) {
+  for (const list of items.values()) {
+    for (const { user } of list) users.set(user!.login, user!.id)
+    for (const login of new Set(list.map(({ user }) => user!.login))) {
       repositoriesPerLogin.set(login, (repositoriesPerLogin.get(login) ?? 0) + 1)
     }
   }
+  const byId = [...users].sort((left, right) => left[1] - right[1])
+  const anchorLogins = new Set(Array.from({ length: ANCHOR_COUNT }, (_, index) =>
+    byId[Math.round((index / (ANCHOR_COUNT - 1)) * (byId.length - 1))][0]))
+  const profiles = new Map<string, UserProfile>()
+  const fetchProfiles = (logins: string[]) => mapLimit(logins, CONCURRENCY, async (login) => {
+    try {
+      const profile = await getJson(`/users/${login}`) as UserProfile | null
+      if (profile) profiles.set(login, profile)
+    } catch {
+      failures += 1
+    }
+  })
+  await fetchProfiles([...anchorLogins])
+  const estimate = creationEstimator([...anchorLogins].flatMap((login) => profiles.has(login)
+    ? [{ id: users.get(login)!, createdAt: Date.parse(profiles.get(login)!.created_at) }]
+    : []))
+
+  // 3. Profiles for accounts that may be new when they starred, or that starred 3+ of the Top 50.
+  const candidates = new Map<string, number>()
+  for (const list of items.values()) {
+    for (const { starred_at: starredAt, user } of list) {
+      const maybeNew = Date.parse(starredAt) - estimate(user!.id) <= ESTIMATE_MARGIN_DAYS * DAY
+      const shared = (repositoriesPerLogin.get(user!.login) ?? 0) >= SHARED_ACCOUNT_MIN_REPOSITORIES
+      if ((maybeNew || shared) && !profiles.has(user!.login)) candidates.set(user!.login, user!.id)
+    }
+  }
+  const lookups = [...candidates].sort((left, right) => right[1] - left[1]).slice(0, MAX_PROFILE_LOOKUPS).map(([login]) => login)
+  await fetchProfiles(lookups)
+
+  const samples = new Map<number, Stargazer[]>()
+  for (const [id, list] of items) {
+    samples.set(id, list.map(({ starred_at: starredAt, user }) => {
+      const profile = profiles.get(user!.login)
+      return {
+        login: user!.login,
+        starredAt,
+        createdAt: profile ? profile.created_at : new Date(estimate(user!.id)).toISOString(),
+        hollow: profile ? isHollow(profile) : false
+      }
+    }))
+  }
   const sharedLogins = new Set([...repositoriesPerLogin]
-    .filter(([, count]) => count >= SHARED_ACCOUNT_MIN_REPOSITORIES)
+    .filter(([login, count]) => count >= SHARED_ACCOUNT_MIN_REPOSITORIES && profiles.has(login) && isHollow(profiles.get(login)!))
     .map(([login]) => login))
 
   let flagged = 0
@@ -212,8 +276,8 @@ export async function auditTopStargazers(
       }
     }
   })
-  const empty = [...samples.values()].filter((stargazers) => stargazers.length === 0).length
-  if (empty > 0) log(`Star audit: ${empty} repositories returned no stargazers.`)
-  log(`Star audit sampled ${samples.size - empty}/${targets.length} repositories; ${sharedLogins.size} hollow accounts starred 3+ of the Top 50; ${flagged} flagged.`)
+  log(`Star audit sampled ${samples.size}/${targets.length} repositories (${tooLarge} above ${MAX_STARS_TO_AUDIT} stars skipped); ` +
+    `${profiles.size} profiles fetched (${candidates.size} candidates); ${sharedLogins.size} hollow accounts starred 3+ of the Top 50; ` +
+    `${flagged} flagged; ${failures} failures; rate limit remaining ${remaining}.`)
   return result
 }

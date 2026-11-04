@@ -129,13 +129,14 @@ Top 50 的分類和風險提示交由 TypeSafe 的 [Jev](https://docs.typesafe.a
 
 ## 刷星偵測
 
-研究顯示刷星相當普遍：ICSE 2026 論文〈Six Million (Suspected) Fake Stars on GitHub〉估計，2024 年 7 月當月達到 50 stars 的倉庫中約 16.7% 涉及刷星，而且主要出現在動能排名最顯眼的尖峰。每次更新會為 Top 50 中 50 stars 以上的項目，經 GitHub GraphQL 抽樣最近 100 個加星帳戶：
+研究顯示刷星相當普遍：ICSE 2026 論文〈Six Million (Suspected) Fake Stars on GitHub〉估計，2024 年 7 月當月達到 50 stars 的倉庫中約 16.7% 涉及刷星，而且主要出現在動能排名最顯眼的尖峰。每次更新會為 Top 50 中 50 stars 以上的項目，經 GitHub REST API 抽樣最近 100 個加星帳戶：
 
 - 「空殼帳戶」：公開倉庫 ≤ 4、追隨者 ≤ 1、個人資料全空（Dagster 2023 買星實驗的特徵）。
 - 可疑帳戶：在加星前 30 日內才建立的空殼帳戶，或同時為 3 個以上當日上榜項目加星的空殼帳戶（StarScout「同步加星」的簡化版）。
 - 可疑帳戶 ≥ 15 個且佔抽樣 ≥ 25% 時標記「疑似刷星」，並在「採用前注意」說明比例；抽樣乾淨（< 10%）時移除較粗糙的 fork 比例提示。
 - 門檻刻意保守，每個項目的抽樣數字都寫入運行日誌，累積實際分佈後再校準。只作提示，不影響分數和排名；設 `STAR_AUDIT=off` 可停用。
-- 需要 repository secret `STAR_AUDIT_TOKEN`：一個只讀公開資料的 fine-grained personal access token（Repository access 選「Public repositories」，不需任何權限）。Actions 自帶的 `GITHUB_TOKEN` 無法經 GraphQL 讀取其他倉庫的 stargazers。沒有這個 secret 時會略過抽樣。
+- 需要 repository secret `STAR_AUDIT_TOKEN`：一個只讀公開資料的 fine-grained personal access token（Repository access 選「Public repositories」，不需任何權限）。Actions 自帶的 `GITHUB_TOKEN` 讀不到其他倉庫的 stargazers，而 GitHub 的 GraphQL 不讓 fine-grained token 讀 stargazers，所以用 REST。沒有這個 secret 時會略過抽樣。
+- 為免超出每小時 5,000 次的 API 上限，只為可能是新帳戶的加星者查詢個人資料：GitHub 帳戶 id 按建立先後遞增，先查幾個帳戶作基準，按 id 估算其餘帳戶的建立日期。超過 40,000 stars 的倉庫因 REST 分頁上限而略過。
 
 ## Hacker News 曝光
 
