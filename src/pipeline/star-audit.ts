@@ -9,7 +9,8 @@ import type { RankedRepository, StarAudit } from '../domain/repository'
 //   for StarScout's lockstep detection (He et al., ICSE 2026);
 // - many stars landing in the same minute.
 // GraphQL would fetch profiles in one query, but GitHub refuses `stargazers` to fine-grained
-// tokens there, so this uses REST. To stay within 5,000 requests an hour, profiles are only
+// tokens there, so this uses REST, falling back to the public events feed when the REST
+// stargazers list is refused too. To stay within 5,000 requests an hour, profiles are only
 // fetched for accounts whose id (GitHub assigns ids in creation order) suggests they are new,
 // or that starred several of today's Top 50.
 // Thresholds start conservative and are logged per repository for calibration. Any failure
@@ -96,6 +97,42 @@ async function mapLimit<T, R>(items: T[], limit: number, task: (item: T) => Prom
   return results
 }
 
+interface RepositoryEvent {
+  type: string
+  created_at: string
+  actor: { login: string, id: number } | null
+}
+
+/** Set once the stargazers endpoint refuses the token, so later repositories go straight to events. */
+interface Source { useEvents: boolean }
+
+// Fallback: GitHub refuses fine-grained tokens and GITHUB_TOKEN access to other repositories'
+// stargazers, but the public events feed lists recent stars as WatchEvents (newest first, at most
+// 300 events from the last 90 days, so busy repositories yield fewer).
+async function recentWatchers(getJson: GetJson, repository: RankedRepository): Promise<StargazerItem[]> {
+  const items: StargazerItem[] = []
+  for (let page = 1; page <= 3 && items.length < SAMPLE_SIZE; page += 1) {
+    const events = (await getJson(`/repos/${repository.fullName}/events?per_page=100&page=${page}`) ?? []) as RepositoryEvent[]
+    for (const event of events) {
+      if (event.type === 'WatchEvent' && event.actor) items.push({ starred_at: event.created_at, user: event.actor })
+    }
+    if (events.length < 100) break
+  }
+  return items.slice(0, SAMPLE_SIZE).reverse()
+}
+
+async function recentStars(getJson: GetJson, repository: RankedRepository, source: Source): Promise<StargazerItem[]> {
+  if (!source.useEvents) {
+    try {
+      return await recentStargazers(getJson, repository)
+    } catch (error) {
+      if (!(error instanceof Error && /REST 403/.test(error.message))) throw error
+      source.useEvents = true
+    }
+  }
+  return recentWatchers(getJson, repository)
+}
+
 // Stargazers are listed oldest first, so the newest are on the last page or two.
 async function recentStargazers(getJson: GetJson, repository: RankedRepository): Promise<StargazerItem[]> {
   const accept = 'application/vnd.github.star+json'
@@ -178,10 +215,12 @@ export async function auditTopStargazers(
 
   // 1. The newest stargazers of each repository.
   const items = new Map<number, StargazerItem[]>()
+  const source: Source = { useEvents: false }
   let failures = 0
   await mapLimit(targets, CONCURRENCY, async (repository) => {
     try {
-      items.set(repository.id, await recentStargazers(getJson, repository))
+      const list = await recentStars(getJson, repository, source)
+      if (list.length > 0) items.set(repository.id, list)
     } catch (error) {
       failures += 1
       if (failures <= 3) log(`Star audit failed for ${repository.fullName}: ${error instanceof Error ? error.message : String(error)}`)
@@ -276,7 +315,7 @@ export async function auditTopStargazers(
       }
     }
   })
-  log(`Star audit sampled ${samples.size}/${targets.length} repositories (${tooLarge} above ${MAX_STARS_TO_AUDIT} stars skipped); ` +
+  log(`Star audit sampled ${samples.size}/${targets.length} repositories from ${source.useEvents ? 'events' : 'stargazers'} (${tooLarge} above ${MAX_STARS_TO_AUDIT} stars skipped); ` +
     `${profiles.size} profiles fetched (${candidates.size} candidates); ${sharedLogins.size} hollow accounts starred 3+ of the Top 50; ` +
     `${flagged} flagged; ${failures} failures; rate limit remaining ${remaining}.`)
   return result

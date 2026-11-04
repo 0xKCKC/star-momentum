@@ -48,7 +48,7 @@ async function run(): Promise<void> {
   if (!useFixtures && process.env.STAR_AUDIT !== 'off') {
     // The workflow's GITHUB_TOKEN cannot read other repositories' stargazers through GraphQL
     // ("Resource not accessible by integration"), so this needs a read-only personal token.
-    researched = await auditTopStargazers(researched, { token: process.env.STAR_AUDIT_TOKEN, log })
+    researched = await auditTopStargazers(researched, { token: process.env.STAR_AUDIT_TOKEN || process.env.GITHUB_TOKEN, log })
   }
   if (!useFixtures && process.env.HACKER_NEWS !== 'off') {
     researched = await addHackerNewsExposure(researched, { now, log })
