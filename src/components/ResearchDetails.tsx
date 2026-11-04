@@ -44,9 +44,6 @@ export function ResearchDetails({ repository }: ResearchDetailsProps) {
         {repository.research.introduction && repository.description && (
           <p className="research-original"><span>原文簡介</span>{repository.description}</p>
         )}
-        {repository.research.introduction && (
-          <p className="research-ai-note">中文介紹由 DeepSeek 根據項目描述和 README 撰寫，可能有誤，請以原文為準。</p>
-        )}
         {repository.research.categorySource === 'jev' && (
           <p className="research-ai-note">分類和風險提示由 Jev 模型根據 repo 描述判斷，只作參考，不影響排名。</p>
         )}
