@@ -675,6 +675,13 @@
   -webkit-line-clamp: 2;
 }
 
+/* Chinese introductions are short enough to show in full. */
+.repository-description.is-introduction {
+  display: block;
+  overflow: visible;
+  -webkit-line-clamp: unset;
+}
+
 .ranking-row .research-details {
   grid-column: 2 / -1;
   max-width: 920px;
