@@ -1,6 +1,7 @@
 import type { RankedRepository } from '../domain/repository'
 import { formatAge } from '../utils/format'
 import { CategoryChips } from './CategoryChips'
+import { RepositoryDescription } from './RepositoryDescription'
 import { RepositoryHeader } from './RepositoryHeader'
 import { RepositoryMeta } from './RepositoryMeta'
 import { ResearchDetails } from './ResearchDetails'
@@ -21,7 +22,7 @@ export function Podium({ repositories }: PodiumProps) {
             <span className="score-number">{repository.score.toFixed(1)} 分</span>
           </div>
           <RepositoryHeader repository={repository} />
-          <p className="repository-description">{repository.description || repository.research.summary}</p>
+          <RepositoryDescription repository={repository} />
           <CategoryChips categories={repository.categories} />
           <RepositoryMeta repository={repository} />
           <p className="repository-age">{formatAge(repository.signals.ageDays)}</p>

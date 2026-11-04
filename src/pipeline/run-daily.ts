@@ -4,6 +4,7 @@ import type { RankingDocument, RepositorySnapshot } from '../domain/repository'
 import { discoverRepositories } from './discovery'
 import { fixtureRepositories } from './fixtures'
 import { GithubClient } from './github-client'
+import { addDeepSeekIntroductions } from './deepseek-intro'
 import { addHackerNewsExposure } from './hacker-news'
 import { researchWithJev } from './jev-research'
 import { buildMarkdownReport } from './report'
@@ -52,6 +53,16 @@ async function run(): Promise<void> {
   }
   if (!useFixtures && process.env.HACKER_NEWS !== 'off') {
     researched = await addHackerNewsExposure(researched, { now, log })
+  }
+  if (!useFixtures && process.env.DEEPSEEK !== 'off') {
+    researched = await addDeepSeekIntroductions(researched, {
+      apiKey: process.env.DEEPSEEK_API_KEY,
+      githubToken: process.env.GITHUB_TOKEN,
+      model: process.env.DEEPSEEK_MODEL,
+      now,
+      previous: previousDocument?.repositories,
+      log
+    })
   }
   const snapshot: RepositorySnapshot = {
     capturedAt: nowIso,
