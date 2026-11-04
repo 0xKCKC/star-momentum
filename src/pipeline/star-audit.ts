@@ -52,7 +52,7 @@ type GraphqlRequest = (query: string) => Promise<Record<string, RepositoryStarga
 
 interface GraphqlBody {
   data?: Record<string, RepositoryStargazers | null> | null
-  errors?: Array<{ message: string, type?: string, path?: string[] }>
+  errors?: Array<{ message: string, type?: string, path?: Array<string | number> }>
 }
 
 interface AuditOptions {
@@ -74,7 +74,14 @@ function graphqlRequest(token: string, log: (message: string) => void): GraphqlR
       signal: AbortSignal.timeout(30_000)
     })
     const body = await response.json() as GraphqlBody
-    const errors = body.errors?.map(({ type, message }) => `${type ?? 'ERROR'}: ${message}`).slice(0, 3).join('; ')
+    // Summarise errors by field path with indices removed, e.g. "r.stargazers.edges.node.bio x500".
+    const counts = new Map<string, number>()
+    for (const { type, message, path } of body.errors ?? []) {
+      const field = (path ?? []).filter((part) => typeof part === 'string').map((part) => part.replace(/^r\d+$/, 'r')).join('.')
+      const key = `${type ?? 'ERROR'} ${field || '(no path)'}: ${message}`
+      counts.set(key, (counts.get(key) ?? 0) + 1)
+    }
+    const errors = counts.size > 0 ? [...counts].map(([key, count]) => `${key} x${count}`).join('; ') : undefined
     if (!response.ok || !body.data) throw new Error(`GitHub GraphQL ${response.status}: ${errors ?? 'no data'}`)
     // GraphQL can answer 200 with partial data; report the errors instead of silently sampling nothing.
     if (errors) log(`Star audit GraphQL errors: ${errors}`)
