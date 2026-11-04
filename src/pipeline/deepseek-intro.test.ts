@@ -81,6 +81,21 @@ describe('addDeepSeekIntroductions', () => {
     expect(calls).toBe(2)
   })
 
+  it('asks again with a bigger budget when the reply is empty', async () => {
+    const budgets: number[] = []
+    const { fetchImpl } = fakeFetch((body) => {
+      const request = body as unknown as { max_tokens: number, messages: unknown[] }
+      budgets.push(request.max_tokens)
+      expect(request.messages).toHaveLength(2)
+      return budgets.length === 1
+        ? new Response(JSON.stringify({ choices: [{ message: { content: '' }, finish_reason: 'length' }] }), { status: 200 })
+        : ok(intro)
+    })
+    const [result] = await addDeepSeekIntroductions([rankedRepository(1, 'Tool')], { apiKey: 'key', now, fetchImpl })
+    expect(result.research.introduction?.text).toBe(intro)
+    expect(budgets[1]).toBeGreaterThan(budgets[0])
+  })
+
   it('writes nothing when the README cannot be read', async () => {
     let deepseekCalls = 0
     const fetchImpl = (async (input: URL | RequestInfo) => {
