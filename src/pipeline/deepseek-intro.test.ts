@@ -31,6 +31,10 @@ describe('cleanIntroduction', () => {
     expect(cleanIntroduction(`「${intro}」`)).toBe(intro)
     expect(cleanIntroduction('A fast IDE written in Rust for everyone who codes.')).toBeNull()
     expect(cleanIntroduction('太短')).toBeNull()
+    expect(cleanIntroduction('RUN · 润」是一本海外移居手冊，整理歐洲 36 國的最新移居路線和文件清單。'))
+      .toBe('RUN · 润是一本海外移居手冊，整理歐洲 36 國的最新移居路線和文件清單。')
+    expect(cleanIntroduction('「RUN」是一本海外移居手冊，整理歐洲 36 國的最新移居路線和文件清單。'))
+      .toBe('RUN是一本海外移居手冊，整理歐洲 36 國的最新移居路線和文件清單。')
   })
 })
 
@@ -40,7 +44,7 @@ describe('addDeepSeekIntroductions', () => {
     const repositories = Array.from({ length: 22 }, (_, index) => rankedRepository(index + 1, `Tool ${index + 1}`))
     const result = await addDeepSeekIntroductions(repositories, { apiKey: 'key', now, fetchImpl })
 
-    expect(result[0].research.introduction).toEqual({ text: intro, writtenAt: now.toISOString(), source: 'deepseek' })
+    expect(result[0].research.introduction).toEqual({ text: intro, writtenAt: now.toISOString(), source: 'deepseek', version: 2 })
     expect(result[19].research.introduction).toBeDefined()
     expect(result[20].research.introduction).toBeUndefined()
     const call = requests.find(({ url }) => url.includes('deepseek'))!
@@ -53,7 +57,7 @@ describe('addDeepSeekIntroductions', () => {
     const { fetchImpl, requests } = fakeFetch(() => ok(intro))
     const earlier = (description: string, writtenAt: string) => ({
       ...rankedRepository(1, description),
-      research: { ...rankedRepository(1, description).research, introduction: { text: '舊介紹舊介紹舊介紹舊介紹舊介紹舊介紹舊介紹', writtenAt, source: 'deepseek' as const } }
+      research: { ...rankedRepository(1, description).research, introduction: { text: '舊介紹舊介紹舊介紹舊介紹舊介紹舊介紹舊介紹', writtenAt, source: 'deepseek' as const, version: 2 } }
     })
     const [kept] = await addDeepSeekIntroductions([rankedRepository(1, 'Same')], {
       apiKey: 'key', now, fetchImpl, previous: [earlier('Same', '2026-11-03T08:00:00Z')]
@@ -65,6 +69,14 @@ describe('addDeepSeekIntroductions', () => {
       apiKey: 'key', now, fetchImpl, previous: [earlier('Same', '2026-11-03T08:00:00Z')]
     })
     expect(rewritten.research.introduction?.text).toBe(intro)
+  })
+
+  it('asks once more when the first reply is too long', async () => {
+    let calls = 0
+    const { fetchImpl } = fakeFetch(() => ok(calls++ === 0 ? '長'.repeat(400) : intro))
+    const [result] = await addDeepSeekIntroductions([rankedRepository(1, 'Tool')], { apiKey: 'key', now, fetchImpl })
+    expect(result.research.introduction?.text).toBe(intro)
+    expect(calls).toBe(2)
   })
 
   it('skips without a key and survives API failures', async () => {

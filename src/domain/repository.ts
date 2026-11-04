@@ -91,6 +91,8 @@ export interface RepositoryIntroduction {
   text: string
   writtenAt: string
   source: 'deepseek'
+  /** Prompt version the text was written with; older versions are rewritten. */
+  version?: number
 }
 
 export interface RankedRepository extends GithubRepository {
