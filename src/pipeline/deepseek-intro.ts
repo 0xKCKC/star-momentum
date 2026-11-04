@@ -1,17 +1,18 @@
 import type { RankedRepository, RepositoryIntroduction } from '../domain/repository'
 
 // Writes a short Traditional Chinese introduction for the top repositories with the DeepSeek
-// chat API, from each repository's description, topics and README. An introduction is reused
+// chat API, summarising each repository's README; the one-line description is only context, even
+// when it is already in Chinese. Without a readable README there is no introduction. One is reused
 // for a few days while the description is unchanged, which keeps the text stable and the cost
 // low. Any failure leaves the repository without one; nothing here changes scores or ranks.
 
 const TOP = 20
 const CONCURRENCY = 4
 const REUSE_DAYS = 3
-const README_CHARS = 6000
+const README_CHARS = 12000
 const MAX_INTRO_CHARS = 260
 /** Bump when the prompt changes so cached introductions are rewritten. */
-const PROMPT_VERSION = 2
+const PROMPT_VERSION = 3
 const DAY = 86_400_000
 // DeepSeek's official name for DeepSeek-V4.1-Flash-1017.
 const DEFAULT_MODEL = 'deepseek-flash'
@@ -29,12 +30,14 @@ interface IntroOptions {
 }
 
 const SYSTEM_PROMPT = [
-  '你是香港的科技編輯，用香港繁體中文（書面語）為 GitHub 開源項目寫簡介。',
+  '你是香港的科技編輯。先完整閱讀項目的 README，理解後用香港繁體中文（書面語）重新整理成簡介。',
   '要求：',
+  '- 內容以 README 為準；一句話描述只作參考，不要只是翻譯或改寫它。README 本身是中文也一樣要整理，不要照抄原句。',
   '- 兩至三句，合共約 80 至 130 字，絕對不要超過 150 字。',
   '- 全部用書面語，不要用粵語口語（例如唔、係、佢、嘅、咗、同埋）。',
   '- 開頭直接寫項目名稱，不要加引號或書名號。',
-  '- 先講它是甚麼、解決甚麼問題，再講主要功能或特色，最後可提適合誰用。',
+  '- 講清楚它是甚麼、怎樣運作或主要功能、有甚麼特別之處；有重要限制或前提（例如只支援某平台、仍在測試階段）可以一併提及。',
+  '- 不要寫適合誰、目標用戶或推薦語。',
   '- 只根據提供的資料，不要猜測，不要誇大，不要提 stars 數字或排名。',
   '- 保留專有名詞和產品名的英文原文。',
   '- 不用 Markdown、項目符號或表情符號，只輸出簡介本身。',
@@ -86,10 +89,10 @@ async function fetchReadme(fetchImpl: Fetch, fullName: string, token?: string): 
 function userPrompt(repository: RankedRepository, readme: string): string {
   return [
     `項目：${repository.fullName}`,
-    `描述：${repository.description || '（無）'}`,
+    `一句話描述（只作參考）：${repository.description || '（無）'}`,
     `主要語言：${repository.language ?? '未標示'}`,
     `標籤：${repository.topics.join(', ') || '（無）'}`,
-    `README 節錄：\n${readme || '（無法取得）'}`
+    `README：\n${readme}`
   ].join('\n')
 }
 
@@ -99,6 +102,7 @@ async function introduce(
   options: IntroOptions & { apiKey: string }
 ): Promise<string> {
   const readme = await fetchReadme(fetchImpl, repository.fullName, options.githubToken)
+  if (readme.length < 80) throw new Error('README missing or too short')
   const messages = [
     { role: 'system', content: SYSTEM_PROMPT },
     { role: 'user', content: userPrompt(repository, readme) }

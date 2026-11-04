@@ -6,13 +6,15 @@ import { rankedRepository } from './test-repository'
 const now = new Date('2026-11-04T08:00:00Z')
 const intro = '這是一個用 Rust 重寫的桌面 IDE，提供熟悉的快捷鍵、除錯器和 Git 整合，適合想要更快編輯器的開發者。'
 
+const readme = '# Tool\n![badge](x.svg)\nSee [docs](https://x).\n```sh\nrm -rf /\n```\nTool rebuilds the editor in Rust with a native window, a debugger, Git integration and a terminal.'
+
 function fakeFetch(reply: (body: { messages: Array<{ content: string }> }) => Response) {
   const requests: Array<{ url: string, body?: string, auth?: string }> = []
   const fetchImpl = (async (input: URL | RequestInfo, init?: RequestInit) => {
     const url = String(input)
     const headers = (init?.headers ?? {}) as Record<string, string>
     requests.push({ url, body: init?.body as string | undefined, auth: headers.Authorization })
-    if (url.endsWith('/readme')) return new Response('# Tool\n![badge](x.svg)\nSee [docs](https://x).\n```sh\nrm -rf /\n```', { status: 200 })
+    if (url.endsWith('/readme')) return new Response(readme, { status: 200 })
     return reply(JSON.parse(String(init?.body)))
   }) as typeof fetch
   return { fetchImpl, requests }
@@ -44,7 +46,7 @@ describe('addDeepSeekIntroductions', () => {
     const repositories = Array.from({ length: 22 }, (_, index) => rankedRepository(index + 1, `Tool ${index + 1}`))
     const result = await addDeepSeekIntroductions(repositories, { apiKey: 'key', now, fetchImpl })
 
-    expect(result[0].research.introduction).toEqual({ text: intro, writtenAt: now.toISOString(), source: 'deepseek', version: 2 })
+    expect(result[0].research.introduction).toEqual({ text: intro, writtenAt: now.toISOString(), source: 'deepseek', version: 3 })
     expect(result[19].research.introduction).toBeDefined()
     expect(result[20].research.introduction).toBeUndefined()
     const call = requests.find(({ url }) => url.includes('deepseek'))!
@@ -57,7 +59,7 @@ describe('addDeepSeekIntroductions', () => {
     const { fetchImpl, requests } = fakeFetch(() => ok(intro))
     const earlier = (description: string, writtenAt: string) => ({
       ...rankedRepository(1, description),
-      research: { ...rankedRepository(1, description).research, introduction: { text: '舊介紹舊介紹舊介紹舊介紹舊介紹舊介紹舊介紹', writtenAt, source: 'deepseek' as const, version: 2 } }
+      research: { ...rankedRepository(1, description).research, introduction: { text: '舊介紹舊介紹舊介紹舊介紹舊介紹舊介紹舊介紹', writtenAt, source: 'deepseek' as const, version: 3 } }
     })
     const [kept] = await addDeepSeekIntroductions([rankedRepository(1, 'Same')], {
       apiKey: 'key', now, fetchImpl, previous: [earlier('Same', '2026-11-03T08:00:00Z')]
@@ -77,6 +79,18 @@ describe('addDeepSeekIntroductions', () => {
     const [result] = await addDeepSeekIntroductions([rankedRepository(1, 'Tool')], { apiKey: 'key', now, fetchImpl })
     expect(result.research.introduction?.text).toBe(intro)
     expect(calls).toBe(2)
+  })
+
+  it('writes nothing when the README cannot be read', async () => {
+    let deepseekCalls = 0
+    const fetchImpl = (async (input: URL | RequestInfo) => {
+      if (String(input).endsWith('/readme')) return new Response('Not Found', { status: 404 })
+      deepseekCalls += 1
+      return ok(intro)
+    }) as typeof fetch
+    const [result] = await addDeepSeekIntroductions([rankedRepository(1, '一個中文描述的工具')], { apiKey: 'key', now, fetchImpl })
+    expect(result.research.introduction).toBeUndefined()
+    expect(deepseekCalls).toBe(0)
   })
 
   it('skips without a key and survives API failures', async () => {
