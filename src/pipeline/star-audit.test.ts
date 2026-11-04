@@ -140,6 +140,34 @@ describe('auditTopStargazers', () => {
     expect(result.every(({ research }) => research.risks?.includes('starInflation'))).toBe(true)
   })
 
+  it('falls back to WatchEvents when the stargazers list is refused', async () => {
+    const users = [...oldUsers('real', 70), ...newHollowUsers('fake', 30)]
+    const { getJson: base } = fakeApi({ 'owner/repo1': users })
+    const calls: string[] = []
+    const getJson: GetJson = async (path, accept) => {
+      calls.push(path)
+      if (path.includes('/stargazers')) throw new Error('GitHub REST 403 ' + path + ': Resource not accessible by personal access token')
+      if (path.startsWith('/repos/owner/repo1/events')) {
+        if (!path.endsWith('page=1')) return []
+        return [
+          { type: 'PushEvent', created_at: '2026-10-29T13:00:00Z', actor: { login: 'maintainer', id: 1001 } },
+          ...[...users].reverse().map((user) => ({ type: 'WatchEvent', created_at: '2026-10-29T12:00:00Z', actor: { login: user.login, id: user.id } }))
+        ]
+      }
+      return base(path, accept)
+    }
+    const logs: string[] = []
+    const [first, second] = await auditTopStargazers(
+      [{ ...rankedRepository(1, 'Inflated tool'), stars: 150 }, { ...rankedRepository(2, 'Other'), stars: 150 }],
+      { getJson, log: (message) => logs.push(message) }
+    )
+
+    expect(first.research.starAudit).toMatchObject({ sampled: 100, suspicious: 30, flagged: true })
+    expect(second.research.starAudit).toBeUndefined()
+    expect(calls.filter((path) => path.includes('/stargazers')).length).toBeLessThanOrEqual(2)
+    expect(logs.join('\n')).toContain('from events')
+  })
+
   it('leaves the ranking untouched when the API fails or there is no token', async () => {
     const input = [{ ...rankedRepository(1, 'Tool'), stars: 5000 }]
     const failing: GetJson = async () => { throw new Error('GitHub REST 502') }
