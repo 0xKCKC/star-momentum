@@ -11,7 +11,8 @@ const REUSE_DAYS = 3
 const README_CHARS = 6000
 const MAX_INTRO_CHARS = 320
 const DAY = 86_400_000
-const DEFAULT_MODEL = 'deepseek-chat'
+// DeepSeek's official name for DeepSeek-V4.1-Flash-1017.
+const DEFAULT_MODEL = 'deepseek-flash'
 
 type Fetch = typeof fetch
 
@@ -96,7 +97,7 @@ async function introduce(
     body: JSON.stringify({
       model: options.model || DEFAULT_MODEL,
       temperature: 0.3,
-      max_tokens: 400,
+      max_tokens: 1500,
       messages: [
         { role: 'system', content: SYSTEM_PROMPT },
         { role: 'user', content: userPrompt(repository, readme) }
