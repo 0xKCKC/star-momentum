@@ -11,6 +11,9 @@ const CONCURRENCY = 4
 const REUSE_DAYS = 3
 const README_CHARS = 12000
 const MAX_INTRO_CHARS = 260
+/** Room for the model's thinking as well as the short answer. */
+const MAX_TOKENS = 4000
+const RETRY_MAX_TOKENS = 12000
 /** Bump when the prompt changes so cached introductions are rewritten. */
 const PROMPT_VERSION = 3
 const DAY = 86_400_000
@@ -107,38 +110,49 @@ async function introduce(
     { role: 'system', content: SYSTEM_PROMPT },
     { role: 'user', content: userPrompt(repository, readme) }
   ]
-  const first = await complete(fetchImpl, messages, options)
-  const introduction = cleanIntroduction(first)
+  const first = await complete(fetchImpl, messages, options, MAX_TOKENS)
+  const introduction = cleanIntroduction(first.content)
   if (introduction) return introduction
-  // One retry, usually for a reply that ran too long.
-  const retry = cleanIntroduction(await complete(fetchImpl, [
-    ...messages,
-    { role: 'assistant', content: first },
-    { role: 'user', content: `上面的簡介有 ${first.length} 字，不合要求。請改寫成兩句、100 字以內的書面語簡介，只輸出簡介。` }
-  ], options))
-  if (!retry) throw new Error(`DeepSeek returned an unusable introduction (${first.length} chars)`)
-  return retry
+  // One retry. An empty reply usually means the model spent its token budget thinking about a
+  // long README, so ask again with a bigger budget; otherwise ask for a shorter rewrite.
+  const retry = first.content.trim() === ''
+    ? await complete(fetchImpl, messages, options, RETRY_MAX_TOKENS)
+    : await complete(fetchImpl, [
+      ...messages,
+      { role: 'assistant', content: first.content },
+      { role: 'user', content: `上面的簡介有 ${first.content.length} 字，不合要求。請改寫成兩句、100 字以內的書面語簡介，只輸出簡介。` }
+    ], options, MAX_TOKENS)
+  const rewritten = cleanIntroduction(retry.content)
+  if (!rewritten) {
+    throw new Error(`DeepSeek returned an unusable introduction (${first.content.length} then ${retry.content.length} chars, ` +
+      `finish ${first.finishReason} then ${retry.finishReason})`)
+  }
+  return rewritten
 }
+
+interface Completion { content: string, finishReason: string }
 
 async function complete(
   fetchImpl: Fetch,
   messages: Array<{ role: string, content: string }>,
-  options: IntroOptions & { apiKey: string }
-): Promise<string> {
+  options: IntroOptions & { apiKey: string },
+  maxTokens: number
+): Promise<Completion> {
   const response = await fetchImpl('https://api.deepseek.com/chat/completions', {
     method: 'POST',
     headers: { Authorization: `Bearer ${options.apiKey}`, 'Content-Type': 'application/json' },
     body: JSON.stringify({
       model: options.model || DEFAULT_MODEL,
       temperature: 0.3,
-      max_tokens: 1500,
+      max_tokens: maxTokens,
       messages
     }),
-    signal: AbortSignal.timeout(90_000)
+    signal: AbortSignal.timeout(180_000)
   })
   if (!response.ok) throw new Error(`DeepSeek ${response.status}: ${(await response.text()).slice(0, 160)}`)
-  const body = await response.json() as { choices?: Array<{ message?: { content?: string } }> }
-  return body.choices?.[0]?.message?.content ?? ''
+  const body = await response.json() as { choices?: Array<{ message?: { content?: string | null }, finish_reason?: string }> }
+  const choice = body.choices?.[0]
+  return { content: choice?.message?.content ?? '', finishReason: choice?.finish_reason ?? 'unknown' }
 }
 
 export async function addDeepSeekIntroductions(
