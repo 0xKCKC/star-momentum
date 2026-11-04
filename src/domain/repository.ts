@@ -83,6 +83,14 @@ export interface RepositoryResearch {
   starAudit?: StarAudit
   /** Most visible Hacker News story linking to the repository in the last 14 days. */
   hackerNews?: HackerNewsExposure
+  /** Short Chinese introduction written by DeepSeek for the top 20. */
+  introduction?: RepositoryIntroduction
+}
+
+export interface RepositoryIntroduction {
+  text: string
+  writtenAt: string
+  source: 'deepseek'
 }
 
 export interface RankedRepository extends GithubRepository {

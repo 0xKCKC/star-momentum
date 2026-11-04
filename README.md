@@ -142,6 +142,12 @@ Top 50 的分類和風險提示交由 TypeSafe 的 [Jev](https://docs.typesafe.a
 
 外部曝光是 star 爆升的主因（例如 Fang 等人 ICSE 2022 估計每輪推文爆發約令 stars 增加 7%）。每次更新以免費的 HN Algolia API 查找過去 14 日連結到 Top 50 項目的 Hacker News 帖子，最高分的一則會以「HN 分數」標籤和研究摘要中的證據顯示，方便讀者知道升幅從哪裏來。只作參考，不影響排名；設 `HACKER_NEWS=off` 可停用。
 
+## DeepSeek 中文介紹
+
+- 為首 20 名項目各寫一段兩至三句的香港繁體中文介紹，資料來源是項目描述、標籤和 README 節錄（去掉圖片、連結和程式碼）。網站顯示中文介紹，原文簡介放在「研究摘要」內。
+- 同一項目三日內、描述沒變就沿用舊介紹，減少費用，內容也較穩定。每次運行最多約 20 次 API 呼叫。
+- 需要 repository secret `DEEPSEEK_API_KEY`；沒有就略過。可用 `DEEPSEEK_MODEL` 改模型（預設 `deepseek-chat`），設 `DEEPSEEK=off` 可停用。只是說明文字，不影響分數和排名。
+
 ## 每日資料流
 
 1. 九組搜尋分別探索新項目、活躍項目及主要技術分類。
