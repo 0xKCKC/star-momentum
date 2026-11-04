@@ -146,7 +146,7 @@ Top 50 的分類和風險提示交由 TypeSafe 的 [Jev](https://docs.typesafe.a
 
 - 為首 20 名項目各寫一段兩至三句的香港繁體中文介紹，資料來源是項目描述、標籤和 README 節錄（去掉圖片、連結和程式碼）。網站顯示中文介紹，原文簡介放在「研究摘要」內。
 - 同一項目三日內、描述沒變就沿用舊介紹，減少費用，內容也較穩定。每次運行最多約 20 次 API 呼叫。
-- 需要 repository secret `DEEPSEEK_API_KEY`；沒有就略過。可用 `DEEPSEEK_MODEL` 改模型（預設 `deepseek-chat`），設 `DEEPSEEK=off` 可停用。只是說明文字，不影響分數和排名。
+- 需要 repository secret `DEEPSEEK_API_KEY`；沒有就略過。可用 `DEEPSEEK_MODEL` 改模型（預設 `deepseek-flash`，即 DeepSeek-V4.1-Flash-1017），設 `DEEPSEEK=off` 可停用。只是說明文字，不影響分數和排名。
 
 ## 每日資料流
 
