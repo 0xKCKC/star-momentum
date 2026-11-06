@@ -1,13 +1,13 @@
 // @vitest-environment node
 import { TypeSafeClient } from '@typesafe-ai/sdk'
 import { describe, expect, it } from 'vitest'
-import { addEaseLabels, setupExcerpt } from './jev-ease'
+import { addEaseLabels, easeFromAnswers, setupExcerpt } from './jev-ease'
 import { rankedRepository } from './test-repository'
 
 const now = new Date('2026-11-06T08:00:00Z')
 const readme = '# Tool\nA desktop app that cleans up your TV.\n## Features\nMany.\n## Download\nGet the installer from Releases.\n## Build\nnpm run build'
 
-function clientChoosing(level: string) {
+function clientChoosing(level: string, clickOnly = 0.9) {
   const states: unknown[] = []
   const client = new TypeSafeClient({
     apiKey: 'test-key',
@@ -19,7 +19,10 @@ function clientChoosing(level: string) {
       return new Response(JSON.stringify({
         model: 'jev-1',
         usage: { input_tokens: 100, output_tokens: 1 },
-        answers: { ease: { type: 'choice', choice: level, confidence: 0.8, probabilities: { [level]: 0.8 } } }
+        answers: {
+          ease: { type: 'choice', choice: level, confidence: 0.8, probabilities: { [level]: 0.8 } },
+          clickOnly: { type: 'noul', noul: clickOnly }
+        }
       }), { status: 200, headers: { 'content-type': 'application/json' } })
     }
   })
@@ -36,6 +39,15 @@ describe('setupExcerpt', () => {
   })
 })
 
+describe('easeFromAnswers', () => {
+  it('only keeps ready when a non-programmer could start by clicking', () => {
+    expect(easeFromAnswers('ready', 0.8)).toBe('ready')
+    expect(easeFromAnswers('ready', 0.3)).toBe('cli')
+    expect(easeFromAnswers('code', 0.9)).toBe('code')
+    expect(easeFromAnswers('nonsense', 0.9)).toBeNull()
+  })
+})
+
 describe('addEaseLabels', () => {
   it('labels repositories with a README and skips those without one', async () => {
     const { client, states } = clientChoosing('ready')
@@ -46,7 +58,7 @@ describe('addEaseLabels', () => {
       now
     })
 
-    expect(labelled.research.ease).toEqual({ level: 'ready', judgedAt: now.toISOString() })
+    expect(labelled.research.ease).toEqual({ level: 'ready', judgedAt: now.toISOString(), version: 2 })
     expect(skipped.research.ease).toBeUndefined()
     expect(JSON.stringify(states[0])).toContain('Get the installer from Releases.')
   })
@@ -55,13 +67,26 @@ describe('addEaseLabels', () => {
     const { client, states } = clientChoosing('code')
     const earlier = {
       ...rankedRepository(1, 'Same'),
-      research: { ...rankedRepository(1, 'Same').research, ease: { level: 'cli' as const, judgedAt: '2026-11-05T08:00:00Z' } }
+      research: { ...rankedRepository(1, 'Same').research, ease: { level: 'cli' as const, judgedAt: '2026-11-05T08:00:00Z', version: 2 } }
     }
     const [result] = await addEaseLabels([rankedRepository(1, 'Same')], {
       client, readmes: new Map([[1, readme]]), now, previous: [earlier]
     })
     expect(result.research.ease?.level).toBe('cli')
     expect(states).toHaveLength(0)
+  })
+
+  it('judges labels from an older question version again', async () => {
+    const { client, states } = clientChoosing('ready', 0.2)
+    const earlier = {
+      ...rankedRepository(1, 'Same'),
+      research: { ...rankedRepository(1, 'Same').research, ease: { level: 'ready' as const, judgedAt: '2026-11-05T08:00:00Z' } }
+    }
+    const [result] = await addEaseLabels([rankedRepository(1, 'Same')], {
+      client, readmes: new Map([[1, readme]]), now, previous: [earlier]
+    })
+    expect(result.research.ease?.level).toBe('cli')
+    expect(states).toHaveLength(1)
   })
 
   it('ignores an unknown choice and skips without a key', async () => {
