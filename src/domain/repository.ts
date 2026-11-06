@@ -102,6 +102,8 @@ export const easeLabels: Record<EaseLevel, string> = {
 export interface RepositoryEase {
   level: EaseLevel
   judgedAt: string
+  /** Question version the label was judged with; older versions are judged again. */
+  version?: number
 }
 
 export interface TrendSummary {
