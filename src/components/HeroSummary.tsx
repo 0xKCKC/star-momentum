@@ -16,6 +16,12 @@ export function HeroSummary({ document }: HeroSummaryProps) {
           <p className="hero-kicker">星勢 StarMomentum · GitHub 開源情報，每日三更</p>
           <h1>看準勢頭，發現下一顆新星。</h1>
           <p className="hero-lede">按 star 增長、加速度和開發活動，排名正在上升的開源項目。</p>
+          {document.trend && (
+            <div className="hero-trend" lang="zh-Hant-HK">
+              <h2>今日趨勢</h2>
+              <p>{document.trend.text}</p>
+            </div>
+          )}
         </div>
         <dl className="hero-metrics" aria-label="今日資料概況">
           <div>

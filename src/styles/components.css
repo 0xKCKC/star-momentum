@@ -934,3 +934,100 @@
     min-height: 138px;
   }
 }
+
+/* Today's trend, written by DeepSeek. */
+.hero-trend {
+  max-width: 64ch;
+  margin-top: 20px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.hero-trend h2 {
+  margin: 0 0 6px;
+  color: var(--accent-strong);
+  font-size: 0.8rem;
+  font-weight: 720;
+  letter-spacing: 0.02em;
+}
+
+.hero-trend p {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.92rem;
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+
+/* Ease-of-use filter and badges, judged by Jev from the README. */
+.ease-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-bottom: 10px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.ease-row::-webkit-scrollbar {
+  display: none;
+}
+
+.ease-row-label {
+  flex: 0 0 auto;
+  margin-right: 6px;
+  color: var(--text-faint);
+  font-size: 0.76rem;
+  font-weight: 650;
+}
+
+.ease-tab {
+  flex: 0 0 auto;
+  min-height: 30px;
+  padding: 4px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.76rem;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.ease-tab:hover {
+  background: var(--surface-subtle);
+  color: var(--text);
+}
+
+.ease-tab.is-active {
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+}
+
+.ease-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 7px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-muted);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI Variable', 'Segoe UI', sans-serif;
+  font-weight: 650;
+}
+
+.ease-badge.is-ready {
+  border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+}
+
+@media (max-width: 680px) {
+  .ease-row {
+    width: 100%;
+    padding-inline: 16px;
+  }
+}

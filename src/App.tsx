@@ -1,5 +1,5 @@
 import { useDeferredValue, useMemo, useState } from 'react'
-import type { RepositoryCategory } from './domain/repository'
+import type { EaseLevel, RepositoryCategory } from './domain/repository'
 import { useRankingData } from './hooks/useRankingData'
 import { FilterBar } from './components/FilterBar'
 import { Header } from './components/Header'
@@ -12,6 +12,7 @@ import { PageState } from './components/PageState'
 export function App() {
   const { data, loading, error } = useRankingData()
   const [category, setCategory] = useState<RepositoryCategory | 'all'>('all')
+  const [ease, setEase] = useState<EaseLevel | 'all'>('all')
   const [query, setQuery] = useState('')
 
   const deferredQuery = useDeferredValue(query)
@@ -21,6 +22,7 @@ export function App() {
     searchFields: [
       repository.fullName,
       repository.description,
+      repository.research.introduction?.text ?? '',
       repository.language ?? '',
       ...repository.topics
     ].map((value) => value.toLowerCase())
@@ -32,12 +34,14 @@ export function App() {
     return searchIndex
       .filter(({ repository, searchFields }) => {
         const matchesCategory = category === 'all' || repository.categories.includes(category)
+        const matchesEase = ease === 'all' || repository.research.ease?.level === ease
         const matchesQuery = !normalizedQuery || searchFields.some((value) => value.includes(normalizedQuery))
 
-        return matchesCategory && matchesQuery
+        return matchesCategory && matchesEase && matchesQuery
       })
       .map(({ repository }) => repository)
-  }, [category, deferredQuery, searchIndex])
+  }, [category, ease, deferredQuery, searchIndex])
+  const hasEase = useMemo(() => (data?.repositories ?? []).some(({ research }) => research.ease), [data])
 
   if (loading) return <PageState type="loading" />
   if (error || !data) return <PageState type="error" message={error ?? undefined} />
@@ -55,6 +59,7 @@ export function App() {
           <FilterBar
             category={category}
             onCategoryChange={setCategory}
+            {...(hasEase ? { ease, onEaseChange: setEase } : {})}
             query={query}
             onQueryChange={setQuery}
             resultCount={filteredRepositories.length}

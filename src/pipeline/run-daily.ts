@@ -6,6 +6,9 @@ import { fixtureRepositories } from './fixtures'
 import { GithubClient } from './github-client'
 import { addDeepSeekIntroductions } from './deepseek-intro'
 import { addHackerNewsExposure } from './hacker-news'
+import { addEaseLabels } from './jev-ease'
+import { fetchReadmes } from './readme'
+import { writeTrendSummary } from './trend-summary'
 import { researchWithJev } from './jev-research'
 import { buildMarkdownReport } from './report'
 import { auditTopStargazers } from './star-audit'
@@ -46,6 +49,16 @@ async function run(): Promise<void> {
   if (!useFixtures && process.env.JEV !== 'off') {
     researched = await researchWithJev(researched, { apiKey: process.env.TYPESAFE_API_KEY, log })
   }
+  const readmes = useFixtures ? new Map<number, string>() : await fetchReadmes(researched, { token: process.env.GITHUB_TOKEN, log })
+  if (!useFixtures && process.env.JEV !== 'off') {
+    researched = await addEaseLabels(researched, {
+      apiKey: process.env.TYPESAFE_API_KEY,
+      readmes,
+      now,
+      previous: previousDocument?.repositories,
+      log
+    })
+  }
   if (!useFixtures && process.env.STAR_AUDIT !== 'off') {
     // The workflow's GITHUB_TOKEN cannot read other repositories' stargazers through GraphQL
     // ("Resource not accessible by integration"), so this needs a read-only personal token.
@@ -61,9 +74,13 @@ async function run(): Promise<void> {
       model: process.env.DEEPSEEK_MODEL,
       now,
       previous: previousDocument?.repositories,
+      readmes,
       log
     })
   }
+  const trend = !useFixtures && process.env.DEEPSEEK !== 'off'
+    ? await writeTrendSummary(researched, { apiKey: process.env.DEEPSEEK_API_KEY, model: process.env.DEEPSEEK_MODEL, now, log })
+    : undefined
   const snapshot: RepositorySnapshot = {
     capturedAt: nowIso,
     repositories: repositories.map((repository) => ({
@@ -87,6 +104,7 @@ async function run(): Promise<void> {
       rankedCount: researched.length,
       historyDays: history.length + 1
     },
+    ...(trend ? { trend } : {}),
     repositories: researched
   }
 
