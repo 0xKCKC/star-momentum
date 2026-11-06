@@ -22,5 +22,24 @@ describe('FilterBar', () => {
     expect(onCategoryChange).toHaveBeenCalledWith('ai')
     expect(onQueryChange).toHaveBeenCalledWith('rust')
     expect(screen.getByText('18')).toBeInTheDocument()
+    expect(screen.queryByRole('group', { name: '上手難度' })).toBeNull()
+  })
+
+  it('shows the ease filter when labels exist', () => {
+    const onEaseChange = vi.fn()
+    render(
+      <FilterBar
+        category="all"
+        onCategoryChange={vi.fn()}
+        ease="all"
+        onEaseChange={onEaseChange}
+        query=""
+        onQueryChange={vi.fn()}
+        resultCount={5}
+      />
+    )
+
+    fireEvent.click(screen.getByRole('button', { name: '下載即用' }))
+    expect(onEaseChange).toHaveBeenCalledWith('ready')
   })
 })

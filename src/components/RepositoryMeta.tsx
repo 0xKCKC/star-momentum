@@ -1,5 +1,5 @@
 import { ArrowDown, ArrowUp, GitFork, Minus, Star, TrendUp, Warning } from '@phosphor-icons/react'
-import { riskLabels, type RankedRepository } from '../domain/repository'
+import { easeLabels, riskLabels, type RankedRepository } from '../domain/repository'
 import { formatCompactNumber } from '../utils/format'
 
 interface RepositoryMetaProps {
@@ -25,6 +25,11 @@ export function RepositoryMeta({ repository, compact = false }: RepositoryMetaPr
       <span title="總 forks"><GitFork size={16} />{formatCompactNumber(repository.forks)}</span>
       <span className="momentum" title="star 動能"><TrendUp size={16} />{momentum}</span>
       {!compact && <RankMovement change={repository.rankChange} />}
+      {repository.research.ease && (
+        <span className={`ease-badge is-${repository.research.ease.level}`} title="上手難度，由 Jev 根據 README 判斷">
+          {easeLabels[repository.research.ease.level]}
+        </span>
+      )}
       {repository.research.hackerNews && (
         <a
           className="hn-badge"

@@ -85,6 +85,29 @@ export interface RepositoryResearch {
   hackerNews?: HackerNewsExposure
   /** Short Chinese introduction written by DeepSeek for the top 20. */
   introduction?: RepositoryIntroduction
+  /** How someone starts using it, judged by Jev from the README. */
+  ease?: RepositoryEase
+}
+
+export const easeLevels = ['ready', 'cli', 'code', 'reading'] as const
+export type EaseLevel = typeof easeLevels[number]
+
+export const easeLabels: Record<EaseLevel, string> = {
+  ready: '下載即用',
+  cli: '需用命令行',
+  code: '需寫程式',
+  reading: '閱讀資料'
+}
+
+export interface RepositoryEase {
+  level: EaseLevel
+  judgedAt: string
+}
+
+export interface TrendSummary {
+  text: string
+  writtenAt: string
+  source: 'deepseek'
 }
 
 export interface RepositoryIntroduction {
@@ -118,6 +141,8 @@ export interface RankingDocument {
     rankedCount: number
     historyDays: number
   }
+  /** DeepSeek's overview of what today's Top 20 have in common. */
+  trend?: TrendSummary
   repositories: RankedRepository[]
 }
 

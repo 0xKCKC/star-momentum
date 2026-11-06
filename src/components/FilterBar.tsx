@@ -1,19 +1,24 @@
 import { MagnifyingGlass } from '@phosphor-icons/react'
-import { categoryLabels, repositoryCategories, type RepositoryCategory } from '../domain/repository'
+import { categoryLabels, easeLabels, easeLevels, repositoryCategories, type EaseLevel, type RepositoryCategory } from '../domain/repository'
 
 interface FilterBarProps {
   category: RepositoryCategory | 'all'
   onCategoryChange: (category: RepositoryCategory | 'all') => void
+  ease?: EaseLevel | 'all'
+  onEaseChange?: (ease: EaseLevel | 'all') => void
   query: string
   onQueryChange: (query: string) => void
   resultCount: number
 }
 
 const categories: Array<RepositoryCategory | 'all'> = ['all', ...repositoryCategories]
+const eases: Array<EaseLevel | 'all'> = ['all', ...easeLevels]
 
 export function FilterBar({
   category,
   onCategoryChange,
+  ease = 'all',
+  onEaseChange,
   query,
   onQueryChange,
   resultCount
@@ -45,6 +50,22 @@ export function FilterBar({
           <span className="result-count">{resultCount}</span>
         </label>
       </div>
+      {onEaseChange && (
+        <div className="container ease-row" role="group" aria-label="上手難度">
+          <span className="ease-row-label">上手難度</span>
+          {eases.map((item) => (
+            <button
+              className={item === ease ? 'ease-tab is-active' : 'ease-tab'}
+              key={item}
+              onClick={() => onEaseChange(item)}
+              type="button"
+              aria-pressed={item === ease}
+            >
+              {item === 'all' ? '不限' : easeLabels[item]}
+            </button>
+          ))}
+        </div>
+      )}
     </div>
   )
 }
