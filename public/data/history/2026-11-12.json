@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T22:19:34.013Z",
+  "generatedAt": "2026-11-12T00:00:58.647Z",
   "dataDate": "2026-11-12",
   "status": "live",
   "source": "github-live",
   "methodologyVersion": "1.2.0",
   "stats": {
-    "candidateCount": 848,
+    "candidateCount": 847,
     "rankedCount": 50,
     "historyDays": 9
   },
   "trend": {
-    "text": "今日榜單顯示三個集中方向。DeepSeek Harness 生態同時出現 dsh-Go、dsh-purge 與 dsh-our-free-model，涵蓋手機客戶端及本機外掛。編程代理外掛亦成氣候，unslop 與 floorplan 分別針對介面設計和程式地圖。遊戲靜態重編譯則有 Hookshot 與 totk-pc-recomp，把主機遊戲轉為桌面原生程式。",
-    "writtenAt": "2026-11-11T22:19:34.013Z",
+    "text": "AI 編碼代理的外掛與技能生態明顯擴張，DeepSeek Harness 周邊接連出現 dsh-Go、dsh-purge、dsh-our-free-model，編程代理亦有 unslop、floorplan 等技能。遊戲領域，Hookshot 與 totk-pc-recomp 同以靜態重編譯把主機遊戲帶到桌面原生運行，Lichii 屬模擬器分支。逆向分析與防護成另一組，craft-anything、rea-video 從畫面或影片推斷原作，BLA 以誘餌對抗 AI 逆向。GestaltX 與 Erosion-CN 則同圍繞 iOS 的 MobileGestalt 調校。",
+    "writtenAt": "2026-11-12T00:00:58.647Z",
     "source": "deepseek"
   },
   "repositories": [
@@ -27,52 +27,51 @@
       "description": "Craft Anything: understand how any software works, and craft your own.",
       "language": "Rust",
       "topics": [],
-      "stars": 28298,
-      "forks": 5739,
-      "openIssues": 314,
+      "stars": 28358,
+      "forks": 5749,
+      "openIssues": 316,
       "createdAt": "2026-10-31T14:50:00Z",
-      "updatedAt": "2026-11-11T22:16:35Z",
-      "pushedAt": "2026-11-11T20:25:04Z",
+      "updatedAt": "2026-11-12T00:00:51Z",
+      "pushedAt": "2026-11-11T23:54:31Z",
       "license": "Apache-2.0",
       "archived": false,
       "fork": false,
       "rank": 1,
       "previousRank": 1,
       "rankChange": 0,
-      "score": 93,
+      "score": 93.1,
       "categories": [
         "learning"
       ],
       "signals": {
-        "stars24h": 2023,
-        "forks24h": 411,
-        "starVelocity": 1959.5522119100974,
-        "relativeGrowth": 11.643598285762268,
-        "acceleration7d": 0.7970220130610214,
-        "forkRatio7d": 0.22526824335711476,
-        "ageDays": 11.312199224537038,
-        "hoursSincePush": 1.9083369444444445,
-        "starsPerDay": 2501.5471738350793
+        "stars24h": 1961,
+        "forks24h": 397,
+        "starVelocity": 1915.026968913297,
+        "relativeGrowth": 11.366997011709035,
+        "acceleration7d": 0.7728015712141431,
+        "forkRatio7d": 0.2250713845809305,
+        "ageDays": 11.382623229166667,
+        "hoursSincePush": 0.10767972222222222,
+        "starsPerDay": 2491.3413568267706
       },
       "scoreBreakdown": {
-        "starMomentum": 34.95867768595041,
-        "relativeGrowth": 18.84297520661157,
-        "acceleration": 5.218417945690673,
-        "forkMomentum": 9.964580873671782,
-        "developmentActivity": 14.915047860761826,
-        "freshness": 9.100385416822549
+        "starMomentum": 34.95862884160757,
+        "relativeGrowth": 18.84160756501182,
+        "acceleration": 5.236406619385344,
+        "forkMomentum": 9.964539007092199,
+        "developmentActivity": 14.995193639744812,
+        "freshness": 9.09504627045336
       },
       "research": {
         "summary": "Craft Anything: understand how any software works, and craft your own.",
-        "whyNow": "過去 24 小時增加 2,023 個 stars，同時增加 411 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 1,961 個 stars，同時增加 397 個 forks，數據動能令它進入今日榜。",
         "bestFor": "想系統學習或查找參考資料的人",
         "evidence": [
-          "28,298 stars，5,739 forks",
+          "28,358 stars，5,749 forks",
           "主要語言：Rust",
           "授權：Apache-2.0",
           "分類：學習資源",
-          "近期加星帳戶抽樣：100 個中 1 個可疑",
-          "Hacker News：6 分、3 則評論（7 日前）"
+          "近期加星帳戶抽樣：100 個中 2 個可疑"
         ],
         "cautions": [
           "項目仍然很新，API、文件和維護節奏可能快速改變。"
@@ -85,17 +84,11 @@
         },
         "starAudit": {
           "sampled": 100,
-          "suspicious": 1,
-          "freshHollow": 1,
+          "suspicious": 2,
+          "freshHollow": 2,
           "sharedHollow": 0,
-          "maxPerMinute": 3,
+          "maxPerMinute": 4,
           "flagged": false
-        },
-        "hackerNews": {
-          "points": 6,
-          "comments": 3,
-          "postedAt": "2026-11-05T10:07:06Z",
-          "url": "https://news.ycombinator.com/item?id=50377361"
         },
         "introduction": {
           "text": "Craft Anything 是一套以純 Rust 編寫的開源引擎，先以檢查工具分析指定的網站、應用或遊戲，再由編碼代理建立新專案並與原作比對修正。預設 clean room 模式只憑可見畫面推斷，不讀取原作原始碼。現屬早期 alpha，需自備並登入編碼代理。",
@@ -134,11 +127,11 @@
         "video-generation",
         "vlm"
       ],
-      "stars": 7025,
-      "forks": 1022,
+      "stars": 7054,
+      "forks": 1024,
       "openIssues": 3,
       "createdAt": "2026-10-29T16:15:01Z",
-      "updatedAt": "2026-11-11T22:15:41Z",
+      "updatedAt": "2026-11-11T23:57:04Z",
       "pushedAt": "2026-11-11T17:48:34Z",
       "license": "Apache-2.0",
       "archived": false,
@@ -152,35 +145,34 @@
         "creative"
       ],
       "signals": {
-        "stars24h": 696,
-        "forks24h": 116,
-        "starVelocity": 758.7607938594454,
-        "relativeGrowth": 9.036709549107142,
-        "acceleration7d": 0.7457457574260017,
-        "forkRatio7d": 0.1436498150431566,
-        "ageDays": 13.253159872685185,
-        "hoursSincePush": 4.516670277777778,
-        "starsPerDay": 530.0622694877885
+        "stars24h": 681,
+        "forks24h": 111,
+        "starVelocity": 745.8856731594269,
+        "relativeGrowth": 8.865154508620622,
+        "acceleration7d": 0.7297475152378757,
+        "forkRatio7d": 0.1433174773668866,
+        "ageDays": 13.323583877314816,
+        "hoursSincePush": 6.206846388888889,
+        "starsPerDay": 529.4371293005014
       },
       "scoreBreakdown": {
-        "starMomentum": 34.421487603305785,
-        "relativeGrowth": 18.795749704840613,
-        "acceleration": 4.887839433293979,
-        "forkMomentum": 9.8642266824085,
-        "developmentActivity": 14.799712131956055,
-        "freshness": 8.9543736961491
+        "starMomentum": 34.42080378250591,
+        "relativeGrowth": 18.77068557919622,
+        "acceleration": 4.988179669030733,
+        "forkMomentum": 9.846335697399528,
+        "developmentActivity": 14.725452277292197,
+        "freshness": 8.949120214058134
       },
       "research": {
         "summary": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻。",
-        "whyNow": "過去 24 小時增加 696 個 stars，同時增加 116 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 681 個 stars，同時增加 111 個 forks，數據動能令它進入今日榜。",
         "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
         "evidence": [
-          "7,025 stars，1,022 forks",
+          "7,054 stars，1,024 forks",
           "主要語言：Python",
           "授權：Apache-2.0",
           "分類：AI、設計與多媒體",
-          "近期加星帳戶抽樣：100 個中 3 個可疑",
-          "Hacker News：4 分、0 則評論（7 日前）"
+          "近期加星帳戶抽樣：100 個中 2 個可疑"
         ],
         "cautions": [
           "項目仍然很新，API、文件和維護節奏可能快速改變。"
@@ -193,17 +185,11 @@
         },
         "starAudit": {
           "sampled": 100,
-          "suspicious": 3,
+          "suspicious": 2,
           "freshHollow": 2,
-          "sharedHollow": 1,
+          "sharedHollow": 0,
           "maxPerMinute": 3,
           "flagged": false
-        },
-        "hackerNews": {
-          "points": 4,
-          "comments": 0,
-          "postedAt": "2026-11-04T17:16:19Z",
-          "url": "https://news.ycombinator.com/item?id=50368605"
         },
         "introduction": {
           "text": "rea-video 是以 AI agent 操作的影片逆向分析工具，逐鏡拆解影片，判斷每個鏡頭屬實拍、AI 生成還是程式碼製作，並分析運鏡、燈光、字幕與音訊，輸出逐鏡摘要和複刻計劃。它需要 ffmpeg 及 Python 3.10+，可選接 Gemini 或 Doubao 視覺模型提升準確度；本身不生成影片，複刻須配合 capsule-cinema。",
@@ -236,52 +222,52 @@
         "flutter",
         "llm"
       ],
-      "stars": 19677,
-      "forks": 876,
-      "openIssues": 535,
+      "stars": 19692,
+      "forks": 877,
+      "openIssues": 527,
       "createdAt": "2026-10-25T08:09:52Z",
-      "updatedAt": "2026-11-11T22:07:41Z",
-      "pushedAt": "2026-11-11T22:19:29Z",
+      "updatedAt": "2026-11-11T23:57:11Z",
+      "pushedAt": "2026-11-11T23:55:38Z",
       "license": "AGPL-3.0",
       "archived": false,
       "fork": false,
       "rank": 3,
       "previousRank": 3,
       "rankChange": 0,
-      "score": 90.8,
+      "score": 90.9,
       "categories": [
         "ai",
         "mobile"
       ],
       "signals": {
-        "stars24h": 919,
-        "forks24h": 50,
-        "starVelocity": 1019.1575905860273,
-        "relativeGrowth": 7.260828619577427,
-        "acceleration7d": 0.5874053598061251,
-        "forkRatio7d": 0.04291398256915498,
-        "ageDays": 17.59006959490741,
-        "hoursSincePush": 0.0013925,
-        "starsPerDay": 1118.6425325853622
+        "stars24h": 882,
+        "forks24h": 48,
+        "starVelocity": 988.6572226402373,
+        "relativeGrowth": 7.040853779510646,
+        "acceleration7d": 0.5637138631372909,
+        "forkRatio7d": 0.04294768706839466,
+        "ageDays": 17.660493599537038,
+        "hoursSincePush": 0.08906861111111111,
+        "starsPerDay": 1115.0311223756632
       },
       "scoreBreakdown": {
-        "starMomentum": 34.586776859504134,
-        "relativeGrowth": 18.7012987012987,
-        "acceleration": 4.262101534828807,
-        "forkMomentum": 9.61038961038961,
-        "developmentActivity": 14.999937834950245,
-        "freshness": 8.636532573069829
+        "starMomentum": 34.58628841607565,
+        "relativeGrowth": 18.699763593380613,
+        "acceleration": 4.361702127659575,
+        "forkMomentum": 9.598108747044918,
+        "developmentActivity": 14.996024249697722,
+        "freshness": 8.63146556662803
       },
       "research": {
         "summary": "dsh-go - DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
-        "whyNow": "過去 24 小時增加 919 個 stars，同時增加 50 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 882 個 stars，同時增加 48 個 forks，數據動能令它進入今日榜。",
         "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
         "evidence": [
-          "19,677 stars，876 forks",
+          "19,692 stars，877 forks",
           "主要語言：Dart",
           "授權：AGPL-3.0",
           "分類：AI、手機應用",
-          "近期加星帳戶抽樣：34 個中 6 個可疑"
+          "近期加星帳戶抽樣：53 個中 6 個可疑"
         ],
         "cautions": [
           "項目仍然很新，API、文件和維護節奏可能快速改變。"
@@ -293,7 +279,7 @@
           "version": 2
         },
         "starAudit": {
-          "sampled": 34,
+          "sampled": 53,
           "suspicious": 6,
           "freshHollow": 6,
           "sharedHollow": 0,
@@ -303,6 +289,88 @@
         "introduction": {
           "text": "DSH Go 是 DeepSeek Harness 的非官方 Android 客戶端，在手機內置 Linux 環境本機運行 DSH 引擎，免 Root、免 Termux，亦可經 SSH 或 DSHarness Remote 接上電腦的 DSH 繼續對話，支援中途插話、分享對話連結與手機操控；模型請求仍由你配置的提供方處理。項目要求 Android 8.0 以上，以 APK 側載發布，DSHarness Remote 目前只支援圖片附件，且不能在 App 內開啟網頁版。",
           "writtenAt": "2026-11-10T15:49:22.350Z",
+          "source": "deepseek",
+          "version": 3
+        }
+      }
+    },
+    {
+      "id": 1446962520,
+      "nodeId": "R_kgDOVj7lWA",
+      "name": "Hookshot",
+      "fullName": "NotRexed/Hookshot",
+      "owner": "NotRexed",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/179062254?v=4",
+      "url": "https://github.com/NotRexed/Hookshot",
+      "description": "A Native Recompilation Of The Legend Of Zelda: Ocarina Of Time Nintendo Switch 2 Remake",
+      "language": "C++",
+      "topics": [],
+      "stars": 7758,
+      "forks": 696,
+      "openIssues": 200,
+      "createdAt": "2026-11-05T12:18:58Z",
+      "updatedAt": "2026-11-12T00:00:43Z",
+      "pushedAt": "2026-11-12T00:00:42Z",
+      "license": "GPL-3.0",
+      "archived": false,
+      "fork": false,
+      "rank": 4,
+      "previousRank": 10,
+      "rankChange": 6,
+      "score": 90.8,
+      "categories": [
+        "games"
+      ],
+      "signals": {
+        "stars24h": 1232,
+        "forks24h": 114,
+        "starVelocity": 1420.7302705964735,
+        "relativeGrowth": 16.10416155053346,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 6.487507488425926,
+        "hoursSincePush": 0.004624166666666667,
+        "starsPerDay": 1195.8367699522048
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.83451536643026,
+        "relativeGrowth": 19.763593380614658,
+        "acceleration": 1.8498817966903072,
+        "forkMomentum": 9.864066193853429,
+        "developmentActivity": 14.999793565408616,
+        "freshness": 9.473728347261275
+      },
+      "research": {
+        "summary": "A Native Recompilation Of The Legend Of Zelda: Ocarina Of Time Nintendo Switch 2 Remake",
+        "whyNow": "過去 24 小時增加 1,232 個 stars，同時增加 114 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "玩家、遊戲開發者和 mod 作者",
+        "evidence": [
+          "7,758 stars，696 forks",
+          "主要語言：C++",
+          "授權：GPL-3.0",
+          "分類：遊戲",
+          "近期加星帳戶抽樣：32 個中 1 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "code",
+          "judgedAt": "2026-11-11T00:01:04.813Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 32,
+          "suspicious": 1,
+          "freshHollow": 1,
+          "sharedHollow": 0,
+          "maxPerMinute": 4,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "Hookshot 把《薩爾達傳說：時之笛》Nintendo Switch 2 版的遊戲程式碼靜態重編譯成 C，再編譯為 Windows 及 Linux 原生程式，同時重新實作主機系統軟件、以 Vulkan 重建畫面，讓遊戲無需模擬器運行。它不含遊戲、密鑰或執行檔，須以自己擁有且符合指定版本的副本在本機建置；項目仍在實驗階段，顯卡須支援 Vulkan 1.3 與 mesh shaders。",
+          "writtenAt": "2026-11-11T00:01:04.813Z",
           "source": "deepseek",
           "version": 3
         }
@@ -321,52 +389,52 @@
       "topics": [
         "unixnu"
       ],
-      "stars": 2608,
+      "stars": 2617,
       "forks": 404,
       "openIssues": 30,
       "createdAt": "2026-10-19T10:46:55Z",
-      "updatedAt": "2026-11-11T22:17:50Z",
-      "pushedAt": "2026-11-11T20:34:37Z",
+      "updatedAt": "2026-11-12T00:00:47Z",
+      "pushedAt": "2026-11-11T23:00:00Z",
       "license": null,
       "archived": false,
       "fork": false,
-      "rank": 4,
+      "rank": 5,
       "previousRank": 4,
-      "rankChange": 0,
-      "score": 90.8,
+      "rankChange": -1,
+      "score": 90.7,
       "categories": [
         "desktop",
         "mobile"
       ],
       "signals": {
-        "stars24h": 222,
-        "forks24h": 24,
-        "starVelocity": 200.8783848007623,
-        "relativeGrowth": 3.9147837609807463,
-        "acceleration7d": 4.0716411860534025,
-        "forkRatio7d": 0.12643678160919541,
-        "ageDays": 23.481007094907408,
-        "hoursSincePush": 1.7491702777777778,
-        "starsPerDay": 111.0684899271474
+        "stars24h": 217,
+        "forks24h": 22,
+        "starVelocity": 197.7210126326899,
+        "relativeGrowth": 3.8466831882192363,
+        "acceleration7d": 3.9810010118257115,
+        "forkRatio7d": 0.12459546925566344,
+        "ageDays": 23.551431099537037,
+        "hoursSincePush": 1.0162908333333334,
+        "starsPerDay": 111.11851288100466
       },
       "scoreBreakdown": {
-        "starMomentum": 30.785123966942148,
-        "relativeGrowth": 18.299881936245573,
-        "acceleration": 9.48051948051948,
-        "forkMomentum": 9.09681227863046,
-        "developmentActivity": 14.92211494656246,
-        "freshness": 8.22279383455046
+        "starMomentum": 30.738770685579198,
+        "relativeGrowth": 18.274231678487,
+        "acceleration": 9.50354609929078,
+        "forkMomentum": 9.048463356973995,
+        "developmentActivity": 14.954698419330796,
+        "freshness": 8.217969566364502
       },
       "research": {
         "summary": "Run iOS and macOS on non-Apple ARM64 hardware through UEFI.",
-        "whyNow": "過去 24 小時增加 222 個 stars，同時增加 24 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 217 個 stars，同時增加 22 個 forks，數據動能令它進入今日榜。",
         "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
         "evidence": [
-          "2,608 stars，404 forks",
+          "2,617 stars，404 forks",
           "主要語言：Python",
           "授權：未標示",
           "分類：桌面與系統、手機應用",
-          "近期加星帳戶抽樣：61 個中 0 個可疑"
+          "近期加星帳戶抽樣：59 個中 0 個可疑"
         ],
         "cautions": [
           "GitHub 未標示開源授權，正式採用前要先確認使用條款。",
@@ -379,7 +447,7 @@
           "version": 2
         },
         "starAudit": {
-          "sampled": 61,
+          "sampled": 59,
           "suspicious": 0,
           "freshHollow": 0,
           "sharedHollow": 0,
@@ -405,51 +473,51 @@
       "description": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups, and support for 7 languages.",
       "language": "Swift",
       "topics": [],
-      "stars": 6157,
-      "forks": 2396,
-      "openIssues": 52,
+      "stars": 6196,
+      "forks": 2407,
+      "openIssues": 53,
       "createdAt": "2026-11-09T05:15:48Z",
-      "updatedAt": "2026-11-11T22:16:34Z",
+      "updatedAt": "2026-11-12T00:00:18Z",
       "pushedAt": "2026-11-11T03:51:20Z",
       "license": "GPL-3.0",
       "archived": false,
       "fork": false,
-      "rank": 5,
-      "previousRank": 6,
-      "rankChange": 1,
+      "rank": 6,
+      "previousRank": 5,
+      "rankChange": -1,
       "score": 90.5,
       "categories": [
         "mobile"
       ],
       "signals": {
-        "stars24h": 1423,
-        "forks24h": 564,
-        "starVelocity": 1423.3242237666502,
-        "relativeGrowth": 18.10253268849695,
+        "stars24h": 1378,
+        "forks24h": 543,
+        "starVelocity": 1377.6730071022027,
+        "relativeGrowth": 17.466908637862925,
         "acceleration7d": null,
         "forkRatio7d": null,
-        "ageDays": 2.7109492245370372,
-        "hoursSincePush": 18.470559166666668,
-        "starsPerDay": 2271.160206274783
+        "ageDays": 2.781373229166667,
+        "hoursSincePush": 20.16073527777778,
+        "starsPerDay": 2227.6765789740475
       },
       "scoreBreakdown": {
-        "starMomentum": 34.79338842975206,
-        "relativeGrowth": 19.976387249114524,
-        "acceleration": 1.806375442739079,
-        "forkMomentum": 9.988193624557262,
-        "developmentActivity": 14.197676136001837,
-        "freshness": 9.776620277813112
+        "starMomentum": 34.75177304964539,
+        "relativeGrowth": 19.976359338061467,
+        "acceleration": 1.8498817966903072,
+        "forkMomentum": 9.988179669030734,
+        "developmentActivity": 14.12643709047017,
+        "freshness": 9.770884388148183
       },
       "research": {
         "summary": "An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups, and support for 7 languages.",
-        "whyNow": "過去 24 小時增加 1,423 個 stars，同時增加 564 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 1,378 個 stars，同時增加 543 個 forks，數據動能令它進入今日榜。",
         "bestFor": "使用或開發 iOS、Android 應用的人",
         "evidence": [
-          "6,157 stars，2,396 forks",
+          "6,196 stars，2,407 forks",
           "主要語言：Swift",
           "授權：GPL-3.0",
           "分類：手機應用",
-          "近期加星帳戶抽樣：100 個中 19 個可疑"
+          "近期加星帳戶抽樣：100 個中 21 個可疑"
         ],
         "cautions": [
           "項目仍然很新，API、文件和維護節奏可能快速改變。"
@@ -462,8 +530,8 @@
         },
         "starAudit": {
           "sampled": 100,
-          "suspicious": 19,
-          "freshHollow": 19,
+          "suspicious": 21,
+          "freshHollow": 21,
           "sharedHollow": 0,
           "maxPerMinute": 3,
           "flagged": false
@@ -471,101 +539,6 @@
         "introduction": {
           "text": "GestaltX 是 iPhone 與 iPad 的 MobileGestalt 編輯器，可讀取、搜尋及修改 CacheExtra 欄位，並透過預設項目調節 Dynamic Island、Always-On Display、Apple Intelligence 與地區碼等系統能力旗標。寫入前會自動備份並記錄原始值，另支援 plist 匯入匯出及多語言介面。程式僅支援 iOS/iPadOS 27.x，重新簽署須具備含共同 App Group 的憑證，而預設只改動旗標，實際效果視裝置與系統而定。",
           "writtenAt": "2026-11-11T08:00:56.607Z",
-          "source": "deepseek",
-          "version": 3
-        }
-      }
-    },
-    {
-      "id": 1421822085,
-      "nodeId": "R_kgDOVL9IhQ",
-      "name": "dsh-purge",
-      "fullName": "kingcharleslzy-ai/dsh-purge",
-      "owner": "kingcharleslzy-ai",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/260348840?v=4",
-      "url": "https://github.com/kingcharleslzy-ai/dsh-purge",
-      "description": "dsh-purge Community · DeepSeek Harness 社区维护版：宿主兼容、状态诊断、提示词管理、更新与本机备份回滚。基于小杨 / YuJunZhiXue 的 dsh-purge。",
-      "language": "JavaScript",
-      "topics": [
-        "agent-tools",
-        "backup",
-        "deepseek",
-        "deepseek-harness",
-        "dsh",
-        "dsh-plugin",
-        "jailbreak",
-        "prompt-injection",
-        "prompt-management",
-        "purge-community",
-        "rollback"
-      ],
-      "stars": 6999,
-      "forks": 3157,
-      "openIssues": 21,
-      "createdAt": "2026-10-16T07:44:27Z",
-      "updatedAt": "2026-11-11T22:15:48Z",
-      "pushedAt": "2026-11-11T16:26:24Z",
-      "license": "MIT",
-      "archived": false,
-      "fork": false,
-      "rank": 6,
-      "previousRank": 5,
-      "rankChange": -1,
-      "score": 90.3,
-      "categories": [
-        "ai",
-        "devtools"
-      ],
-      "signals": {
-        "stars24h": 404,
-        "forks24h": 138,
-        "starVelocity": 445.82566799746314,
-        "relativeGrowth": 5.31952454979261,
-        "acceleration7d": 1.1931346829501526,
-        "forkRatio7d": 0.38694455367675973,
-        "ageDays": 26.60772005787037,
-        "hoursSincePush": 5.8861147222222225,
-        "starsPerDay": 263.0439580985349
-      },
-      "scoreBreakdown": {
-        "starMomentum": 32.14876033057851,
-        "relativeGrowth": 18.536009445100355,
-        "acceleration": 6.965761511216057,
-        "forkMomentum": 9.917355371900827,
-        "developmentActivity": 14.739515294315916,
-        "freshness": 8.011308391614342
-      },
-      "research": {
-        "summary": "dsh-purge Community · DeepSeek Harness 社区维护版：宿主兼容、状态诊断、提示词管理、更新与本机备份回滚。基于小杨 / YuJunZhiXue 的 dsh-purge。",
-        "whyNow": "過去 24 小時增加 404 個 stars，同時增加 138 個 forks，數據動能令它進入今日榜。",
-        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
-        "evidence": [
-          "6,999 stars，3,157 forks",
-          "主要語言：JavaScript",
-          "授權：MIT",
-          "分類：AI、開發工具",
-          "近期加星帳戶抽樣：100 個中 11 個可疑"
-        ],
-        "cautions": [
-          "項目仍然很新，API、文件和維護節奏可能快速改變。"
-        ],
-        "categorySource": "jev",
-        "ease": {
-          "level": "cli",
-          "judgedAt": "2026-11-09T16:01:05.941Z",
-          "version": 2
-        },
-        "starAudit": {
-          "sampled": 100,
-          "suspicious": 11,
-          "freshHollow": 11,
-          "sharedHollow": 0,
-          "maxPerMinute": 3,
-          "flagged": false
-        },
-        "introduction": {
-          "text": "dsh-purge Community 是為 DeepSeek Harness 而設的本機附加組件，把宿主補丁、狀態自檢、提示詞與預設管理、更新及備份回滾集中一處，改動前自動快照。邏輯全在本機運行，不改動模型本身。目前僅在 DSH Desktop 部分版本驗證，其他宿主可安裝但會標示未驗證。",
-          "writtenAt": "2026-11-10T16:01:09.297Z",
           "source": "deepseek",
           "version": 3
         }
@@ -603,51 +576,51 @@
         "youtube-downloader",
         "yt-dlp"
       ],
-      "stars": 6763,
-      "forks": 519,
-      "openIssues": 203,
+      "stars": 6811,
+      "forks": 524,
+      "openIssues": 200,
       "createdAt": "2026-10-29T01:25:19Z",
-      "updatedAt": "2026-11-11T22:15:13Z",
-      "pushedAt": "2026-11-11T22:10:19Z",
+      "updatedAt": "2026-11-11T23:57:37Z",
+      "pushedAt": "2026-11-11T23:58:43Z",
       "license": "GPL-3.0",
       "archived": false,
       "fork": false,
       "rank": 7,
-      "previousRank": 11,
-      "rankChange": 4,
-      "score": 90.2,
+      "previousRank": 7,
+      "rankChange": 0,
+      "score": 90.4,
       "categories": [
         "desktop"
       ],
       "signals": {
-        "stars24h": 1213,
-        "forks24h": 116,
-        "starVelocity": 1440.344521990061,
-        "relativeGrowth": 17.48217520549298,
+        "stars24h": 1185,
+        "forks24h": 114,
+        "starVelocity": 1413.3702423208388,
+        "relativeGrowth": 17.09444149594338,
         "acceleration7d": null,
         "forkRatio7d": null,
-        "ageDays": 13.871007094907407,
-        "hoursSincePush": 0.15417027777777778,
-        "starsPerDay": 487.56373302432837
+        "ageDays": 13.941431099537038,
+        "hoursSincePush": 0.037679722222222226,
+        "starsPerDay": 488.543819595836
       },
       "scoreBreakdown": {
-        "starMomentum": 34.83471074380165,
-        "relativeGrowth": 19.787485242030694,
-        "acceleration": 1.806375442739079,
-        "forkMomentum": 9.8642266824085,
-        "developmentActivity": 14.99311897707888,
-        "freshness": 8.908388555907843
+        "starMomentum": 34.79314420803782,
+        "relativeGrowth": 19.95271867612293,
+        "acceleration": 1.8498817966903072,
+        "forkMomentum": 9.864066193853429,
+        "developmentActivity": 14.998317963858888,
+        "freshness": 8.903162053047241
       },
       "research": {
         "summary": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux",
-        "whyNow": "過去 24 小時增加 1,213 個 stars，同時增加 116 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 1,185 個 stars，同時增加 114 個 forks，數據動能令它進入今日榜。",
         "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
         "evidence": [
-          "6,763 stars，519 forks",
+          "6,811 stars，524 forks",
           "主要語言：Rust",
           "授權：GPL-3.0",
           "分類：桌面與系統",
-          "近期加星帳戶抽樣：100 個中 1 個可疑"
+          "近期加星帳戶抽樣：100 個中 3 個可疑"
         ],
         "cautions": [
           "項目仍然很新，API、文件和維護節奏可能快速改變。"
@@ -660,8 +633,8 @@
         },
         "starAudit": {
           "sampled": 100,
-          "suspicious": 1,
-          "freshHollow": 1,
+          "suspicious": 3,
+          "freshHollow": 3,
           "sharedHollow": 0,
           "maxPerMinute": 4,
           "flagged": false
@@ -685,51 +658,51 @@
       "description": "Agent harness for learning difficult things.",
       "language": "TypeScript",
       "topics": [],
-      "stars": 8722,
-      "forks": 1166,
-      "openIssues": 482,
+      "stars": 8743,
+      "forks": 1170,
+      "openIssues": 483,
       "createdAt": "2026-10-16T19:35:33Z",
-      "updatedAt": "2026-11-11T22:15:44Z",
+      "updatedAt": "2026-11-12T00:00:49Z",
       "pushedAt": "2026-11-11T00:21:42Z",
       "license": "AGPL-3.0",
       "archived": false,
       "fork": false,
       "rank": 8,
-      "previousRank": 14,
-      "rankChange": 6,
-      "score": 90.1,
+      "previousRank": 8,
+      "rankChange": 0,
+      "score": 90.2,
       "categories": [
         "ai"
       ],
       "signals": {
-        "stars24h": 459,
-        "forks24h": 36,
-        "starVelocity": 607.2135073069062,
-        "relativeGrowth": 6.492498537919403,
-        "acceleration7d": 0.9722922598966441,
-        "forkRatio7d": 0.09900410076157001,
-        "ageDays": 26.113900613425926,
-        "hoursSincePush": 21.964448055555554,
-        "starsPerDay": 333.9983608391219
+        "stars24h": 450,
+        "forks24h": 37,
+        "starVelocity": 596.9584863386666,
+        "relativeGrowth": 6.375200676780578,
+        "acceleration7d": 0.9544300859575958,
+        "forkRatio7d": 0.09956331877729256,
+        "ageDays": 26.184324618055555,
+        "hoursSincePush": 23.654624166666668,
+        "starsPerDay": 333.9020626856731
       },
       "scoreBreakdown": {
-        "starMomentum": 34.00826446280992,
-        "relativeGrowth": 18.654073199527744,
-        "acceleration": 5.974025974025974,
-        "forkMomentum": 9.409681227863047,
-        "developmentActivity": 14.050806833242119,
-        "freshness": 8.044344150905271
+        "starMomentum": 34.00709219858156,
+        "relativeGrowth": 18.62884160756501,
+        "acceleration": 6.099290780141844,
+        "forkMomentum": 9.444444444444445,
+        "developmentActivity": 13.980304727252266,
+        "freshness": 8.039624578173065
       },
       "research": {
         "summary": "Agent harness for learning difficult things.",
-        "whyNow": "過去 24 小時增加 459 個 stars，同時增加 36 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 450 個 stars，同時增加 37 個 forks，數據動能令它進入今日榜。",
         "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
         "evidence": [
-          "8,722 stars，1,166 forks",
+          "8,743 stars，1,170 forks",
           "主要語言：TypeScript",
           "授權：AGPL-3.0",
           "分類：AI",
-          "近期加星帳戶抽樣：80 個中 1 個可疑"
+          "近期加星帳戶抽樣：82 個中 1 個可疑"
         ],
         "cautions": [
           "項目仍然很新，API、文件和維護節奏可能快速改變。"
@@ -741,7 +714,7 @@
           "version": 2
         },
         "starAudit": {
-          "sampled": 80,
+          "sampled": 82,
           "suspicious": 1,
           "freshHollow": 1,
           "sharedHollow": 0,
@@ -751,6 +724,101 @@
         "introduction": {
           "text": "LearnHarness 是一個由 AI agent 帶領學習的桌面應用，先量度你對每個相關概念的理解程度，再規劃出通往目標的依賴路徑，逐步講解並配合練習鞏固，並按你的推理調整內容。所學內容會累積成可跨課節沿用的知識圖譜；模型與 API key 由用戶自行提供，學習記錄存於本機，Windows 版本目前未簽署。",
           "writtenAt": "2026-11-10T08:01:03.652Z",
+          "source": "deepseek",
+          "version": 3
+        }
+      }
+    },
+    {
+      "id": 1421822085,
+      "nodeId": "R_kgDOVL9IhQ",
+      "name": "dsh-purge",
+      "fullName": "kingcharleslzy-ai/dsh-purge",
+      "owner": "kingcharleslzy-ai",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/260348840?v=4",
+      "url": "https://github.com/kingcharleslzy-ai/dsh-purge",
+      "description": "dsh-purge Community · DeepSeek Harness 社区维护版：宿主兼容、状态诊断、提示词管理、更新与本机备份回滚。基于小杨 / YuJunZhiXue 的 dsh-purge。",
+      "language": "JavaScript",
+      "topics": [
+        "agent-tools",
+        "backup",
+        "deepseek",
+        "deepseek-harness",
+        "dsh",
+        "dsh-plugin",
+        "jailbreak",
+        "prompt-injection",
+        "prompt-management",
+        "purge-community",
+        "rollback"
+      ],
+      "stars": 7005,
+      "forks": 3160,
+      "openIssues": 21,
+      "createdAt": "2026-10-16T07:44:27Z",
+      "updatedAt": "2026-11-11T23:42:30Z",
+      "pushedAt": "2026-11-11T16:26:24Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 9,
+      "previousRank": 6,
+      "rankChange": -3,
+      "score": 90.1,
+      "categories": [
+        "ai",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 387,
+        "forks24h": 133,
+        "starVelocity": 432.14756061600906,
+        "relativeGrowth": 5.154118547424547,
+        "acceleration7d": 1.143716460514917,
+        "forkRatio7d": 0.3872106708513142,
+        "ageDays": 26.6781440625,
+        "hoursSincePush": 7.576290833333333,
+        "starsPerDay": 262.57448732524625
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.14539007092199,
+        "relativeGrowth": 18.51063829787234,
+        "acceleration": 6.855791962174941,
+        "forkMomentum": 9.91725768321513,
+        "developmentActivity": 14.665557486636116,
+        "freshness": 8.006608200781493
+      },
+      "research": {
+        "summary": "dsh-purge Community · DeepSeek Harness 社区维护版：宿主兼容、状态诊断、提示词管理、更新与本机备份回滚。基于小杨 / YuJunZhiXue 的 dsh-purge。",
+        "whyNow": "過去 24 小時增加 387 個 stars，同時增加 133 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "7,005 stars，3,160 forks",
+          "主要語言：JavaScript",
+          "授權：MIT",
+          "分類：AI、開發工具",
+          "近期加星帳戶抽樣：100 個中 10 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-09T16:01:05.941Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 10,
+          "freshHollow": 10,
+          "sharedHollow": 0,
+          "maxPerMinute": 3,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "dsh-purge Community 是為 DeepSeek Harness 而設的本機附加組件，把宿主補丁、狀態自檢、提示詞與預設管理、更新及備份回滾集中一處，改動前自動快照。邏輯全在本機運行，不改動模型本身。目前僅在 DSH Desktop 部分版本驗證，其他宿主可安裝但會標示未驗證。",
+          "writtenAt": "2026-11-10T16:01:09.297Z",
           "source": "deepseek",
           "version": 3
         }
@@ -775,51 +843,51 @@
         "windows"
       ],
       "stars": 8284,
-      "forks": 3871,
+      "forks": 3917,
       "openIssues": 18,
       "createdAt": "2026-11-03T14:04:27Z",
-      "updatedAt": "2026-11-11T21:56:29Z",
+      "updatedAt": "2026-11-11T23:46:32Z",
       "pushedAt": "2026-11-10T13:42:26Z",
       "license": null,
       "archived": false,
       "fork": false,
-      "rank": 9,
-      "previousRank": 7,
-      "rankChange": -2,
+      "rank": 10,
+      "previousRank": 9,
+      "rankChange": -1,
       "score": 89.9,
       "categories": [
         "web",
         "mobile"
       ],
       "signals": {
-        "stars24h": 264,
-        "forks24h": 628,
-        "starVelocity": 910.8142632334623,
-        "relativeGrowth": 9.99206943991497,
-        "acceleration7d": 0.2148409860709971,
-        "forkRatio7d": 0.43718331817591266,
-        "ageDays": 8.343831168981481,
-        "hoursSincePush": 32.6188925,
-        "starsPerDay": 992.8292929507124
+        "stars24h": 250,
+        "forks24h": 629,
+        "starVelocity": 883.3215894314012,
+        "relativeGrowth": 9.690461618421388,
+        "acceleration7d": 0.2035616889555671,
+        "forkRatio7d": 0.4431596725997141,
+        "ageDays": 8.414255173611112,
+        "hoursSincePush": 34.30906861111111,
+        "starsPerDay": 984.5197024664025
       },
       "scoreBreakdown": {
-        "starMomentum": 34.50413223140496,
-        "relativeGrowth": 18.819362455726093,
-        "acceleration": 3.6835891381345927,
+        "starMomentum": 34.50354609929078,
+        "relativeGrowth": 18.817966903073287,
+        "acceleration": 3.747044917257683,
         "forkMomentum": 10,
-        "developmentActivity": 13.612250561945118,
-        "freshness": 9.328303509865886
+        "developmentActivity": 13.54394898017344,
+        "freshness": 9.322830645197612
       },
       "research": {
         "summary": "YellowFruit third-party client",
-        "whyNow": "過去 24 小時增加 264 個 stars，同時增加 628 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 250 個 stars，同時增加 629 個 forks，數據動能令它進入今日榜。",
         "bestFor": "建立網站、服務或前端產品的開發者",
         "evidence": [
-          "8,284 stars，3,871 forks",
+          "8,284 stars，3,917 forks",
           "GitHub 尚未識別主要語言",
           "授權：未標示",
           "分類：Web、手機應用",
-          "近期加星帳戶抽樣：69 個中 5 個可疑"
+          "近期加星帳戶抽樣：68 個中 5 個可疑"
         ],
         "cautions": [
           "GitHub 未標示開源授權，正式採用前要先確認使用條款。",
@@ -832,7 +900,7 @@
           "version": 2
         },
         "starAudit": {
-          "sampled": 69,
+          "sampled": 68,
           "suspicious": 5,
           "freshHollow": 5,
           "sharedHollow": 1,
@@ -842,95 +910,6 @@
         "introduction": {
           "text": "HGhub 項目已停止維護。作者表示出於個人原因，已撤下倉庫內的程式碼、版本發布與構建記錄，只留下一份說明文件。文中他向貢獻者及使用者致歉，並強調自己一切平安，未受任何上游或機構處理，有關決定純屬個人原因。",
           "writtenAt": "2026-11-11T15:38:52.851Z",
-          "source": "deepseek",
-          "version": 3
-        }
-      }
-    },
-    {
-      "id": 1446962520,
-      "nodeId": "R_kgDOVj7lWA",
-      "name": "Hookshot",
-      "fullName": "NotRexed/Hookshot",
-      "owner": "NotRexed",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/179062254?v=4",
-      "url": "https://github.com/NotRexed/Hookshot",
-      "description": "A Native Recompilation Of The Legend Of Zelda: Ocarina Of Time Nintendo Switch 2 Remake",
-      "language": "C++",
-      "topics": [],
-      "stars": 7658,
-      "forks": 681,
-      "openIssues": 185,
-      "createdAt": "2026-11-05T12:18:58Z",
-      "updatedAt": "2026-11-11T22:17:17Z",
-      "pushedAt": "2026-11-11T22:16:46Z",
-      "license": "GPL-3.0",
-      "archived": false,
-      "fork": false,
-      "rank": 10,
-      "previousRank": 10,
-      "rankChange": 0,
-      "score": 89.9,
-      "categories": [
-        "games"
-      ],
-      "signals": {
-        "stars24h": 1221,
-        "forks24h": 109,
-        "starVelocity": 1418.0863430243394,
-        "relativeGrowth": 16.17846292257236,
-        "acceleration7d": null,
-        "forkRatio7d": null,
-        "ageDays": 6.417083483796296,
-        "hoursSincePush": 0.046670277777777776,
-        "starsPerDay": 1193.377025456678
-      },
-      "scoreBreakdown": {
-        "starMomentum": 34.752066115702476,
-        "relativeGrowth": 19.102715466351828,
-        "acceleration": 1.806375442739079,
-        "forkMomentum": 9.805194805194805,
-        "developmentActivity": 14.997916650147967,
-        "freshness": 9.4792897947574
-      },
-      "research": {
-        "summary": "A Native Recompilation Of The Legend Of Zelda: Ocarina Of Time Nintendo Switch 2 Remake",
-        "whyNow": "過去 24 小時增加 1,221 個 stars，同時增加 109 個 forks，數據動能令它進入今日榜。",
-        "bestFor": "玩家、遊戲開發者和 mod 作者",
-        "evidence": [
-          "7,658 stars，681 forks",
-          "主要語言：C++",
-          "授權：GPL-3.0",
-          "分類：遊戲",
-          "近期加星帳戶抽樣：19 個中 1 個可疑",
-          "Hacker News：2 分、1 則評論（4 日前）"
-        ],
-        "cautions": [
-          "項目仍然很新，API、文件和維護節奏可能快速改變。"
-        ],
-        "categorySource": "jev",
-        "ease": {
-          "level": "code",
-          "judgedAt": "2026-11-11T00:01:04.813Z",
-          "version": 2
-        },
-        "starAudit": {
-          "sampled": 19,
-          "suspicious": 1,
-          "freshHollow": 1,
-          "sharedHollow": 0,
-          "maxPerMinute": 3,
-          "flagged": false
-        },
-        "hackerNews": {
-          "points": 2,
-          "comments": 1,
-          "postedAt": "2026-11-08T03:41:14Z",
-          "url": "https://news.ycombinator.com/item?id=50410236"
-        },
-        "introduction": {
-          "text": "Hookshot 把《薩爾達傳說：時之笛》Nintendo Switch 2 版的遊戲程式碼靜態重編譯成 C，再編譯為 Windows 及 Linux 原生程式，同時重新實作主機系統軟件、以 Vulkan 重建畫面，讓遊戲無需模擬器運行。它不含遊戲、密鑰或執行檔，須以自己擁有且符合指定版本的副本在本機建置；項目仍在實驗階段，顯卡須支援 Vulkan 1.3 與 mesh shaders。",
-          "writtenAt": "2026-11-11T00:01:04.813Z",
           "source": "deepseek",
           "version": 3
         }
@@ -947,52 +926,52 @@
       "description": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
       "language": "JavaScript",
       "topics": [],
-      "stars": 14490,
-      "forks": 813,
+      "stars": 14535,
+      "forks": 814,
       "openIssues": 6,
       "createdAt": "2026-10-29T15:41:21Z",
-      "updatedAt": "2026-11-11T22:17:36Z",
+      "updatedAt": "2026-11-12T00:00:36Z",
       "pushedAt": "2026-11-08T21:18:33Z",
       "license": "CC-BY-4.0",
       "archived": false,
       "fork": false,
       "rank": 11,
-      "previousRank": 8,
-      "rankChange": -3,
+      "previousRank": 11,
+      "rankChange": 0,
       "score": 89.7,
       "categories": [
         "ai",
         "creative"
       ],
       "signals": {
-        "stars24h": 822,
-        "forks24h": 49,
-        "starVelocity": 847.5119356784121,
-        "relativeGrowth": 7.034565909967153,
-        "acceleration7d": 0.9504590377318616,
-        "forkRatio7d": 0.06462475946119307,
-        "ageDays": 13.276539502314815,
-        "hoursSincePush": 73.01694805555556,
-        "starsPerDay": 1091.398854157261
+        "stars24h": 813,
+        "forks24h": 47,
+        "starVelocity": 839.6146627589862,
+        "relativeGrowth": 6.958238762095036,
+        "acceleration7d": 0.9393393605804906,
+        "forkRatio7d": 0.06432096799872632,
+        "ageDays": 13.346963506944444,
+        "hoursSincePush": 74.70712416666667,
+        "starsPerDay": 1089.0117435652999
       },
       "scoreBreakdown": {
-        "starMomentum": 34.46280991735537,
-        "relativeGrowth": 18.677685950413224,
-        "acceleration": 5.914994096812278,
-        "forkMomentum": 9.586776859504132,
-        "developmentActivity": 12.070178885838816,
-        "freshness": 8.952629283248637
+        "starMomentum": 34.46217494089834,
+        "relativeGrowth": 18.67612293144208,
+        "acceleration": 6.040189125295509,
+        "forkMomentum": 9.56855791962175,
+        "developmentActivity": 12.009614888253095,
+        "freshness": 8.947376824595183
       },
       "research": {
         "summary": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
-        "whyNow": "過去 24 小時增加 822 個 stars，同時增加 49 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 813 個 stars，同時增加 47 個 forks，數據動能令它進入今日榜。",
         "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
         "evidence": [
-          "14,490 stars，813 forks",
+          "14,535 stars，814 forks",
           "主要語言：JavaScript",
           "授權：CC-BY-4.0",
           "分類：AI、設計與多媒體",
-          "近期加星帳戶抽樣：100 個中 4 個可疑"
+          "近期加星帳戶抽樣：100 個中 3 個可疑"
         ],
         "cautions": [
           "項目仍然很新，API、文件和維護節奏可能快速改變。"
@@ -1005,15 +984,114 @@
         },
         "starAudit": {
           "sampled": 100,
-          "suspicious": 4,
-          "freshHollow": 2,
-          "sharedHollow": 2,
+          "suspicious": 3,
+          "freshHollow": 3,
+          "sharedHollow": 0,
           "maxPerMinute": 3,
           "flagged": false
         },
         "introduction": {
           "text": "unslop 是 Claude Code、Codex 等編程代理的技能，能把一眼看去像 AI 生成的介面改造成有性格的設計。它先找出紫色漸變、光暈、emoji 標籤等痕跡，再按產品定下方向逐輪修正。支援 Next.js、React 或純 HTML/CSS，連只有網址的網站亦可處理。",
           "writtenAt": "2026-11-09T00:01:01.083Z",
+          "source": "deepseek",
+          "version": 3
+        }
+      }
+    },
+    {
+      "id": 1423101235,
+      "nodeId": "R_kgDOVNLNMw",
+      "name": "cleanyourtv",
+      "fullName": "Gathin23/cleanyourtv",
+      "owner": "Gathin23",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/94786511?v=4",
+      "url": "https://github.com/Gathin23/cleanyourtv",
+      "description": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.",
+      "language": "Python",
+      "topics": [
+        "adb",
+        "adblock",
+        "android-tv",
+        "android-tv-launcher",
+        "apple-tv",
+        "bloatware-removal",
+        "claude-code",
+        "debloat",
+        "fire-tv",
+        "google-tv",
+        "launcher",
+        "privacy",
+        "smart-tv",
+        "sony-bravia",
+        "tcl",
+        "vibe-coding",
+        "xiaomi"
+      ],
+      "stars": 56524,
+      "forks": 7271,
+      "openIssues": 199,
+      "createdAt": "2026-10-17T08:12:35Z",
+      "updatedAt": "2026-11-11T23:56:37Z",
+      "pushedAt": "2026-11-11T13:26:26Z",
+      "license": null,
+      "archived": false,
+      "fork": false,
+      "rank": 12,
+      "previousRank": 17,
+      "rankChange": 5,
+      "score": 89.2,
+      "categories": [
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 511,
+        "forks24h": 55,
+        "starVelocity": 554.2121648590637,
+        "relativeGrowth": 2.3305777157833822,
+        "acceleration7d": 0.76417574761027,
+        "forkRatio7d": 0.14824281150159746,
+        "ageDays": 25.658607025462963,
+        "hoursSincePush": 10.575735277777778,
+        "starsPerDay": 2202.9255112682845
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.88297872340426,
+        "relativeGrowth": 17.825059101654844,
+        "acceleration": 5.200945626477541,
+        "forkMomentum": 9.645390070921986,
+        "developmentActivity": 14.535221870894716,
+        "freshness": 8.074923277150043
+      },
+      "research": {
+        "summary": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.",
+        "whyNow": "過去 24 小時增加 511 個 stars，同時增加 55 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
+        "evidence": [
+          "56,524 stars，7,271 forks",
+          "主要語言：Python",
+          "授權：未標示",
+          "分類：桌面與系統",
+          "Hacker News：1 分、0 則評論（45 小時前）"
+        ],
+        "cautions": [
+          "GitHub 未標示開源授權，正式採用前要先確認使用條款。",
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-09T16:01:05.941Z",
+          "version": 2
+        },
+        "hackerNews": {
+          "points": 1,
+          "comments": 0,
+          "postedAt": "2026-11-10T02:54:28Z",
+          "url": "https://news.ycombinator.com/item?id=50435512"
+        },
+        "introduction": {
+          "text": "CleanYourTV 是一套經 Wi-Fi 以 ADB 連接電視的工具，可為 Android TV 及 Google TV 停用廠商的遙測、廣告服務與預載程式；它以 pm disable-user 停用而非卸載，因此可一鍵還原，並會安裝一個仿 Apple TV 風格的原生啟動器作為主畫面。使用前須在電視開啟 USB 偵錯，再配合編碼助理操作，約十五分鐘完成；Fire TV 只支援停用部分，Samsung、LG、Roku 等非 Android 平台則不適用。",
+          "writtenAt": "2026-11-10T15:49:22.350Z",
           "source": "deepseek",
           "version": 3
         }
@@ -1041,48 +1119,48 @@
         "model-provider",
         "openai-compatible"
       ],
-      "stars": 69976,
-      "forks": 1898,
-      "openIssues": 172,
+      "stars": 69999,
+      "forks": 1900,
+      "openIssues": 173,
       "createdAt": "2026-09-24T16:17:19Z",
-      "updatedAt": "2026-11-11T22:18:52Z",
+      "updatedAt": "2026-11-11T23:55:58Z",
       "pushedAt": "2026-11-11T09:33:36Z",
       "license": "MIT",
       "archived": false,
       "fork": false,
-      "rank": 12,
-      "previousRank": 9,
-      "rankChange": -3,
-      "score": 89.1,
+      "rank": 13,
+      "previousRank": 12,
+      "rankChange": -1,
+      "score": 89,
       "categories": [
         "ai",
         "devtools"
       ],
       "signals": {
-        "stars24h": 1131,
-        "forks24h": 42,
-        "starVelocity": 1205.8782743368233,
-        "relativeGrowth": 4.5577589094254245,
-        "acceleration7d": 0.8387068229461087,
-        "forkRatio7d": 0.02706388335256478,
-        "ageDays": 48.251562650462965,
-        "hoursSincePush": 12.766114722222222,
-        "starsPerDay": 1450.232824725493
+        "stars24h": 1089,
+        "forks24h": 41,
+        "starVelocity": 1172.157352914795,
+        "relativeGrowth": 4.429579070447772,
+        "acceleration7d": 0.8073845126904513,
+        "forkRatio7d": 0.02720803683549602,
+        "ageDays": 48.321986655092594,
+        "hoursSincePush": 14.456290833333334,
+        "starsPerDay": 1448.595242981859
       },
       "scoreBreakdown": {
-        "starMomentum": 34.710743801652896,
-        "relativeGrowth": 18.417945690672962,
-        "acceleration": 5.395513577331759,
-        "forkMomentum": 9.49232585596222,
-        "developmentActivity": 14.44077513954682,
-        "freshness": 6.6891628887470445
+        "starMomentum": 34.71040189125296,
+        "relativeGrowth": 18.39243498817967,
+        "acceleration": 5.342789598108747,
+        "forkMomentum": 9.48581560283688,
+        "developmentActivity": 14.36831630700097,
+        "freshness": 6.6852383934521145
       },
       "research": {
         "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型 - - 完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key - the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
-        "whyNow": "過去 24 小時增加 1,131 個 stars，同時增加 42 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 1,089 個 stars，同時增加 41 個 forks，數據動能令它進入今日榜。",
         "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
         "evidence": [
-          "69,976 stars，1,898 forks",
+          "69,999 stars，1,900 forks",
           "主要語言：JavaScript",
           "授權：MIT",
           "分類：AI、開發工具"
@@ -1103,6 +1181,96 @@
         "introduction": {
           "text": "dsh-our-free-model 是 dsh 的外掛，安裝後毋須登入、註冊或填 API Key，便可用 DeepSeek V4.1 Flash、Kimi K3 等前沿模型，免費且不限量。模型清單跟隨上游刷新，可用性以本機網絡出口實測為準；插件純掛載、零依賴、無構建步驟，並提供 OpenAI 兼容的本機轉發端口。部分模型受地區限制，EAC 渠道僅限桌面端。",
           "writtenAt": "2026-11-10T08:01:03.652Z",
+          "source": "deepseek",
+          "version": 3
+        }
+      }
+    },
+    {
+      "id": 1440927503,
+      "nodeId": "R_kgDOVeLPDw",
+      "name": "Lichii",
+      "fullName": "zortos293/Lichii",
+      "owner": "zortos293",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/65777760?v=4",
+      "url": "https://github.com/zortos293/Lichii",
+      "description": "VERY experimental Nintendo Switch 2 emulator",
+      "language": "C++",
+      "topics": [],
+      "stars": 8527,
+      "forks": 1369,
+      "openIssues": 660,
+      "createdAt": "2026-10-31T14:17:26Z",
+      "updatedAt": "2026-11-11T23:53:48Z",
+      "pushedAt": "2026-11-11T23:53:27Z",
+      "license": "GPL-3.0",
+      "archived": false,
+      "fork": false,
+      "rank": 14,
+      "previousRank": 15,
+      "rankChange": 1,
+      "score": 88.5,
+      "categories": [
+        "games",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 391,
+        "forks24h": 64,
+        "starVelocity": 468.32216187592786,
+        "relativeGrowth": 5.064200173622679,
+        "acceleration7d": 0.32031988417068286,
+        "forkRatio7d": 0.1673666793941708,
+        "ageDays": 11.405238969907407,
+        "hoursSincePush": 0.1254575,
+        "starsPerDay": 747.6388721444937
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.35224586288416,
+        "relativeGrowth": 18.46335697399527,
+        "acceleration": 3.9125295508274234,
+        "forkMomentum": 9.728132387706856,
+        "developmentActivity": 14.994400264244893,
+        "freshness": 9.093332338562117
+      },
+      "research": {
+        "summary": "VERY experimental Nintendo Switch 2 emulator",
+        "whyNow": "過去 24 小時增加 391 個 stars，同時增加 64 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "玩家、遊戲開發者和 mod 作者",
+        "evidence": [
+          "8,527 stars，1,369 forks",
+          "主要語言：C++",
+          "授權：GPL-3.0",
+          "分類：遊戲、桌面與系統",
+          "近期加星帳戶抽樣：41 個中 3 個可疑",
+          "Hacker News：2 分、0 則評論（44 小時前）"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-09T16:01:05.941Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 41,
+          "suspicious": 3,
+          "freshHollow": 3,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "hackerNews": {
+          "points": 2,
+          "comments": 0,
+          "postedAt": "2026-11-10T03:57:22Z",
+          "url": "https://news.ycombinator.com/item?id=50435881"
+        },
+        "introduction": {
+          "text": "Lichii 是實驗性開源 Nintendo Switch 及 Switch 2 模擬器，以 C++ 編寫，建基於 Eglantine、Eden、yuzu 和 Sudachi，專注改善遊戲兼容性與渲染修正。它屬獨立分支，並非上游項目的官方版本，亦與 Nintendo 無關；只應從 GitHub releases 頁面下載，其他網站如 lichii.org 可能含惡意軟件。使用時須自備合法取得的遊戲、keys 和 firmware，兼容性與效能因遊戲、硬件及驅動而異，仍可能出現渲染錯誤、卡頓或崩潰。",
+          "writtenAt": "2026-11-11T15:38:52.851Z",
           "source": "deepseek",
           "version": 3
         }
@@ -1130,52 +1298,52 @@
         "reverse-engineering",
         "webassembly"
       ],
-      "stars": 5301,
-      "forks": 637,
+      "stars": 5306,
+      "forks": 639,
       "openIssues": 14,
       "createdAt": "2026-10-25T05:25:45Z",
-      "updatedAt": "2026-11-11T22:17:02Z",
+      "updatedAt": "2026-11-11T23:54:08Z",
       "pushedAt": "2026-11-11T18:27:47Z",
       "license": "MIT",
       "archived": false,
       "fork": false,
-      "rank": 13,
+      "rank": 15,
       "previousRank": 13,
-      "rankChange": 0,
-      "score": 88.6,
+      "rankChange": -2,
+      "score": 88.5,
       "categories": [
         "security",
         "ai"
       ],
       "signals": {
-        "stars24h": 346,
+        "stars24h": 332,
         "forks24h": 40,
-        "starVelocity": 434.24788251498427,
-        "relativeGrowth": 5.950276242159471,
-        "acceleration7d": 0.777180438280047,
-        "forkRatio7d": 0.11050433665274653,
-        "ageDays": 17.704039502314814,
-        "hoursSincePush": 3.8630591666666665,
-        "starsPerDay": 299.42319092243844
+        "starVelocity": 421.0645817134912,
+        "relativeGrowth": 5.766925892321254,
+        "acceleration7d": 0.7447458706137593,
+        "forkRatio7d": 0.11096856959589481,
+        "ageDays": 17.774463506944443,
+        "hoursSincePush": 5.553235277777778,
+        "starsPerDay": 298.5181520627589
       },
       "scoreBreakdown": {
-        "starMomentum": 32.06611570247934,
-        "relativeGrowth": 18.58323494687131,
-        "acceleration": 5.041322314049586,
-        "forkMomentum": 9.48051948051948,
-        "developmentActivity": 14.828529605014541,
-        "freshness": 8.62833392686778
+        "starMomentum": 32.06264775413712,
+        "relativeGrowth": 18.55791962174941,
+        "acceleration": 5.0236406619385345,
+        "forkMomentum": 9.46808510638298,
+        "developmentActivity": 14.754125154203003,
+        "freshness": 8.623271730526884
       },
       "research": {
         "summary": "🛡️ BLA (Blind LLM Agents) - Adversarial defense shield that protects binaries, Electron apps, JS bundles, Python, and WebAssembly against AI reverse-engineering agents like REA. Poison -> Exhaust -> Hallucinate.",
-        "whyNow": "過去 24 小時增加 346 個 stars，同時增加 40 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 332 個 stars，同時增加 40 個 forks，數據動能令它進入今日榜。",
         "bestFor": "負責程式安全、審計或防禦工作的工程師",
         "evidence": [
-          "5,301 stars，637 forks",
+          "5,306 stars，639 forks",
           "主要語言：TypeScript",
           "授權：MIT",
           "分類：安全、AI",
-          "近期加星帳戶抽樣：100 個中 1 個可疑"
+          "近期加星帳戶抽樣：100 個中 0 個可疑"
         ],
         "cautions": [
           "項目仍然很新，API、文件和維護節奏可能快速改變。"
@@ -1188,9 +1356,9 @@
         },
         "starAudit": {
           "sampled": 100,
-          "suspicious": 1,
+          "suspicious": 0,
           "freshHollow": 0,
-          "sharedHollow": 1,
+          "sharedHollow": 0,
           "maxPerMinute": 3,
           "flagged": false
         },
@@ -1226,48 +1394,48 @@
         "openai",
         "vibe-coding"
       ],
-      "stars": 3669,
-      "forks": 297,
+      "stars": 3681,
+      "forks": 298,
       "openIssues": 67,
       "createdAt": "2026-10-27T12:03:01Z",
-      "updatedAt": "2026-11-11T22:19:14Z",
+      "updatedAt": "2026-11-11T23:58:41Z",
       "pushedAt": "2026-11-11T03:49:40Z",
       "license": "MIT",
       "archived": false,
       "fork": false,
-      "rank": 14,
-      "previousRank": 25,
-      "rankChange": 11,
-      "score": 88.6,
+      "rank": 16,
+      "previousRank": 14,
+      "rankChange": -2,
+      "score": 88.5,
       "categories": [
         "ai",
         "devtools"
       ],
       "signals": {
-        "stars24h": 201,
+        "stars24h": 199,
         "forks24h": 19,
-        "starVelocity": 174.65680360897102,
-        "relativeGrowth": 2.8736711128983257,
-        "acceleration7d": 1.9263194343209245,
-        "forkRatio7d": 0.10681818181818183,
-        "ageDays": 15.428159872685185,
-        "hoursSincePush": 18.498336944444443,
-        "starsPerDay": 237.81189916859677
+        "starVelocity": 174.14981721828397,
+        "relativeGrowth": 2.8606868227740185,
+        "acceleration7d": 1.9110774836645554,
+        "forkRatio7d": 0.10650224215246636,
+        "ageDays": 15.498583877314815,
+        "hoursSincePush": 20.188513055555557,
+        "starsPerDay": 237.5055701306916
       },
       "scoreBreakdown": {
-        "starMomentum": 30.206611570247933,
-        "relativeGrowth": 18.016528925619834,
-        "acceleration": 8.488783943329398,
-        "forkMomentum": 8.884297520661157,
-        "developmentActivity": 14.196502434838036,
-        "freshness": 8.793537652622858
+        "starMomentum": 30.159574468085104,
+        "relativeGrowth": 17.990543735224588,
+        "acceleration": 8.47517730496454,
+        "forkMomentum": 8.94208037825059,
+        "developmentActivity": 14.125269278534283,
+        "freshness": 8.788378532159285
       },
       "research": {
         "summary": "See how your app actually fits together. An interactive, plain-English map of your codebase, drawn by Claude or Codex.",
-        "whyNow": "過去 24 小時增加 201 個 stars，同時增加 19 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 199 個 stars，同時增加 19 個 forks，數據動能令它進入今日榜。",
         "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
         "evidence": [
-          "3,669 stars，297 forks",
+          "3,681 stars，298 forks",
           "主要語言：JavaScript",
           "授權：MIT",
           "分類：AI、開發工具",
@@ -1287,102 +1455,12 @@
           "suspicious": 0,
           "freshHollow": 0,
           "sharedHollow": 0,
-          "maxPerMinute": 4,
+          "maxPerMinute": 2,
           "flagged": false
         },
         "introduction": {
           "text": "Floorplan 是一個 Claude Code 與 Codex 插件，由 AI 讀取程式碼後繪製出可縮放、可互動的應用程式地圖；它為每個部分、檔案和網絡請求配上淺白名稱，並顯示彼此的連繫。它會追蹤 import，把前端請求配對到後端端點，跨 repo 亦能對應；地圖只在本地運行、不提交到 git，並有 Health check 檢查金鑰外露、公開資料表等隱患。使用前需安裝 Node.js 18+。",
           "writtenAt": "2026-11-11T22:19:34.013Z",
-          "source": "deepseek",
-          "version": 3
-        }
-      }
-    },
-    {
-      "id": 1440927503,
-      "nodeId": "R_kgDOVeLPDw",
-      "name": "Lichii",
-      "fullName": "zortos293/Lichii",
-      "owner": "zortos293",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/65777760?v=4",
-      "url": "https://github.com/zortos293/Lichii",
-      "description": "VERY experimental Nintendo Switch 2 emulator",
-      "language": "C++",
-      "topics": [],
-      "stars": 8505,
-      "forks": 1368,
-      "openIssues": 648,
-      "createdAt": "2026-10-31T14:17:26Z",
-      "updatedAt": "2026-11-11T22:17:32Z",
-      "pushedAt": "2026-11-11T21:11:03Z",
-      "license": "GPL-3.0",
-      "archived": false,
-      "fork": false,
-      "rank": 15,
-      "previousRank": 15,
-      "rankChange": 0,
-      "score": 88.3,
-      "categories": [
-        "games",
-        "desktop"
-      ],
-      "signals": {
-        "stars24h": 396,
-        "forks24h": 67,
-        "starVelocity": 473.66894573064985,
-        "relativeGrowth": 5.12861853097827,
-        "acceleration7d": 0.3239020314734447,
-        "forkRatio7d": 0.1677089980855137,
-        "ageDays": 11.334814965277777,
-        "hoursSincePush": 1.1419480555555555,
-        "starsPerDay": 750.3430824458608
-      },
-      "scoreBreakdown": {
-        "starMomentum": 32.1900826446281,
-        "relativeGrowth": 18.4887839433294,
-        "acceleration": 3.8134592680047223,
-        "forkMomentum": 9.728453364817002,
-        "developmentActivity": 14.949106709446033,
-        "freshness": 9.098670478786536
-      },
-      "research": {
-        "summary": "VERY experimental Nintendo Switch 2 emulator",
-        "whyNow": "過去 24 小時增加 396 個 stars，同時增加 67 個 forks，數據動能令它進入今日榜。",
-        "bestFor": "玩家、遊戲開發者和 mod 作者",
-        "evidence": [
-          "8,505 stars，1,368 forks",
-          "主要語言：C++",
-          "授權：GPL-3.0",
-          "分類：遊戲、桌面與系統",
-          "近期加星帳戶抽樣：13 個中 1 個可疑",
-          "Hacker News：2 分、0 則評論（42 小時前）"
-        ],
-        "cautions": [
-          "項目仍然很新，API、文件和維護節奏可能快速改變。"
-        ],
-        "categorySource": "jev",
-        "ease": {
-          "level": "ready",
-          "judgedAt": "2026-11-09T16:01:05.941Z",
-          "version": 2
-        },
-        "starAudit": {
-          "sampled": 13,
-          "suspicious": 1,
-          "freshHollow": 1,
-          "sharedHollow": 0,
-          "maxPerMinute": 2,
-          "flagged": false
-        },
-        "hackerNews": {
-          "points": 2,
-          "comments": 0,
-          "postedAt": "2026-11-10T03:57:22Z",
-          "url": "https://news.ycombinator.com/item?id=50435881"
-        },
-        "introduction": {
-          "text": "Lichii 是實驗性開源 Nintendo Switch 及 Switch 2 模擬器，以 C++ 編寫，建基於 Eglantine、Eden、yuzu 和 Sudachi，專注改善遊戲兼容性與渲染修正。它屬獨立分支，並非上游項目的官方版本，亦與 Nintendo 無關；只應從 GitHub releases 頁面下載，其他網站如 lichii.org 可能含惡意軟件。使用時須自備合法取得的遊戲、keys 和 firmware，兼容性與效能因遊戲、硬件及驅動而異，仍可能出現渲染錯誤、卡頓或崩潰。",
-          "writtenAt": "2026-11-11T15:38:52.851Z",
           "source": "deepseek",
           "version": 3
         }
@@ -1405,48 +1483,48 @@
         "recompilation",
         "windows"
       ],
-      "stars": 6715,
+      "stars": 6729,
       "forks": 551,
-      "openIssues": 371,
+      "openIssues": 374,
       "createdAt": "2026-10-29T12:32:46Z",
-      "updatedAt": "2026-11-11T22:18:40Z",
+      "updatedAt": "2026-11-11T23:58:20Z",
       "pushedAt": "2026-11-11T12:55:22Z",
       "license": "MIT",
       "archived": false,
       "fork": false,
-      "rank": 16,
+      "rank": 17,
       "previousRank": 16,
-      "rankChange": 0,
-      "score": 88.3,
+      "rankChange": -1,
+      "score": 88.2,
       "categories": [
         "games",
         "desktop"
       ],
       "signals": {
-        "stars24h": 288,
-        "forks24h": 18,
-        "starVelocity": 276.1011801792961,
-        "relativeGrowth": 3.363088645405383,
-        "acceleration7d": 1.0706455052625592,
-        "forkRatio7d": 0.08535353535353536,
-        "ageDays": 13.407500150462964,
-        "hoursSincePush": 9.403336944444444,
-        "starsPerDay": 500.8390769824552
+        "stars24h": 283,
+        "forks24h": 17,
+        "starVelocity": 272.8962641086111,
+        "relativeGrowth": 3.3206038122433736,
+        "acceleration7d": 1.0532394506177962,
+        "forkRatio7d": 0.08475426278836509,
+        "ageDays": 13.477924155092593,
+        "hoursSincePush": 11.093513055555556,
+        "starsPerDay": 499.260859652298
       },
       "scoreBreakdown": {
-        "starMomentum": 31.322314049586776,
-        "relativeGrowth": 18.158205430932703,
-        "acceleration": 6.469893742621016,
-        "forkMomentum": 8.842975206611571,
-        "developmentActivity": 14.586027927574058,
-        "freshness": 8.942864261577993
+        "starMomentum": 31.27659574468085,
+        "relativeGrowth": 18.13238770685579,
+        "acceleration": 6.501182033096927,
+        "forkMomentum": 8.85933806146572,
+        "developmentActivity": 14.512840266600179,
+        "freshness": 8.937617532009366
       },
       "research": {
         "summary": "Static recompilation of The Legend of Zelda: Tears of the Kingdom to native Windows and Linux x86-64, with a Vulkan renderer. Game files not included.",
-        "whyNow": "過去 24 小時增加 288 個 stars，同時增加 18 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 283 個 stars，同時增加 17 個 forks，數據動能令它進入今日榜。",
         "bestFor": "玩家、遊戲開發者和 mod 作者",
         "evidence": [
-          "6,715 stars，551 forks",
+          "6,729 stars，551 forks",
           "主要語言：C",
           "授權：MIT",
           "分類：遊戲、桌面與系統",
@@ -1472,105 +1550,6 @@
         "introduction": {
           "text": "TotK Recomp 把 The Legend of Zelda: Tears of the Kingdom 靜態重編譯成 Windows 與 Linux 的原生 x86-64 程式，以 Vulkan 渲染，並非模擬器；玩家須自備從主機抽取的遊戲檔案，安裝時在本機建置，成品不含遊戲檔案。它支援最高 144fps、自訂解像度、DLSS、HDR10 及模擬器 mods。現處早期開發階段，雖可遊玩，但仍預期出現畫面錯誤與崩潰。",
           "writtenAt": "2026-11-11T00:01:04.813Z",
-          "source": "deepseek",
-          "version": 3
-        }
-      }
-    },
-    {
-      "id": 1423101235,
-      "nodeId": "R_kgDOVNLNMw",
-      "name": "cleanyourtv",
-      "fullName": "Gathin23/cleanyourtv",
-      "owner": "Gathin23",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/94786511?v=4",
-      "url": "https://github.com/Gathin23/cleanyourtv",
-      "description": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.",
-      "language": "Python",
-      "topics": [
-        "adb",
-        "adblock",
-        "android-tv",
-        "android-tv-launcher",
-        "apple-tv",
-        "bloatware-removal",
-        "claude-code",
-        "debloat",
-        "fire-tv",
-        "google-tv",
-        "launcher",
-        "privacy",
-        "smart-tv",
-        "sony-bravia",
-        "tcl",
-        "vibe-coding",
-        "xiaomi"
-      ],
-      "stars": 56491,
-      "forks": 7264,
-      "openIssues": 194,
-      "createdAt": "2026-10-17T08:12:35Z",
-      "updatedAt": "2026-11-11T22:19:27Z",
-      "pushedAt": "2026-11-11T13:26:26Z",
-      "license": null,
-      "archived": false,
-      "fork": false,
-      "rank": 17,
-      "previousRank": 18,
-      "rankChange": 1,
-      "score": 87.9,
-      "categories": [
-        "desktop"
-      ],
-      "signals": {
-        "stars24h": 513,
-        "forks24h": 53,
-        "starVelocity": 557.12973029294,
-        "relativeGrowth": 2.3435305874414256,
-        "acceleration7d": 0.7676643386492364,
-        "forkRatio7d": 0.1477906477906478,
-        "ageDays": 25.588183020833334,
-        "hoursSincePush": 8.885559166666667,
-        "starsPerDay": 2207.698762901855
-      },
-      "scoreBreakdown": {
-        "starMomentum": 32.68595041322314,
-        "relativeGrowth": 17.85123966942149,
-        "acceleration": 5.00590318772137,
-        "forkMomentum": 9.634002361275089,
-        "developmentActivity": 14.608522401385319,
-        "freshness": 8.079663571593265
-      },
-      "research": {
-        "summary": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.",
-        "whyNow": "過去 24 小時增加 513 個 stars，同時增加 53 個 forks，數據動能令它進入今日榜。",
-        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
-        "evidence": [
-          "56,491 stars，7,264 forks",
-          "主要語言：Python",
-          "授權：未標示",
-          "分類：桌面與系統",
-          "Hacker News：1 分、0 則評論（43 小時前）"
-        ],
-        "cautions": [
-          "GitHub 未標示開源授權，正式採用前要先確認使用條款。",
-          "項目仍然很新，API、文件和維護節奏可能快速改變。"
-        ],
-        "categorySource": "jev",
-        "ease": {
-          "level": "cli",
-          "judgedAt": "2026-11-09T16:01:05.941Z",
-          "version": 2
-        },
-        "hackerNews": {
-          "points": 1,
-          "comments": 0,
-          "postedAt": "2026-11-10T02:54:28Z",
-          "url": "https://news.ycombinator.com/item?id=50435512"
-        },
-        "introduction": {
-          "text": "CleanYourTV 是一套經 Wi-Fi 以 ADB 連接電視的工具，可為 Android TV 及 Google TV 停用廠商的遙測、廣告服務與預載程式；它以 pm disable-user 停用而非卸載，因此可一鍵還原，並會安裝一個仿 Apple TV 風格的原生啟動器作為主畫面。使用前須在電視開啟 USB 偵錯，再配合編碼助理操作，約十五分鐘完成；Fire TV 只支援停用部分，Samsung、LG、Roku 等非 Android 平台則不適用。",
-          "writtenAt": "2026-11-10T15:49:22.350Z",
           "source": "deepseek",
           "version": 3
         }
@@ -1604,48 +1583,48 @@
         "open-data",
         "primary-school"
       ],
-      "stars": 7666,
-      "forks": 2028,
+      "stars": 7671,
+      "forks": 2031,
       "openIssues": 32,
       "createdAt": "2026-10-18T09:04:43Z",
-      "updatedAt": "2026-11-11T21:42:59Z",
-      "pushedAt": "2026-11-11T14:03:32Z",
+      "updatedAt": "2026-11-11T23:34:41Z",
+      "pushedAt": "2026-11-11T22:34:37Z",
       "license": null,
       "archived": false,
       "fork": false,
       "rank": 18,
-      "previousRank": 12,
-      "rankChange": -6,
-      "score": 87.8,
+      "previousRank": 18,
+      "rankChange": 0,
+      "score": 87.9,
       "categories": [
         "data",
         "learning"
       ],
       "signals": {
-        "stars24h": 187,
-        "forks24h": 55,
-        "starVelocity": 186.84277144289143,
-        "relativeGrowth": 2.130516465162682,
-        "acceleration7d": 1.251321087624951,
-        "forkRatio7d": 0.29577464788732394,
-        "ageDays": 24.55197931712963,
-        "hoursSincePush": 8.267225833333333,
-        "starsPerDay": 312.2355188142213
+        "stars24h": 181,
+        "forks24h": 54,
+        "starVelocity": 182.26669986373955,
+        "relativeGrowth": 2.077661541038009,
+        "acceleration7d": 1.2105339907724797,
+        "forkRatio7d": 0.2971078001752848,
+        "ageDays": 24.622403321759258,
+        "hoursSincePush": 1.4393463888888889,
+        "starsPerDay": 311.5455424784225
       },
       "scoreBreakdown": {
-        "starMomentum": 30.578512396694215,
-        "relativeGrowth": 17.756788665879576,
-        "acceleration": 7.0602125147579695,
-        "forkMomentum": 9.645808736717829,
-        "developmentActivity": 14.63543089248178,
-        "freshness": 8.14973380985016
+        "starMomentum": 30.44917257683215,
+        "relativeGrowth": 17.706855791962177,
+        "acceleration": 7.044917257683215,
+        "forkMomentum": 9.63356973995272,
+        "developmentActivity": 14.935880898544154,
+        "freshness": 8.14495240558125
       },
       "research": {
         "summary": "数学（小学到高中）、英语（三年级到高中）、初中物理的知识图谱：1644 个知识点、2403 条先修边、6723 道题，对齐课标，附自适应前置诊断。",
-        "whyNow": "過去 24 小時增加 187 個 stars，同時增加 55 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 181 個 stars，同時增加 54 個 forks，數據動能令它進入今日榜。",
         "bestFor": "處理資料管線、分析、儲存或視覺化的團隊",
         "evidence": [
-          "7,666 stars，2,028 forks",
+          "7,671 stars，2,031 forks",
           "主要語言：Python",
           "授權：未標示",
           "分類：資料、學習資源",
@@ -1705,53 +1684,52 @@
         "prompt-engineering",
         "spec-driven-development"
       ],
-      "stars": 17641,
-      "forks": 1319,
-      "openIssues": 103,
+      "stars": 17676,
+      "forks": 1322,
+      "openIssues": 100,
       "createdAt": "2026-09-13T16:31:06Z",
-      "updatedAt": "2026-11-11T22:18:21Z",
-      "pushedAt": "2026-11-11T21:19:52Z",
+      "updatedAt": "2026-11-12T00:00:42Z",
+      "pushedAt": "2026-11-11T23:57:19Z",
       "license": "Apache-2.0",
       "archived": false,
       "fork": false,
       "rank": 19,
       "previousRank": 19,
       "rankChange": 0,
-      "score": 87.4,
+      "score": 87.8,
       "categories": [
         "ai",
         "devtools"
       ],
       "signals": {
         "stars24h": 492,
-        "forks24h": 49,
-        "starVelocity": 639.5286906477147,
-        "relativeGrowth": 4.811615548274644,
-        "acceleration7d": 0.5421379710811232,
-        "forkRatio7d": 0.08586025049439684,
-        "ageDays": 59.241990891203706,
-        "hoursSincePush": 0.9950036111111111,
-        "starsPerDay": 297.77864880329923
+        "forks24h": 48,
+        "starVelocity": 635.8326481449742,
+        "relativeGrowth": 4.779075844291163,
+        "acceleration7d": 0.5424411810321811,
+        "forkRatio7d": 0.08585941340324431,
+        "ageDays": 59.312414895833335,
+        "hoursSincePush": 0.061013055555555556,
+        "starsPerDay": 298.01517997611876
       },
       "scoreBreakdown": {
-        "starMomentum": 34.049586776859506,
-        "relativeGrowth": 18.46517119244392,
-        "acceleration": 4.22668240850059,
-        "forkMomentum": 9.586776859504132,
-        "developmentActivity": 14.955645901691051,
-        "freshness": 6.103740839337828
+        "starMomentum": 34.33806146572104,
+        "relativeGrowth": 18.43971631205674,
+        "acceleration": 4.314420803782506,
+        "forkMomentum": 9.598108747044918,
+        "developmentActivity": 14.997276450164374,
+        "freshness": 6.100159807958587
       },
       "research": {
         "summary": "Open-source plugin for designing and reviewing software with agents",
-        "whyNow": "過去 24 小時增加 492 個 stars，同時增加 49 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 492 個 stars，同時增加 48 個 forks，數據動能令它進入今日榜。",
         "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
         "evidence": [
-          "17,641 stars，1,319 forks",
+          "17,676 stars，1,322 forks",
           "主要語言：Python",
           "授權：Apache-2.0",
           "分類：AI、開發工具",
-          "近期加星帳戶抽樣：100 個中 1 個可疑",
-          "Hacker News：1 分、0 則評論（4 日前）"
+          "近期加星帳戶抽樣：100 個中 1 個可疑"
         ],
         "cautions": [
           "熱門度不等於適合生產環境，採用前仍要檢查文件、測試和安全紀錄。"
@@ -1769,12 +1747,6 @@
           "sharedHollow": 0,
           "maxPerMinute": 4,
           "flagged": false
-        },
-        "hackerNews": {
-          "points": 1,
-          "comments": 0,
-          "postedAt": "2026-11-08T03:50:34Z",
-          "url": "https://news.ycombinator.com/item?id=50410270"
         },
         "introduction": {
           "text": "Elephant Goldfish Model（EGM）是開源 AI 助理插件：Elephant 保留項目上下文並草擬規格，Goldfish 評審在無先前對話下審閱草稿及引用材料，揭示未言明的假設與盲點，用戶負責架構取捨及批准規格。內建流程針對軟件規格，其他文件可用 /egm-review-loop 自訂評審；評審需能建立全新子代理會話，否則中止。",
@@ -1795,52 +1767,52 @@
       "description": "iOS / iPadOS 系统配置与 MobileGestalt 研究工具箱（简体中文防白苹果安全加固版）",
       "language": "Swift",
       "topics": [],
-      "stars": 1507,
-      "forks": 347,
-      "openIssues": 7,
+      "stars": 1528,
+      "forks": 348,
+      "openIssues": 9,
       "createdAt": "2026-11-10T02:37:31Z",
-      "updatedAt": "2026-11-11T22:11:12Z",
+      "updatedAt": "2026-11-12T00:00:58Z",
       "pushedAt": "2026-11-11T13:23:15Z",
       "license": "GPL-3.0",
       "archived": false,
       "fork": false,
       "rank": 20,
-      "previousRank": 17,
-      "rankChange": -3,
+      "previousRank": 20,
+      "rankChange": 0,
       "score": 87.4,
       "categories": [
         "mobile",
         "security"
       ],
       "signals": {
-        "stars24h": 497,
-        "forks24h": 113,
-        "starVelocity": 497.2586563960879,
-        "relativeGrowth": 12.704365200361377,
+        "stars24h": 487,
+        "forks24h": 108,
+        "starVelocity": 486.80761560483677,
+        "relativeGrowth": 12.35297708618195,
         "acceleration7d": null,
         "forkRatio7d": null,
-        "ageDays": 1.8208682060185186,
-        "hoursSincePush": 8.938614722222223,
-        "starsPerDay": 827.6271698406895
+        "ageDays": 1.8912922106481482,
+        "hoursSincePush": 10.628790833333333,
+        "starsPerDay": 807.9132306458093
       },
       "scoreBreakdown": {
-        "starMomentum": 32.396694214876035,
-        "relativeGrowth": 18.890200708382526,
-        "acceleration": 1.806375442739079,
-        "forkMomentum": 9.834710743801654,
-        "developmentActivity": 14.606215847568372,
-        "freshness": 9.849406418404241
+        "starMomentum": 32.434988179669034,
+        "relativeGrowth": 18.88888888888889,
+        "acceleration": 1.8498817966903072,
+        "forkMomentum": 9.810874704491725,
+        "developmentActivity": 14.532926890569854,
+        "freshness": 9.843627825508571
       },
       "research": {
         "summary": "iOS / iPadOS 系统配置与 MobileGestalt 研究工具箱（简体中文防白苹果安全加固版）",
-        "whyNow": "過去 24 小時增加 497 個 stars，同時增加 113 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 487 個 stars，同時增加 108 個 forks，數據動能令它進入今日榜。",
         "bestFor": "使用或開發 iOS、Android 應用的人",
         "evidence": [
-          "1,507 stars，347 forks",
+          "1,528 stars，348 forks",
           "主要語言：Swift",
           "授權：GPL-3.0",
           "分類：手機應用、安全",
-          "近期加星帳戶抽樣：100 個中 4 個可疑"
+          "近期加星帳戶抽樣：100 個中 3 個可疑"
         ],
         "cautions": [
           "項目仍然很新，API、文件和維護節奏可能快速改變。"
@@ -1853,8 +1825,8 @@
         },
         "starAudit": {
           "sampled": 100,
-          "suspicious": 4,
-          "freshHollow": 4,
+          "suspicious": 3,
+          "freshHollow": 3,
           "sharedHollow": 0,
           "maxPerMinute": 3,
           "flagged": false
@@ -1864,82 +1836,6 @@
           "writtenAt": "2026-11-10T15:49:22.350Z",
           "source": "deepseek",
           "version": 3
-        }
-      }
-    },
-    {
-      "id": 1449231124,
-      "nodeId": "R_kgDOVmGDFA",
-      "name": "NX2navi",
-      "fullName": "tangerineturtle1/NX2navi",
-      "owner": "tangerineturtle1",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/178368288?v=4",
-      "url": "https://github.com/tangerineturtle1/NX2navi",
-      "description": "",
-      "language": "C",
-      "topics": [],
-      "stars": 3212,
-      "forks": 215,
-      "openIssues": 487,
-      "createdAt": "2026-11-07T10:01:23Z",
-      "updatedAt": "2026-11-11T22:19:13Z",
-      "pushedAt": "2026-11-11T21:45:19Z",
-      "license": "MIT",
-      "archived": false,
-      "fork": false,
-      "rank": 21,
-      "previousRank": 21,
-      "rankChange": 0,
-      "score": 87,
-      "categories": [
-        "other"
-      ],
-      "signals": {
-        "stars24h": 402,
-        "forks24h": 31,
-        "starVelocity": 509.1712073454653,
-        "relativeGrowth": 8.949370487655163,
-        "acceleration7d": null,
-        "forkRatio7d": null,
-        "ageDays": 4.512627465277777,
-        "hoursSincePush": 0.5708369444444444,
-        "starsPerDay": 711.7804482454178
-      },
-      "scoreBreakdown": {
-        "starMomentum": 32.43801652892562,
-        "relativeGrowth": 18.772136953955137,
-        "acceleration": 1.806375442739079,
-        "forkMomentum": 9.344746162927981,
-        "developmentActivity": 14.974537843038846,
-        "freshness": 9.63093067186204
-      },
-      "research": {
-        "summary": "tangerineturtle1/NX2navi 是一個以 C 建立的公開 GitHub 項目。",
-        "whyNow": "過去 24 小時增加 402 個 stars，同時增加 31 個 forks，數據動能令它進入今日榜。",
-        "bestFor": "正在尋找新開源工具和技術方向的開發者",
-        "evidence": [
-          "3,212 stars，215 forks",
-          "主要語言：C",
-          "授權：MIT",
-          "分類：其他",
-          "近期加星帳戶抽樣：44 個中 5 個可疑"
-        ],
-        "cautions": [
-          "項目仍然很新，API、文件和維護節奏可能快速改變。",
-          "未處理 issues 相對較多，要留意支援能力和成熟度。"
-        ],
-        "ease": {
-          "level": "ready",
-          "judgedAt": "2026-11-09T08:01:02.850Z",
-          "version": 2
-        },
-        "starAudit": {
-          "sampled": 44,
-          "suspicious": 5,
-          "freshHollow": 5,
-          "sharedHollow": 0,
-          "maxPerMinute": 3,
-          "flagged": false
         }
       }
     },
@@ -1954,52 +1850,52 @@
       "description": "Switch games running natively on iPhone, iPad and Mac: an NSP folder becomes an unsigned IPA (NSO rewriter, Horizon HLE host, NVN→Metal)",
       "language": "Python",
       "topics": [],
-      "stars": 14798,
-      "forks": 2647,
-      "openIssues": 1139,
+      "stars": 14813,
+      "forks": 2650,
+      "openIssues": 1151,
       "createdAt": "2026-10-13T05:20:14Z",
-      "updatedAt": "2026-11-11T22:10:40Z",
-      "pushedAt": "2026-11-11T18:56:03Z",
+      "updatedAt": "2026-11-11T23:56:38Z",
+      "pushedAt": "2026-11-11T23:29:11Z",
       "license": "MIT",
       "archived": false,
       "fork": false,
-      "rank": 22,
-      "previousRank": 20,
-      "rankChange": -2,
-      "score": 86.9,
+      "rank": 21,
+      "previousRank": 22,
+      "rankChange": 1,
+      "score": 87,
       "categories": [
         "games",
         "mobile"
       ],
       "signals": {
-        "stars24h": 296,
-        "forks24h": 58,
-        "starVelocity": 328.76036054267774,
-        "relativeGrowth": 2.700296128442687,
-        "acceleration7d": 0.752218456406476,
-        "forkRatio7d": 0.24853801169590642,
-        "ageDays": 29.707870520833332,
-        "hoursSincePush": 3.3919480555555555,
-        "starsPerDay": 498.1171568531834
+        "stars24h": 291,
+        "forks24h": 57,
+        "starVelocity": 324.62235019168185,
+        "relativeGrowth": 2.664960241913686,
+        "acceleration7d": 0.7411597157216494,
+        "forkRatio7d": 0.24827335514358415,
+        "ageDays": 29.778294525462965,
+        "hoursSincePush": 0.5299019444444445,
+        "starsPerDay": 497.4428601790351
       },
       "scoreBreakdown": {
-        "starMomentum": 31.694214876033058,
-        "relativeGrowth": 17.92207792207792,
-        "acceleration": 4.935064935064935,
-        "forkMomentum": 9.675324675324676,
-        "developmentActivity": 14.849335512336378,
-        "freshness": 7.806990148995281
+        "starMomentum": 31.6903073286052,
+        "relativeGrowth": 17.89598108747045,
+        "acceleration": 5.011820330969266,
+        "forkMomentum": 9.657210401891254,
+        "developmentActivity": 14.976362307467632,
+        "freshness": 7.8024098305582985
       },
       "research": {
         "summary": "Switch games running natively on iPhone, iPad and Mac: an NSP folder becomes an unsigned IPA (NSO rewriter, Horizon HLE host, NVN→Metal)",
-        "whyNow": "過去 24 小時增加 296 個 stars，同時增加 58 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 291 個 stars，同時增加 57 個 forks，數據動能令它進入今日榜。",
         "bestFor": "玩家、遊戲開發者和 mod 作者",
         "evidence": [
-          "14,798 stars，2,647 forks",
+          "14,813 stars，2,650 forks",
           "主要語言：Python",
           "授權：MIT",
           "分類：遊戲、手機應用",
-          "近期加星帳戶抽樣：72 個中 4 個可疑"
+          "近期加星帳戶抽樣：70 個中 3 個可疑"
         ],
         "cautions": [
           "可能涉及破解、盜版或繞過授權，使用可能違反軟件條款或法律。",
@@ -2015,11 +1911,87 @@
           "version": 2
         },
         "starAudit": {
-          "sampled": 72,
-          "suspicious": 4,
-          "freshHollow": 4,
+          "sampled": 70,
+          "suspicious": 3,
+          "freshHollow": 3,
           "sharedHollow": 0,
           "maxPerMinute": 2,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": 1449231124,
+      "nodeId": "R_kgDOVmGDFA",
+      "name": "NX2navi",
+      "fullName": "tangerineturtle1/NX2navi",
+      "owner": "tangerineturtle1",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/178368288?v=4",
+      "url": "https://github.com/tangerineturtle1/NX2navi",
+      "description": "",
+      "language": "C",
+      "topics": [],
+      "stars": 3244,
+      "forks": 217,
+      "openIssues": 498,
+      "createdAt": "2026-11-07T10:01:23Z",
+      "updatedAt": "2026-11-12T00:00:07Z",
+      "pushedAt": "2026-11-11T21:45:19Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 22,
+      "previousRank": 21,
+      "rankChange": -1,
+      "score": 87,
+      "categories": [
+        "other"
+      ],
+      "signals": {
+        "stars24h": 405,
+        "forks24h": 31,
+        "starVelocity": 508.4072171832024,
+        "relativeGrowth": 8.892098129329417,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 4.583051469907407,
+        "hoursSincePush": 2.2610130555555554,
+        "starsPerDay": 707.8253476532611
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.476359338061464,
+        "relativeGrowth": 18.79432624113475,
+        "acceleration": 1.8498817966903072,
+        "forkMomentum": 9.361702127659575,
+        "developmentActivity": 14.89940077321156,
+        "freshness": 9.625280257492388
+      },
+      "research": {
+        "summary": "tangerineturtle1/NX2navi 是一個以 C 建立的公開 GitHub 項目。",
+        "whyNow": "過去 24 小時增加 405 個 stars，同時增加 31 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "正在尋找新開源工具和技術方向的開發者",
+        "evidence": [
+          "3,244 stars，217 forks",
+          "主要語言：C",
+          "授權：MIT",
+          "分類：其他",
+          "近期加星帳戶抽樣：81 個中 7 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。",
+          "未處理 issues 相對較多，要留意支援能力和成熟度。"
+        ],
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-09T08:01:02.850Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 81,
+          "suspicious": 7,
+          "freshHollow": 7,
+          "sharedHollow": 0,
+          "maxPerMinute": 3,
           "flagged": false
         }
       }
@@ -2046,52 +2018,52 @@
         "static-recompilation",
         "switch"
       ],
-      "stars": 2581,
+      "stars": 2585,
       "forks": 479,
-      "openIssues": 259,
+      "openIssues": 253,
       "createdAt": "2026-11-08T05:49:46Z",
-      "updatedAt": "2026-11-11T21:58:50Z",
-      "pushedAt": "2026-11-11T22:19:13Z",
+      "updatedAt": "2026-11-12T00:00:44Z",
+      "pushedAt": "2026-11-11T23:32:02Z",
       "license": "Apache-2.0",
       "archived": false,
       "fork": false,
       "rank": 23,
-      "previousRank": 29,
-      "rankChange": 6,
+      "previousRank": 23,
+      "rankChange": 0,
       "score": 86.5,
       "categories": [
         "games",
         "mobile"
       ],
       "signals": {
-        "stars24h": 209,
-        "forks24h": 31,
-        "starVelocity": 401.60958343980315,
-        "relativeGrowth": 7.86713969595436,
+        "stars24h": 201,
+        "forks24h": 30,
+        "starVelocity": 390.52424481318235,
+        "relativeGrowth": 7.644124425500358,
         "acceleration7d": null,
         "forkRatio7d": null,
-        "ageDays": 3.687361261574074,
-        "hoursSincePush": 0.005836944444444444,
-        "starsPerDay": 699.9585386158267
+        "ageDays": 3.7577852662037037,
+        "hoursSincePush": 0.48240194444444445,
+        "starsPerDay": 687.9051933192266
       },
       "scoreBreakdown": {
-        "starMomentum": 31.900826446280995,
-        "relativeGrowth": 18.72491145218418,
-        "acceleration": 1.806375442739079,
-        "forkMomentum": 9.344746162927981,
-        "developmentActivity": 14.999739424386364,
-        "freshness": 9.697392961030118
+        "starMomentum": 31.897163120567377,
+        "relativeGrowth": 18.72340425531915,
+        "acceleration": 1.8498817966903072,
+        "forkMomentum": 9.343971631205674,
+        "developmentActivity": 14.978479651203743,
+        "freshness": 9.691703553598783
       },
       "research": {
         "summary": "Run your own Switch games natively on iPhone, iPad and Mac: game code rewritten to ARM64, graphics direct to Metal, one app for the whole library. Bring your own games and keys. 把你自己的 Switch 游戏原生带到 iPhone / iPad / Mac。",
-        "whyNow": "過去 24 小時增加 209 個 stars，同時增加 31 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 201 個 stars，同時增加 30 個 forks，數據動能令它進入今日榜。",
         "bestFor": "玩家、遊戲開發者和 mod 作者",
         "evidence": [
-          "2,581 stars，479 forks",
+          "2,585 stars，479 forks",
           "主要語言：C#",
           "授權：Apache-2.0",
           "分類：遊戲、手機應用",
-          "近期加星帳戶抽樣：14 個中 0 個可疑"
+          "近期加星帳戶抽樣：30 個中 3 個可疑"
         ],
         "cautions": [
           "項目仍然很新，API、文件和維護節奏可能快速改變。",
@@ -2104,9 +2076,9 @@
           "version": 2
         },
         "starAudit": {
-          "sampled": 14,
-          "suspicious": 0,
-          "freshHollow": 0,
+          "sampled": 30,
+          "suspicious": 3,
+          "freshHollow": 3,
           "sharedHollow": 0,
           "maxPerMinute": 1,
           "flagged": false
@@ -2124,51 +2096,51 @@
       "description": "the ultimate vocal synthesizer - sing, speak, beatbox, and more",
       "language": "Rust",
       "topics": [],
-      "stars": 1953,
-      "forks": 230,
-      "openIssues": 28,
+      "stars": 1966,
+      "forks": 233,
+      "openIssues": 30,
       "createdAt": "2026-11-05T19:10:42Z",
-      "updatedAt": "2026-11-11T22:12:28Z",
+      "updatedAt": "2026-11-11T23:52:18Z",
       "pushedAt": "2026-11-11T21:31:00Z",
       "license": "MIT",
       "archived": false,
       "fork": false,
       "rank": 24,
-      "previousRank": 23,
-      "rankChange": -1,
-      "score": 86.4,
+      "previousRank": 24,
+      "rankChange": 0,
+      "score": 86.3,
       "categories": [
         "creative"
       ],
       "signals": {
-        "stars24h": 337,
-        "forks24h": 46,
-        "starVelocity": 385.2314615715278,
-        "relativeGrowth": 8.661809036564636,
+        "stars24h": 329,
+        "forks24h": 45,
+        "starVelocity": 377.94783426565994,
+        "relativeGrowth": 8.470250044966829,
         "acceleration7d": null,
         "forkRatio7d": null,
-        "ageDays": 6.13115755787037,
-        "hoursSincePush": 0.8094480555555555,
-        "starsPerDay": 318.5369127389324
+        "ageDays": 6.2015815625,
+        "hoursSincePush": 2.4996241666666665,
+        "starsPerDay": 317.01590637589874
       },
       "scoreBreakdown": {
-        "starMomentum": 31.818181818181817,
-        "relativeGrowth": 18.748524203069657,
-        "acceleration": 1.806375442739079,
-        "forkMomentum": 9.533648170011805,
-        "developmentActivity": 14.96390741835352,
-        "freshness": 9.501903180628194
+        "starMomentum": 31.814420803782507,
+        "relativeGrowth": 18.747044917257682,
+        "acceleration": 1.8498817966903072,
+        "forkMomentum": 9.533096926713947,
+        "developmentActivity": 14.888823688333462,
+        "freshness": 9.496328465982211
       },
       "research": {
         "summary": "the ultimate vocal synthesizer - sing, speak, beatbox, and more",
-        "whyNow": "過去 24 小時增加 337 個 stars，同時增加 46 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 329 個 stars，同時增加 45 個 forks，數據動能令它進入今日榜。",
         "bestFor": "處理圖片、影片、音樂或設計工作的創作者",
         "evidence": [
-          "1,953 stars，230 forks",
+          "1,966 stars，233 forks",
           "主要語言：Rust",
           "授權：MIT",
           "分類：設計與多媒體",
-          "近期加星帳戶抽樣：65 個中 1 個可疑"
+          "近期加星帳戶抽樣：64 個中 1 個可疑"
         ],
         "cautions": [
           "項目仍然很新，API、文件和維護節奏可能快速改變。"
@@ -2180,7 +2152,7 @@
           "version": 2
         },
         "starAudit": {
-          "sampled": 65,
+          "sampled": 64,
           "suspicious": 1,
           "freshHollow": 0,
           "sharedHollow": 1,
@@ -2209,52 +2181,52 @@
         "sprite-sheet",
         "vfx"
       ],
-      "stars": 6969,
-      "forks": 904,
+      "stars": 6980,
+      "forks": 905,
       "openIssues": 11,
       "createdAt": "2026-10-30T06:43:25Z",
-      "updatedAt": "2026-11-11T22:14:14Z",
+      "updatedAt": "2026-11-11T23:51:30Z",
       "pushedAt": "2026-11-09T09:51:43Z",
       "license": "MIT",
       "archived": false,
       "fork": false,
       "rank": 25,
-      "previousRank": 22,
-      "rankChange": -3,
-      "score": 86.1,
+      "previousRank": 25,
+      "rankChange": 0,
+      "score": 86,
       "categories": [
         "creative",
         "games"
       ],
       "signals": {
-        "stars24h": 294,
-        "forks24h": 30,
-        "starVelocity": 301.0110130971947,
-        "relativeGrowth": 3.5993126390354155,
-        "acceleration7d": 0.870277385310094,
-        "forkRatio7d": 0.1227632126508531,
-        "ageDays": 12.65010431712963,
-        "hoursSincePush": 60.464170277777775,
-        "starsPerDay": 550.9045479224396
+        "stars24h": 287,
+        "forks24h": 29,
+        "starVelocity": 295.3853754892475,
+        "relativeGrowth": 3.5292702869640573,
+        "acceleration7d": 0.8488397995115463,
+        "forkRatio7d": 0.12261806130903066,
+        "ageDays": 12.720528321759259,
+        "hoursSincePush": 62.15434638888889,
+        "starsPerDay": 548.7193474551111
       },
       "scoreBreakdown": {
-        "starMomentum": 31.570247933884296,
-        "relativeGrowth": 18.20543093270366,
-        "acceleration": 5.537190082644629,
-        "forkMomentum": 9.303423848878394,
-        "developmentActivity": 12.529643457191112,
-        "freshness": 8.999486831766362
+        "starMomentum": 31.483451536643027,
+        "relativeGrowth": 18.203309692671393,
+        "acceleration": 5.57919621749409,
+        "forkMomentum": 9.308510638297872,
+        "developmentActivity": 12.466774024743712,
+        "freshness": 8.994206882045377
       },
       "research": {
         "summary": "244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
-        "whyNow": "過去 24 小時增加 294 個 stars，同時增加 30 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 287 個 stars，同時增加 29 個 forks，數據動能令它進入今日榜。",
         "bestFor": "處理圖片、影片、音樂或設計工作的創作者",
         "evidence": [
-          "6,969 stars，904 forks",
+          "6,980 stars，905 forks",
           "主要語言：JavaScript",
           "授權：MIT",
           "分類：設計與多媒體、遊戲",
-          "近期加星帳戶抽樣：100 個中 2 個可疑"
+          "近期加星帳戶抽樣：100 個中 3 個可疑"
         ],
         "cautions": [
           "項目仍然很新，API、文件和維護節奏可能快速改變。"
@@ -2267,8 +2239,101 @@
         },
         "starAudit": {
           "sampled": 100,
-          "suspicious": 2,
-          "freshHollow": 2,
+          "suspicious": 3,
+          "freshHollow": 3,
+          "sharedHollow": 0,
+          "maxPerMinute": 3,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": 1299769220,
+      "nodeId": "R_kgDOTXjnhA",
+      "name": "codex-security",
+      "fullName": "openai/codex-security",
+      "owner": "openai",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/14957082?v=4",
+      "url": "https://github.com/openai/codex-security",
+      "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
+      "language": "TypeScript",
+      "topics": [
+        "ai-security",
+        "application-security",
+        "cli",
+        "code-scanning",
+        "codex",
+        "codex-security",
+        "cybersecurity",
+        "devsecops",
+        "nodejs",
+        "npm",
+        "openai",
+        "sdk",
+        "security",
+        "typescript",
+        "vulnerability-scanning"
+      ],
+      "stars": 11695,
+      "forks": 936,
+      "openIssues": 139,
+      "createdAt": "2026-07-13T22:00:13Z",
+      "updatedAt": "2026-11-11T23:55:14Z",
+      "pushedAt": "2026-11-11T23:57:22Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 26,
+      "previousRank": 30,
+      "rankChange": 4,
+      "score": 85.7,
+      "categories": [
+        "security",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 253,
+        "forks24h": 17,
+        "starVelocity": 193.48520643680817,
+        "relativeGrowth": 1.7872444591652588,
+        "acceleration7d": 28.166456185234985,
+        "forkRatio7d": 0.08375634517766498,
+        "ageDays": 121.08386165509259,
+        "hoursSincePush": 0.060179722222222225,
+        "starsPerDay": 96.58595158876919
+      },
+      "scoreBreakdown": {
+        "starMomentum": 30.697399527186764,
+        "relativeGrowth": 17.494089834515368,
+        "acceleration": 9.964539007092199,
+        "forkMomentum": 8.85933806146572,
+        "developmentActivity": 14.997313645836616,
+        "freshness": 3.645716484495053
+      },
+      "research": {
+        "summary": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
+        "whyNow": "過去 24 小時增加 253 個 stars，同時增加 17 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "負責程式安全、審計或防禦工作的工程師",
+        "evidence": [
+          "11,695 stars，936 forks",
+          "主要語言：TypeScript",
+          "授權：Apache-2.0",
+          "分類：安全、開發工具",
+          "近期加星帳戶抽樣：100 個中 10 個可疑"
+        ],
+        "cautions": [
+          "熱門度不等於適合生產環境，採用前仍要檢查文件、測試和安全紀錄。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-11T22:19:34.013Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 10,
+          "freshHollow": 10,
           "sharedHollow": 0,
           "maxPerMinute": 3,
           "flagged": false
@@ -2307,48 +2372,48 @@
         "touhou",
         "typescript"
       ],
-      "stars": 452547,
-      "forks": 111269,
-      "openIssues": 1709,
+      "stars": 452684,
+      "forks": 111290,
+      "openIssues": 1692,
       "createdAt": "2026-04-14T00:51:32Z",
-      "updatedAt": "2026-11-11T22:19:16Z",
-      "pushedAt": "2026-11-11T22:18:06Z",
+      "updatedAt": "2026-11-12T00:00:41Z",
+      "pushedAt": "2026-11-11T23:43:17Z",
       "license": "MIT",
       "archived": false,
       "fork": false,
-      "rank": 26,
-      "previousRank": 31,
-      "rankChange": 5,
-      "score": 85.4,
+      "rank": 27,
+      "previousRank": 26,
+      "rankChange": -1,
+      "score": 85.5,
       "categories": [
         "ai",
         "security"
       ],
       "signals": {
-        "stars24h": 2699,
-        "forks24h": 493,
-        "starVelocity": 2838.6603414309607,
-        "relativeGrowth": 4.219583541618018,
-        "acceleration7d": 0.836958141896269,
-        "forkRatio7d": 0.1928530664208262,
-        "ageDays": 211.89446774305554,
-        "hoursSincePush": 0.024448055555555556,
-        "starsPerDay": 2135.71880766968
+        "stars24h": 2659,
+        "forks24h": 482,
+        "starVelocity": 2805.240559901882,
+        "relativeGrowth": 4.169275035982579,
+        "acceleration7d": 0.8246917240726216,
+        "forkRatio7d": 0.19261651248036307,
+        "ageDays": 211.9648917476852,
+        "hoursSincePush": 0.29490194444444445,
+        "starsPerDay": 2135.655561954371
       },
       "scoreBreakdown": {
         "starMomentum": 35,
-        "relativeGrowth": 18.37072018890201,
-        "acceleration": 5.3837072018890195,
-        "forkMomentum": 9.976387249114522,
-        "developmentActivity": 14.998908608654842,
-        "freshness": 1.7105207593806881
+        "relativeGrowth": 18.321513002364068,
+        "acceleration": 5.472813238770685,
+        "forkMomentum": 9.976359338061465,
+        "developmentActivity": 14.98684051040687,
+        "freshness": 1.7095172062031503
       },
       "research": {
         "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-        "whyNow": "過去 24 小時增加 2,699 個 stars，同時增加 493 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 2,659 個 stars，同時增加 482 個 forks，數據動能令它進入今日榜。",
         "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
         "evidence": [
-          "452,547 stars，111,269 forks",
+          "452,684 stars，111,290 forks",
           "主要語言：TypeScript",
           "授權：MIT",
           "分類：AI、安全"
@@ -2395,48 +2460,48 @@
         "voicestudio",
         "workflow"
       ],
-      "stars": 108276,
-      "forks": 11998,
+      "stars": 108322,
+      "forks": 12001,
       "openIssues": 16,
       "createdAt": "2026-04-09T21:40:26Z",
-      "updatedAt": "2026-11-11T22:19:23Z",
-      "pushedAt": "2026-11-11T21:03:32Z",
+      "updatedAt": "2026-11-12T00:00:01Z",
+      "pushedAt": "2026-11-11T23:38:40Z",
       "license": "AGPL-3.0",
       "archived": false,
       "fork": false,
-      "rank": 27,
-      "previousRank": 32,
-      "rankChange": 5,
+      "rank": 28,
+      "previousRank": 27,
+      "rankChange": -1,
       "score": 85.4,
       "categories": [
         "ai",
         "creative"
       ],
       "signals": {
-        "stars24h": 1055,
-        "forks24h": 110,
-        "starVelocity": 1088.1788832352404,
-        "relativeGrowth": 3.3066182664562573,
-        "acceleration7d": 1.0143157207595759,
-        "forkRatio7d": 0.1115653435315838,
-        "ageDays": 216.02717607638888,
-        "hoursSincePush": 1.2672258333333333,
-        "starsPerDay": 501.2147173636745
+        "stars24h": 1034,
+        "forks24h": 107,
+        "starVelocity": 1071.447739026397,
+        "relativeGrowth": 3.255086600882419,
+        "acceleration7d": 0.9940305875575937,
+        "forkRatio7d": 0.11128588281557215,
+        "ageDays": 216.09760008101853,
+        "hoursSincePush": 0.3718463888888889,
+        "starsPerDay": 501.26424337608705
       },
       "scoreBreakdown": {
-        "starMomentum": 34.628099173553714,
-        "relativeGrowth": 18.134592680047227,
-        "acceleration": 6.174734356552538,
-        "forkMomentum": 9.822904368358913,
-        "developmentActivity": 14.943533966064553,
-        "freshness": 1.6526145766670068
+        "starMomentum": 34.62765957446808,
+        "relativeGrowth": 18.10874704491726,
+        "acceleration": 6.217494089834515,
+        "forkMomentum": 9.79905437352246,
+        "developmentActivity": 14.983408897043118,
+        "freshness": 1.6516449967302747
       },
       "research": {
         "summary": "VoiceStudio is the open-source, fully-local ElevenLabs alternative - voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-        "whyNow": "過去 24 小時增加 1,055 個 stars，同時增加 110 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 1,034 個 stars，同時增加 107 個 forks，數據動能令它進入今日榜。",
         "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
         "evidence": [
-          "108,276 stars，11,998 forks",
+          "108,322 stars，12,001 forks",
           "主要語言：Python",
           "授權：AGPL-3.0",
           "分類：AI、設計與多媒體",
@@ -2460,6 +2525,82 @@
       }
     },
     {
+      "id": 1442375804,
+      "nodeId": "R_kgDOVfjofA",
+      "name": "Henge",
+      "fullName": "Leviidev/Henge",
+      "owner": "Leviidev",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/281482210?v=4",
+      "url": "https://github.com/Leviidev/Henge",
+      "description": "Emulate macOS on iOS and iPadOS",
+      "language": "C",
+      "topics": [],
+      "stars": 2032,
+      "forks": 169,
+      "openIssues": 70,
+      "createdAt": "2026-11-02T01:13:51Z",
+      "updatedAt": "2026-11-11T23:57:18Z",
+      "pushedAt": "2026-11-11T23:45:34Z",
+      "license": "GPL-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 29,
+      "previousRank": 29,
+      "rankChange": 0,
+      "score": 85.3,
+      "categories": [
+        "mobile"
+      ],
+      "signals": {
+        "stars24h": 277,
+        "forks24h": 27,
+        "starVelocity": 276.75504861748846,
+        "relativeGrowth": 6.102087154400298,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 9.9493940625,
+        "hoursSincePush": 0.2568463888888889,
+        "starsPerDay": 204.23354299120163
+      },
+      "scoreBreakdown": {
+        "starMomentum": 31.44208037825059,
+        "relativeGrowth": 18.581560283687942,
+        "acceleration": 1.8498817966903072,
+        "forkMomentum": 9.21985815602837,
+        "developmentActivity": 14.988538024814497,
+        "freshness": 9.20432494037781
+      },
+      "research": {
+        "summary": "Emulate macOS on iOS and iPadOS",
+        "whyNow": "過去 24 小時增加 277 個 stars，同時增加 27 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "使用或開發 iOS、Android 應用的人",
+        "evidence": [
+          "2,032 stars，169 forks",
+          "主要語言：C",
+          "授權：GPL-2.0",
+          "分類：手機應用",
+          "近期加星帳戶抽樣：72 個中 3 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-11T15:38:52.851Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 72,
+          "suspicious": 3,
+          "freshHollow": 3,
+          "sharedHollow": 1,
+          "maxPerMinute": 1,
+          "flagged": false
+        }
+      }
+    },
+    {
       "id": 1438540053,
       "nodeId": "R_kgDOVb5hFQ",
       "name": "Mika",
@@ -2479,52 +2620,52 @@
         "llm",
         "mobile-agent"
       ],
-      "stars": 8240,
-      "forks": 1883,
+      "stars": 8243,
+      "forks": 1886,
       "openIssues": 115,
       "createdAt": "2026-10-29T14:34:07Z",
-      "updatedAt": "2026-11-11T20:13:32Z",
+      "updatedAt": "2026-11-11T23:57:08Z",
       "pushedAt": "2026-11-11T17:21:56Z",
       "license": "Apache-2.0",
       "archived": false,
       "fork": false,
-      "rank": 28,
-      "previousRank": 24,
-      "rankChange": -4,
-      "score": 85.3,
+      "rank": 30,
+      "previousRank": 28,
+      "rankChange": -2,
+      "score": 85.2,
       "categories": [
         "ai",
         "mobile"
       ],
       "signals": {
-        "stars24h": 169,
+        "stars24h": 163,
         "forks24h": 39,
-        "starVelocity": 166.0465858475501,
-        "relativeGrowth": 1.8264530855623344,
-        "acceleration7d": 0.6776333778027546,
-        "forkRatio7d": 0.29013426736719206,
-        "ageDays": 13.323229317129629,
-        "hoursSincePush": 4.960559166666667,
-        "starsPerDay": 618.4686763145224
+        "starVelocity": 161.1353087306908,
+        "relativeGrowth": 1.7721092052367535,
+        "acceleration7d": 0.6510161042420999,
+        "forkRatio7d": 0.29137529137529133,
+        "ageDays": 13.39365332175926,
+        "hoursSincePush": 6.650735277777778,
+        "starsPerDay": 615.4407465966335
       },
       "scoreBreakdown": {
-        "starMomentum": 29.958677685950413,
-        "relativeGrowth": 17.54427390791027,
-        "acceleration": 4.651711924439197,
-        "forkMomentum": 9.462809917355372,
-        "developmentActivity": 14.780173172861202,
-        "freshness": 8.9491466557782
+        "starMomentum": 29.911347517730494,
+        "relativeGrowth": 17.47044917257683,
+        "acceleration": 4.66903073286052,
+        "forkMomentum": 9.456264775413711,
+        "developmentActivity": 14.706011357959857,
+        "freshness": 8.943896240363243
       },
       "research": {
         "summary": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
-        "whyNow": "過去 24 小時增加 169 個 stars，同時增加 39 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 163 個 stars，同時增加 39 個 forks，數據動能令它進入今日榜。",
         "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
         "evidence": [
-          "8,240 stars，1,883 forks",
+          "8,243 stars，1,886 forks",
           "主要語言：Kotlin",
           "授權：Apache-2.0",
           "分類：AI、手機應用",
-          "近期加星帳戶抽樣：100 個中 2 個可疑"
+          "近期加星帳戶抽樣：40 個中 2 個可疑"
         ],
         "cautions": [
           "項目仍然很新，API、文件和維護節奏可能快速改變。"
@@ -2536,264 +2677,12 @@
           "version": 2
         },
         "starAudit": {
-          "sampled": 100,
+          "sampled": 40,
           "suspicious": 2,
           "freshHollow": 1,
           "sharedHollow": 1,
           "maxPerMinute": 2,
           "flagged": false
-        }
-      }
-    },
-    {
-      "id": 1442375804,
-      "nodeId": "R_kgDOVfjofA",
-      "name": "Henge",
-      "fullName": "Leviidev/Henge",
-      "owner": "Leviidev",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/281482210?v=4",
-      "url": "https://github.com/Leviidev/Henge",
-      "description": "Emulate macOS on iOS and iPadOS",
-      "language": "C",
-      "topics": [],
-      "stars": 2026,
-      "forks": 168,
-      "openIssues": 69,
-      "createdAt": "2026-11-02T01:13:51Z",
-      "updatedAt": "2026-11-11T22:14:23Z",
-      "pushedAt": "2026-11-11T22:05:12Z",
-      "license": "GPL-2.0",
-      "archived": false,
-      "fork": false,
-      "rank": 29,
-      "previousRank": 27,
-      "rankChange": -2,
-      "score": 85.2,
-      "categories": [
-        "mobile"
-      ],
-      "signals": {
-        "stars24h": 282,
-        "forks24h": 27,
-        "starVelocity": 281.95119295066024,
-        "relativeGrowth": 6.225741814754187,
-        "acceleration7d": null,
-        "forkRatio7d": null,
-        "ageDays": 9.87897005787037,
-        "hoursSincePush": 0.23944805555555557,
-        "starsPerDay": 205.08210756099294
-      },
-      "scoreBreakdown": {
-        "starMomentum": 31.404958677685947,
-        "relativeGrowth": 18.606847697756788,
-        "acceleration": 1.806375442739079,
-        "forkMomentum": 9.197166469893743,
-        "developmentActivity": 14.989314162708634,
-        "freshness": 9.209728237582125
-      },
-      "research": {
-        "summary": "Emulate macOS on iOS and iPadOS",
-        "whyNow": "過去 24 小時增加 282 個 stars，同時增加 27 個 forks，數據動能令它進入今日榜。",
-        "bestFor": "使用或開發 iOS、Android 應用的人",
-        "evidence": [
-          "2,026 stars，168 forks",
-          "主要語言：C",
-          "授權：GPL-2.0",
-          "分類：手機應用",
-          "近期加星帳戶抽樣：75 個中 3 個可疑"
-        ],
-        "cautions": [
-          "項目仍然很新，API、文件和維護節奏可能快速改變。"
-        ],
-        "categorySource": "jev",
-        "ease": {
-          "level": "ready",
-          "judgedAt": "2026-11-11T15:38:52.851Z",
-          "version": 2
-        },
-        "starAudit": {
-          "sampled": 75,
-          "suspicious": 3,
-          "freshHollow": 3,
-          "sharedHollow": 1,
-          "maxPerMinute": 2,
-          "flagged": false
-        }
-      }
-    },
-    {
-      "id": 1299769220,
-      "nodeId": "R_kgDOTXjnhA",
-      "name": "codex-security",
-      "fullName": "openai/codex-security",
-      "owner": "openai",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/14957082?v=4",
-      "url": "https://github.com/openai/codex-security",
-      "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
-      "language": "TypeScript",
-      "topics": [
-        "ai-security",
-        "application-security",
-        "cli",
-        "code-scanning",
-        "codex",
-        "codex-security",
-        "cybersecurity",
-        "devsecops",
-        "nodejs",
-        "npm",
-        "openai",
-        "sdk",
-        "security",
-        "typescript",
-        "vulnerability-scanning"
-      ],
-      "stars": 11658,
-      "forks": 928,
-      "openIssues": 137,
-      "createdAt": "2026-07-13T22:00:13Z",
-      "updatedAt": "2026-11-11T22:19:50Z",
-      "pushedAt": "2026-11-11T22:18:53Z",
-      "license": "Apache-2.0",
-      "archived": false,
-      "fork": false,
-      "rank": 30,
-      "previousRank": null,
-      "rankChange": null,
-      "score": 85,
-      "categories": [
-        "security",
-        "devtools"
-      ],
-      "signals": {
-        "stars24h": 238,
-        "forks24h": 12,
-        "starVelocity": 180.63653967630668,
-        "relativeGrowth": 1.671199961041768,
-        "acceleration7d": 26.4921381898711,
-        "forkRatio7d": 0.0700280112044818,
-        "ageDays": 121.01343765046296,
-        "hoursSincePush": 0.0113925,
-        "starsPerDay": 96.3364088017493
-      },
-      "scoreBreakdown": {
-        "starMomentum": 30.289256198347108,
-        "relativeGrowth": 17.44982290436836,
-        "acceleration": 9.964580873671782,
-        "forkMomentum": 8.612750885478158,
-        "developmentActivity": 14.999491414872157,
-        "freshness": 3.6478566620546236
-      },
-      "research": {
-        "summary": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
-        "whyNow": "過去 24 小時增加 238 個 stars，同時增加 12 個 forks，數據動能令它進入今日榜。",
-        "bestFor": "負責程式安全、審計或防禦工作的工程師",
-        "evidence": [
-          "11,658 stars，928 forks",
-          "主要語言：TypeScript",
-          "授權：Apache-2.0",
-          "分類：安全、開發工具",
-          "近期加星帳戶抽樣：100 個中 8 個可疑"
-        ],
-        "cautions": [
-          "熱門度不等於適合生產環境，採用前仍要檢查文件、測試和安全紀錄。"
-        ],
-        "categorySource": "jev",
-        "ease": {
-          "level": "cli",
-          "judgedAt": "2026-11-11T22:19:34.013Z",
-          "version": 2
-        },
-        "starAudit": {
-          "sampled": 100,
-          "suspicious": 8,
-          "freshHollow": 8,
-          "sharedHollow": 0,
-          "maxPerMinute": 3,
-          "flagged": false
-        }
-      }
-    },
-    {
-      "id": 1429303647,
-      "nodeId": "R_kgDOVTFxXw",
-      "name": "rune",
-      "fullName": "anomalyco/rune",
-      "owner": "anomalyco",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/66570915?v=4",
-      "url": "https://github.com/anomalyco/rune",
-      "description": "Rune: Native UI framework",
-      "language": "Rust",
-      "topics": [],
-      "stars": 6626,
-      "forks": 238,
-      "openIssues": 312,
-      "createdAt": "2026-10-22T05:51:40Z",
-      "updatedAt": "2026-11-11T22:19:04Z",
-      "pushedAt": "2026-11-11T22:14:13Z",
-      "license": "MIT",
-      "archived": false,
-      "fork": false,
-      "rank": 31,
-      "previousRank": 28,
-      "rankChange": -3,
-      "score": 85,
-      "categories": [
-        "devtools"
-      ],
-      "signals": {
-        "stars24h": 430,
-        "forks24h": 24,
-        "starVelocity": 434.3490147681799,
-        "relativeGrowth": 5.325928929687184,
-        "acceleration7d": null,
-        "forkRatio7d": null,
-        "ageDays": 20.68604181712963,
-        "hoursSincePush": 0.08917027777777778,
-        "starsPerDay": 320.31260782394645
-      },
-      "scoreBreakdown": {
-        "starMomentum": 32.107438016528924,
-        "relativeGrowth": 18.55962219598583,
-        "acceleration": 1.806375442739079,
-        "forkMomentum": 9.09681227863046,
-        "developmentActivity": 14.996019712210913,
-        "freshness": 8.416561830425303
-      },
-      "research": {
-        "summary": "Rune: Native UI framework",
-        "whyNow": "過去 24 小時增加 430 個 stars，同時增加 24 個 forks，數據動能令它進入今日榜。",
-        "bestFor": "希望改善開發、測試或部署流程的工程團隊",
-        "evidence": [
-          "6,626 stars，238 forks",
-          "主要語言：Rust",
-          "授權：MIT",
-          "分類：開發工具",
-          "近期加星帳戶抽樣：81 個中 0 個可疑",
-          "Hacker News：179 分、131 則評論（5 日前）"
-        ],
-        "cautions": [
-          "項目仍然很新，API、文件和維護節奏可能快速改變。"
-        ],
-        "categorySource": "jev",
-        "ease": {
-          "level": "code",
-          "judgedAt": "2026-11-11T00:01:04.813Z",
-          "version": 2
-        },
-        "starAudit": {
-          "sampled": 81,
-          "suspicious": 0,
-          "freshHollow": 0,
-          "sharedHollow": 0,
-          "maxPerMinute": 2,
-          "flagged": false
-        },
-        "hackerNews": {
-          "points": 179,
-          "comments": 131,
-          "postedAt": "2026-11-06T16:31:32Z",
-          "url": "https://news.ycombinator.com/item?id=50394569"
         }
       }
     },
@@ -2823,48 +2712,48 @@
         "romfs",
         "switch-games"
       ],
-      "stars": 6145,
-      "forks": 768,
-      "openIssues": 153,
+      "stars": 6151,
+      "forks": 769,
+      "openIssues": 157,
       "createdAt": "2026-10-20T18:16:07Z",
-      "updatedAt": "2026-11-11T21:44:11Z",
-      "pushedAt": "2026-11-11T20:21:23Z",
+      "updatedAt": "2026-11-11T23:52:47Z",
+      "pushedAt": "2026-11-11T23:59:02Z",
       "license": "MIT",
       "archived": false,
       "fork": false,
-      "rank": 32,
-      "previousRank": 26,
-      "rankChange": -6,
-      "score": 85,
+      "rank": 31,
+      "previousRank": 32,
+      "rankChange": 1,
+      "score": 85.2,
       "categories": [
         "games",
         "mobile"
       ],
       "signals": {
-        "stars24h": 179,
+        "stars24h": 174,
         "forks24h": 20,
-        "starVelocity": 220.27114794354333,
-        "relativeGrowth": 2.804239052562522,
-        "acceleration7d": 0.43336257047572185,
-        "forkRatio7d": 0.11025073746312684,
-        "ageDays": 22.169062650462962,
-        "hoursSincePush": 1.9697258333333334,
-        "starsPerDay": 277.1880839928824
+        "starVelocity": 215.47514362430735,
+        "relativeGrowth": 2.741849010685254,
+        "acceleration7d": 0.4214162881934135,
+        "forkRatio7d": 0.11037527593818984,
+        "ageDays": 22.23948665509259,
+        "hoursSincePush": 0.03240194444444444,
+        "starsPerDay": 276.5801250449048
       },
       "scoreBreakdown": {
-        "starMomentum": 30.867768595041323,
-        "relativeGrowth": 17.969303423848878,
-        "acceleration": 4.014167650531287,
-        "forkMomentum": 8.937426210153482,
-        "developmentActivity": 14.912323055473239,
-        "freshness": 8.313185795059473
+        "starMomentum": 30.862884160756504,
+        "relativeGrowth": 17.96690307328605,
+        "acceleration": 4.113475177304965,
+        "forkMomentum": 8.995271867612294,
+        "developmentActivity": 14.998553554367666,
+        "freshness": 8.30830849440449
       },
       "research": {
         "summary": "Play your own Switch games on iPhone/iPad - one-click macOS app, no terminal. | 把 Switch 游戏装进 iPhone：图形界面一键构建，不用命令行。Bring your own game.",
-        "whyNow": "過去 24 小時增加 179 個 stars，同時增加 20 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 174 個 stars，同時增加 20 個 forks，數據動能令它進入今日榜。",
         "bestFor": "玩家、遊戲開發者和 mod 作者",
         "evidence": [
-          "6,145 stars，768 forks",
+          "6,151 stars，769 forks",
           "主要語言：Swift",
           "授權：MIT",
           "分類：遊戲、手機應用",
@@ -2890,6 +2779,166 @@
       }
     },
     {
+      "id": 1443650212,
+      "nodeId": "R_kgDOVgxapA",
+      "name": "gputaskman",
+      "fullName": "shanselman/gputaskman",
+      "owner": "shanselman",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/2892?v=4",
+      "url": "https://github.com/shanselman/gputaskman",
+      "description": "A GPU task manager for Windows, Linux, and WSL: per-process VRAM, GPU activity, and LLM model/KV-cache insights (Windows AMD and NVIDIA).",
+      "language": "Python",
+      "topics": [],
+      "stars": 2000,
+      "forks": 98,
+      "openIssues": 4,
+      "createdAt": "2026-11-03T00:49:34Z",
+      "updatedAt": "2026-11-12T00:00:04Z",
+      "pushedAt": "2026-11-11T23:06:35Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 32,
+      "previousRank": null,
+      "rankChange": null,
+      "score": 85,
+      "categories": [
+        "desktop",
+        "ai"
+      ],
+      "signals": {
+        "stars24h": 300,
+        "forks24h": 14,
+        "starVelocity": 295.5344620510822,
+        "relativeGrowth": 6.567432490024048,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 8.966257488425926,
+        "hoursSincePush": 0.9065686111111111,
+        "starsPerDay": 223.0585060245811
+      },
+      "scoreBreakdown": {
+        "starMomentum": 31.52482269503546,
+        "relativeGrowth": 18.652482269503544,
+        "acceleration": 1.8498817966903072,
+        "forkMomentum": 8.705673758865247,
+        "developmentActivity": 14.959582736853816,
+        "freshness": 9.28004392969733
+      },
+      "research": {
+        "summary": "A GPU task manager for Windows, Linux, and WSL: per-process VRAM, GPU activity, and LLM model/KV-cache insights (Windows AMD and NVIDIA).",
+        "whyNow": "過去 24 小時增加 300 個 stars，同時增加 14 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
+        "evidence": [
+          "2,000 stars，98 forks",
+          "主要語言：Python",
+          "授權：MIT",
+          "分類：桌面與系統、AI",
+          "近期加星帳戶抽樣：100 個中 0 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-12T00:00:58.647Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 3,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": 1429303647,
+      "nodeId": "R_kgDOVTFxXw",
+      "name": "rune",
+      "fullName": "anomalyco/rune",
+      "owner": "anomalyco",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/66570915?v=4",
+      "url": "https://github.com/anomalyco/rune",
+      "description": "Rune: Native UI framework",
+      "language": "Rust",
+      "topics": [],
+      "stars": 6646,
+      "forks": 238,
+      "openIssues": 313,
+      "createdAt": "2026-10-22T05:51:40Z",
+      "updatedAt": "2026-11-12T00:00:24Z",
+      "pushedAt": "2026-11-11T23:53:56Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 33,
+      "previousRank": 31,
+      "rankChange": -2,
+      "score": 84.9,
+      "categories": [
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 422,
+        "forks24h": 22,
+        "starVelocity": 428.47878431197296,
+        "relativeGrowth": 5.24606724097652,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 20.75646582175926,
+        "hoursSincePush": 0.11740194444444445,
+        "starsPerDay": 320.18938373568955
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.104018912529554,
+        "relativeGrowth": 18.534278959810877,
+        "acceleration": 1.8498817966903072,
+        "forkMomentum": 9.048463356973995,
+        "developmentActivity": 14.994759757317222,
+        "freshness": 8.411623879615561
+      },
+      "research": {
+        "summary": "Rune: Native UI framework",
+        "whyNow": "過去 24 小時增加 422 個 stars，同時增加 22 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "希望改善開發、測試或部署流程的工程團隊",
+        "evidence": [
+          "6,646 stars，238 forks",
+          "主要語言：Rust",
+          "授權：MIT",
+          "分類：開發工具",
+          "近期加星帳戶抽樣：88 個中 0 個可疑",
+          "Hacker News：179 分、131 則評論（5 日前）"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "code",
+          "judgedAt": "2026-11-11T00:01:04.813Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 88,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "hackerNews": {
+          "points": 179,
+          "comments": 131,
+          "postedAt": "2026-11-06T16:31:32Z",
+          "url": "https://news.ycombinator.com/item?id=50394569"
+        }
+      }
+    },
+    {
       "id": 1448515937,
       "nodeId": "R_kgDOVlaZYQ",
       "name": "pinky",
@@ -2900,48 +2949,48 @@
       "description": "Let AI agents use your phone, with you in the loop.",
       "language": "Go",
       "topics": [],
-      "stars": 1857,
+      "stars": 1862,
       "forks": 195,
       "openIssues": 23,
       "createdAt": "2026-11-06T16:53:14Z",
-      "updatedAt": "2026-11-11T21:06:45Z",
-      "pushedAt": "2026-11-11T21:46:24Z",
+      "updatedAt": "2026-11-12T00:00:15Z",
+      "pushedAt": "2026-11-11T23:41:21Z",
       "license": "Apache-2.0",
       "archived": false,
       "fork": false,
-      "rank": 33,
-      "previousRank": 30,
-      "rankChange": -3,
+      "rank": 34,
+      "previousRank": 33,
+      "rankChange": -1,
       "score": 84.6,
       "categories": [
         "ai",
         "mobile"
       ],
       "signals": {
-        "stars24h": 172,
-        "forks24h": 17,
-        "starVelocity": 226.16743144262534,
-        "relativeGrowth": 5.213390500714561,
+        "stars24h": 167,
+        "forks24h": 16,
+        "starVelocity": 220.74783754967876,
+        "relativeGrowth": 5.081717377152169,
         "acceleration7d": null,
         "forkRatio7d": null,
-        "ageDays": 5.226620520833333,
-        "hoursSincePush": 0.5527813888888888,
-        "starsPerDay": 355.2965042321304
+        "ageDays": 5.297044525462963,
+        "hoursSincePush": 0.32712416666666666,
+        "starsPerDay": 351.5167733722723
       },
       "scoreBreakdown": {
-        "starMomentum": 30.950413223140497,
-        "relativeGrowth": 18.51239669421488,
-        "acceleration": 1.806375442739079,
-        "forkMomentum": 8.795749704840613,
-        "developmentActivity": 14.975342547992941,
-        "freshness": 9.573797330299852
+        "starMomentum": 30.904255319148938,
+        "relativeGrowth": 18.486997635933808,
+        "acceleration": 1.8498817966903072,
+        "forkMomentum": 8.794326241134753,
+        "developmentActivity": 14.985403349244065,
+        "freshness": 9.568180435749328
       },
       "research": {
         "summary": "Let AI agents use your phone, with you in the loop.",
-        "whyNow": "過去 24 小時增加 172 個 stars，同時增加 17 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 167 個 stars，同時增加 16 個 forks，數據動能令它進入今日榜。",
         "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
         "evidence": [
-          "1,857 stars，195 forks",
+          "1,862 stars，195 forks",
           "主要語言：Go",
           "授權：Apache-2.0",
           "分類：AI、手機應用",
@@ -2960,6 +3009,91 @@
           "sampled": 100,
           "suspicious": 1,
           "freshHollow": 1,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": 1431851693,
+      "nodeId": "R_kgDOVVhSrQ",
+      "name": "android-ad-cleaner",
+      "fullName": "rddmwmddr/android-ad-cleaner",
+      "owner": "rddmwmddr",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/5119232?v=4",
+      "url": "https://github.com/rddmwmddr/android-ad-cleaner",
+      "description": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
+      "language": "Python",
+      "topics": [
+        "adb",
+        "ai-agent",
+        "android",
+        "coloros",
+        "debloat",
+        "hyperos",
+        "magicos",
+        "originos"
+      ],
+      "stars": 7558,
+      "forks": 672,
+      "openIssues": 248,
+      "createdAt": "2026-10-24T05:35:47Z",
+      "updatedAt": "2026-11-11T23:58:11Z",
+      "pushedAt": "2026-11-11T19:13:23Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 35,
+      "previousRank": 35,
+      "rankChange": 0,
+      "score": 84.5,
+      "categories": [
+        "mobile"
+      ],
+      "signals": {
+        "stars24h": 146,
+        "forks24h": 13,
+        "starVelocity": 144.30971682286884,
+        "relativeGrowth": 1.6572004649954517,
+        "acceleration7d": 0.8111056545261118,
+        "forkRatio7d": 0.07752545027407988,
+        "ageDays": 18.76749591435185,
+        "hoursSincePush": 4.793235277777778,
+        "starsPerDay": 402.7175513713717
+      },
+      "scoreBreakdown": {
+        "starMomentum": 29.70449172576832,
+        "relativeGrowth": 17.375886524822693,
+        "acceleration": 5.401891252955082,
+        "forkMomentum": 8.65839243498818,
+        "developmentActivity": 14.787535351244452,
+        "freshness": 8.552206276599714
+      },
+      "research": {
+        "summary": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
+        "whyNow": "過去 24 小時增加 146 個 stars，同時增加 13 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "使用或開發 iOS、Android 應用的人",
+        "evidence": [
+          "7,558 stars，672 forks",
+          "主要語言：Python",
+          "授權：MIT",
+          "分類：手機應用",
+          "近期加星帳戶抽樣：100 個中 3 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-11T15:38:52.851Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 3,
+          "freshHollow": 3,
           "sharedHollow": 0,
           "maxPerMinute": 2,
           "flagged": false
@@ -2993,52 +3127,52 @@
         "tauri",
         "terminal"
       ],
-      "stars": 8575,
+      "stars": 8580,
       "forks": 753,
-      "openIssues": 148,
+      "openIssues": 147,
       "createdAt": "2026-10-21T12:23:14Z",
-      "updatedAt": "2026-11-11T22:11:16Z",
-      "pushedAt": "2026-11-11T21:56:02Z",
+      "updatedAt": "2026-11-11T23:42:13Z",
+      "pushedAt": "2026-11-11T23:43:09Z",
       "license": "Apache-2.0",
       "archived": false,
       "fork": false,
-      "rank": 34,
-      "previousRank": 33,
-      "rankChange": -1,
+      "rank": 36,
+      "previousRank": 34,
+      "rankChange": -2,
       "score": 84.4,
       "categories": [
         "desktop",
         "devtools"
       ],
       "signals": {
-        "stars24h": 162,
-        "forks24h": 16,
-        "starVelocity": 192.74254751512342,
-        "relativeGrowth": 2.0783963412851256,
-        "acceleration7d": 0.4151098845435616,
-        "forkRatio7d": 0.09729305610043155,
-        "ageDays": 21.414120520833333,
-        "hoursSincePush": 0.39222583333333333,
-        "starsPerDay": 400.4367114520332
+        "stars24h": 157,
+        "forks24h": 15,
+        "starVelocity": 188.33912340570896,
+        "relativeGrowth": 2.030322873577982,
+        "acceleration7d": 0.4028628477499529,
+        "forkRatio7d": 0.0971025841816758,
+        "ageDays": 21.48454452546296,
+        "hoursSincePush": 0.2971241666666667,
+        "starsPerDay": 399.35684881898203
       },
       "scoreBreakdown": {
-        "starMomentum": 30.702479338842974,
-        "relativeGrowth": 17.685950413223143,
-        "acceleration": 3.955135773317591,
-        "forkMomentum": 8.742621015348288,
-        "developmentActivity": 14.982500134278023,
-        "freshness": 8.365650439295184
+        "starMomentum": 30.614657210401894,
+        "relativeGrowth": 17.635933806146575,
+        "acceleration": 4.054373522458628,
+        "forkMomentum": 8.747044917257684,
+        "developmentActivity": 14.986741391419098,
+        "freshness": 8.360742357920266
       },
       "research": {
         "summary": "The IDE you know, rebuilt in Rust. IntelliJ IDEA - style keymap, tool windows and search-everywhere in a fast native app: editor, code insight, debugger, Git, terminal, database and HTTP clients for 60+ languages.",
-        "whyNow": "過去 24 小時增加 162 個 stars，同時增加 16 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 157 個 stars，同時增加 15 個 forks，數據動能令它進入今日榜。",
         "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
         "evidence": [
-          "8,575 stars，753 forks",
+          "8,580 stars，753 forks",
           "主要語言：TypeScript",
           "授權：Apache-2.0",
           "分類：桌面與系統、開發工具",
-          "近期加星帳戶抽樣：14 個中 0 個可疑",
+          "近期加星帳戶抽樣：13 個中 0 個可疑",
           "Hacker News：41 分、58 則評論（11 日前）"
         ],
         "cautions": [
@@ -3051,11 +3185,11 @@
           "version": 2
         },
         "starAudit": {
-          "sampled": 14,
+          "sampled": 13,
           "suspicious": 0,
           "freshHollow": 0,
           "sharedHollow": 0,
-          "maxPerMinute": 2,
+          "maxPerMinute": 1,
           "flagged": false
         },
         "hackerNews": {
@@ -3063,92 +3197,6 @@
           "comments": 58,
           "postedAt": "2026-11-01T09:15:26Z",
           "url": "https://news.ycombinator.com/item?id=50323848"
-        }
-      }
-    },
-    {
-      "id": 1431851693,
-      "nodeId": "R_kgDOVVhSrQ",
-      "name": "android-ad-cleaner",
-      "fullName": "rddmwmddr/android-ad-cleaner",
-      "owner": "rddmwmddr",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/5119232?v=4",
-      "url": "https://github.com/rddmwmddr/android-ad-cleaner",
-      "description": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
-      "language": "Python",
-      "topics": [
-        "adb",
-        "ai-agent",
-        "android",
-        "coloros",
-        "debloat",
-        "hyperos",
-        "magicos",
-        "originos"
-      ],
-      "stars": 7545,
-      "forks": 670,
-      "openIssues": 248,
-      "createdAt": "2026-10-24T05:35:47Z",
-      "updatedAt": "2026-11-11T22:00:05Z",
-      "pushedAt": "2026-11-11T19:13:23Z",
-      "license": "MIT",
-      "archived": false,
-      "fork": false,
-      "rank": 35,
-      "previousRank": 37,
-      "rankChange": 2,
-      "score": 84.4,
-      "categories": [
-        "mobile",
-        "desktop"
-      ],
-      "signals": {
-        "stars24h": 144,
-        "forks24h": 12,
-        "starVelocity": 142.6727407937572,
-        "relativeGrowth": 1.6398082404565797,
-        "acceleration7d": 0.7992700487945285,
-        "forkRatio7d": 0.07674050632911393,
-        "ageDays": 18.697071909722222,
-        "hoursSincePush": 3.1030591666666667,
-        "starsPerDay": 403.53912294024514
-      },
-      "scoreBreakdown": {
-        "starMomentum": 29.710743801652892,
-        "relativeGrowth": 17.4025974025974,
-        "acceleration": 5.230224321133412,
-        "forkMomentum": 8.612750885478158,
-        "developmentActivity": 14.86210828831569,
-        "freshness": 8.557226754751497
-      },
-      "research": {
-        "summary": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
-        "whyNow": "過去 24 小時增加 144 個 stars，同時增加 12 個 forks，數據動能令它進入今日榜。",
-        "bestFor": "使用或開發 iOS、Android 應用的人",
-        "evidence": [
-          "7,545 stars，670 forks",
-          "主要語言：Python",
-          "授權：MIT",
-          "分類：手機應用、桌面與系統",
-          "近期加星帳戶抽樣：91 個中 4 個可疑"
-        ],
-        "cautions": [
-          "項目仍然很新，API、文件和維護節奏可能快速改變。"
-        ],
-        "categorySource": "jev",
-        "ease": {
-          "level": "ready",
-          "judgedAt": "2026-11-11T15:38:52.851Z",
-          "version": 2
-        },
-        "starAudit": {
-          "sampled": 91,
-          "suspicious": 4,
-          "freshHollow": 4,
-          "sharedHollow": 0,
-          "maxPerMinute": 2,
-          "flagged": false
         }
       }
     },
@@ -3163,51 +3211,51 @@
       "description": "Agent skills",
       "language": null,
       "topics": [],
-      "stars": 5691,
-      "forks": 393,
+      "stars": 5795,
+      "forks": 401,
       "openIssues": 10,
       "createdAt": "2026-11-03T16:50:21Z",
-      "updatedAt": "2026-11-11T22:17:42Z",
+      "updatedAt": "2026-11-11T23:59:45Z",
       "pushedAt": "2026-11-03T18:14:13Z",
       "license": "MIT",
       "archived": false,
       "fork": false,
-      "rank": 36,
+      "rank": 37,
       "previousRank": 36,
-      "rankChange": 0,
+      "rankChange": -1,
       "score": 84.4,
       "categories": [
         "ai"
       ],
       "signals": {
-        "stars24h": 1854,
-        "forks24h": 158,
-        "starVelocity": 1870.5414711310336,
-        "relativeGrowth": 24.741226842498786,
+        "stars24h": 1834,
+        "forks24h": 156,
+        "starVelocity": 1855.2247993432,
+        "relativeGrowth": 24.31840285756066,
         "acceleration7d": null,
         "forkRatio7d": null,
-        "ageDays": 8.228622835648148,
-        "hoursSincePush": 196.08917027777778,
-        "starsPerDay": 691.6102625758195
+        "ageDays": 8.299046840277779,
+        "hoursSincePush": 197.77934638888888,
+        "starsPerDay": 698.2729597181108
       },
       "scoreBreakdown": {
-        "starMomentum": 34.917355371900825,
+        "starMomentum": 34.91725768321513,
         "relativeGrowth": 20,
-        "acceleration": 1.806375442739079,
-        "forkMomentum": 9.940968122786305,
-        "developmentActivity": 8.368306046074116,
-        "freshness": 9.337263629514522
+        "acceleration": 1.8498817966903072,
+        "forkMomentum": 9.940898345153665,
+        "developmentActivity": 8.32631677052447,
+        "freshness": 9.33178550799304
       },
       "research": {
         "summary": "Agent skills",
-        "whyNow": "過去 24 小時增加 1,854 個 stars，同時增加 158 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 1,834 個 stars，同時增加 156 個 forks，數據動能令它進入今日榜。",
         "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
         "evidence": [
-          "5,691 stars，393 forks",
+          "5,795 stars，401 forks",
           "GitHub 尚未識別主要語言",
           "授權：MIT",
           "分類：AI",
-          "近期加星帳戶抽樣：100 個中 8 個可疑",
+          "近期加星帳戶抽樣：100 個中 6 個可疑",
           "Hacker News：4 分、0 則評論（2 日前）"
         ],
         "cautions": [
@@ -3221,8 +3269,8 @@
         },
         "starAudit": {
           "sampled": 100,
-          "suspicious": 8,
-          "freshHollow": 8,
+          "suspicious": 6,
+          "freshHollow": 6,
           "sharedHollow": 0,
           "maxPerMinute": 4,
           "flagged": false
@@ -3232,95 +3280,6 @@
           "comments": 0,
           "postedAt": "2026-11-09T18:08:34Z",
           "url": "https://news.ycombinator.com/item?id=50429183"
-        }
-      }
-    },
-    {
-      "id": 1183888342,
-      "nodeId": "R_kgDORpCz1g",
-      "name": "orca",
-      "fullName": "stablyai/orca",
-      "owner": "stablyai",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/127256420?v=4",
-      "url": "https://github.com/stablyai/orca",
-      "description": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and remote runtime.",
-      "language": "TypeScript",
-      "topics": [
-        "agent-ide",
-        "ai-agents",
-        "automation",
-        "bot",
-        "claude-code",
-        "codex",
-        "ghostty",
-        "grok-bot",
-        "hermes-agent",
-        "mobile-app",
-        "muse",
-        "openclaw",
-        "opencode",
-        "orchestration",
-        "pi",
-        "runtime",
-        "swarm",
-        "terminal",
-        "worktrees",
-        "yc-backed"
-      ],
-      "stars": 122330,
-      "forks": 7758,
-      "openIssues": 8310,
-      "createdAt": "2026-03-17T03:28:57Z",
-      "updatedAt": "2026-11-11T22:19:02Z",
-      "pushedAt": "2026-11-11T22:14:48Z",
-      "license": "MIT",
-      "archived": false,
-      "fork": false,
-      "rank": 37,
-      "previousRank": 38,
-      "rankChange": 1,
-      "score": 84.3,
-      "categories": [
-        "ai",
-        "devtools"
-      ],
-      "signals": {
-        "stars24h": 910,
-        "forks24h": 65,
-        "starVelocity": 971.2967073185982,
-        "relativeGrowth": 2.7767773349125053,
-        "acceleration7d": 0.9081372818484669,
-        "forkRatio7d": 0.06712252302539772,
-        "ageDays": 239.7851506134259,
-        "hoursSincePush": 0.07944805555555555,
-        "starsPerDay": 510.1650360210028
-      },
-      "scoreBreakdown": {
-        "starMomentum": 34.54545454545455,
-        "relativeGrowth": 17.945690672963398,
-        "acceleration": 5.7142857142857135,
-        "forkMomentum": 9.710743801652892,
-        "developmentActivity": 14.996453631096058,
-        "freshness": 1.3557780613460353
-      },
-      "research": {
-        "summary": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and remote runtime.",
-        "whyNow": "過去 24 小時增加 910 個 stars，同時增加 65 個 forks，數據動能令它進入今日榜。",
-        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
-        "evidence": [
-          "122,330 stars，7,758 forks",
-          "主要語言：TypeScript",
-          "授權：MIT",
-          "分類：AI、開發工具"
-        ],
-        "cautions": [
-          "熱門度不等於適合生產環境，採用前仍要檢查文件、測試和安全紀錄。"
-        ],
-        "categorySource": "jev",
-        "ease": {
-          "level": "ready",
-          "judgedAt": "2026-11-11T15:38:52.851Z",
-          "version": 2
         }
       }
     },
@@ -3361,35 +3320,35 @@
       "archived": false,
       "fork": false,
       "rank": 38,
-      "previousRank": 34,
-      "rankChange": -4,
-      "score": 84.2,
+      "previousRank": 38,
+      "rankChange": 0,
+      "score": 84.4,
       "categories": [
         "desktop",
         "mobile"
       ],
       "signals": {
-        "stars24h": 566,
+        "stars24h": 537,
         "forks24h": 1,
-        "starVelocity": 566.497203489214,
-        "relativeGrowth": 16.185634385406114,
+        "starVelocity": 536.7557170528063,
+        "relativeGrowth": 15.33587763008018,
         "acceleration7d": null,
         "forkRatio7d": null,
-        "ageDays": 5.040058020833333,
-        "hoursSincePush": 3.8188925,
-        "starsPerDay": 238.09249715771915
+        "ageDays": 5.110482025462963,
+        "hoursSincePush": 5.509068611111111,
+        "starsPerDay": 234.8115097599411
       },
       "scoreBreakdown": {
-        "starMomentum": 33.28512396694215,
-        "relativeGrowth": 19.39787485242031,
-        "acceleration": 1.806375442739079,
-        "forkMomentum": 5.253837072018889,
-        "developmentActivity": 14.830478919808133,
-        "freshness": 9.588693169523989
+        "starMomentum": 33.20035460992908,
+        "relativeGrowth": 19.37352245862884,
+        "acceleration": 1.8498817966903072,
+        "forkMomentum": 5.626477541371159,
+        "developmentActivity": 14.756064688006802,
+        "freshness": 9.583067535666032
       },
       "research": {
         "summary": "Android Screen Mirroring and Control Workflow, Simplified",
-        "whyNow": "過去 24 小時增加 566 個 stars，同時增加 1 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 537 個 stars，同時增加 1 個 forks，數據動能令它進入今日榜。",
         "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
         "evidence": [
           "1,200 stars，1 forks",
@@ -3462,45 +3421,45 @@
       "archived": false,
       "fork": false,
       "rank": 39,
-      "previousRank": null,
-      "rankChange": null,
-      "score": 84.1,
+      "previousRank": 39,
+      "rankChange": 0,
+      "score": 84.4,
       "categories": [
-        "games",
-        "desktop"
+        "desktop",
+        "games"
       ],
       "signals": {
-        "stars24h": 566,
+        "stars24h": 537,
         "forks24h": 1,
-        "starVelocity": 566.497203489214,
-        "relativeGrowth": 16.185634385406114,
+        "starVelocity": 536.7557170528063,
+        "relativeGrowth": 15.33587763008018,
         "acceleration7d": null,
         "forkRatio7d": null,
-        "ageDays": 5.056250150462963,
-        "hoursSincePush": 4.5400036111111115,
-        "starsPerDay": 237.33003002039464
+        "ageDays": 5.1266741550925925,
+        "hoursSincePush": 6.230179722222222,
+        "starsPerDay": 234.06987916483388
       },
       "scoreBreakdown": {
-        "starMomentum": 33.28512396694215,
-        "relativeGrowth": 19.39787485242031,
-        "acceleration": 1.806375442739079,
-        "forkMomentum": 5.253837072018889,
-        "developmentActivity": 14.79868440985432,
-        "freshness": 9.58739941212232
+        "starMomentum": 33.20035460992908,
+        "relativeGrowth": 19.37352245862884,
+        "acceleration": 1.8498817966903072,
+        "forkMomentum": 5.626477541371159,
+        "developmentActivity": 14.72442971194576,
+        "freshness": 9.581774537304756
       },
       "research": {
         "summary": "ExitLag installer with optimized system performance enhancements for desktop",
-        "whyNow": "過去 24 小時增加 566 個 stars，同時增加 1 個 forks，數據動能令它進入今日榜。",
-        "bestFor": "玩家、遊戲開發者和 mod 作者",
+        "whyNow": "過去 24 小時增加 537 個 stars，同時增加 1 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
         "evidence": [
           "1,200 stars，1 forks",
           "主要語言：HTML",
           "授權：未標示",
-          "分類：遊戲、桌面與系統",
-          "近期加星帳戶抽樣：100 個中 100 個可疑"
+          "分類：桌面與系統、遊戲",
+          "近期加星帳戶抽樣：100 個中 99 個可疑"
         ],
         "cautions": [
-          "最近 100 個加星帳戶中有 100 個（100%）是資料空白的新帳戶或同時為多個上榜項目加星，可能有刷星。",
+          "最近 100 個加星帳戶中有 99 個（99%）是資料空白的新帳戶或同時為多個上榜項目加星，可能有刷星。",
           "可能涉及破解、盜版或繞過授權，使用可能違反軟件條款或法律。",
           "可能透過共用帳號、逆向 API 等方式繞過付費服務，或會違反服務條款並導致封號。",
           "GitHub 未標示開源授權，正式採用前要先確認使用條款。",
@@ -3519,12 +3478,366 @@
         },
         "starAudit": {
           "sampled": 100,
-          "suspicious": 100,
+          "suspicious": 99,
           "freshHollow": 1,
-          "sharedHollow": 100,
+          "sharedHollow": 99,
           "maxPerMinute": 28,
           "flagged": true
         }
+      }
+    },
+    {
+      "id": 1183888342,
+      "nodeId": "R_kgDORpCz1g",
+      "name": "orca",
+      "fullName": "stablyai/orca",
+      "owner": "stablyai",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/127256420?v=4",
+      "url": "https://github.com/stablyai/orca",
+      "description": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and remote runtime.",
+      "language": "TypeScript",
+      "topics": [
+        "agent-ide",
+        "ai-agents",
+        "automation",
+        "bot",
+        "claude-code",
+        "codex",
+        "ghostty",
+        "grok-bot",
+        "hermes-agent",
+        "mobile-app",
+        "muse",
+        "openclaw",
+        "opencode",
+        "orchestration",
+        "pi",
+        "runtime",
+        "swarm",
+        "terminal",
+        "worktrees",
+        "yc-backed"
+      ],
+      "stars": 122375,
+      "forks": 7760,
+      "openIssues": 8298,
+      "createdAt": "2026-03-17T03:28:57Z",
+      "updatedAt": "2026-11-12T00:00:24Z",
+      "pushedAt": "2026-11-11T23:59:56Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 40,
+      "previousRank": 37,
+      "rankChange": -3,
+      "score": 84.3,
+      "categories": [
+        "ai",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 895,
+        "forks24h": 63,
+        "starVelocity": 958.9910055317221,
+        "relativeGrowth": 2.74109334355137,
+        "acceleration7d": 0.8939548543785993,
+        "forkRatio7d": 0.06698100124809318,
+        "ageDays": 239.85557461805556,
+        "hoursSincePush": 0.017401944444444446,
+        "starsPerDay": 510.20285934512526
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.54491725768322,
+        "relativeGrowth": 17.94326241134752,
+        "acceleration": 5.709219858156028,
+        "forkMomentum": 9.710401891252955,
+        "developmentActivity": 14.999223147597508,
+        "freshness": 1.3549826337699369
+      },
+      "research": {
+        "summary": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and remote runtime.",
+        "whyNow": "過去 24 小時增加 895 個 stars，同時增加 63 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "122,375 stars，7,760 forks",
+          "主要語言：TypeScript",
+          "授權：MIT",
+          "分類：AI、開發工具"
+        ],
+        "cautions": [
+          "熱門度不等於適合生產環境，採用前仍要檢查文件、測試和安全紀錄。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-11T15:38:52.851Z",
+          "version": 2
+        }
+      }
+    },
+    {
+      "id": 1422474621,
+      "nodeId": "R_kgDOVMk9fQ",
+      "name": "SavageWindRecomp",
+      "fullName": "Revivedx/SavageWindRecomp",
+      "owner": "Revivedx",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/82332536?v=4",
+      "url": "https://github.com/Revivedx/SavageWindRecomp",
+      "description": "Work-in-progress static recompilation of The Legend of Zelda: Breath of the Wild (Switch, v1.9.0) for Windows and Linux. Bring your own dump: no game files, keys or dumping tools included.",
+      "language": "C",
+      "topics": [],
+      "stars": 3963,
+      "forks": 232,
+      "openIssues": 116,
+      "createdAt": "2026-10-16T17:34:55Z",
+      "updatedAt": "2026-11-11T23:39:53Z",
+      "pushedAt": "2026-11-11T23:56:41Z",
+      "license": null,
+      "archived": false,
+      "fork": false,
+      "rank": 41,
+      "previousRank": 45,
+      "rankChange": 4,
+      "score": 84.3,
+      "categories": [
+        "games",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 135,
+        "forks24h": 4,
+        "starVelocity": 129.9058506746921,
+        "relativeGrowth": 2.0570797849387517,
+        "acceleration7d": 1.0956735761939298,
+        "forkRatio7d": 0.059782608695652176,
+        "ageDays": 26.268097766203702,
+        "hoursSincePush": 0.07156861111111111,
+        "starsPerDay": 150.86741473525197
+      },
+      "scoreBreakdown": {
+        "starMomentum": 29.45626477541371,
+        "relativeGrowth": 17.659574468085108,
+        "acceleration": 6.607565011820331,
+        "forkMomentum": 7.505910165484634,
+        "developmentActivity": 14.996805312967407,
+        "freshness": 8.034013997960436
+      },
+      "research": {
+        "summary": "Work-in-progress static recompilation of The Legend of Zelda: Breath of the Wild (Switch, v1.9.0) for Windows and Linux. Bring your own dump: no game files, keys or dumping tools included.",
+        "whyNow": "過去 24 小時增加 135 個 stars，同時增加 4 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "玩家、遊戲開發者和 mod 作者",
+        "evidence": [
+          "3,963 stars，232 forks",
+          "主要語言：C",
+          "授權：未標示",
+          "分類：遊戲、桌面與系統",
+          "近期加星帳戶抽樣：100 個中 6 個可疑"
+        ],
+        "cautions": [
+          "GitHub 未標示開源授權，正式採用前要先確認使用條款。",
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-11T15:38:52.851Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 6,
+          "freshHollow": 6,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": 1200597263,
+      "nodeId": "R_kgDOR4-pDw",
+      "name": "graphify",
+      "fullName": "Graphify-Labs/graphify",
+      "owner": "Graphify-Labs",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/297659074?v=4",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+      "language": "Python",
+      "topics": [
+        "ai-agents",
+        "antigravity",
+        "ast",
+        "claude-code",
+        "code-analysis",
+        "code-search",
+        "codex",
+        "cursor",
+        "developer-tools",
+        "gemini",
+        "graphify",
+        "graphrag",
+        "knowledge-graph",
+        "leiden",
+        "llm",
+        "mcp",
+        "openclaw",
+        "rag",
+        "skills",
+        "tree-sitter"
+      ],
+      "stars": 146164,
+      "forks": 14005,
+      "openIssues": 1648,
+      "createdAt": "2026-04-03T15:49:07Z",
+      "updatedAt": "2026-11-11T23:57:54Z",
+      "pushedAt": "2026-11-11T23:25:36Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 42,
+      "previousRank": null,
+      "rankChange": null,
+      "score": 83.6,
+      "categories": [
+        "ai",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 533,
+        "forks24h": 60,
+        "starVelocity": 550.5818054136655,
+        "relativeGrowth": 1.440006683808766,
+        "acceleration7d": 0.9995467585587525,
+        "forkRatio7d": 0.10370370370370369,
+        "ageDays": 222.34156998842593,
+        "hoursSincePush": 0.5896241666666666,
+        "starsPerDay": 657.3849415905835
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.84160756501182,
+        "relativeGrowth": 17.257683215130022,
+        "acceleration": 6.288416075650119,
+        "forkMomentum": 9.692671394799055,
+        "developmentActivity": 14.973700574868941,
+        "freshness": 1.5679024020866692
+      },
+      "research": {
+        "summary": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+        "whyNow": "過去 24 小時增加 533 個 stars，同時增加 60 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "146,164 stars，14,005 forks",
+          "主要語言：Python",
+          "授權：Apache-2.0",
+          "分類：AI、開發工具"
+        ],
+        "cautions": [
+          "熱門度不等於適合生產環境，採用前仍要檢查文件、測試和安全紀錄。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-12T00:00:58.647Z",
+          "version": 2
+        }
+      }
+    },
+    {
+      "id": 1448745513,
+      "nodeId": "R_kgDOVloaKQ",
+      "name": "hitfilm-desktop-installer",
+      "fullName": "Paulinho182/hitfilm-desktop-installer",
+      "owner": "Paulinho182",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/295299555?v=4",
+      "url": "https://github.com/Paulinho182/hitfilm-desktop-installer",
+      "description": "HitFilm: Fully Featured Desktop Video Editing and VFX Suite",
+      "language": "TypeScript",
+      "topics": [
+        "automation",
+        "desktop",
+        "developer-tools",
+        "fxhome-hitfilm",
+        "hitfilm-2026",
+        "hitfilm-compositing-pc-install",
+        "hitfilm-pro-express",
+        "hitfilm-pro-mac",
+        "hitfilm-video-editor-download-windows-vfx",
+        "open-source",
+        "python",
+        "scripts",
+        "software-engineering",
+        "system",
+        "utility",
+        "windows-app"
+      ],
+      "stars": 1194,
+      "forks": 1,
+      "openIssues": 0,
+      "createdAt": "2026-11-06T21:02:28Z",
+      "updatedAt": "2026-11-11T19:14:41Z",
+      "pushedAt": "2026-11-11T18:14:37Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 43,
+      "previousRank": 42,
+      "rankChange": -1,
+      "score": 83.5,
+      "categories": [
+        "desktop",
+        "creative"
+      ],
+      "signals": {
+        "stars24h": 532,
+        "forks24h": 1,
+        "starVelocity": 532.2827527440329,
+        "relativeGrowth": 15.245460300610608,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 5.123965821759259,
+        "hoursSincePush": 5.772679722222223,
+        "starsPerDay": 233.0226315971118
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.641843971631204,
+        "relativeGrowth": 19.05437352245863,
+        "acceleration": 1.8498817966903072,
+        "forkMomentum": 5.626477541371159,
+        "developmentActivity": 14.744492256168183,
+        "freshness": 9.581990795073255
+      },
+      "research": {
+        "summary": "HitFilm: Fully Featured Desktop Video Editing and VFX Suite",
+        "whyNow": "過去 24 小時增加 532 個 stars，同時增加 1 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
+        "evidence": [
+          "1,194 stars，1 forks",
+          "主要語言：TypeScript",
+          "授權：MIT",
+          "分類：桌面與系統、設計與多媒體",
+          "近期加星帳戶抽樣：100 個中 99 個可疑"
+        ],
+        "cautions": [
+          "最近 100 個加星帳戶中有 99 個（99%）是資料空白的新帳戶或同時為多個上榜項目加星，可能有刷星。",
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-11T08:00:56.607Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 99,
+          "freshHollow": 1,
+          "sharedHollow": 99,
+          "maxPerMinute": 26,
+          "flagged": true
+        },
+        "risks": [
+          "starInflation"
+        ]
       }
     },
     {
@@ -3568,46 +3881,46 @@
       "license": "MIT",
       "archived": false,
       "fork": false,
-      "rank": 40,
-      "previousRank": 43,
-      "rankChange": 3,
-      "score": 83.7,
+      "rank": 44,
+      "previousRank": 40,
+      "rankChange": -4,
+      "score": 83.4,
       "categories": [
         "ai",
         "desktop"
       ],
       "signals": {
-        "stars24h": 193,
+        "stars24h": 183,
         "forks24h": 0,
-        "starVelocity": 184.01147852572095,
-        "relativeGrowth": 3.2422727965210605,
-        "acceleration7d": 4.536219352255157,
+        "starVelocity": 176.63707761913497,
+        "relativeGrowth": 3.112336231467474,
+        "acceleration7d": 4.2980647673663075,
         "forkRatio7d": 0.038,
-        "ageDays": 15.56129644675926,
-        "hoursSincePush": 9.588059166666667,
-        "starsPerDay": 205.38134537406026
+        "ageDays": 15.631720451388889,
+        "hoursSincePush": 11.278235277777778,
+        "starsPerDay": 204.4560616305055
       },
       "scoreBreakdown": {
-        "starMomentum": 30.454545454545453,
-        "relativeGrowth": 18.110979929161747,
-        "acceleration": 9.515938606847698,
-        "forkMomentum": 2.290436835891381,
-        "developmentActivity": 14.578011192485452,
-        "freshness": 8.783786883747398
+        "starMomentum": 30.20094562647754,
+        "relativeGrowth": 18.085106382978722,
+        "acceleration": 9.515366430260046,
+        "forkMomentum": 2.3167848699763596,
+        "developmentActivity": 14.504863756725227,
+        "freshness": 8.778633484006612
       },
       "research": {
         "summary": "🤖 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. Your own AI bots on any model: GPT, Claude, Gemini, Grok, DeepSeek, Kimi, GLM and 70+ more through one Modelflare key. Reach them in the app, WeChat or Feishu; they remember you, work in the background, run commands and use your computer. Pay per use.",
-        "whyNow": "過去 24 小時增加 193 個 stars，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 183 個 stars，數據動能令它進入今日榜。",
         "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
         "evidence": [
           "3,196 stars，46 forks",
           "主要語言：Python",
           "授權：MIT",
           "分類：AI、桌面與系統",
-          "近期加星帳戶抽樣：100 個中 43 個可疑"
+          "近期加星帳戶抽樣：100 個中 44 個可疑"
         ],
         "cautions": [
-          "最近 100 個加星帳戶中有 43 個（43%）是資料空白的新帳戶或同時為多個上榜項目加星，可能有刷星。",
+          "最近 100 個加星帳戶中有 44 個（44%）是資料空白的新帳戶或同時為多個上榜項目加星，可能有刷星。",
           "項目仍然很新，API、文件和維護節奏可能快速改變。"
         ],
         "categorySource": "jev",
@@ -3618,8 +3931,8 @@
         },
         "starAudit": {
           "sampled": 100,
-          "suspicious": 43,
-          "freshHollow": 43,
+          "suspicious": 44,
+          "freshHollow": 44,
           "sharedHollow": 0,
           "maxPerMinute": 6,
           "flagged": true
@@ -3652,48 +3965,48 @@
         "typescript",
         "workflow"
       ],
-      "stars": 4525,
+      "stars": 4526,
       "forks": 827,
       "openIssues": 4,
       "createdAt": "2026-11-03T08:02:11Z",
-      "updatedAt": "2026-11-11T20:22:33Z",
+      "updatedAt": "2026-11-11T22:58:09Z",
       "pushedAt": "2026-11-11T21:58:06Z",
       "license": "MIT",
       "archived": false,
       "fork": false,
-      "rank": 41,
-      "previousRank": 39,
-      "rankChange": -2,
-      "score": 83.3,
+      "rank": 45,
+      "previousRank": 41,
+      "rankChange": -4,
+      "score": 83.2,
       "categories": [
         "ai",
         "devtools"
       ],
       "signals": {
-        "stars24h": 94,
-        "forks24h": 20,
-        "starVelocity": 111.52480931254001,
-        "relativeGrowth": 1.653353773873598,
-        "acceleration7d": 0.2595118560478536,
-        "forkRatio7d": 0.16243432574430822,
-        "ageDays": 8.595405243055556,
-        "hoursSincePush": 0.3577813888888889,
-        "starsPerDay": 526.4440561026324
+        "stars24h": 89,
+        "forks24h": 19,
+        "starVelocity": 107.91829578698426,
+        "relativeGrowth": 1.5997114773344825,
+        "acceleration7d": 0.2479535879368601,
+        "forkRatio7d": 0.16236323851203502,
+        "ageDays": 8.665829247685185,
+        "hoursSincePush": 2.0479575,
+        "starsPerDay": 522.2812347945795
       },
       "scoreBreakdown": {
-        "starMomentum": 28.96694214876033,
-        "relativeGrowth": 17.42621015348288,
-        "acceleration": 3.7190082644628095,
-        "forkMomentum": 8.937426210153482,
-        "developmentActivity": 14.984036117450957,
-        "freshness": 9.308767667334157
+        "starMomentum": 28.87706855791962,
+        "relativeGrowth": 17.35224586288416,
+        "acceleration": 3.806146572104019,
+        "forkMomentum": 8.94208037825059,
+        "developmentActivity": 14.908851388556313,
+        "freshness": 9.303306264237888
       },
       "research": {
         "summary": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
-        "whyNow": "過去 24 小時增加 94 個 stars，同時增加 20 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 89 個 stars，同時增加 19 個 forks，數據動能令它進入今日榜。",
         "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
         "evidence": [
-          "4,525 stars，827 forks",
+          "4,526 stars，827 forks",
           "主要語言：TypeScript",
           "授權：MIT",
           "分類：AI、開發工具",
@@ -3719,104 +4032,6 @@
       }
     },
     {
-      "id": 1448745513,
-      "nodeId": "R_kgDOVloaKQ",
-      "name": "hitfilm-desktop-installer",
-      "fullName": "Paulinho182/hitfilm-desktop-installer",
-      "owner": "Paulinho182",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/295299555?v=4",
-      "url": "https://github.com/Paulinho182/hitfilm-desktop-installer",
-      "description": "HitFilm: Fully Featured Desktop Video Editing and VFX Suite",
-      "language": "TypeScript",
-      "topics": [
-        "automation",
-        "desktop",
-        "developer-tools",
-        "fxhome-hitfilm",
-        "hitfilm-2026",
-        "hitfilm-compositing-pc-install",
-        "hitfilm-pro-express",
-        "hitfilm-pro-mac",
-        "hitfilm-video-editor-download-windows-vfx",
-        "open-source",
-        "python",
-        "scripts",
-        "software-engineering",
-        "system",
-        "utility",
-        "windows-app"
-      ],
-      "stars": 1194,
-      "forks": 1,
-      "openIssues": 0,
-      "createdAt": "2026-11-06T21:02:28Z",
-      "updatedAt": "2026-11-11T19:14:41Z",
-      "pushedAt": "2026-11-11T18:14:37Z",
-      "license": "MIT",
-      "archived": false,
-      "fork": false,
-      "rank": 42,
-      "previousRank": 41,
-      "rankChange": -1,
-      "score": 83.2,
-      "categories": [
-        "desktop",
-        "creative"
-      ],
-      "signals": {
-        "stars24h": 562,
-        "forks24h": 1,
-        "starVelocity": 561.7763934601372,
-        "relativeGrowth": 16.090207056615434,
-        "acceleration7d": null,
-        "forkRatio7d": null,
-        "ageDays": 5.05354181712963,
-        "hoursSincePush": 4.082503611111111,
-        "starsPerDay": 236.26993566230786
-      },
-      "scoreBreakdown": {
-        "starMomentum": 32.72727272727273,
-        "relativeGrowth": 19.055489964580875,
-        "acceleration": 1.806375442739079,
-        "forkMomentum": 5.253837072018889,
-        "developmentActivity": 14.818848128668197,
-        "freshness": 9.58761579684255
-      },
-      "research": {
-        "summary": "HitFilm: Fully Featured Desktop Video Editing and VFX Suite",
-        "whyNow": "過去 24 小時增加 562 個 stars，同時增加 1 個 forks，數據動能令它進入今日榜。",
-        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
-        "evidence": [
-          "1,194 stars，1 forks",
-          "主要語言：TypeScript",
-          "授權：MIT",
-          "分類：桌面與系統、設計與多媒體",
-          "近期加星帳戶抽樣：100 個中 99 個可疑"
-        ],
-        "cautions": [
-          "最近 100 個加星帳戶中有 99 個（99%）是資料空白的新帳戶或同時為多個上榜項目加星，可能有刷星。",
-          "項目仍然很新，API、文件和維護節奏可能快速改變。"
-        ],
-        "categorySource": "jev",
-        "ease": {
-          "level": "cli",
-          "judgedAt": "2026-11-11T08:00:56.607Z",
-          "version": 2
-        },
-        "starAudit": {
-          "sampled": 100,
-          "suspicious": 99,
-          "freshHollow": 1,
-          "sharedHollow": 99,
-          "maxPerMinute": 26,
-          "flagged": true
-        },
-        "risks": [
-          "starInflation"
-        ]
-      }
-    },
-    {
       "id": 1148788086,
       "nodeId": "R_kgDORHkddg",
       "name": "skills",
@@ -3827,48 +4042,48 @@
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
       "topics": [],
-      "stars": 321953,
-      "forks": 26996,
+      "stars": 322007,
+      "forks": 27000,
       "openIssues": 236,
       "createdAt": "2026-02-03T11:15:53Z",
-      "updatedAt": "2026-11-11T22:19:17Z",
+      "updatedAt": "2026-11-12T00:00:16Z",
       "pushedAt": "2026-11-11T14:40:17Z",
       "license": "MIT",
       "archived": false,
       "fork": false,
-      "rank": 43,
-      "previousRank": 45,
-      "rankChange": 2,
+      "rank": 46,
+      "previousRank": 43,
+      "rankChange": -3,
       "score": 83.1,
       "categories": [
         "ai",
         "devtools"
       ],
       "signals": {
-        "stars24h": 1121,
-        "forks24h": 96,
-        "starVelocity": 1121.192381905736,
-        "relativeGrowth": 1.9759094533494874,
-        "acceleration7d": 0.8530434774484064,
-        "forkRatio7d": 0.08086340206185567,
-        "ageDays": 281.4608913541667,
-        "hoursSincePush": 7.654725833333333,
-        "starsPerDay": 1143.8640674056612
+        "stars24h": 1103,
+        "forks24h": 94,
+        "starVelocity": 1102.5857021126394,
+        "relativeGrowth": 1.9429554456005367,
+        "acceleration7d": 0.8388868464449978,
+        "forkRatio7d": 0.08082425795430279,
+        "ageDays": 281.5313153587963,
+        "hoursSincePush": 9.344901944444445,
+        "starsPerDay": 1143.7697422385131
       },
       "scoreBreakdown": {
-        "starMomentum": 34.66942148760331,
-        "relativeGrowth": 17.615112160566706,
-        "acceleration": 5.466351829988194,
-        "forkMomentum": 9.775678866587958,
-        "developmentActivity": 14.662134395114837,
-        "freshness": 0.9579857891850695
+        "starMomentum": 34.66903073286052,
+        "relativeGrowth": 17.541371158392437,
+        "acceleration": 5.531914893617022,
+        "forkMomentum": 9.775413711583925,
+        "developmentActivity": 14.588564858117413,
+        "freshness": 0.9574237441601843
       },
       "research": {
         "summary": "Skills for Real Engineers. Straight from my .agents directory.",
-        "whyNow": "過去 24 小時增加 1,121 個 stars，同時增加 96 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 1,103 個 stars，同時增加 94 個 forks，數據動能令它進入今日榜。",
         "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
         "evidence": [
-          "321,953 stars，26,996 forks",
+          "322,007 stars，27,000 forks",
           "主要語言：Shell",
           "授權：MIT",
           "分類：AI、開發工具"
@@ -3895,51 +4110,51 @@
       "description": "给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。A tvOS-style launcher for Xiaomi, TCL and other China-market TVs.",
       "language": "Kotlin",
       "topics": [],
-      "stars": 11273,
+      "stars": 11276,
       "forks": 967,
       "openIssues": 394,
       "createdAt": "2026-10-20T09:13:06Z",
-      "updatedAt": "2026-11-11T22:04:26Z",
+      "updatedAt": "2026-11-11T23:48:50Z",
       "pushedAt": "2026-11-11T01:39:07Z",
       "license": "MIT",
       "archived": false,
       "fork": false,
-      "rank": 44,
-      "previousRank": 35,
-      "rankChange": -9,
-      "score": 83.1,
+      "rank": 47,
+      "previousRank": 44,
+      "rankChange": -3,
+      "score": 83,
       "categories": [
         "desktop"
       ],
       "signals": {
-        "stars24h": 160,
-        "forks24h": 18,
-        "starVelocity": 168.6441810999795,
-        "relativeGrowth": 1.5866114192256278,
-        "acceleration7d": 0.6497887091511261,
-        "forkRatio7d": 0.08641239570917758,
-        "ageDays": 22.54615755787037,
-        "hoursSincePush": 20.674170277777776,
-        "starsPerDay": 499.9965058819898
+        "stars24h": 154,
+        "forks24h": 17,
+        "starVelocity": 163.78747439987444,
+        "relativeGrowth": 1.5407147797659078,
+        "acceleration7d": 0.6247729982144645,
+        "forkRatio7d": 0.08625817965496729,
+        "ageDays": 22.6165815625,
+        "hoursSincePush": 22.36434638888889,
+        "starsPerDay": 498.5722519046141
       },
       "scoreBreakdown": {
-        "starMomentum": 30.041322314049587,
-        "relativeGrowth": 17.30814639905549,
-        "acceleration": 4.4864226682408495,
-        "forkMomentum": 8.842975206611571,
-        "developmentActivity": 14.104867243862447,
-        "freshness": 8.287102965053005
+        "starMomentum": 29.994089834515364,
+        "relativeGrowth": 17.28132387706856,
+        "acceleration": 4.5626477541371155,
+        "forkMomentum": 8.85933806146572,
+        "developmentActivity": 14.034093881364363,
+        "freshness": 8.28224096705178
       },
       "research": {
         "summary": "给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。A tvOS-style launcher for Xiaomi, TCL and other China-market TVs.",
-        "whyNow": "過去 24 小時增加 160 個 stars，同時增加 18 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 154 個 stars，同時增加 17 個 forks，數據動能令它進入今日榜。",
         "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
         "evidence": [
-          "11,273 stars，967 forks",
+          "11,276 stars，967 forks",
           "主要語言：Kotlin",
           "授權：MIT",
           "分類：桌面與系統",
-          "近期加星帳戶抽樣：60 個中 4 個可疑"
+          "近期加星帳戶抽樣：58 個中 5 個可疑"
         ],
         "cautions": [
           "項目仍然很新，API、文件和維護節奏可能快速改變。"
@@ -3951,87 +4166,9 @@
           "version": 2
         },
         "starAudit": {
-          "sampled": 60,
-          "suspicious": 4,
-          "freshHollow": 4,
-          "sharedHollow": 0,
-          "maxPerMinute": 2,
-          "flagged": false
-        }
-      }
-    },
-    {
-      "id": 1422474621,
-      "nodeId": "R_kgDOVMk9fQ",
-      "name": "SavageWindRecomp",
-      "fullName": "Revivedx/SavageWindRecomp",
-      "owner": "Revivedx",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/82332536?v=4",
-      "url": "https://github.com/Revivedx/SavageWindRecomp",
-      "description": "Work-in-progress static recompilation of The Legend of Zelda: Breath of the Wild (Switch, v1.9.0) for Windows and Linux. Bring your own dump: no game files, keys or dumping tools included.",
-      "language": "C",
-      "topics": [],
-      "stars": 3956,
-      "forks": 230,
-      "openIssues": 113,
-      "createdAt": "2026-10-16T17:34:55Z",
-      "updatedAt": "2026-11-11T22:17:01Z",
-      "pushedAt": "2026-11-11T03:40:58Z",
-      "license": null,
-      "archived": false,
-      "fork": false,
-      "rank": 45,
-      "previousRank": 49,
-      "rankChange": 4,
-      "score": 83.1,
-      "categories": [
-        "games",
-        "desktop"
-      ],
-      "signals": {
-        "stars24h": 137,
-        "forks24h": 3,
-        "starVelocity": 131.23595915242979,
-        "relativeGrowth": 2.0799685145493814,
-        "acceleration7d": 1.11166249294171,
-        "forkRatio7d": 0.058050383351588165,
-        "ageDays": 26.197673761574073,
-        "hoursSincePush": 18.643336944444446,
-        "starsPerDay": 151.0057738715159
-      },
-      "scoreBreakdown": {
-        "starMomentum": 29.421487603305785,
-        "relativeGrowth": 17.70956316410862,
-        "acceleration": 6.587957497048405,
-        "forkMomentum": 7.1723730814639906,
-        "developmentActivity": 14.190377289754426,
-        "freshness": 8.038730277063554
-      },
-      "research": {
-        "summary": "Work-in-progress static recompilation of The Legend of Zelda: Breath of the Wild (Switch, v1.9.0) for Windows and Linux. Bring your own dump: no game files, keys or dumping tools included.",
-        "whyNow": "過去 24 小時增加 137 個 stars，同時增加 3 個 forks，數據動能令它進入今日榜。",
-        "bestFor": "玩家、遊戲開發者和 mod 作者",
-        "evidence": [
-          "3,956 stars，230 forks",
-          "主要語言：C",
-          "授權：未標示",
-          "分類：遊戲、桌面與系統",
-          "近期加星帳戶抽樣：100 個中 7 個可疑"
-        ],
-        "cautions": [
-          "GitHub 未標示開源授權，正式採用前要先確認使用條款。",
-          "項目仍然很新，API、文件和維護節奏可能快速改變。"
-        ],
-        "categorySource": "jev",
-        "ease": {
-          "level": "cli",
-          "judgedAt": "2026-11-11T15:38:52.851Z",
-          "version": 2
-        },
-        "starAudit": {
-          "sampled": 100,
-          "suspicious": 7,
-          "freshHollow": 7,
+          "sampled": 58,
+          "suspicious": 5,
+          "freshHollow": 5,
           "sharedHollow": 0,
           "maxPerMinute": 2,
           "flagged": false
@@ -4049,48 +4186,48 @@
       "description": "GIF 工厂：按风格制作像素、人物与宠物、粘土吉祥物、光栅卡与动态海报的 GIF Skill。",
       "language": "Python",
       "topics": [],
-      "stars": 1312,
-      "forks": 153,
+      "stars": 1323,
+      "forks": 154,
       "openIssues": 1,
       "createdAt": "2026-11-05T04:08:24Z",
-      "updatedAt": "2026-11-11T22:14:49Z",
+      "updatedAt": "2026-11-11T23:49:47Z",
       "pushedAt": "2026-11-11T13:46:51Z",
       "license": "MIT",
       "archived": false,
       "fork": false,
-      "rank": 46,
-      "previousRank": 42,
-      "rankChange": -4,
-      "score": 83.1,
+      "rank": 48,
+      "previousRank": 46,
+      "rankChange": -2,
+      "score": 83,
       "categories": [
         "ai",
         "creative"
       ],
       "signals": {
-        "stars24h": 186,
+        "stars24h": 185,
         "forks24h": 19,
-        "starVelocity": 161.41272095987694,
-        "relativeGrowth": 4.414403778967548,
+        "starVelocity": 160.88001085379852,
+        "relativeGrowth": 4.381846308515711,
         "acceleration7d": null,
         "forkRatio7d": null,
-        "ageDays": 6.757754780092593,
-        "hoursSincePush": 8.545281388888888,
-        "starsPerDay": 194.14732299327727
+        "ageDays": 6.828178784722223,
+        "hoursSincePush": 10.2354575,
+        "starsPerDay": 193.75591086750097
       },
       "scoreBreakdown": {
-        "starMomentum": 29.917355371900825,
-        "relativeGrowth": 18.394332939787486,
-        "acceleration": 1.806375442739079,
-        "forkMomentum": 8.884297520661157,
-        "developmentActivity": 14.623324405881991,
-        "freshness": 9.45241694166008
+        "starMomentum": 29.86997635933806,
+        "relativeGrowth": 18.368794326241137,
+        "acceleration": 1.8498817966903072,
+        "forkMomentum": 8.94208037825059,
+        "developmentActivity": 14.54994960403443,
+        "freshness": 9.446871260319941
       },
       "research": {
         "summary": "GIF 工厂：按风格制作像素、人物与宠物、粘土吉祥物、光栅卡与动态海报的 GIF Skill。",
-        "whyNow": "過去 24 小時增加 186 個 stars，同時增加 19 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 185 個 stars，同時增加 19 個 forks，數據動能令它進入今日榜。",
         "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
         "evidence": [
-          "1,312 stars，153 forks",
+          "1,323 stars，154 forks",
           "主要語言：Python",
           "授權：MIT",
           "分類：AI、設計與多媒體",
@@ -4116,99 +4253,100 @@
       }
     },
     {
-      "id": 1448721877,
-      "nodeId": "R_kgDOVlm91Q",
-      "name": "aida-64-extreme",
-      "fullName": "hembramneeraj3-create/aida-64-extreme",
-      "owner": "hembramneeraj3-create",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/232789375?v=4",
-      "url": "https://github.com/hembramneeraj3-create/aida-64-extreme",
-      "description": "Aida 64 Extreme 2026: Complete Standalone Desktop Setup with Full Feature Configuration",
+      "id": 1448721315,
+      "nodeId": "R_kgDOVlm7ow",
+      "name": "adobe-substance-3d-studio",
+      "fullName": "abdulmannanmalik13-wq/adobe-substance-3d-studio",
+      "owner": "abdulmannanmalik13-wq",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/226122531?v=4",
+      "url": "https://github.com/abdulmannanmalik13-wq/adobe-substance-3d-studio",
+      "description": "Adobe Substance 3D Creative Studio 2026 - Secure Asset Pipeline Desktop Installer",
       "language": "HTML",
       "topics": [
-        "aida64",
-        "aida64-extreme-compatibility-check",
-        "aida64-extreme-detailed-reporting",
-        "aida64-extreme-hardware-diagnostics",
-        "aida64-extreme-setup",
-        "aida64-extreme-system-information",
-        "aida64-free-setup",
         "automation",
         "desktop",
         "developer-tools",
         "open-source",
-        "pc-diagnostics-windows-platform",
         "python",
         "scripts",
         "software-engineering",
+        "substance",
+        "substance-3d",
+        "substance-3d-painter",
+        "substance-abuse",
+        "substance-designer",
+        "substance-designer-allegorithmic",
+        "substance-painter",
+        "substance-use",
+        "substance3d",
+        "substancedesigner",
         "system",
         "utility",
-        "windows-app",
-        "windows-cpu-gpu-status-check",
-        "windows-performance-benchmarking"
+        "windows-app"
       ],
       "stars": 1304,
       "forks": 0,
       "openIssues": 0,
-      "createdAt": "2026-11-06T20:33:44Z",
-      "updatedAt": "2026-11-11T19:19:09Z",
-      "pushedAt": "2026-11-11T18:19:04Z",
+      "createdAt": "2026-11-06T20:33:06Z",
+      "updatedAt": "2026-11-11T17:41:58Z",
+      "pushedAt": "2026-11-11T23:09:29Z",
       "license": "MIT",
       "archived": false,
       "fork": false,
-      "rank": 47,
-      "previousRank": 50,
-      "rankChange": 3,
+      "rank": 49,
+      "previousRank": null,
+      "rankChange": null,
       "score": 82.8,
       "categories": [
-        "desktop"
+        "desktop",
+        "creative"
       ],
       "signals": {
-        "stars24h": 648,
+        "stars24h": 614,
         "forks24h": 0,
-        "starVelocity": 648.324577326545,
-        "relativeGrowth": 17.784022334331265,
+        "starVelocity": 613.541604353416,
+        "relativeGrowth": 16.829899677498837,
         "acceleration7d": null,
         "forkRatio7d": null,
-        "ageDays": 5.073495520833333,
-        "hoursSincePush": 4.008336944444444,
-        "starsPerDay": 257.02200674966105
+        "ageDays": 5.144359340277778,
+        "hoursSincePush": 0.8582352777777777,
+        "starsPerDay": 253.4815151403456
       },
       "scoreBreakdown": {
-        "starMomentum": 34.33884297520661,
-        "relativeGrowth": 19.952774498229044,
-        "acceleration": 1.806375442739079,
-        "forkMomentum": 2.290436835891381,
-        "developmentActivity": 14.822119515212835,
-        "freshness": 9.586021692340466
+        "starMomentum": 34.234633569739955,
+        "relativeGrowth": 19.893617021276594,
+        "acceleration": 1.8498817966903072,
+        "forkMomentum": 2.3167848699763596,
+        "developmentActivity": 14.961734815741536,
+        "freshness": 9.580362512547852
       },
       "research": {
-        "summary": "Aida 64 Extreme 2026: Complete Standalone Desktop Setup with Full Feature Configuration",
-        "whyNow": "過去 24 小時增加 648 個 stars，數據動能令它進入今日榜。",
+        "summary": "Adobe Substance 3D Creative Studio 2026 - Secure Asset Pipeline Desktop Installer",
+        "whyNow": "過去 24 小時增加 614 個 stars，數據動能令它進入今日榜。",
         "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
         "evidence": [
           "1,304 stars，0 forks",
           "主要語言：HTML",
           "授權：MIT",
-          "分類：桌面與系統",
-          "近期加星帳戶抽樣：100 個中 95 個可疑"
+          "分類：桌面與系統、設計與多媒體",
+          "近期加星帳戶抽樣：100 個中 94 個可疑"
         ],
         "cautions": [
-          "最近 100 個加星帳戶中有 95 個（95%）是資料空白的新帳戶或同時為多個上榜項目加星，可能有刷星。",
+          "最近 100 個加星帳戶中有 94 個（94%）是資料空白的新帳戶或同時為多個上榜項目加星，可能有刷星。",
           "項目仍然很新，API、文件和維護節奏可能快速改變。"
         ],
         "categorySource": "jev",
         "ease": {
           "level": "cli",
-          "judgedAt": "2026-11-11T15:38:52.851Z",
+          "judgedAt": "2026-11-12T00:00:58.647Z",
           "version": 2
         },
         "starAudit": {
           "sampled": 100,
-          "suspicious": 95,
+          "suspicious": 94,
           "freshHollow": 1,
-          "sharedHollow": 95,
-          "maxPerMinute": 21,
+          "sharedHollow": 94,
+          "maxPerMinute": 22,
           "flagged": true
         },
         "risks": [
@@ -4233,48 +4371,48 @@
         "design",
         "slop"
       ],
-      "stars": 108269,
-      "forks": 6436,
+      "stars": 108291,
+      "forks": 6438,
       "openIssues": 57,
       "createdAt": "2025-11-16T01:52:04Z",
-      "updatedAt": "2026-11-11T22:16:29Z",
-      "pushedAt": "2026-11-11T20:07:13Z",
+      "updatedAt": "2026-11-12T00:00:55Z",
+      "pushedAt": "2026-11-11T23:16:58Z",
       "license": "Apache-2.0",
       "archived": false,
       "fork": false,
-      "rank": 48,
-      "previousRank": null,
-      "rankChange": null,
+      "rank": 50,
+      "previousRank": 48,
+      "rankChange": -2,
       "score": 82.7,
       "categories": [
         "ai",
         "devtools"
       ],
       "signals": {
-        "stars24h": 726,
-        "forks24h": 46,
-        "starVelocity": 718.6293963942206,
-        "relativeGrowth": 2.1837493106968386,
-        "acceleration7d": 0.872262926948526,
-        "forkRatio7d": 0.06724108802162528,
-        "ageDays": 360.85243070601854,
-        "hoursSincePush": 2.2058369444444446,
-        "starsPerDay": 300.03677621948805
+        "stars24h": 704,
+        "forks24h": 45,
+        "starVelocity": 702.5023287586334,
+        "relativeGrowth": 2.1345260603213165,
+        "acceleration7d": 0.8461676748060456,
+        "forkRatio7d": 0.06732873253661,
+        "ageDays": 360.92285471064815,
+        "hoursSincePush": 0.7335130555555556,
+        "starsPerDay": 300.03918728509694
       },
       "scoreBreakdown": {
-        "starMomentum": 34.3801652892562,
-        "relativeGrowth": 17.780401416765052,
-        "acceleration": 5.560802833530106,
-        "forkMomentum": 9.533648170011805,
-        "developmentActivity": 14.901847673497052,
-        "freshness": 0.4943465466887199
+        "starMomentum": 34.37943262411348,
+        "relativeGrowth": 17.754137115839242,
+        "acceleration": 5.567375886524823,
+        "forkMomentum": 9.533096926713947,
+        "developmentActivity": 14.96728959906162,
+        "freshness": 0.4940565162725362
       },
       "research": {
         "summary": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
-        "whyNow": "過去 24 小時增加 726 個 stars，同時增加 46 個 forks，數據動能令它進入今日榜。",
+        "whyNow": "過去 24 小時增加 704 個 stars，同時增加 45 個 forks，數據動能令它進入今日榜。",
         "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
         "evidence": [
-          "108,269 stars，6,436 forks",
+          "108,291 stars，6,438 forks",
           "主要語言：Rust",
           "授權：Apache-2.0",
           "分類：AI、開發工具"
@@ -4287,193 +4425,6 @@
           "level": "cli",
           "judgedAt": "2026-11-11T22:19:34.013Z",
           "version": 2
-        }
-      }
-    },
-    {
-      "id": 1448761997,
-      "nodeId": "R_kgDOVlpajQ",
-      "name": "secure-pdf-document-processor",
-      "fullName": "mahmoudtawfik1998/secure-pdf-document-processor",
-      "owner": "mahmoudtawfik1998",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/191867361?v=4",
-      "url": "https://github.com/mahmoudtawfik1998/secure-pdf-document-processor",
-      "description": "Adobe Acrobat Pro 2026: Secure Standalone PDF Document Processor for Desktop",
-      "language": "HTML",
-      "topics": [
-        "acrobat-dc-pro",
-        "acrobat-for-free-2026",
-        "acrobat-no-limits",
-        "acrobat-pdf",
-        "automation",
-        "desktop",
-        "developer-tools",
-        "forms-acrobat-pro",
-        "free-pdf-reader-windows",
-        "open-source",
-        "pdf-password",
-        "pro-acrobat",
-        "python",
-        "scripts",
-        "software-engineering",
-        "system",
-        "utility",
-        "windows-app"
-      ],
-      "stars": 1304,
-      "forks": 0,
-      "openIssues": 0,
-      "createdAt": "2026-11-06T21:23:09Z",
-      "updatedAt": "2026-11-11T19:32:20Z",
-      "pushedAt": "2026-11-11T18:32:14Z",
-      "license": null,
-      "archived": false,
-      "fork": false,
-      "rank": 49,
-      "previousRank": 47,
-      "rankChange": -2,
-      "score": 82.7,
-      "categories": [
-        "desktop",
-        "creative"
-      ],
-      "signals": {
-        "stars24h": 648,
-        "forks24h": 0,
-        "starVelocity": 647.5377756550322,
-        "relativeGrowth": 17.76243978295465,
-        "acceleration7d": null,
-        "forkRatio7d": null,
-        "ageDays": 5.039178391203704,
-        "hoursSincePush": 3.7888925,
-        "starsPerDay": 258.77234318122936
-      },
-      "scoreBreakdown": {
-        "starMomentum": 34.27685950413223,
-        "relativeGrowth": 19.917355371900825,
-        "acceleration": 1.806375442739079,
-        "forkMomentum": 2.290436835891381,
-        "developmentActivity": 14.831803128827282,
-        "freshness": 9.588763457270113
-      },
-      "research": {
-        "summary": "Adobe Acrobat Pro 2026: Secure Standalone PDF Document Processor for Desktop",
-        "whyNow": "過去 24 小時增加 648 個 stars，數據動能令它進入今日榜。",
-        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
-        "evidence": [
-          "1,304 stars，0 forks",
-          "主要語言：HTML",
-          "授權：未標示",
-          "分類：桌面與系統、設計與多媒體",
-          "近期加星帳戶抽樣：100 個中 95 個可疑"
-        ],
-        "cautions": [
-          "最近 100 個加星帳戶中有 95 個（95%）是資料空白的新帳戶或同時為多個上榜項目加星，可能有刷星。",
-          "GitHub 未標示開源授權，正式採用前要先確認使用條款。",
-          "項目仍然很新，API、文件和維護節奏可能快速改變。"
-        ],
-        "categorySource": "jev",
-        "ease": {
-          "level": "cli",
-          "judgedAt": "2026-11-11T15:38:52.851Z",
-          "version": 2
-        },
-        "starAudit": {
-          "sampled": 100,
-          "suspicious": 95,
-          "freshHollow": 1,
-          "sharedHollow": 95,
-          "maxPerMinute": 22,
-          "flagged": true
-        },
-        "risks": [
-          "starInflation"
-        ]
-      }
-    },
-    {
-      "id": 1441517767,
-      "nodeId": "R_kgDOVevQxw",
-      "name": "stack-diagram",
-      "fullName": "caru-ini/stack-diagram",
-      "owner": "caru-ini",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/166897461?v=4",
-      "url": "https://github.com/caru-ini/stack-diagram",
-      "description": "Agent skill: describe your stack in a sentence, get an architecture diagram with official logos",
-      "language": "TypeScript",
-      "topics": [
-        "agent-skills",
-        "architecture-diagram",
-        "claude-code",
-        "claude-skills",
-        "codex",
-        "diagram",
-        "system-architecture",
-        "tech-stack"
-      ],
-      "stars": 2369,
-      "forks": 122,
-      "openIssues": 3,
-      "createdAt": "2026-11-01T05:35:12Z",
-      "updatedAt": "2026-11-11T22:16:47Z",
-      "pushedAt": "2026-11-09T06:00:33Z",
-      "license": "MIT",
-      "archived": false,
-      "fork": false,
-      "rank": 50,
-      "previousRank": 40,
-      "rankChange": -10,
-      "score": 82.6,
-      "categories": [
-        "ai",
-        "creative"
-      ],
-      "signals": {
-        "stars24h": 105,
-        "forks24h": 8,
-        "starVelocity": 92.18836097854273,
-        "relativeGrowth": 1.884143691952843,
-        "acceleration7d": 1.2264499308971113,
-        "forkRatio7d": 0.07286821705426356,
-        "ageDays": 10.697477002314814,
-        "hoursSincePush": 64.31694805555556,
-        "starsPerDay": 221.45408674282496
-      },
-      "scoreBreakdown": {
-        "starMomentum": 28.305785123966942,
-        "relativeGrowth": 17.56788665879575,
-        "acceleration": 7.001180637544274,
-        "forkMomentum": 8.146399055489965,
-        "developmentActivity": 12.38679161859088,
-        "freshness": 9.147123436248792
-      },
-      "research": {
-        "summary": "Agent skill: describe your stack in a sentence, get an architecture diagram with official logos",
-        "whyNow": "過去 24 小時增加 105 個 stars，同時增加 8 個 forks，數據動能令它進入今日榜。",
-        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
-        "evidence": [
-          "2,369 stars，122 forks",
-          "主要語言：TypeScript",
-          "授權：MIT",
-          "分類：AI、設計與多媒體",
-          "近期加星帳戶抽樣：100 個中 2 個可疑"
-        ],
-        "cautions": [
-          "項目仍然很新，API、文件和維護節奏可能快速改變。"
-        ],
-        "categorySource": "jev",
-        "ease": {
-          "level": "cli",
-          "judgedAt": "2026-11-11T15:38:52.851Z",
-          "version": 2
-        },
-        "starAudit": {
-          "sampled": 100,
-          "suspicious": 2,
-          "freshHollow": 2,
-          "sharedHollow": 0,
-          "maxPerMinute": 5,
-          "flagged": false
         }
       }
     }
