@@ -1,0 +1,4630 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-15T16:00:56.590Z",
+  "dataDate": "2026-11-16",
+  "status": "live",
+  "source": "github-live",
+  "methodologyVersion": "1.2.0",
+  "stats": {
+    "candidateCount": 843,
+    "rankedCount": 50,
+    "historyDays": 9
+  },
+  "trend": {
+    "text": "今日榜上 GitHub-Copilot-app 以多個分叉佔近半位置，同屬 agent-native 桌面應用，讓代理在獨立 worktree 並行推進至 pull request。其次為 DeepSeek Harness 周邊生態，如 dsh-Go 客戶端與 dsh-our-free-model 外掛一起上升。另有以 Rust 編寫的 kiri 與 craft-anything，以及面向 AI agent 的 unslop。",
+    "writtenAt": "2026-11-15T16:00:56.590Z",
+    "source": "deepseek"
+  },
+  "repositories": [
+    {
+      "id": 1443186633,
+      "nodeId": "R_kgDOVgVHyQ",
+      "name": "kiri",
+      "fullName": "libracoder/kiri",
+      "owner": "libracoder",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/32944039?v=4",
+      "url": "https://github.com/libracoder/kiri",
+      "description": "A small, fast container runtime for macOS, Windows and Linux with free Ngrok alternative",
+      "language": "Rust",
+      "topics": [
+        "containers",
+        "docker",
+        "kubernetes",
+        "linux",
+        "macos",
+        "oci",
+        "windows"
+      ],
+      "stars": 5277,
+      "forks": 247,
+      "openIssues": 97,
+      "createdAt": "2026-11-02T16:11:30Z",
+      "updatedAt": "2026-11-15T16:00:40Z",
+      "pushedAt": "2026-11-15T15:25:31Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 1,
+      "previousRank": 1,
+      "rankChange": 0,
+      "score": 98.4,
+      "categories": [
+        "infra",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 2161,
+        "forks24h": 82,
+        "starVelocity": 2160.507299745218,
+        "relativeGrowth": 29.671252289384235,
+        "acceleration7d": 6.851252649166769,
+        "forkRatio7d": 0.04182600382409178,
+        "ageDays": 12.992668865740741,
+        "hoursSincePush": 0.5904416666666666,
+        "starsPerDay": 406.15211967069143
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.958432304038006,
+        "relativeGrowth": 20,
+        "acceleration": 9.881235154394298,
+        "forkMomentum": 9.608076009501188,
+        "developmentActivity": 14.973664143364989,
+        "freshness": 8.973832590626053
+      },
+      "research": {
+        "summary": "A small, fast container runtime for macOS, Windows and Linux with free Ngrok alternative",
+        "whyNow": "過去 24 小時增加 2,161 個 stars，同時增加 82 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "負責部署、伺服器、網絡或自託管服務的工程師",
+        "evidence": [
+          "5,277 stars，247 forks",
+          "主要語言：Rust",
+          "授權：Apache-2.0",
+          "分類：雲端與基建、開發工具",
+          "近期加星帳戶抽樣：100 個中 5 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 5,
+          "freshHollow": 5,
+          "sharedHollow": 0,
+          "maxPerMinute": 9,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "Kiri 是以 Rust 編寫的輕量容器執行環境，在小型 Linux VM 內執行容器，並實作 Docker Engine API，令現有的 docker CLI、Compose 及 buildx 可直接使用。它啟動容器約需 2.5 毫秒，另提供 .kiri.local 本機網域及 38 種語言介面，Windows 版本須經 WSL 2 運行。",
+          "writtenAt": "2026-11-15T00:01:00.236Z",
+          "source": "deepseek",
+          "version": 3
+        }
+      }
+    },
+    {
+      "id": 1432967563,
+      "nodeId": "R_kgDOVWlZiw",
+      "name": "dsh-Go",
+      "fullName": "ccch1mneyyy/dsh-Go",
+      "owner": "ccch1mneyyy",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/268149062?v=4",
+      "url": "https://github.com/ccch1mneyyy/dsh-Go",
+      "description": "dsh-go - DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+      "language": "Dart",
+      "topics": [
+        "ai-agent",
+        "android",
+        "android-app",
+        "coding-agent",
+        "deepseek",
+        "deepseek-harness",
+        "dsh",
+        "dsh-plugin",
+        "dsh-tui",
+        "flutter",
+        "llm"
+      ],
+      "stars": 23574,
+      "forks": 1107,
+      "openIssues": 624,
+      "createdAt": "2026-10-25T08:09:52Z",
+      "updatedAt": "2026-11-15T16:00:24Z",
+      "pushedAt": "2026-11-15T16:00:08Z",
+      "license": "AGPL-3.0",
+      "archived": false,
+      "fork": false,
+      "rank": 2,
+      "previousRank": 2,
+      "rankChange": 0,
+      "score": 94.3,
+      "categories": [
+        "ai",
+        "mobile"
+      ],
+      "signals": {
+        "stars24h": 1067,
+        "forks24h": 58,
+        "starVelocity": 1049.227716819365,
+        "relativeGrowth": 6.830035396853148,
+        "acceleration7d": 0.940932834258069,
+        "forkRatio7d": 0.053301411290322585,
+        "ageDays": 21.32713645833333,
+        "hoursSincePush": 0.013497222222222223,
+        "starsPerDay": 1105.3523311043818
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.79216152019002,
+        "relativeGrowth": 18.741092636579573,
+        "acceleration": 7.862232779097386,
+        "forkMomentum": 9.495249406175772,
+        "developmentActivity": 14.999397457538747,
+        "freshness": 8.371716623123914
+      },
+      "research": {
+        "summary": "dsh-go - DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+        "whyNow": "過去 24 小時增加 1,067 個 stars，同時增加 58 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "23,574 stars，1,107 forks",
+          "主要語言：Dart",
+          "授權：AGPL-3.0",
+          "分類：AI、手機應用",
+          "近期加星帳戶抽樣：100 個中 10 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-13T00:01:25.058Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 10,
+          "freshHollow": 9,
+          "sharedHollow": 1,
+          "maxPerMinute": 6,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "DSH Go 是 DeepSeek Harness 的非官方 Android 客戶端，內置 Linux 環境，免 Root 即可在本機運行引擎，亦可連接電腦上的 DSH。提供聊天、插件介面、螢幕操控與對話分享，以 APK 側載發佈，需 Android 8.0 以上；遙控功能有限，手機操控須授權。",
+          "writtenAt": "2026-11-13T16:00:58.093Z",
+          "source": "deepseek",
+          "version": 3
+        }
+      }
+    },
+    {
+      "id": 1440956372,
+      "nodeId": "R_kgDOVeM_1A",
+      "name": "craft-anything",
+      "fullName": "storytold/craft-anything",
+      "owner": "storytold",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/76897702?v=4",
+      "url": "https://github.com/storytold/craft-anything",
+      "description": "Craft Anything: understand how any software works, and craft your own.",
+      "language": "Rust",
+      "topics": [],
+      "stars": 33499,
+      "forks": 6772,
+      "openIssues": 374,
+      "createdAt": "2026-10-31T14:50:00Z",
+      "updatedAt": "2026-11-15T15:59:19Z",
+      "pushedAt": "2026-11-15T15:49:35Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 3,
+      "previousRank": 3,
+      "rankChange": 0,
+      "score": 93.3,
+      "categories": [
+        "learning"
+      ],
+      "signals": {
+        "stars24h": 1130,
+        "forks24h": 182,
+        "starVelocity": 1245.0555891771594,
+        "relativeGrowth": 6.800029961220034,
+        "acceleration7d": 0.6570129152907215,
+        "forkRatio7d": 0.21232638888888888,
+        "ageDays": 15.049266087962963,
+        "hoursSincePush": 0.18933055555555556,
+        "starsPerDay": 2225.955724631244
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.833729216152015,
+        "relativeGrowth": 18.717339667458432,
+        "acceleration": 6.211401425178147,
+        "forkMomentum": 9.71496437054632,
+        "developmentActivity": 14.991550123963249,
+        "freshness": 8.821346671974371
+      },
+      "research": {
+        "summary": "Craft Anything: understand how any software works, and craft your own.",
+        "whyNow": "過去 24 小時增加 1,130 個 stars，同時增加 182 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想系統學習或查找參考資料的人",
+        "evidence": [
+          "33,499 stars，6,772 forks",
+          "主要語言：Rust",
+          "授權：Apache-2.0",
+          "分類：學習資源",
+          "近期加星帳戶抽樣：100 個中 5 個可疑",
+          "Hacker News：6 分、3 則評論（10 日前）"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-13T00:01:25.058Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 5,
+          "freshHollow": 5,
+          "sharedHollow": 0,
+          "maxPerMinute": 5,
+          "flagged": false
+        },
+        "hackerNews": {
+          "points": 6,
+          "comments": 3,
+          "postedAt": "2026-11-05T10:07:06Z",
+          "url": "https://news.ycombinator.com/item?id=50377361"
+        },
+        "introduction": {
+          "text": "Craft Anything 是一套以純 Rust 編寫的開源引擎，指向網站、應用程式或遊戲後，會用檢測工具研究原作，再由編碼代理按指定技術棧建立新專案，並與原作比對修正。引擎內置 320 項工具，每項同時是 CLI 指令與 MCP 工具。預設 Clean room 模式不讀取原作原始碼，只憑可見畫面推斷；計劃仍屬早期 alpha，須在電腦登入編碼代理。",
+          "writtenAt": "2026-11-13T16:00:58.093Z",
+          "source": "deepseek",
+          "version": 3
+        }
+      }
+    },
+    {
+      "id": 1385896447,
+      "nodeId": "R_kgDOUpsZ_w",
+      "name": "dsh-our-free-model",
+      "fullName": "Ebony-Vinyl/dsh-our-free-model",
+      "owner": "Ebony-Vinyl",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/245557608?v=4",
+      "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+      "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型 - - 完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key - the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
+      "language": "JavaScript",
+      "topics": [
+        "ai-agents",
+        "deepseek",
+        "deepseek-harness",
+        "developer-tools",
+        "dsh",
+        "dsh-plugin",
+        "free-model",
+        "llm",
+        "model-provider",
+        "openai-compatible"
+      ],
+      "stars": 75534,
+      "forks": 2116,
+      "openIssues": 182,
+      "createdAt": "2026-09-24T16:17:19Z",
+      "updatedAt": "2026-11-15T16:00:42Z",
+      "pushedAt": "2026-11-15T03:42:29Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 4,
+      "previousRank": 4,
+      "rankChange": 0,
+      "score": 92.5,
+      "categories": [
+        "ai",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 1529,
+        "forks24h": 61,
+        "starVelocity": 1507.1216881266646,
+        "relativeGrowth": 5.482835534560325,
+        "acceleration7d": 1.1620644879639164,
+        "forkRatio7d": 0.03614964270701975,
+        "ageDays": 51.98862951388889,
+        "hoursSincePush": 12.30766388888889,
+        "starsPerDay": 1452.8946176552108
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.87529691211402,
+        "relativeGrowth": 18.55106888361045,
+        "acceleration": 8.562945368171022,
+        "forkMomentum": 9.519002375296912,
+        "developmentActivity": 14.460492115740259,
+        "freshness": 6.484057771648313
+      },
+      "research": {
+        "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型 - - 完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key - the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
+        "whyNow": "過去 24 小時增加 1,529 個 stars，同時增加 61 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "75,534 stars，2,116 forks",
+          "主要語言：JavaScript",
+          "授權：MIT",
+          "分類：AI、開發工具"
+        ],
+        "cautions": [
+          "可能透過共用帳號、逆向 API 等方式繞過付費服務，或會違反服務條款並導致封號。",
+          "熱門度不等於適合生產環境，採用前仍要檢查文件、測試和安全紀錄。"
+        ],
+        "categorySource": "jev",
+        "risks": [
+          "serviceAbuse"
+        ],
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-13T00:01:25.058Z",
+          "version": 2
+        },
+        "introduction": {
+          "text": "dsh-our-free-model 是 dsh 外掛，安裝後毋須登入、註冊或填 API Key，即可使用 DeepSeek V4.1 Flash、Kimi K3 等前沿模型，免費且不限用量。它以純外掛掛載，不改內核、零依賴；模型清單每次向上游重新拉取，可用性按本機網絡出口實測，思考強度會真實下發輸出預算，另設 OpenAI 兼容的本地轉發端口，但實際可用的模型受所在地區及網絡出口限制。",
+          "writtenAt": "2026-11-13T15:43:06.507Z",
+          "source": "deepseek",
+          "version": 3
+        }
+      }
+    },
+    {
+      "id": 1438661890,
+      "nodeId": "R_kgDOVcA9Ag",
+      "name": "rea-video",
+      "fullName": "JuneYaooo/rea-video",
+      "owner": "JuneYaooo",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/60815510?v=4",
+      "url": "https://github.com/JuneYaooo/rea-video",
+      "description": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻；拆解结果按 VIDEO.md 格式输出。",
+      "language": "Python",
+      "topics": [
+        "agent-skills",
+        "ai-video",
+        "aigc-detection",
+        "claude-code",
+        "codex",
+        "ffmpeg",
+        "prompt-engineering",
+        "remotion",
+        "reverse-engineering",
+        "short-video",
+        "shot-detection",
+        "subtitles",
+        "video-analysis",
+        "video-breakdown",
+        "video-editing",
+        "video-generation",
+        "videomd",
+        "vlm"
+      ],
+      "stars": 9008,
+      "forks": 1328,
+      "openIssues": 5,
+      "createdAt": "2026-10-29T16:15:01Z",
+      "updatedAt": "2026-11-15T15:59:31Z",
+      "pushedAt": "2026-11-15T08:45:34Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 5,
+      "previousRank": 5,
+      "rankChange": 0,
+      "score": 91.8,
+      "categories": [
+        "ai",
+        "creative"
+      ],
+      "signals": {
+        "stars24h": 639,
+        "forks24h": 92,
+        "starVelocity": 586.4011100590695,
+        "relativeGrowth": 6.1699092836815375,
+        "acceleration7d": 0.8938176029615071,
+        "forkRatio7d": 0.15217391304347827,
+        "ageDays": 16.99022673611111,
+        "hoursSincePush": 7.256275,
+        "starsPerDay": 530.1871564111827
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.54750593824228,
+        "relativeGrowth": 18.64608076009501,
+        "acceleration": 7.6128266033254155,
+        "forkMomentum": 9.631828978622327,
+        "developmentActivity": 14.679532029144667,
+        "freshness": 8.679812006436908
+      },
+      "research": {
+        "summary": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻；拆解结果按 VIDEO.md 格式输出。",
+        "whyNow": "過去 24 小時增加 639 個 stars，同時增加 92 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "9,008 stars，1,328 forks",
+          "主要語言：Python",
+          "授權：Apache-2.0",
+          "分類：AI、設計與多媒體",
+          "近期加星帳戶抽樣：100 個中 8 個可疑",
+          "Hacker News：4 分、0 則評論（11 日前）"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-15T14:59:42.289Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 8,
+          "freshHollow": 7,
+          "sharedHollow": 1,
+          "maxPerMinute": 4,
+          "flagged": false
+        },
+        "hackerNews": {
+          "points": 4,
+          "comments": 0,
+          "postedAt": "2026-11-04T17:16:19Z",
+          "url": "https://news.ycombinator.com/item?id=50368605"
+        },
+        "introduction": {
+          "text": "rea-video 是一套供 AI agent 使用的影片逆向工具，逐個鏡頭判斷畫面屬實拍、AI 生成還是程式碼製作，並給出對應的拍攝方案、提示詞或重建方法。分析結果以開放格式 VIDEO.md 分層輸出，方便模型按問題讀取所需部分，另附 HTML 或 PDF 報告，亦涵蓋字幕、剪接與音效等細節。純工具模式離線免費，接上視覺模型可提升準確度，使用時需具備 ffmpeg 與 Python 3.10 以上環境。",
+          "writtenAt": "2026-11-15T14:59:42.289Z",
+          "source": "deepseek",
+          "version": 3
+        }
+      }
+    },
+    {
+      "id": 1438623288,
+      "nodeId": "R_kgDOVb-mOA",
+      "name": "unslop",
+      "fullName": "heydamir/unslop",
+      "owner": "heydamir",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/97800728?v=4",
+      "url": "https://github.com/heydamir/unslop",
+      "description": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
+      "language": "JavaScript",
+      "topics": [],
+      "stars": 16500,
+      "forks": 964,
+      "openIssues": 4,
+      "createdAt": "2026-10-29T15:41:21Z",
+      "updatedAt": "2026-11-15T16:00:13Z",
+      "pushedAt": "2026-11-15T00:55:20Z",
+      "license": "CC-BY-4.0",
+      "archived": false,
+      "fork": false,
+      "rank": 6,
+      "previousRank": 7,
+      "rankChange": 1,
+      "score": 90.4,
+      "categories": [
+        "ai",
+        "creative"
+      ],
+      "signals": {
+        "stars24h": 588,
+        "forks24h": 41,
+        "starVelocity": 558.2501115025601,
+        "relativeGrowth": 4.3426825580343795,
+        "acceleration7d": 0.8458956501779796,
+        "forkRatio7d": 0.06567973311092577,
+        "ageDays": 17.013606365740742,
+        "hoursSincePush": 15.093497222222222,
+        "starsPerDay": 969.8120225248093
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.3396674584323,
+        "relativeGrowth": 18.38479809976247,
+        "acceleration": 7.339667458432304,
+        "forkMomentum": 9.293349168646081,
+        "developmentActivity": 14.341093369821698,
+        "freshness": 8.678121081247564
+      },
+      "research": {
+        "summary": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
+        "whyNow": "過去 24 小時增加 588 個 stars，同時增加 41 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "16,500 stars，964 forks",
+          "主要語言：JavaScript",
+          "授權：CC-BY-4.0",
+          "分類：AI、設計與多媒體",
+          "近期加星帳戶抽樣：100 個中 4 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-15T08:00:55.770Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 4,
+          "freshHollow": 3,
+          "sharedHollow": 1,
+          "maxPerMinute": 4,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "unslop 是 Claude Code、Codex 及 Google Antigravity 的技能，把 AI 生成的介面改造成有自己性格的設計。它先點出紫漸變、發光、emoji 標籤等痕跡，再按產品定出方向，逐輪修正；適用於 Next.js、React 等框架，連只有連結的網站也能處理，生成圖片則須接上 fal 等外部服務。",
+          "writtenAt": "2026-11-15T14:59:42.289Z",
+          "source": "deepseek",
+          "version": 3
+        }
+      }
+    },
+    {
+      "id": 1458099119,
+      "nodeId": "R_kgDOVujTrw",
+      "name": "GitHub-Copilot-app",
+      "fullName": "toppatronweave/GitHub-Copilot-app",
+      "owner": "toppatronweave",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342286804?v=4",
+      "url": "https://github.com/toppatronweave/GitHub-Copilot-app",
+      "description": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+      "language": null,
+      "topics": [
+        "adminlte",
+        "agent-skills",
+        "ai",
+        "awesome",
+        "chatgpt",
+        "copilot",
+        "github-copilot",
+        "hacktoberfest",
+        "microsoft-copilot",
+        "openai",
+        "prompts",
+        "vue",
+        "xcode",
+        "xtreamcode"
+      ],
+      "stars": 666,
+      "forks": 309,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:25:20Z",
+      "updatedAt": "2026-11-15T10:27:37Z",
+      "pushedAt": "2026-11-15T10:32:43Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 7,
+      "previousRank": 6,
+      "rankChange": -1,
+      "score": 90.4,
+      "categories": [
+        "ai",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 666,
+        "forks24h": 309,
+        "starVelocity": 666,
+        "relativeGrowth": 25.335834035054166,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8580623842592593,
+        "hoursSincePush": 5.470441666666667,
+        "starsPerDay": 776.1673419292687
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.1062945368171,
+        "relativeGrowth": 19.774346793349167,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 9.762470308788599,
+        "developmentActivity": 14.757761159599216,
+        "freshness": 9.928749842728738
+      },
+      "research": {
+        "summary": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+        "whyNow": "過去 24 小時增加 666 個 stars，同時增加 309 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "666 stars，309 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI、桌面與系統",
+          "近期加星帳戶抽樣：1 個中 0 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 1,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 1,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "GitHub Copilot app 是 agent-native 桌面應用，集中處理跨儲存庫由構思到 pull request 的工作。各工作階段在獨立 worktree 或 GitHub 雲端環境並行，canvases 讓 agent 進度可檢視及修改。需 Copilot 計劃或自備 API 金鑰。",
+          "writtenAt": "2026-11-15T00:01:00.236Z",
+          "source": "deepseek",
+          "version": 3
+        }
+      }
+    },
+    {
+      "id": 1458099075,
+      "nodeId": "R_kgDOVujTgw",
+      "name": "GitHub-Copilot-app",
+      "fullName": "TurkeyDesignate/GitHub-Copilot-app",
+      "owner": "TurkeyDesignate",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342278017?v=4",
+      "url": "https://github.com/TurkeyDesignate/GitHub-Copilot-app",
+      "description": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+      "language": null,
+      "topics": [
+        "adminlte",
+        "agent-skills",
+        "ai",
+        "awesome",
+        "chatgpt",
+        "copilot",
+        "github-copilot",
+        "hacktoberfest",
+        "microsoft-copilot",
+        "openai",
+        "prompts",
+        "vue",
+        "xcode",
+        "xtreamcode"
+      ],
+      "stars": 664,
+      "forks": 387,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:25:18Z",
+      "updatedAt": "2026-11-14T23:32:17Z",
+      "pushedAt": "2026-11-15T10:36:42Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 8,
+      "previousRank": 9,
+      "rankChange": 1,
+      "score": 90,
+      "categories": [
+        "ai",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 664,
+        "forks24h": 387,
+        "starVelocity": 664,
+        "relativeGrowth": 25.29638534961405,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8580855324074074,
+        "hoursSincePush": 5.404052777777777,
+        "starsPerDay": 773.8156336666236
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.75296912114014,
+        "relativeGrowth": 19.57244655581948,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 9.869358669833728,
+        "developmentActivity": 14.760677374375453,
+        "freshness": 9.92874792746082
+      },
+      "research": {
+        "summary": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+        "whyNow": "過去 24 小時增加 664 個 stars，同時增加 387 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "664 stars，387 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI、桌面與系統"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        },
+        "introduction": {
+          "text": "GitHub Copilot app 是 agent-native 桌面應用程式，把在 GitHub 儲存庫之間尋找工作、操控 agent、審閱進度至合併變更，集中於單一控制中心。每個本機 session 各自在獨立 git worktree 運行，雲端 session 則在 GitHub 託管的隔離環境繼續執行，讓多項 agent 工作並行而不互相衝突。使用前須安裝 Git，並具備 Copilot 方案或自備金鑰（BYOK）。",
+          "writtenAt": "2026-11-15T00:01:00.236Z",
+          "source": "deepseek",
+          "version": 3
+        }
+      }
+    },
+    {
+      "id": 1443985070,
+      "nodeId": "R_kgDOVhF2rg",
+      "name": "agent-autoloop",
+      "fullName": "KKKKhazix/agent-autoloop",
+      "owner": "KKKKhazix",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/239590580?v=4",
+      "url": "https://github.com/KKKKhazix/agent-autoloop",
+      "description": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+      "language": "TypeScript",
+      "topics": [
+        "ai-agents",
+        "automation",
+        "claude-code",
+        "cli",
+        "codex",
+        "event-driven",
+        "mcp",
+        "nodejs",
+        "self-hosted",
+        "typescript",
+        "workflow"
+      ],
+      "stars": 5469,
+      "forks": 1009,
+      "openIssues": 5,
+      "createdAt": "2026-11-03T08:02:11Z",
+      "updatedAt": "2026-11-15T15:59:10Z",
+      "pushedAt": "2026-11-15T14:58:48Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 9,
+      "previousRank": 11,
+      "rankChange": 2,
+      "score": 89.8,
+      "categories": [
+        "ai",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 173,
+        "forks24h": 41,
+        "starVelocity": 222.00043434243221,
+        "relativeGrowth": 2.995087375825515,
+        "acceleration7d": 0.8455633947849673,
+        "forkRatio7d": 0.1940298507462687,
+        "ageDays": 12.33247210648148,
+        "hoursSincePush": 1.0357194444444444,
+        "starsPerDay": 443.4633991286873
+      },
+      "scoreBreakdown": {
+        "starMomentum": 31.092636579572446,
+        "relativeGrowth": 18.12351543942993,
+        "acceleration": 7.327790973871734,
+        "forkMomentum": 9.293349168646081,
+        "developmentActivity": 14.953833715105228,
+        "freshness": 9.023339443472935
+      },
+      "research": {
+        "summary": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+        "whyNow": "過去 24 小時增加 173 個 stars，同時增加 41 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "5,469 stars，1,009 forks",
+          "主要語言：TypeScript",
+          "授權：MIT",
+          "分類：AI、開發工具",
+          "近期加星帳戶抽樣：100 個中 1 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-13T00:01:25.058Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 1,
+          "freshHollow": 1,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "Agent Autoloop 是一個輕量自動化中台，把命令行 Agent 的任務調度做成零外部依賴的內核，事件來源、Agent、通知通道與交付流水線則拆成可隨時插拔的插件。它在本機按規則派活，Agent 完成一輪便退出；遇到刪數據、花錢等難以確定的事，才經飛書、Slack 等通道發卡片等你拍板，等待期間不佔進程、不耗 Token。運行需 Node 24 或更新、Git 及一個已登入的命令行 Agent。",
+          "writtenAt": "2026-11-15T14:59:42.289Z",
+          "source": "deepseek",
+          "version": 3
+        }
+      }
+    },
+    {
+      "id": 1458099121,
+      "nodeId": "R_kgDOVujTsQ",
+      "name": "GitHub-Copilot-app",
+      "fullName": "TurquoiseConsultant/GitHub-Copilot-app",
+      "owner": "TurquoiseConsultant",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342281340?v=4",
+      "url": "https://github.com/TurquoiseConsultant/GitHub-Copilot-app",
+      "description": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+      "language": null,
+      "topics": [
+        "adminlte",
+        "agent-skills",
+        "ai",
+        "awesome",
+        "chatgpt",
+        "copilot",
+        "github-copilot",
+        "hacktoberfest",
+        "microsoft-copilot",
+        "openai",
+        "prompts",
+        "vue",
+        "xcode",
+        "xtreamcode"
+      ],
+      "stars": 664,
+      "forks": 263,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:25:20Z",
+      "updatedAt": "2026-11-14T23:32:19Z",
+      "pushedAt": "2026-11-15T10:36:41Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 10,
+      "previousRank": 10,
+      "rankChange": 0,
+      "score": 89.8,
+      "categories": [
+        "ai",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 664,
+        "forks24h": 263,
+        "starVelocity": 664,
+        "relativeGrowth": 25.29638534961405,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8580623842592593,
+        "hoursSincePush": 5.404330555555555,
+        "starsPerDay": 773.8365090706221
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.75296912114014,
+        "relativeGrowth": 19.57244655581948,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 9.750593824228028,
+        "developmentActivity": 14.760665171439545,
+        "freshness": 9.928749842728738
+      },
+      "research": {
+        "summary": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+        "whyNow": "過去 24 小時增加 664 個 stars，同時增加 263 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "664 stars，263 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI、桌面與系統",
+          "近期加星帳戶抽樣：32 個中 0 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 32,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 32,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "GitHub Copilot app 是 agent-native 桌面應用，讓你在 GitHub 儲存庫中尋找、啟動和引導軟件工作，直至完成 pull request。每個本機工作階段在獨立 git worktree 運行，雲端工作階段則在 GitHub 託管的隔離環境持續執行，並以 canvases 呈現計劃、終端、預覽和差異，支援並行處理。使用前須安裝 Git 並具備 Copilot 計劃，或自備模型供應商金鑰；此儲存庫用作下載版本及回報問題。",
+          "writtenAt": "2026-11-15T08:00:55.770Z",
+          "source": "deepseek",
+          "version": 3
+        }
+      }
+    },
+    {
+      "id": 1433297111,
+      "nodeId": "R_kgDOVW5g1w",
+      "name": "Zero-Breach-Toolkit",
+      "fullName": "interplains/Zero-Breach-Toolkit",
+      "owner": "interplains",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/39777629?v=4",
+      "url": "https://github.com/interplains/Zero-Breach-Toolkit",
+      "description": "Free, offline checks for known mercenary spyware on Windows, Mac, Linux, iPhone and Android - plus the doors left open, suspicious links, emails, files and QR codes, your accounts, home network and nearby trackers. Apps with a window, 27 languages. Nothing leaves your computer.",
+      "language": "Python",
+      "topics": [],
+      "stars": 5002,
+      "forks": 518,
+      "openIssues": 5,
+      "createdAt": "2026-10-25T14:41:34Z",
+      "updatedAt": "2026-11-15T15:48:07Z",
+      "pushedAt": "2026-11-14T20:27:04Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 11,
+      "previousRank": 14,
+      "rankChange": 3,
+      "score": 89.7,
+      "categories": [
+        "security",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 255,
+        "forks24h": 23,
+        "starVelocity": 174.80494655500613,
+        "relativeGrowth": 2.4654674621786388,
+        "acceleration7d": 9.726142170774981,
+        "forkRatio7d": 0.08665105386416862,
+        "ageDays": 21.055122569444446,
+        "hoursSincePush": 19.564608333333332,
+        "starsPerDay": 237.56689059882217
+      },
+      "scoreBreakdown": {
+        "starMomentum": 30.385985748218527,
+        "relativeGrowth": 17.838479809976246,
+        "acceleration": 9.964370546318289,
+        "forkMomentum": 8.978622327790974,
+        "developmentActivity": 14.151522282574817,
+        "freshness": 8.390715007551854
+      },
+      "research": {
+        "summary": "Free, offline checks for known mercenary spyware on Windows, Mac, Linux, iPhone and Android - plus the doors left open, suspicious links, emails, files and QR codes, your accounts, home network and nearby trackers. Apps with a window, 27 languages. Nothing leaves your computer.",
+        "whyNow": "過去 24 小時增加 255 個 stars，同時增加 23 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "負責程式安全、審計或防禦工作的工程師",
+        "evidence": [
+          "5,002 stars，518 forks",
+          "主要語言：Python",
+          "授權：Apache-2.0",
+          "分類：安全、桌面與系統",
+          "近期加星帳戶抽樣：100 個中 3 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-15T08:00:55.770Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 3,
+          "freshHollow": 3,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "Zero Breach Toolkit 是免費開源工具，檢查電腦、Android 手機及 iPhone 備份有否已知僱傭間諜軟件痕跡。掃描唯讀，期間不發出網絡請求或上傳資料，但非作業系統網絡沙盒；報告列明證據強度及未能檢查之處，綠色結果不保證安全。",
+          "writtenAt": "2026-11-15T14:59:42.289Z",
+          "source": "deepseek",
+          "version": 3
+        }
+      }
+    },
+    {
+      "id": 1458099096,
+      "nodeId": "R_kgDOVujTmA",
+      "name": "GitHub-Copilot-app",
+      "fullName": "Tealplesense/GitHub-Copilot-app",
+      "owner": "Tealplesense",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342267804?v=4",
+      "url": "https://github.com/Tealplesense/GitHub-Copilot-app",
+      "description": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+      "language": null,
+      "topics": [
+        "adminlte",
+        "agent-skills",
+        "ai",
+        "awesome",
+        "chatgpt",
+        "copilot",
+        "github-copilot",
+        "hacktoberfest",
+        "microsoft-copilot",
+        "openai",
+        "prompts",
+        "vue",
+        "xcode",
+        "xtreamcode"
+      ],
+      "stars": 663,
+      "forks": 327,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:25:19Z",
+      "updatedAt": "2026-11-14T23:32:19Z",
+      "pushedAt": "2026-11-15T10:36:42Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 12,
+      "previousRank": 13,
+      "rankChange": 1,
+      "score": 89.7,
+      "categories": [
+        "ai",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 663,
+        "forks24h": 327,
+        "starVelocity": 663,
+        "relativeGrowth": 25.276638032629226,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8580739583333333,
+        "hoursSincePush": 5.404052777777777,
+        "starsPerDay": 772.6606705181541
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.60748218527316,
+        "relativeGrowth": 19.489311163895486,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 9.79809976247031,
+        "developmentActivity": 14.760677374375453,
+        "freshness": 9.928748885094732
+      },
+      "research": {
+        "summary": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+        "whyNow": "過去 24 小時增加 663 個 stars，同時增加 327 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "663 stars，327 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI、桌面與系統"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        },
+        "introduction": {
+          "text": "GitHub Copilot app 是 agent-native 桌面應用，集中管理從構思到 pull request 的軟件工作。每個本機工作階段在獨立 git worktree 運行，雲端工作階段亦可在 GitHub 託管環境並行，並以 canvases 檢視及調整代理工作；使用前需安裝 Git，並具備 Copilot 計劃或自備模型供應商金鑰（BYOK）。",
+          "writtenAt": "2026-11-15T00:01:00.236Z",
+          "source": "deepseek",
+          "version": 3
+        }
+      }
+    },
+    {
+      "id": 1421822085,
+      "nodeId": "R_kgDOVL9IhQ",
+      "name": "dsh-purge",
+      "fullName": "kingcharleslzy-ai/dsh-purge",
+      "owner": "kingcharleslzy-ai",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/260348840?v=4",
+      "url": "https://github.com/kingcharleslzy-ai/dsh-purge",
+      "description": "dsh-purge Community · DeepSeek Harness 社区维护版：宿主兼容、状态诊断、提示词管理、更新与本机备份回滚。基于小杨 / YuJunZhiXue 的 dsh-purge。",
+      "language": "JavaScript",
+      "topics": [
+        "agent-tools",
+        "backup",
+        "deepseek",
+        "deepseek-harness",
+        "dsh",
+        "dsh-plugin",
+        "jailbreak",
+        "prompt-injection",
+        "prompt-management",
+        "purge-community",
+        "rollback"
+      ],
+      "stars": 8671,
+      "forks": 3774,
+      "openIssues": 25,
+      "createdAt": "2026-10-16T07:44:27Z",
+      "updatedAt": "2026-11-15T16:00:53Z",
+      "pushedAt": "2026-11-14T09:09:36Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 13,
+      "previousRank": 15,
+      "rankChange": 2,
+      "score": 89.6,
+      "categories": [
+        "ai",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 451,
+        "forks24h": 161,
+        "starVelocity": 447.2881997560187,
+        "relativeGrowth": 4.796535635075462,
+        "acceleration7d": 0.9380163792479235,
+        "forkRatio7d": 0.3946428571428572,
+        "ageDays": 30.344786921296297,
+        "hoursSincePush": 30.855719444444443,
+        "starsPerDay": 285.74924656711295
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.13182897862232,
+        "relativeGrowth": 18.43230403800475,
+        "acceleration": 7.850356294536817,
+        "forkMomentum": 9.691211401425178,
+        "developmentActivity": 13.683869121927625,
+        "freshness": 7.76566325288699
+      },
+      "research": {
+        "summary": "dsh-purge Community · DeepSeek Harness 社区维护版：宿主兼容、状态诊断、提示词管理、更新与本机备份回滚。基于小杨 / YuJunZhiXue 的 dsh-purge。",
+        "whyNow": "過去 24 小時增加 451 個 stars，同時增加 161 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "8,671 stars，3,774 forks",
+          "主要語言：JavaScript",
+          "授權：MIT",
+          "分類：AI、開發工具",
+          "近期加星帳戶抽樣：100 個中 13 個可疑"
+        ],
+        "cautions": [
+          "熱門度不等於適合生產環境，採用前仍要檢查文件、測試和安全紀錄。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-13T00:01:25.058Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 13,
+          "freshHollow": 13,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "dsh-purge Community 是為 DeepSeek Harness 而設的本機自託管附加組件，將宿主補丁、狀態自檢、提示詞管理與備份回滾整合到左側欄設定頁，並可用命令列核對安裝與注入狀態。全部邏輯在本機執行，不上傳提示詞或配置，操作前自動快照，可隨時回滾。主要適配 DSH Desktop 0.2.2-rc.3，其他宿主可安裝，但自檢會標示未驗證。",
+          "writtenAt": "2026-11-15T14:59:42.289Z",
+          "source": "deepseek",
+          "version": 3
+        }
+      }
+    },
+    {
+      "id": 1458099218,
+      "nodeId": "R_kgDOVujUEg",
+      "name": "GitHub-Copilot-app",
+      "fullName": "WebBookkeeper/GitHub-Copilot-app",
+      "owner": "WebBookkeeper",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342265412?v=4",
+      "url": "https://github.com/WebBookkeeper/GitHub-Copilot-app",
+      "description": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+      "language": null,
+      "topics": [
+        "adminlte",
+        "agent-skills",
+        "ai",
+        "awesome",
+        "chatgpt",
+        "copilot",
+        "github-copilot",
+        "hacktoberfest",
+        "microsoft-copilot",
+        "openai",
+        "prompts",
+        "vue",
+        "xcode",
+        "xtreamcode"
+      ],
+      "stars": 663,
+      "forks": 317,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:25:26Z",
+      "updatedAt": "2026-11-15T14:05:07Z",
+      "pushedAt": "2026-11-15T10:36:12Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 14,
+      "previousRank": 12,
+      "rankChange": -2,
+      "score": 89.6,
+      "categories": [
+        "ai",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 663,
+        "forks24h": 317,
+        "starVelocity": 663,
+        "relativeGrowth": 25.276638032629226,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8579929398148148,
+        "hoursSincePush": 5.412386111111111,
+        "starsPerDay": 772.7336312850066
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.60748218527316,
+        "relativeGrowth": 19.489311163895486,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 9.774346793349169,
+        "developmentActivity": 14.760311290686667,
+        "freshness": 9.928755588534708
+      },
+      "research": {
+        "summary": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+        "whyNow": "過去 24 小時增加 663 個 stars，同時增加 317 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "663 stars，317 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI、桌面與系統",
+          "近期加星帳戶抽樣：1 個中 0 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 1,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 1,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "GitHub Copilot app 是面向代理驅動開發的桌面應用，集中尋找工作、啟動與引導代理、檢視進度及合併變更。本機工作階段各自在獨立 git worktree 運行，雲端工作階段則在 GitHub 託管環境繼續，並以 canvases 顯示計劃、終端和差異等可檢查介面。使用前需安裝 Git，並具備 Copilot 計劃或自備模型供應商金鑰（BYOK）。",
+          "writtenAt": "2026-11-15T00:01:00.236Z",
+          "source": "deepseek",
+          "version": 3
+        }
+      }
+    },
+    {
+      "id": 1458099208,
+      "nodeId": "R_kgDOVujUCA",
+      "name": "IPTV_Player_2.0",
+      "fullName": "WarriorRemember/IPTV_Player_2.0",
+      "owner": "WarriorRemember",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342264193?v=4",
+      "url": "https://github.com/WarriorRemember/IPTV_Player_2.0",
+      "description": "🎬 A powerful, intuitive IPTV streaming app supporting M3U playlists, EPG, and community lists. Available for Windows, macOS, Linux, Android & TV Boxes.",
+      "language": "Rust",
+      "topics": [
+        "dash",
+        "ip-tv",
+        "iptv",
+        "iptv-channels",
+        "iptv-m3u8",
+        "iptv-player",
+        "iptv-player-application",
+        "iptvtools",
+        "m3u",
+        "mag",
+        "mpegts",
+        "plex",
+        "streaming",
+        "tv",
+        "xtream",
+        "xtreamcode"
+      ],
+      "stars": 674,
+      "forks": 12,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:25:25Z",
+      "updatedAt": "2026-11-15T15:38:46Z",
+      "pushedAt": "2026-11-15T10:36:10Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 15,
+      "previousRank": 16,
+      "rankChange": 1,
+      "score": 89.4,
+      "categories": [
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 674,
+        "forks24h": 12,
+        "starVelocity": 674,
+        "relativeGrowth": 25.493021289714278,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8580045138888889,
+        "hoursSincePush": 5.412941666666667,
+        "starsPerDay": 785.5436528475917
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.418052256532064,
+        "relativeGrowth": 19.95249406175772,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 8.260095011876485,
+        "developmentActivity": 14.76028688543024,
+        "freshness": 9.928754630900148
+      },
+      "research": {
+        "summary": "🎬 A powerful, intuitive IPTV streaming app supporting M3U playlists, EPG, and community lists. Available for Windows, macOS, Linux, Android & TV Boxes.",
+        "whyNow": "過去 24 小時增加 674 個 stars，同時增加 12 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
+        "evidence": [
+          "674 stars，12 forks",
+          "主要語言：Rust",
+          "授權：Apache-2.0",
+          "分類：桌面與系統",
+          "近期加星帳戶抽樣：100 個中 0 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 72,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "WarriorRemember/IPTV_Player_2.0 是以 Rust 編寫的 IPTV 播放器，其 README 以 MegaCubo Free 之名介紹，稱可收看全球數千條免費頻道、畫質最高支援 4K，並設 Turbo Stream 模式以減少緩衝、按網速調節畫質。使用時下載約 50 MB 壓縮檔、解壓即可開啟，毋須密碼或帳戶，惟文件只列明支援 Windows、macOS 與 Linux。",
+          "writtenAt": "2026-11-15T00:01:00.236Z",
+          "source": "deepseek",
+          "version": 3
+        }
+      }
+    },
+    {
+      "id": 1458099091,
+      "nodeId": "R_kgDOVujTkw",
+      "name": "GitHub-Copilot-app",
+      "fullName": "unitsenseimonitor/GitHub-Copilot-app",
+      "owner": "unitsenseimonitor",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342266936?v=4",
+      "url": "https://github.com/unitsenseimonitor/GitHub-Copilot-app",
+      "description": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+      "language": null,
+      "topics": [
+        "adminlte",
+        "agent-skills",
+        "ai",
+        "awesome",
+        "chatgpt",
+        "copilot",
+        "github-copilot",
+        "hacktoberfest",
+        "microsoft-copilot",
+        "openai",
+        "prompts",
+        "vue",
+        "xcode",
+        "xtreamcode"
+      ],
+      "stars": 661,
+      "forks": 332,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:25:19Z",
+      "updatedAt": "2026-11-14T23:32:18Z",
+      "pushedAt": "2026-11-15T10:36:41Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 16,
+      "previousRank": 17,
+      "rankChange": 1,
+      "score": 89.4,
+      "categories": [
+        "ai",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 661,
+        "forks24h": 332,
+        "starVelocity": 661,
+        "relativeGrowth": 25.237097272016072,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8580739583333333,
+        "hoursSincePush": 5.404330555555555,
+        "starsPerDay": 770.3298690987932
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.44121140142518,
+        "relativeGrowth": 19.394299287410924,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 9.80997624703088,
+        "developmentActivity": 14.760665171439545,
+        "freshness": 9.928748885094732
+      },
+      "research": {
+        "summary": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+        "whyNow": "過去 24 小時增加 661 個 stars，同時增加 332 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "661 stars，332 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI、桌面與系統"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        },
+        "introduction": {
+          "text": "GitHub Copilot app 是桌面控制中心，管理由構思到 pull request 的軟件工作，讓多個 agent 在隔離環境並行運作。需 Git 及 Copilot 計劃或自備金鑰。",
+          "writtenAt": "2026-11-15T00:01:00.236Z",
+          "source": "deepseek",
+          "version": 3
+        }
+      }
+    },
+    {
+      "id": 1458099089,
+      "nodeId": "R_kgDOVujTkQ",
+      "name": "GitHub-Copilot-app",
+      "fullName": "topconstableinlet67/GitHub-Copilot-app",
+      "owner": "topconstableinlet67",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342283901?v=4",
+      "url": "https://github.com/topconstableinlet67/GitHub-Copilot-app",
+      "description": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+      "language": null,
+      "topics": [
+        "adminlte",
+        "agent-skills",
+        "ai",
+        "awesome",
+        "chatgpt",
+        "copilot",
+        "github-copilot",
+        "hacktoberfest",
+        "microsoft-copilot",
+        "openai",
+        "prompts",
+        "vue",
+        "xcode",
+        "xtreamcode"
+      ],
+      "stars": 661,
+      "forks": 335,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:25:19Z",
+      "updatedAt": "2026-11-14T23:32:18Z",
+      "pushedAt": "2026-11-15T10:32:40Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 17,
+      "previousRank": 18,
+      "rankChange": 1,
+      "score": 89.4,
+      "categories": [
+        "ai",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 661,
+        "forks24h": 335,
+        "starVelocity": 661,
+        "relativeGrowth": 25.237097272016072,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8580739583333333,
+        "hoursSincePush": 5.471275,
+        "starsPerDay": 770.3298690987932
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.44121140142518,
+        "relativeGrowth": 19.394299287410924,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 9.821852731591449,
+        "developmentActivity": 14.757724558054427,
+        "freshness": 9.928748885094732
+      },
+      "research": {
+        "summary": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+        "whyNow": "過去 24 小時增加 661 個 stars，同時增加 335 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "661 stars，335 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI、桌面與系統"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        },
+        "introduction": {
+          "text": "GitHub Copilot app 是代理原生的桌面應用程式，以單一控制中心統籌跨儲存庫的軟件工作，由構思一直推進至 pull request。它支援並行代理開發：本機工作階段各自在獨立的 git worktree 運行，雲端工作階段則在 GitHub 的隔離環境持續處理，並以 Canvases 呈現計劃、終端與差異，方便檢視和修改。使用前須安裝 Git，並具備 Copilot 計劃或自備模型供應商金鑰。",
+          "writtenAt": "2026-11-15T00:01:00.236Z",
+          "source": "deepseek",
+          "version": 3
+        }
+      }
+    },
+    {
+      "id": 1438478196,
+      "nodeId": "R_kgDOVb1vdA",
+      "name": "apkstart",
+      "fullName": "RoutineMiku/apkstart",
+      "owner": "RoutineMiku",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/52089759?v=4",
+      "url": "https://github.com/RoutineMiku/apkstart",
+      "description": "Windows 上的安卓应用运行器：双击 APK 即装，应用以独立窗口与桌面图标运行，自持 QEMU 运行时",
+      "language": "JavaScript",
+      "topics": [
+        "android",
+        "android-x86",
+        "apk",
+        "electron",
+        "emulator",
+        "freeform",
+        "qemu",
+        "windows",
+        "wsa"
+      ],
+      "stars": 4855,
+      "forks": 411,
+      "openIssues": 62,
+      "createdAt": "2026-10-29T13:44:03Z",
+      "updatedAt": "2026-11-15T16:00:56Z",
+      "pushedAt": "2026-11-15T07:43:58Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 18,
+      "previousRank": 8,
+      "rankChange": -10,
+      "score": 89.3,
+      "categories": [
+        "desktop",
+        "mobile"
+      ],
+      "signals": {
+        "stars24h": 1763,
+        "forks24h": 168,
+        "starVelocity": 1762.7175613104528,
+        "relativeGrowth": 25.23322848680423,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 17.095064699074076,
+        "hoursSincePush": 8.282941666666666,
+        "starsPerDay": 284.0000950837561
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.91686460807601,
+        "relativeGrowth": 19.334916864608076,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 9.703087885985749,
+        "developmentActivity": 14.634746360893585,
+        "freshness": 8.67223220288507
+      },
+      "research": {
+        "summary": "Windows 上的安卓应用运行器：双击 APK 即装，应用以独立窗口与桌面图标运行，自持 QEMU 运行时",
+        "whyNow": "過去 24 小時增加 1,763 個 stars，同時增加 168 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
+        "evidence": [
+          "4,855 stars，411 forks",
+          "主要語言：JavaScript",
+          "授權：MIT",
+          "分類：桌面與系統、手機應用",
+          "近期加星帳戶抽樣：100 個中 4 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-15T08:00:55.770Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 4,
+          "freshHollow": 4,
+          "sharedHollow": 0,
+          "maxPerMinute": 5,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "ApkStart 是 Windows 上的 Android 應用運行器。註冊 .apk 檔案關聯後，雙擊便會自動解析、安裝並建立桌面與開始選單捷徑，應用其後以獨立窗口啟動，可切換全屏或自由縮放的窗口模式，並透過共享資料夾與本機雙向同步檔案。它自持以 QEMU 為基礎的運行時，外殼本身不依賴第三方套件；輕量版首次啟動須聯網下載運行時。",
+          "writtenAt": "2026-11-15T08:00:55.770Z",
+          "source": "deepseek",
+          "version": 3
+        }
+      }
+    },
+    {
+      "id": 1458092119,
+      "nodeId": "R_kgDOVui4Vw",
+      "name": "GitHub-Copilot-app",
+      "fullName": "trackboatwrightplan/GitHub-Copilot-app",
+      "owner": "trackboatwrightplan",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342287019?v=4",
+      "url": "https://github.com/trackboatwrightplan/GitHub-Copilot-app",
+      "description": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+      "language": null,
+      "topics": [
+        "adminlte",
+        "agent-skills",
+        "ai",
+        "awesome",
+        "chatgpt",
+        "copilot",
+        "github-copilot",
+        "hacktoberfest",
+        "microsoft-copilot",
+        "openai",
+        "prompts",
+        "vue",
+        "xcode",
+        "xtreamcode"
+      ],
+      "stars": 672,
+      "forks": 12,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:16:41Z",
+      "updatedAt": "2026-11-14T23:32:13Z",
+      "pushedAt": "2026-11-15T10:32:41Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 19,
+      "previousRank": 19,
+      "rankChange": 0,
+      "score": 89.3,
+      "categories": [
+        "ai",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 672,
+        "forks24h": 12,
+        "starVelocity": 672,
+        "relativeGrowth": 25.45381504103996,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8640693287037037,
+        "hoursSincePush": 5.4709972222222225,
+        "starsPerDay": 777.7153726867607
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.37648456057007,
+        "relativeGrowth": 19.928741092636578,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 8.260095011876485,
+        "developmentActivity": 14.757736758559272,
+        "freshness": 9.928252843095645
+      },
+      "research": {
+        "summary": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+        "whyNow": "過去 24 小時增加 672 個 stars，同時增加 12 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "672 stars，12 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI、桌面與系統",
+          "近期加星帳戶抽樣：100 個中 0 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 74,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "GitHub Copilot app 是代理原生桌面應用，集中管理從構思到 pull request 的軟件工作，讓用戶尋找及啟動工作、引導代理、檢視進度及合併變更。每個本機工作階段在獨立 git worktree 運行，雲端工作階段則在 GitHub 託管的隔離環境繼續；canvas 把計劃、終端、預覽和差異轉為可檢視及調整的共享介面。使用前需安裝 Git 並具備 GitHub Copilot 計劃，或自備模型供應商金鑰（BYOK）。",
+          "writtenAt": "2026-11-15T00:01:00.236Z",
+          "source": "deepseek",
+          "version": 3
+        }
+      }
+    },
+    {
+      "id": 1458092197,
+      "nodeId": "R_kgDOVui4pQ",
+      "name": "GitHub-Copilot-app",
+      "fullName": "TrapAccountant/GitHub-Copilot-app",
+      "owner": "TrapAccountant",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342274804?v=4",
+      "url": "https://github.com/TrapAccountant/GitHub-Copilot-app",
+      "description": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+      "language": null,
+      "topics": [
+        "adminlte",
+        "agent-skills",
+        "ai",
+        "awesome",
+        "chatgpt",
+        "copilot",
+        "github-copilot",
+        "hacktoberfest",
+        "microsoft-copilot",
+        "openai",
+        "prompts",
+        "vue",
+        "xcode",
+        "xtreamcode"
+      ],
+      "stars": 670,
+      "forks": 12,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:16:47Z",
+      "updatedAt": "2026-11-14T23:32:14Z",
+      "pushedAt": "2026-11-15T10:36:10Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 20,
+      "previousRank": 20,
+      "rankChange": 0,
+      "score": 89.3,
+      "categories": [
+        "ai",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 670,
+        "forks24h": 12,
+        "starVelocity": 670,
+        "relativeGrowth": 25.41454860066453,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8639998842592592,
+        "hoursSincePush": 5.412941666666667,
+        "starsPerDay": 775.4630668433679
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.334916864608076,
+        "relativeGrowth": 19.904988123515437,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 8.260095011876485,
+        "developmentActivity": 14.76028688543024,
+        "freshness": 9.928258588614
+      },
+      "research": {
+        "summary": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+        "whyNow": "過去 24 小時增加 670 個 stars，同時增加 12 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "670 stars，12 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI、桌面與系統",
+          "近期加星帳戶抽樣：100 個中 0 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 72,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "GitHub Copilot app 是 agent-native 桌面應用，在單一控制中心管理由構想到 pull request 的軟件工作，包括啟動及引導 agent、檢視進度與合併變更。本地 session 各自在獨立 git worktree 運行，雲端 session 在 GitHub 託管的隔離環境繼續工作，避免分支和檔案衝突；Canvases 把 agent 工作呈現為可檢視及修改的介面。使用前須具備 Git，並持有 GitHub Copilot 計劃或自備 API key。",
+          "writtenAt": "2026-11-15T00:01:00.236Z",
+          "source": "deepseek",
+          "version": 3
+        }
+      }
+    },
+    {
+      "id": 1435475558,
+      "nodeId": "R_kgDOVY-eZg",
+      "name": "AnyModelBot",
+      "fullName": "modelflare-ai/AnyModelBot",
+      "owner": "modelflare-ai",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/267078600?v=4",
+      "url": "https://github.com/modelflare-ai/AnyModelBot",
+      "description": "🤖 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. Your own AI bots on any model: GPT, Claude, Gemini, Grok, DeepSeek, Kimi, GLM and 70+ more through one Modelflare key. Reach them in the app, WeChat or Feishu; they remember you, work in the background, run commands and use your computer. Pay per use.",
+      "language": "Python",
+      "topics": [
+        "ai-agent",
+        "ai-assistant",
+        "chatbot",
+        "claude",
+        "computer-use",
+        "deepseek",
+        "desktop-app",
+        "dsh",
+        "electron",
+        "feishu",
+        "gemini",
+        "gpt",
+        "grok",
+        "llm",
+        "local-first",
+        "modelflare",
+        "multi-model",
+        "openai-compatible",
+        "personal-ai-agent",
+        "wechat"
+      ],
+      "stars": 4008,
+      "forks": 59,
+      "openIssues": 2,
+      "createdAt": "2026-10-27T08:51:18Z",
+      "updatedAt": "2026-11-15T15:12:49Z",
+      "pushedAt": "2026-11-15T14:25:06Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 21,
+      "previousRank": 22,
+      "rankChange": 1,
+      "score": 89.2,
+      "categories": [
+        "ai",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 231,
+        "forks24h": 7,
+        "starVelocity": 221.07199634504158,
+        "relativeGrowth": 3.4811250311166386,
+        "acceleration7d": 1.3557877023949398,
+        "forkRatio7d": 0.011049723756906077,
+        "ageDays": 19.298363310185184,
+        "hoursSincePush": 1.5973861111111112,
+        "starsPerDay": 207.68600609175388
+      },
+      "scoreBreakdown": {
+        "starMomentum": 31.05106888361045,
+        "relativeGrowth": 18.26603325415677,
+        "acceleration": 8.836104513064132,
+        "forkMomentum": 7.577197149643705,
+        "developmentActivity": 14.928857364537725,
+        "freshness": 8.51445577799841
+      },
+      "research": {
+        "summary": "🤖 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. Your own AI bots on any model: GPT, Claude, Gemini, Grok, DeepSeek, Kimi, GLM and 70+ more through one Modelflare key. Reach them in the app, WeChat or Feishu; they remember you, work in the background, run commands and use your computer. Pay per use.",
+        "whyNow": "過去 24 小時增加 231 個 stars，同時增加 7 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "4,008 stars，59 forks",
+          "主要語言：Python",
+          "授權：MIT",
+          "分類：AI、桌面與系統",
+          "近期加星帳戶抽樣：100 個中 57 個可疑"
+        ],
+        "cautions": [
+          "最近 100 個加星帳戶中有 57 個（57%）是資料空白的新帳戶或同時為多個上榜項目加星，可能有刷星。",
+          "項目仍然很新，API、文件和維護節奏可能快速改變。",
+          "近 7 日新增 forks 只有新增 stars 的 1.1%（一般約 10%），可能是收藏型清單，亦可能有刷星，宜先核實 stargazers。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-13T08:00:55.616Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 57,
+          "freshHollow": 57,
+          "sharedHollow": 0,
+          "maxPerMinute": 5,
+          "flagged": true
+        },
+        "risks": [
+          "starInflation"
+        ]
+      }
+    },
+    {
+      "id": 1458099066,
+      "nodeId": "R_kgDOVujTeg",
+      "name": "IPTV_Player_2.0",
+      "fullName": "TurquoiseDetective/IPTV_Player_2.0",
+      "owner": "TurquoiseDetective",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342295016?v=4",
+      "url": "https://github.com/TurquoiseDetective/IPTV_Player_2.0",
+      "description": "🎬 A powerful, intuitive IPTV streaming app supporting M3U playlists, EPG, and community lists. Available for Windows, macOS, Linux, Android & TV Boxes.",
+      "language": "Rust",
+      "topics": [
+        "dash",
+        "ip-tv",
+        "iptv",
+        "iptv-channels",
+        "iptv-m3u8",
+        "iptv-player",
+        "iptv-player-application",
+        "iptvtools",
+        "m3u",
+        "mag",
+        "mpegts",
+        "plex",
+        "streaming",
+        "tv",
+        "xtream",
+        "xtreamcode"
+      ],
+      "stars": 669,
+      "forks": 12,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:25:17Z",
+      "updatedAt": "2026-11-14T23:32:17Z",
+      "pushedAt": "2026-11-15T10:36:46Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 22,
+      "previousRank": 23,
+      "rankChange": 1,
+      "score": 89.2,
+      "categories": [
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 669,
+        "forks24h": 12,
+        "starVelocity": 669,
+        "relativeGrowth": 25.394892722137577,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8580971064814815,
+        "hoursSincePush": 5.402941666666667,
+        "starsPerDay": 779.6320427453132
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.27256532066508,
+        "relativeGrowth": 19.86935866983373,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 8.260095011876485,
+        "developmentActivity": 14.760726186219964,
+        "freshness": 9.928746969827
+      },
+      "research": {
+        "summary": "🎬 A powerful, intuitive IPTV streaming app supporting M3U playlists, EPG, and community lists. Available for Windows, macOS, Linux, Android & TV Boxes.",
+        "whyNow": "過去 24 小時增加 669 個 stars，同時增加 12 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
+        "evidence": [
+          "669 stars，12 forks",
+          "主要語言：Rust",
+          "授權：Apache-2.0",
+          "分類：桌面與系統",
+          "近期加星帳戶抽樣：100 個中 0 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 70,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": 1458091291,
+      "nodeId": "R_kgDOVui1Gw",
+      "name": "IPTV_Player_2.0",
+      "fullName": "tornadonovicewhirl40/IPTV_Player_2.0",
+      "owner": "tornadonovicewhirl40",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342283160?v=4",
+      "url": "https://github.com/tornadonovicewhirl40/IPTV_Player_2.0",
+      "description": "🎬 A powerful, intuitive IPTV streaming app supporting M3U playlists, EPG, and community lists. Available for Windows, macOS, Linux, Android & TV Boxes.",
+      "language": "Rust",
+      "topics": [
+        "dash",
+        "ip-tv",
+        "iptv",
+        "iptv-channels",
+        "iptv-m3u8",
+        "iptv-player",
+        "iptv-player-application",
+        "iptvtools",
+        "m3u",
+        "mag",
+        "mpegts",
+        "plex",
+        "streaming",
+        "tv",
+        "xtream",
+        "xtreamcode"
+      ],
+      "stars": 669,
+      "forks": 12,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:15:43Z",
+      "updatedAt": "2026-11-14T23:32:12Z",
+      "pushedAt": "2026-11-15T10:32:09Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 23,
+      "previousRank": 25,
+      "rankChange": 2,
+      "score": 89.2,
+      "categories": [
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 669,
+        "forks24h": 12,
+        "starVelocity": 669,
+        "relativeGrowth": 25.394892722137577,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.864740625,
+        "hoursSincePush": 5.479886111111111,
+        "starsPerDay": 773.6423855419074
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.27256532066508,
+        "relativeGrowth": 19.86935866983373,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 8.260095011876485,
+        "developmentActivity": 14.757346347407099,
+        "freshness": 9.92819730325631
+      },
+      "research": {
+        "summary": "🎬 A powerful, intuitive IPTV streaming app supporting M3U playlists, EPG, and community lists. Available for Windows, macOS, Linux, Android & TV Boxes.",
+        "whyNow": "過去 24 小時增加 669 個 stars，同時增加 12 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
+        "evidence": [
+          "669 stars，12 forks",
+          "主要語言：Rust",
+          "授權：Apache-2.0",
+          "分類：桌面與系統",
+          "近期加星帳戶抽樣：100 個中 0 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 71,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": 1458099087,
+      "nodeId": "R_kgDOVujTjw",
+      "name": "GitHub-Copilot-app",
+      "fullName": "Trapkrostride/GitHub-Copilot-app",
+      "owner": "Trapkrostride",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342260694?v=4",
+      "url": "https://github.com/Trapkrostride/GitHub-Copilot-app",
+      "description": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+      "language": null,
+      "topics": [
+        "adminlte",
+        "agent-skills",
+        "ai",
+        "awesome",
+        "chatgpt",
+        "copilot",
+        "github-copilot",
+        "hacktoberfest",
+        "microsoft-copilot",
+        "openai",
+        "prompts",
+        "vue",
+        "xcode",
+        "xtreamcode"
+      ],
+      "stars": 660,
+      "forks": 341,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:25:19Z",
+      "updatedAt": "2026-11-14T23:32:18Z",
+      "pushedAt": "2026-11-15T10:36:46Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 24,
+      "previousRank": 24,
+      "rankChange": 0,
+      "score": 89.2,
+      "categories": [
+        "ai",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 660,
+        "forks24h": 341,
+        "starVelocity": 660,
+        "relativeGrowth": 25.217303756728715,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8580739583333333,
+        "hoursSincePush": 5.402941666666667,
+        "starsPerDay": 769.1644683891127
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.274940617577194,
+        "relativeGrowth": 19.275534441805227,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 9.84560570071259,
+        "developmentActivity": 14.760726186219964,
+        "freshness": 9.928748885094732
+      },
+      "research": {
+        "summary": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+        "whyNow": "過去 24 小時增加 660 個 stars，同時增加 341 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "660 stars，341 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI、桌面與系統"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        }
+      }
+    },
+    {
+      "id": 1458099253,
+      "nodeId": "R_kgDOVujUNQ",
+      "name": "IPTV_Player_2.0",
+      "fullName": "WattBeetleLearn/IPTV_Player_2.0",
+      "owner": "WattBeetleLearn",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342291202?v=4",
+      "url": "https://github.com/WattBeetleLearn/IPTV_Player_2.0",
+      "description": "🎬 A powerful, intuitive IPTV streaming app supporting M3U playlists, EPG, and community lists. Available for Windows, macOS, Linux, Android & TV Boxes.",
+      "language": "Rust",
+      "topics": [
+        "dash",
+        "ip-tv",
+        "iptv",
+        "iptv-channels",
+        "iptv-m3u8",
+        "iptv-player",
+        "iptv-player-application",
+        "iptvtools",
+        "m3u",
+        "mag",
+        "mpegts",
+        "plex",
+        "streaming",
+        "tv",
+        "xtream",
+        "xtreamcode"
+      ],
+      "stars": 667,
+      "forks": 12,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:25:28Z",
+      "updatedAt": "2026-11-14T23:32:20Z",
+      "pushedAt": "2026-11-15T10:36:42Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 25,
+      "previousRank": 26,
+      "rankChange": 1,
+      "score": 89.1,
+      "categories": [
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 667,
+        "forks24h": 12,
+        "starVelocity": 667,
+        "relativeGrowth": 25.35553547434468,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8579697916666666,
+        "hoursSincePush": 5.404052777777777,
+        "starsPerDay": 777.4166485562453
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.21021377672209,
+        "relativeGrowth": 19.83372921615202,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 8.260095011876485,
+        "developmentActivity": 14.760677374375453,
+        "freshness": 9.928757503804103
+      },
+      "research": {
+        "summary": "🎬 A powerful, intuitive IPTV streaming app supporting M3U playlists, EPG, and community lists. Available for Windows, macOS, Linux, Android & TV Boxes.",
+        "whyNow": "過去 24 小時增加 667 個 stars，同時增加 12 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
+        "evidence": [
+          "667 stars，12 forks",
+          "主要語言：Rust",
+          "授權：Apache-2.0",
+          "分類：桌面與系統",
+          "近期加星帳戶抽樣：100 個中 0 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 67,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": 1458099122,
+      "nodeId": "R_kgDOVujTsg",
+      "name": "GitHub-Copilot-app",
+      "fullName": "TrueDefenderRouter/GitHub-Copilot-app",
+      "owner": "TrueDefenderRouter",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342282884?v=4",
+      "url": "https://github.com/TrueDefenderRouter/GitHub-Copilot-app",
+      "description": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+      "language": null,
+      "topics": [
+        "adminlte",
+        "agent-skills",
+        "ai",
+        "awesome",
+        "chatgpt",
+        "copilot",
+        "github-copilot",
+        "hacktoberfest",
+        "microsoft-copilot",
+        "openai",
+        "prompts",
+        "vue",
+        "xcode",
+        "xtreamcode"
+      ],
+      "stars": 660,
+      "forks": 323,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:25:20Z",
+      "updatedAt": "2026-11-14T23:32:19Z",
+      "pushedAt": "2026-11-15T10:36:41Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 26,
+      "previousRank": 27,
+      "rankChange": 1,
+      "score": 89.1,
+      "categories": [
+        "ai",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 660,
+        "forks24h": 323,
+        "starVelocity": 660,
+        "relativeGrowth": 25.217303756728715,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8580623842592593,
+        "hoursSincePush": 5.404330555555555,
+        "starsPerDay": 769.1748433533293
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.274940617577194,
+        "relativeGrowth": 19.275534441805227,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 9.78622327790974,
+        "developmentActivity": 14.760665171439545,
+        "freshness": 9.928749842728738
+      },
+      "research": {
+        "summary": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+        "whyNow": "過去 24 小時增加 660 個 stars，同時增加 323 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "660 stars，323 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI、桌面與系統"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        }
+      }
+    },
+    {
+      "id": 1435672472,
+      "nodeId": "R_kgDOVZKfmA",
+      "name": "floorplan",
+      "fullName": "haydenschmitty/floorplan",
+      "owner": "haydenschmitty",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/348570593?v=4",
+      "url": "https://github.com/haydenschmitty/floorplan",
+      "description": "See how your app actually fits together. An interactive, plain-English map of your codebase, drawn by Claude or Codex.",
+      "language": "JavaScript",
+      "topics": [
+        "ai-coding",
+        "architecture-diagram",
+        "claude",
+        "claude-code",
+        "claude-code-plugin",
+        "codebase-visualization",
+        "codex",
+        "codex-plugin",
+        "developer-tools",
+        "onboarding",
+        "openai",
+        "vibe-coding"
+      ],
+      "stars": 4458,
+      "forks": 373,
+      "openIssues": 48,
+      "createdAt": "2026-10-27T12:03:01Z",
+      "updatedAt": "2026-11-15T15:57:30Z",
+      "pushedAt": "2026-11-15T04:40:31Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 27,
+      "previousRank": 21,
+      "rankChange": -6,
+      "score": 89,
+      "categories": [
+        "ai",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 206,
+        "forks24h": 12,
+        "starVelocity": 213.91780316599323,
+        "relativeGrowth": 3.1949389248844535,
+        "acceleration7d": 1.20836114275612,
+        "forkRatio7d": 0.09887459807073956,
+        "ageDays": 19.165226736111112,
+        "hoursSincePush": 11.340441666666667,
+        "starsPerDay": 232.608779503779
+      },
+      "scoreBreakdown": {
+        "starMomentum": 30.884798099762474,
+        "relativeGrowth": 18.19477434679335,
+        "acceleration": 8.657957244655583,
+        "forkMomentum": 8.260095011876485,
+        "developmentActivity": 14.502178602927033,
+        "freshness": 8.52390756587651
+      },
+      "research": {
+        "summary": "See how your app actually fits together. An interactive, plain-English map of your codebase, drawn by Claude or Codex.",
+        "whyNow": "過去 24 小時增加 206 個 stars，同時增加 12 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "4,458 stars，373 forks",
+          "主要語言：JavaScript",
+          "授權：MIT",
+          "分類：AI、開發工具",
+          "近期加星帳戶抽樣：100 個中 0 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-14T16:01:02.338Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": 1458099068,
+      "nodeId": "R_kgDOVujTfA",
+      "name": "ai--manus2.0",
+      "fullName": "tornadonovicewhirl40/ai--manus2.0",
+      "owner": "tornadonovicewhirl40",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342283160?v=4",
+      "url": "https://github.com/tornadonovicewhirl40/ai--manus2.0",
+      "description": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "language": null,
+      "topics": [
+        "ai",
+        "ai-agents",
+        "ai-sdk",
+        "anthropic",
+        "chatbot",
+        "function-calling",
+        "gemeni",
+        "generative-ai",
+        "llm",
+        "multimodal",
+        "openai",
+        "react",
+        "solidjs",
+        "streaming",
+        "svelte",
+        "tanstack",
+        "tool-calling",
+        "typescript",
+        "typescript-sdk",
+        "vue"
+      ],
+      "stars": 659,
+      "forks": 521,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:25:17Z",
+      "updatedAt": "2026-11-14T23:32:17Z",
+      "pushedAt": "2026-11-15T10:32:05Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 28,
+      "previousRank": 29,
+      "rankChange": 1,
+      "score": 89,
+      "categories": [
+        "ai"
+      ],
+      "signals": {
+        "stars24h": 659,
+        "forks24h": 521,
+        "starVelocity": 659,
+        "relativeGrowth": 25.1974947701167,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8580971064814815,
+        "hoursSincePush": 5.480997222222222,
+        "starsPerDay": 767.9783500286419
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.12945368171022,
+        "relativeGrowth": 19.192399049881235,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 9.899049881235154,
+        "developmentActivity": 14.757297546739284,
+        "freshness": 9.928746969827
+      },
+      "research": {
+        "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+        "whyNow": "過去 24 小時增加 659 個 stars，同時增加 521 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "659 stars，521 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "code",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        }
+      }
+    },
+    {
+      "id": 1458091044,
+      "nodeId": "R_kgDOVui0JA",
+      "name": "ai--manus2.0",
+      "fullName": "topapothecarycanal/ai--manus2.0",
+      "owner": "topapothecarycanal",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342284320?v=4",
+      "url": "https://github.com/topapothecarycanal/ai--manus2.0",
+      "description": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "language": null,
+      "topics": [
+        "ai",
+        "ai-agents",
+        "ai-sdk",
+        "anthropic",
+        "chatbot",
+        "function-calling",
+        "gemeni",
+        "generative-ai",
+        "llm",
+        "multimodal",
+        "openai",
+        "react",
+        "solidjs",
+        "streaming",
+        "svelte",
+        "tanstack",
+        "tool-calling",
+        "typescript",
+        "typescript-sdk",
+        "vue"
+      ],
+      "stars": 666,
+      "forks": 12,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:15:24Z",
+      "updatedAt": "2026-11-14T23:32:11Z",
+      "pushedAt": "2026-11-15T10:36:40Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 29,
+      "previousRank": 30,
+      "rankChange": 1,
+      "score": 88.9,
+      "categories": [
+        "ai",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 666,
+        "forks24h": 12,
+        "starVelocity": 666,
+        "relativeGrowth": 25.335834035054166,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8649605324074074,
+        "hoursSincePush": 5.404608333333333,
+        "starsPerDay": 769.9773284988516
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.1062945368171,
+        "relativeGrowth": 19.774346793349167,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 8.260095011876485,
+        "developmentActivity": 14.760652968513726,
+        "freshness": 9.92817910923857
+      },
+      "research": {
+        "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+        "whyNow": "過去 24 小時增加 666 個 stars，同時增加 12 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "666 stars，12 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI、開發工具",
+          "近期加星帳戶抽樣：100 個中 0 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "code",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 67,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": 1458099092,
+      "nodeId": "R_kgDOVujTlA",
+      "name": "IPTV_Player_2.0",
+      "fullName": "Trapbraneedle/IPTV_Player_2.0",
+      "owner": "Trapbraneedle",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342285987?v=4",
+      "url": "https://github.com/Trapbraneedle/IPTV_Player_2.0",
+      "description": "🎬 A powerful, intuitive IPTV streaming app supporting M3U playlists, EPG, and community lists. Available for Windows, macOS, Linux, Android & TV Boxes.",
+      "language": "Rust",
+      "topics": [
+        "dash",
+        "ip-tv",
+        "iptv",
+        "iptv-channels",
+        "iptv-m3u8",
+        "iptv-player",
+        "iptv-player-application",
+        "iptvtools",
+        "m3u",
+        "mag",
+        "mpegts",
+        "plex",
+        "streaming",
+        "tv",
+        "xtream",
+        "xtreamcode"
+      ],
+      "stars": 666,
+      "forks": 12,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:25:19Z",
+      "updatedAt": "2026-11-15T06:44:04Z",
+      "pushedAt": "2026-11-15T10:36:46Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 30,
+      "previousRank": 31,
+      "rankChange": 1,
+      "score": 88.9,
+      "categories": [
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 666,
+        "forks24h": 12,
+        "starVelocity": 666,
+        "relativeGrowth": 25.335834035054166,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8580739583333333,
+        "hoursSincePush": 5.402941666666667,
+        "starsPerDay": 776.1568726471955
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.1062945368171,
+        "relativeGrowth": 19.774346793349167,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 8.260095011876485,
+        "developmentActivity": 14.760726186219964,
+        "freshness": 9.928748885094732
+      },
+      "research": {
+        "summary": "🎬 A powerful, intuitive IPTV streaming app supporting M3U playlists, EPG, and community lists. Available for Windows, macOS, Linux, Android & TV Boxes.",
+        "whyNow": "過去 24 小時增加 666 個 stars，同時增加 12 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
+        "evidence": [
+          "666 stars，12 forks",
+          "主要語言：Rust",
+          "授權：Apache-2.0",
+          "分類：桌面與系統",
+          "近期加星帳戶抽樣：100 個中 0 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 59,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": 1458092120,
+      "nodeId": "R_kgDOVui4WA",
+      "name": "GitHub-Copilot-app",
+      "fullName": "trackersnailgrip/GitHub-Copilot-app",
+      "owner": "trackersnailgrip",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342294406?v=4",
+      "url": "https://github.com/trackersnailgrip/GitHub-Copilot-app",
+      "description": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+      "language": null,
+      "topics": [
+        "adminlte",
+        "agent-skills",
+        "ai",
+        "awesome",
+        "chatgpt",
+        "copilot",
+        "github-copilot",
+        "hacktoberfest",
+        "microsoft-copilot",
+        "openai",
+        "prompts",
+        "vue",
+        "xcode",
+        "xtreamcode"
+      ],
+      "stars": 666,
+      "forks": 12,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:16:41Z",
+      "updatedAt": "2026-11-14T23:32:13Z",
+      "pushedAt": "2026-11-15T10:32:43Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 31,
+      "previousRank": 32,
+      "rankChange": 1,
+      "score": 88.9,
+      "categories": [
+        "ai",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 666,
+        "forks24h": 12,
+        "starVelocity": 666,
+        "relativeGrowth": 25.335834035054166,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8640693287037037,
+        "hoursSincePush": 5.470441666666667,
+        "starsPerDay": 770.7714854306289
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.1062945368171,
+        "relativeGrowth": 19.774346793349167,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 8.260095011876485,
+        "developmentActivity": 14.757761159599216,
+        "freshness": 9.928252843095645
+      },
+      "research": {
+        "summary": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+        "whyNow": "過去 24 小時增加 666 個 stars，同時增加 12 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "666 stars，12 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI、桌面與系統",
+          "近期加星帳戶抽樣：100 個中 0 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 59,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": 1458099090,
+      "nodeId": "R_kgDOVujTkg",
+      "name": "GitHub-Copilot-app",
+      "fullName": "TarantulaCorrect/GitHub-Copilot-app",
+      "owner": "TarantulaCorrect",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342280083?v=4",
+      "url": "https://github.com/TarantulaCorrect/GitHub-Copilot-app",
+      "description": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+      "language": null,
+      "topics": [
+        "adminlte",
+        "agent-skills",
+        "ai",
+        "awesome",
+        "chatgpt",
+        "copilot",
+        "github-copilot",
+        "hacktoberfest",
+        "microsoft-copilot",
+        "openai",
+        "prompts",
+        "vue",
+        "xcode",
+        "xtreamcode"
+      ],
+      "stars": 659,
+      "forks": 339,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:25:19Z",
+      "updatedAt": "2026-11-14T23:32:18Z",
+      "pushedAt": "2026-11-15T10:36:40Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 32,
+      "previousRank": 28,
+      "rankChange": -4,
+      "score": 88.9,
+      "categories": [
+        "ai",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 659,
+        "forks24h": 339,
+        "starVelocity": 659,
+        "relativeGrowth": 25.1974947701167,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8580739583333333,
+        "hoursSincePush": 5.404608333333333,
+        "starsPerDay": 767.9990676794323
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.12945368171022,
+        "relativeGrowth": 19.192399049881235,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 9.833729216152019,
+        "developmentActivity": 14.760652968513726,
+        "freshness": 9.928748885094732
+      },
+      "research": {
+        "summary": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+        "whyNow": "過去 24 小時增加 659 個 stars，同時增加 339 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "659 stars，339 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI、桌面與系統"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        }
+      }
+    },
+    {
+      "id": 1458099058,
+      "nodeId": "R_kgDOVujTcg",
+      "name": "ai--manus2.0",
+      "fullName": "trackersnailgrip/ai--manus2.0",
+      "owner": "trackersnailgrip",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342294406?v=4",
+      "url": "https://github.com/trackersnailgrip/ai--manus2.0",
+      "description": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "language": null,
+      "topics": [
+        "ai",
+        "ai-agents",
+        "ai-sdk",
+        "anthropic",
+        "chatbot",
+        "function-calling",
+        "gemeni",
+        "generative-ai",
+        "llm",
+        "multimodal",
+        "openai",
+        "react",
+        "solidjs",
+        "streaming",
+        "svelte",
+        "tanstack",
+        "tool-calling",
+        "typescript",
+        "typescript-sdk",
+        "vue"
+      ],
+      "stars": 654,
+      "forks": 522,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:25:17Z",
+      "updatedAt": "2026-11-14T23:32:15Z",
+      "pushedAt": "2026-11-15T10:32:40Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 33,
+      "previousRank": 33,
+      "rankChange": 0,
+      "score": 88.8,
+      "categories": [
+        "ai",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 654,
+        "forks24h": 522,
+        "starVelocity": 654,
+        "relativeGrowth": 25.098216496024097,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8580971064814815,
+        "hoursSincePush": 5.471275,
+        "starsPerDay": 762.1515036703062
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.98396674584323,
+        "relativeGrowth": 19.109263657957246,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 9.958432304038006,
+        "developmentActivity": 14.757724558054427,
+        "freshness": 9.928746969827
+      },
+      "research": {
+        "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+        "whyNow": "過去 24 小時增加 654 個 stars，同時增加 522 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "654 stars，522 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI、開發工具"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "code",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        }
+      }
+    },
+    {
+      "id": 1458099063,
+      "nodeId": "R_kgDOVujTdw",
+      "name": "ai--manus2.0",
+      "fullName": "Ultimateakiln/ai--manus2.0",
+      "owner": "Ultimateakiln",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342276539?v=4",
+      "url": "https://github.com/Ultimateakiln/ai--manus2.0",
+      "description": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "language": null,
+      "topics": [
+        "ai",
+        "ai-agents",
+        "ai-sdk",
+        "anthropic",
+        "chatbot",
+        "function-calling",
+        "gemeni",
+        "generative-ai",
+        "llm",
+        "multimodal",
+        "openai",
+        "react",
+        "solidjs",
+        "streaming",
+        "svelte",
+        "tanstack",
+        "tool-calling",
+        "typescript",
+        "typescript-sdk",
+        "vue"
+      ],
+      "stars": 654,
+      "forks": 522,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:25:17Z",
+      "updatedAt": "2026-11-14T23:32:16Z",
+      "pushedAt": "2026-11-15T10:36:41Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 34,
+      "previousRank": 34,
+      "rankChange": 0,
+      "score": 88.8,
+      "categories": [
+        "ai"
+      ],
+      "signals": {
+        "stars24h": 654,
+        "forks24h": 522,
+        "starVelocity": 654,
+        "relativeGrowth": 25.098216496024097,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8580971064814815,
+        "hoursSincePush": 5.404330555555555,
+        "starsPerDay": 762.1515036703062
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.98396674584323,
+        "relativeGrowth": 19.109263657957246,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 9.958432304038006,
+        "developmentActivity": 14.760665171439545,
+        "freshness": 9.928746969827
+      },
+      "research": {
+        "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+        "whyNow": "過去 24 小時增加 654 個 stars，同時增加 522 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "654 stars，522 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "code",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        }
+      }
+    },
+    {
+      "id": 1437814166,
+      "nodeId": "R_kgDOVbNNlg",
+      "name": "misterdownloadmanager",
+      "fullName": "anefzaoui/misterdownloadmanager",
+      "owner": "anefzaoui",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/1832078?v=4",
+      "url": "https://github.com/anefzaoui/misterdownloadmanager",
+      "description": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux",
+      "language": "Rust",
+      "topics": [
+        "bittorrent-client",
+        "debrid",
+        "download-accelerator",
+        "download-manager",
+        "downloadmanager",
+        "egui",
+        "file-downloader",
+        "gallery-dl",
+        "idm",
+        "idm-alternative",
+        "internet-download-manager",
+        "m3u8-downloader",
+        "magnet",
+        "playlist-downloader",
+        "real-debrid",
+        "rust",
+        "torrent-client",
+        "video-downloader",
+        "youtube-downloader",
+        "yt-dlp"
+      ],
+      "stars": 10105,
+      "forks": 831,
+      "openIssues": 45,
+      "createdAt": "2026-10-29T01:25:19Z",
+      "updatedAt": "2026-11-15T16:00:00Z",
+      "pushedAt": "2026-11-15T15:57:21Z",
+      "license": "GPL-3.0",
+      "archived": false,
+      "fork": false,
+      "rank": 35,
+      "previousRank": 37,
+      "rankChange": 2,
+      "score": 88.7,
+      "categories": [
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 706,
+        "forks24h": 52,
+        "starVelocity": 794.3142279928277,
+        "relativeGrowth": 7.892009859603018,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 17.608073958333332,
+        "hoursSincePush": 0.05988611111111111,
+        "starsPerDay": 573.8844591357268
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.70902612826603,
+        "relativeGrowth": 18.788598574821854,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 9.459619952494062,
+        "developmentActivity": 14.99732675113378,
+        "freshness": 8.635236876346525
+      },
+      "research": {
+        "summary": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux",
+        "whyNow": "過去 24 小時增加 706 個 stars，同時增加 52 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
+        "evidence": [
+          "10,105 stars，831 forks",
+          "主要語言：Rust",
+          "授權：GPL-3.0",
+          "分類：桌面與系統",
+          "近期加星帳戶抽樣：100 個中 2 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-13T00:01:25.058Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 2,
+          "freshHollow": 2,
+          "sharedHollow": 0,
+          "maxPerMinute": 4,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": 1458099061,
+      "nodeId": "R_kgDOVujTdQ",
+      "name": "ai--manus2.0",
+      "fullName": "TrapBladesmith/ai--manus2.0",
+      "owner": "TrapBladesmith",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342266986?v=4",
+      "url": "https://github.com/TrapBladesmith/ai--manus2.0",
+      "description": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "language": null,
+      "topics": [
+        "ai",
+        "ai-agents",
+        "ai-sdk",
+        "anthropic",
+        "chatbot",
+        "function-calling",
+        "gemeni",
+        "generative-ai",
+        "llm",
+        "multimodal",
+        "openai",
+        "react",
+        "solidjs",
+        "streaming",
+        "svelte",
+        "tanstack",
+        "tool-calling",
+        "typescript",
+        "typescript-sdk",
+        "vue"
+      ],
+      "stars": 653,
+      "forks": 522,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:25:17Z",
+      "updatedAt": "2026-11-14T23:32:16Z",
+      "pushedAt": "2026-11-15T10:37:56Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 36,
+      "previousRank": 35,
+      "rankChange": -1,
+      "score": 88.7,
+      "categories": [
+        "ai",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 653,
+        "forks24h": 522,
+        "starVelocity": 653,
+        "relativeGrowth": 25.078313916779866,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8580971064814815,
+        "hoursSincePush": 5.383497222222222,
+        "starsPerDay": 760.986134398639
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.90083135391924,
+        "relativeGrowth": 19.061757719714965,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 9.958432304038006,
+        "developmentActivity": 14.761580419628459,
+        "freshness": 9.928746969827
+      },
+      "research": {
+        "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+        "whyNow": "過去 24 小時增加 653 個 stars，同時增加 522 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "653 stars，522 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI、開發工具"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "code",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        }
+      }
+    },
+    {
+      "id": 1458099035,
+      "nodeId": "R_kgDOVujTWw",
+      "name": "ai--manus2.0",
+      "fullName": "Torusdrasocket/ai--manus2.0",
+      "owner": "Torusdrasocket",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342259234?v=4",
+      "url": "https://github.com/Torusdrasocket/ai--manus2.0",
+      "description": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "language": null,
+      "topics": [
+        "ai",
+        "ai-agents",
+        "ai-sdk",
+        "anthropic",
+        "chatbot",
+        "function-calling",
+        "gemeni",
+        "generative-ai",
+        "llm",
+        "multimodal",
+        "openai",
+        "react",
+        "solidjs",
+        "streaming",
+        "svelte",
+        "tanstack",
+        "tool-calling",
+        "typescript",
+        "typescript-sdk",
+        "vue"
+      ],
+      "stars": 653,
+      "forks": 522,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:25:15Z",
+      "updatedAt": "2026-11-14T23:32:14Z",
+      "pushedAt": "2026-11-15T10:32:41Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 37,
+      "previousRank": 36,
+      "rankChange": -1,
+      "score": 88.7,
+      "categories": [
+        "ai",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 653,
+        "forks24h": 522,
+        "starVelocity": 653,
+        "relativeGrowth": 25.078313916779866,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8581202546296296,
+        "hoursSincePush": 5.4709972222222225,
+        "starsPerDay": 760.9656064834866
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.90083135391924,
+        "relativeGrowth": 19.061757719714965,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 9.958432304038006,
+        "developmentActivity": 14.757736758559272,
+        "freshness": 9.928745054559636
+      },
+      "research": {
+        "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+        "whyNow": "過去 24 小時增加 653 個 stars，同時增加 522 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "653 stars，522 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI、開發工具"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "code",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        }
+      }
+    },
+    {
+      "id": 1458099094,
+      "nodeId": "R_kgDOVujTlg",
+      "name": "IPTV_Player_2.0",
+      "fullName": "Titanlushrink/IPTV_Player_2.0",
+      "owner": "Titanlushrink",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342267914?v=4",
+      "url": "https://github.com/Titanlushrink/IPTV_Player_2.0",
+      "description": "🎬 A powerful, intuitive IPTV streaming app supporting M3U playlists, EPG, and community lists. Available for Windows, macOS, Linux, Android & TV Boxes.",
+      "language": "Rust",
+      "topics": [
+        "dash",
+        "ip-tv",
+        "iptv",
+        "iptv-channels",
+        "iptv-m3u8",
+        "iptv-player",
+        "iptv-player-application",
+        "iptvtools",
+        "m3u",
+        "mag",
+        "mpegts",
+        "plex",
+        "streaming",
+        "tv",
+        "xtream",
+        "xtreamcode"
+      ],
+      "stars": 665,
+      "forks": 12,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:25:19Z",
+      "updatedAt": "2026-11-14T23:32:19Z",
+      "pushedAt": "2026-11-15T10:36:41Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 38,
+      "previousRank": 38,
+      "rankChange": 0,
+      "score": 88.6,
+      "categories": [
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 665,
+        "forks24h": 12,
+        "starVelocity": 665,
+        "relativeGrowth": 25.31611733859379,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8580739583333333,
+        "hoursSincePush": 5.404330555555555,
+        "starsPerDay": 774.9914719375151
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.919239904988125,
+        "relativeGrowth": 19.667458432304038,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 8.260095011876485,
+        "developmentActivity": 14.760665171439545,
+        "freshness": 9.928748885094732
+      },
+      "research": {
+        "summary": "🎬 A powerful, intuitive IPTV streaming app supporting M3U playlists, EPG, and community lists. Available for Windows, macOS, Linux, Android & TV Boxes.",
+        "whyNow": "過去 24 小時增加 665 個 stars，同時增加 12 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
+        "evidence": [
+          "665 stars，12 forks",
+          "主要語言：Rust",
+          "授權：Apache-2.0",
+          "分類：桌面與系統",
+          "近期加星帳戶抽樣：100 個中 0 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 65,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": 1458092123,
+      "nodeId": "R_kgDOVui4Ww",
+      "name": "GitHub-Copilot-app",
+      "fullName": "TradesmanRecord/GitHub-Copilot-app",
+      "owner": "TradesmanRecord",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342285424?v=4",
+      "url": "https://github.com/TradesmanRecord/GitHub-Copilot-app",
+      "description": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+      "language": null,
+      "topics": [
+        "adminlte",
+        "agent-skills",
+        "ai",
+        "awesome",
+        "chatgpt",
+        "copilot",
+        "github-copilot",
+        "hacktoberfest",
+        "microsoft-copilot",
+        "openai",
+        "prompts",
+        "vue",
+        "xcode",
+        "xtreamcode"
+      ],
+      "stars": 665,
+      "forks": 12,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:16:41Z",
+      "updatedAt": "2026-11-14T23:32:13Z",
+      "pushedAt": "2026-11-15T10:32:06Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 39,
+      "previousRank": 39,
+      "rankChange": 0,
+      "score": 88.6,
+      "categories": [
+        "ai",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 665,
+        "forks24h": 12,
+        "starVelocity": 665,
+        "relativeGrowth": 25.31611733859379,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8640693287037037,
+        "hoursSincePush": 5.4807194444444445,
+        "starsPerDay": 769.6141708879402
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.919239904988125,
+        "relativeGrowth": 19.667458432304038,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 8.260095011876485,
+        "developmentActivity": 14.75730974689111,
+        "freshness": 9.928252843095645
+      },
+      "research": {
+        "summary": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+        "whyNow": "過去 24 小時增加 665 個 stars，同時增加 12 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "665 stars，12 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI、桌面與系統",
+          "近期加星帳戶抽樣：100 個中 0 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 69,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": 1458091352,
+      "nodeId": "R_kgDOVui1WA",
+      "name": "IPTV_Player_2.0",
+      "fullName": "Torusdrasocket/IPTV_Player_2.0",
+      "owner": "Torusdrasocket",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342259234?v=4",
+      "url": "https://github.com/Torusdrasocket/IPTV_Player_2.0",
+      "description": "🎬 A powerful, intuitive IPTV streaming app supporting M3U playlists, EPG, and community lists. Available for Windows, macOS, Linux, Android & TV Boxes.",
+      "language": "Rust",
+      "topics": [
+        "dash",
+        "ip-tv",
+        "iptv",
+        "iptv-channels",
+        "iptv-m3u8",
+        "iptv-player",
+        "iptv-player-application",
+        "iptvtools",
+        "m3u",
+        "mag",
+        "mpegts",
+        "plex",
+        "streaming",
+        "tv",
+        "xtream",
+        "xtreamcode"
+      ],
+      "stars": 665,
+      "forks": 12,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:15:48Z",
+      "updatedAt": "2026-11-14T23:32:12Z",
+      "pushedAt": "2026-11-15T10:32:38Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 40,
+      "previousRank": 40,
+      "rankChange": 0,
+      "score": 88.6,
+      "categories": [
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 665,
+        "forks24h": 12,
+        "starVelocity": 665,
+        "relativeGrowth": 25.31611733859379,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8646827546296296,
+        "hoursSincePush": 5.471830555555556,
+        "starsPerDay": 769.0681888120229
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.919239904988125,
+        "relativeGrowth": 19.667458432304038,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 8.260095011876485,
+        "developmentActivity": 14.757700157075002,
+        "freshness": 9.928202091161255
+      },
+      "research": {
+        "summary": "🎬 A powerful, intuitive IPTV streaming app supporting M3U playlists, EPG, and community lists. Available for Windows, macOS, Linux, Android & TV Boxes.",
+        "whyNow": "過去 24 小時增加 665 個 stars，同時增加 12 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
+        "evidence": [
+          "665 stars，12 forks",
+          "主要語言：Rust",
+          "授權：Apache-2.0",
+          "分類：桌面與系統",
+          "近期加星帳戶抽樣：100 個中 0 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 67,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": 1458099072,
+      "nodeId": "R_kgDOVujTgA",
+      "name": "IPTV_Player_2.0",
+      "fullName": "tremorbuffalospire/IPTV_Player_2.0",
+      "owner": "tremorbuffalospire",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342260774?v=4",
+      "url": "https://github.com/tremorbuffalospire/IPTV_Player_2.0",
+      "description": "🎬 A powerful, intuitive IPTV streaming app supporting M3U playlists, EPG, and community lists. Available for Windows, macOS, Linux, Android & TV Boxes.",
+      "language": "Rust",
+      "topics": [
+        "dash",
+        "ip-tv",
+        "iptv",
+        "iptv-channels",
+        "iptv-m3u8",
+        "iptv-player",
+        "iptv-player-application",
+        "iptvtools",
+        "m3u",
+        "mag",
+        "mpegts",
+        "plex",
+        "streaming",
+        "tv",
+        "xtream",
+        "xtreamcode"
+      ],
+      "stars": 661,
+      "forks": 25,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:25:18Z",
+      "updatedAt": "2026-11-14T23:32:17Z",
+      "pushedAt": "2026-11-15T10:36:12Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 41,
+      "previousRank": 41,
+      "rankChange": 0,
+      "score": 88.6,
+      "categories": [
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 661,
+        "forks24h": 25,
+        "starVelocity": 661,
+        "relativeGrowth": 25.237097272016072,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8580855324074074,
+        "hoursSincePush": 5.412386111111111,
+        "starsPerDay": 770.3194786952382
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.44121140142518,
+        "relativeGrowth": 19.394299287410924,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 9.049881235154395,
+        "developmentActivity": 14.760311290686667,
+        "freshness": 9.92874792746082
+      },
+      "research": {
+        "summary": "🎬 A powerful, intuitive IPTV streaming app supporting M3U playlists, EPG, and community lists. Available for Windows, macOS, Linux, Android & TV Boxes.",
+        "whyNow": "過去 24 小時增加 661 個 stars，同時增加 25 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
+        "evidence": [
+          "661 stars，25 forks",
+          "主要語言：Rust",
+          "授權：Apache-2.0",
+          "分類：桌面與系統",
+          "近期加星帳戶抽樣：100 個中 0 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 59,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": 1458099064,
+      "nodeId": "R_kgDOVujTeA",
+      "name": "ai--manus2.0",
+      "fullName": "TremorRatTackle/ai--manus2.0",
+      "owner": "TremorRatTackle",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342290243?v=4",
+      "url": "https://github.com/TremorRatTackle/ai--manus2.0",
+      "description": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "language": null,
+      "topics": [
+        "ai",
+        "ai-agents",
+        "ai-sdk",
+        "anthropic",
+        "chatbot",
+        "function-calling",
+        "gemeni",
+        "generative-ai",
+        "llm",
+        "multimodal",
+        "openai",
+        "react",
+        "solidjs",
+        "streaming",
+        "svelte",
+        "tanstack",
+        "tool-calling",
+        "typescript",
+        "typescript-sdk",
+        "vue"
+      ],
+      "stars": 652,
+      "forks": 522,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:25:17Z",
+      "updatedAt": "2026-11-14T23:32:16Z",
+      "pushedAt": "2026-11-15T10:36:46Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 42,
+      "previousRank": 42,
+      "rankChange": 0,
+      "score": 88.6,
+      "categories": [
+        "ai",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 652,
+        "forks24h": 522,
+        "starVelocity": 652,
+        "relativeGrowth": 25.058395609985265,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8580971064814815,
+        "hoursSincePush": 5.402941666666667,
+        "starsPerDay": 759.820765126972
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.83847980997625,
+        "relativeGrowth": 19.026128266033254,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 9.958432304038006,
+        "developmentActivity": 14.760726186219964,
+        "freshness": 9.928746969827
+      },
+      "research": {
+        "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+        "whyNow": "過去 24 小時增加 652 個 stars，同時增加 522 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "652 stars，522 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI、開發工具"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "code",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        }
+      }
+    },
+    {
+      "id": 1458091050,
+      "nodeId": "R_kgDOVui0Kg",
+      "name": "ai--manus2.0",
+      "fullName": "Topkiflare74/ai--manus2.0",
+      "owner": "Topkiflare74",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342288932?v=4",
+      "url": "https://github.com/Topkiflare74/ai--manus2.0",
+      "description": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "language": null,
+      "topics": [
+        "ai",
+        "ai-agents",
+        "ai-sdk",
+        "anthropic",
+        "chatbot",
+        "function-calling",
+        "gemeni",
+        "generative-ai",
+        "llm",
+        "multimodal",
+        "openai",
+        "react",
+        "solidjs",
+        "streaming",
+        "svelte",
+        "tanstack",
+        "tool-calling",
+        "typescript",
+        "typescript-sdk",
+        "vue"
+      ],
+      "stars": 678,
+      "forks": 5,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:15:24Z",
+      "updatedAt": "2026-11-15T02:16:23Z",
+      "pushedAt": "2026-11-15T10:32:40Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 43,
+      "previousRank": 43,
+      "rankChange": 0,
+      "score": 88.5,
+      "categories": [
+        "ai",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 678,
+        "forks24h": 5,
+        "starVelocity": 678,
+        "relativeGrowth": 25.571254309119812,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8649605324074074,
+        "hoursSincePush": 5.471275,
+        "starsPerDay": 783.8507938772094
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.45961995249406,
+        "relativeGrowth": 19.97624703087886,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 7.286223277909739,
+        "developmentActivity": 14.757724558054427,
+        "freshness": 9.92817910923857
+      },
+      "research": {
+        "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+        "whyNow": "過去 24 小時增加 678 個 stars，同時增加 5 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "678 stars，5 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI、開發工具",
+          "近期加星帳戶抽樣：100 個中 0 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "code",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 78,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": 1458099060,
+      "nodeId": "R_kgDOVujTdA",
+      "name": "ai--manus2.0",
+      "fullName": "taboospecialistblade/ai--manus2.0",
+      "owner": "taboospecialistblade",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342263109?v=4",
+      "url": "https://github.com/taboospecialistblade/ai--manus2.0",
+      "description": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "language": null,
+      "topics": [
+        "ai",
+        "ai-agents",
+        "ai-sdk",
+        "anthropic",
+        "chatbot",
+        "function-calling",
+        "gemeni",
+        "generative-ai",
+        "llm",
+        "multimodal",
+        "openai",
+        "react",
+        "solidjs",
+        "streaming",
+        "svelte",
+        "tanstack",
+        "tool-calling",
+        "typescript",
+        "typescript-sdk",
+        "vue"
+      ],
+      "stars": 651,
+      "forks": 522,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:25:17Z",
+      "updatedAt": "2026-11-14T23:32:16Z",
+      "pushedAt": "2026-11-15T10:36:46Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 44,
+      "previousRank": 44,
+      "rankChange": 0,
+      "score": 88.5,
+      "categories": [
+        "ai",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 651,
+        "forks24h": 522,
+        "starVelocity": 651,
+        "relativeGrowth": 25.03846153846154,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8580971064814815,
+        "hoursSincePush": 5.402941666666667,
+        "starsPerDay": 758.6553958553048
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.776128266033254,
+        "relativeGrowth": 18.990498812351543,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 9.958432304038006,
+        "developmentActivity": 14.760726186219964,
+        "freshness": 9.928746969827
+      },
+      "research": {
+        "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+        "whyNow": "過去 24 小時增加 651 個 stars，同時增加 522 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "651 stars，522 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI、開發工具"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "code",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        }
+      }
+    },
+    {
+      "id": 1458099148,
+      "nodeId": "R_kgDOVujTzA",
+      "name": "ai--manus2.0",
+      "fullName": "violetkomodolimit/ai--manus2.0",
+      "owner": "violetkomodolimit",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342293572?v=4",
+      "url": "https://github.com/violetkomodolimit/ai--manus2.0",
+      "description": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "language": null,
+      "topics": [
+        "ai",
+        "ai-agents",
+        "ai-sdk",
+        "anthropic",
+        "chatbot",
+        "function-calling",
+        "gemeni",
+        "generative-ai",
+        "llm",
+        "multimodal",
+        "openai",
+        "react",
+        "solidjs",
+        "streaming",
+        "svelte",
+        "tanstack",
+        "tool-calling",
+        "typescript",
+        "typescript-sdk",
+        "vue"
+      ],
+      "stars": 651,
+      "forks": 522,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:25:22Z",
+      "updatedAt": "2026-11-14T23:32:19Z",
+      "pushedAt": "2026-11-15T10:36:45Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 45,
+      "previousRank": 45,
+      "rankChange": 0,
+      "score": 88.5,
+      "categories": [
+        "ai",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 651,
+        "forks24h": 522,
+        "starVelocity": 651,
+        "relativeGrowth": 25.03846153846154,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8580392361111111,
+        "hoursSincePush": 5.403219444444445,
+        "starsPerDay": 758.7065632925197
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.776128266033254,
+        "relativeGrowth": 18.990498812351543,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 9.958432304038006,
+        "developmentActivity": 14.760713983243704,
+        "freshness": 9.928751757997025
+      },
+      "research": {
+        "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+        "whyNow": "過去 24 小時增加 651 個 stars，同時增加 522 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "651 stars，522 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI、開發工具"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "code",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        }
+      }
+    },
+    {
+      "id": 1423101235,
+      "nodeId": "R_kgDOVNLNMw",
+      "name": "cleanyourtv",
+      "fullName": "Gathin23/cleanyourtv",
+      "owner": "Gathin23",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/94786511?v=4",
+      "url": "https://github.com/Gathin23/cleanyourtv",
+      "description": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.",
+      "language": "Python",
+      "topics": [
+        "adb",
+        "adblock",
+        "android-tv",
+        "android-tv-launcher",
+        "apple-tv",
+        "bloatware-removal",
+        "claude-code",
+        "debloat",
+        "fire-tv",
+        "google-tv",
+        "launcher",
+        "privacy",
+        "smart-tv",
+        "sony-bravia",
+        "tcl",
+        "vibe-coding",
+        "xiaomi"
+      ],
+      "stars": 58151,
+      "forks": 7581,
+      "openIssues": 257,
+      "createdAt": "2026-10-17T08:12:35Z",
+      "updatedAt": "2026-11-15T15:53:49Z",
+      "pushedAt": "2026-11-15T04:49:54Z",
+      "license": null,
+      "archived": false,
+      "fork": false,
+      "rank": 46,
+      "previousRank": 46,
+      "rankChange": 0,
+      "score": 88.4,
+      "categories": [
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 428,
+        "forks24h": 101,
+        "starVelocity": 434.17664565659675,
+        "relativeGrowth": 1.800091289787242,
+        "acceleration7d": 0.7738485496042898,
+        "forkRatio7d": 0.1537645811240721,
+        "ageDays": 29.32524988425926,
+        "hoursSincePush": 11.184052777777778,
+        "starsPerDay": 1982.966904954265
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.04869358669834,
+        "relativeGrowth": 17.339667458432302,
+        "acceleration": 6.971496437054632,
+        "forkMomentum": 9.655581947743467,
+        "developmentActivity": 14.50893011330748,
+        "freshness": 7.831922505852765
+      },
+      "research": {
+        "summary": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.",
+        "whyNow": "過去 24 小時增加 428 個 stars，同時增加 101 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
+        "evidence": [
+          "58,151 stars，7,581 forks",
+          "主要語言：Python",
+          "授權：未標示",
+          "分類：桌面與系統",
+          "Hacker News：1 分、0 則評論（6 日前）"
+        ],
+        "cautions": [
+          "GitHub 未標示開源授權，正式採用前要先確認使用條款。",
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-13T00:01:25.058Z",
+          "version": 2
+        },
+        "hackerNews": {
+          "points": 1,
+          "comments": 0,
+          "postedAt": "2026-11-10T02:54:28Z",
+          "url": "https://news.ycombinator.com/item?id=50435512"
+        }
+      }
+    },
+    {
+      "id": 1458099036,
+      "nodeId": "R_kgDOVujTXA",
+      "name": "ai--manus2.0",
+      "fullName": "Tonephorepair/ai--manus2.0",
+      "owner": "Tonephorepair",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342284655?v=4",
+      "url": "https://github.com/Tonephorepair/ai--manus2.0",
+      "description": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "language": null,
+      "topics": [
+        "ai",
+        "ai-agents",
+        "ai-sdk",
+        "anthropic",
+        "chatbot",
+        "function-calling",
+        "gemeni",
+        "generative-ai",
+        "llm",
+        "multimodal",
+        "openai",
+        "react",
+        "solidjs",
+        "streaming",
+        "svelte",
+        "tanstack",
+        "tool-calling",
+        "typescript",
+        "typescript-sdk",
+        "vue"
+      ],
+      "stars": 650,
+      "forks": 522,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:25:15Z",
+      "updatedAt": "2026-11-14T23:32:15Z",
+      "pushedAt": "2026-11-15T10:36:41Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 47,
+      "previousRank": 47,
+      "rankChange": 0,
+      "score": 88.4,
+      "categories": [
+        "ai",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 650,
+        "forks24h": 522,
+        "starVelocity": 650,
+        "relativeGrowth": 25.018511664883782,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8581202546296296,
+        "hoursSincePush": 5.404330555555555,
+        "starsPerDay": 757.4695929774368
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.71377672209026,
+        "relativeGrowth": 18.954869358669836,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 9.958432304038006,
+        "developmentActivity": 14.760665171439545,
+        "freshness": 9.928745054559636
+      },
+      "research": {
+        "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+        "whyNow": "過去 24 小時增加 650 個 stars，同時增加 522 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "650 stars，522 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI、開發工具"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "code",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        }
+      }
+    },
+    {
+      "id": 1458092242,
+      "nodeId": "R_kgDOVui40g",
+      "name": "GitHub-Copilot-app",
+      "fullName": "TrapBladesmith/GitHub-Copilot-app",
+      "owner": "TrapBladesmith",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342266986?v=4",
+      "url": "https://github.com/TrapBladesmith/GitHub-Copilot-app",
+      "description": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+      "language": null,
+      "topics": [
+        "adminlte",
+        "agent-skills",
+        "ai",
+        "awesome",
+        "chatgpt",
+        "copilot",
+        "github-copilot",
+        "hacktoberfest",
+        "microsoft-copilot",
+        "openai",
+        "prompts",
+        "vue",
+        "xcode",
+        "xtreamcode"
+      ],
+      "stars": 664,
+      "forks": 12,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:16:50Z",
+      "updatedAt": "2026-11-14T23:32:14Z",
+      "pushedAt": "2026-11-15T10:38:02Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 48,
+      "previousRank": 49,
+      "rankChange": 1,
+      "score": 88.3,
+      "categories": [
+        "ai",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 664,
+        "forks24h": 12,
+        "starVelocity": 664,
+        "relativeGrowth": 25.29638534961405,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.863965162037037,
+        "hoursSincePush": 5.381830555555555,
+        "starsPerDay": 768.5495077538037
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.75296912114014,
+        "relativeGrowth": 19.57244655581948,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 8.260095011876485,
+        "developmentActivity": 14.761653641935158,
+        "freshness": 9.928261461374424
+      },
+      "research": {
+        "summary": "The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.",
+        "whyNow": "過去 24 小時增加 664 個 stars，同時增加 12 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "664 stars，12 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI、桌面與系統",
+          "近期加星帳戶抽樣：100 個中 0 個可疑"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 66,
+          "flagged": false
+        }
+      }
+    },
+    {
+      "id": 1458099048,
+      "nodeId": "R_kgDOVujTaA",
+      "name": "ai--manus2.0",
+      "fullName": "trackboatwrightplan/ai--manus2.0",
+      "owner": "trackboatwrightplan",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342287019?v=4",
+      "url": "https://github.com/trackboatwrightplan/ai--manus2.0",
+      "description": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+      "language": null,
+      "topics": [
+        "ai",
+        "ai-agents",
+        "ai-sdk",
+        "anthropic",
+        "chatbot",
+        "function-calling",
+        "gemeni",
+        "generative-ai",
+        "llm",
+        "multimodal",
+        "openai",
+        "react",
+        "solidjs",
+        "streaming",
+        "svelte",
+        "tanstack",
+        "tool-calling",
+        "typescript",
+        "typescript-sdk",
+        "vue"
+      ],
+      "stars": 649,
+      "forks": 521,
+      "openIssues": 0,
+      "createdAt": "2026-11-14T19:25:16Z",
+      "updatedAt": "2026-11-14T23:32:15Z",
+      "pushedAt": "2026-11-15T10:32:39Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 49,
+      "previousRank": 50,
+      "rankChange": 1,
+      "score": 88.3,
+      "categories": [
+        "ai"
+      ],
+      "signals": {
+        "stars24h": 649,
+        "forks24h": 521,
+        "starVelocity": 649,
+        "relativeGrowth": 24.998545951780155,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.8581086805555556,
+        "hoursSincePush": 5.471552777777778,
+        "starsPerDay": 756.3144560894376
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.672209026128264,
+        "relativeGrowth": 18.931116389548695,
+        "acceleration": 2.0724465558194773,
+        "forkMomentum": 9.899049881235154,
+        "developmentActivity": 14.757712357559672,
+        "freshness": 9.928746012193272
+      },
+      "research": {
+        "summary": "AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.",
+        "whyNow": "過去 24 小時增加 649 個 stars，同時增加 521 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "649 stars，521 forks",
+          "GitHub 尚未識別主要語言",
+          "授權：Apache-2.0",
+          "分類：AI"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "code",
+          "judgedAt": "2026-11-15T00:01:00.236Z",
+          "version": 2
+        }
+      }
+    },
+    {
+      "id": 1368596582,
+      "nodeId": "R_kgDOUZMgZg",
+      "name": "elephant-goldfish-model",
+      "fullName": "google/elephant-goldfish-model",
+      "owner": "google",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/1342004?v=4",
+      "url": "https://github.com/google/elephant-goldfish-model",
+      "description": "Open-source plugin for designing and reviewing software with agents",
+      "language": "Python",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "antigravity",
+        "claude-code",
+        "claude-code-plugin",
+        "claude-skills",
+        "codex",
+        "codex-plugin",
+        "coding-agents",
+        "context-engineering",
+        "developer-tools",
+        "gemini",
+        "llm",
+        "multi-agent",
+        "prompt-engineering",
+        "spec-driven-development"
+      ],
+      "stars": 19530,
+      "forks": 1453,
+      "openIssues": 111,
+      "createdAt": "2026-09-13T16:31:06Z",
+      "updatedAt": "2026-11-15T15:54:07Z",
+      "pushedAt": "2026-11-15T13:33:20Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 50,
+      "previousRank": null,
+      "rankChange": null,
+      "score": 88.2,
+      "categories": [
+        "ai",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 601,
+        "forks24h": 43,
+        "starVelocity": 562.8985221334674,
+        "relativeGrowth": 4.025327296319848,
+        "acceleration7d": 0.818755310724392,
+        "forkRatio7d": 0.07750247770069375,
+        "ageDays": 62.97905775462963,
+        "hoursSincePush": 2.460163888888889,
+        "starsPerDay": 310.1030834105221
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.42280285035629,
+        "relativeGrowth": 18.33729216152019,
+        "acceleration": 7.244655581947743,
+        "forkMomentum": 9.382422802850357,
+        "developmentActivity": 14.890572353866988,
+        "freshness": 5.916586108556979
+      },
+      "research": {
+        "summary": "Open-source plugin for designing and reviewing software with agents",
+        "whyNow": "過去 24 小時增加 601 個 stars，同時增加 43 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "19,530 stars，1,453 forks",
+          "主要語言：Python",
+          "授權：Apache-2.0",
+          "分類：AI、開發工具",
+          "近期加星帳戶抽樣：100 個中 3 個可疑",
+          "Hacker News：1 分、0 則評論（8 日前）"
+        ],
+        "cautions": [
+          "熱門度不等於適合生產環境，採用前仍要檢查文件、測試和安全紀錄。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-15T16:00:56.590Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 3,
+          "freshHollow": 2,
+          "sharedHollow": 1,
+          "maxPerMinute": 4,
+          "flagged": false
+        },
+        "hackerNews": {
+          "points": 1,
+          "comments": 0,
+          "postedAt": "2026-11-08T03:50:34Z",
+          "url": "https://news.ycombinator.com/item?id=50410270"
+        }
+      }
+    }
+  ]
+}
