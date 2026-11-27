@@ -4,7 +4,9 @@ import type { RankingDocument, RepositorySnapshot } from '../domain/repository'
 import { discoverRepositories } from './discovery'
 import { fixtureRepositories } from './fixtures'
 import { GithubClient } from './github-client'
+import { addChartHistory, loadChartDays } from './chart-history'
 import { addDeepSeekIntroductions } from './deepseek-intro'
+import { addGithubTrending } from './github-trending'
 import { addHackerNewsExposure } from './hacker-news'
 import { addEaseLabels } from './jev-ease'
 import { fetchReadmes } from './readme'
@@ -46,6 +48,16 @@ async function run(): Promise<void> {
   const log = (message: string) => process.stdout.write(`${message}\n`)
   // Each step only adds research and warnings; scores and ranks are already final.
   let researched = ranked
+  let githubTrending: RankingDocument['githubTrending']
+  if (!useFixtures) {
+    const chartDays = await loadChartDays(root, dataDate)
+    researched = addChartHistory(researched, chartDays, dataDate)
+    if (process.env.GITHUB_TRENDING !== 'off') {
+      const compared = await addGithubTrending(researched, { now, today: dataDate, days: chartDays, previous: previousDocument, log })
+      researched = compared.repositories
+      githubTrending = compared.comparison
+    }
+  }
   if (!useFixtures && process.env.JEV !== 'off') {
     researched = await researchWithJev(researched, { apiKey: process.env.TYPESAFE_API_KEY, log })
   }
@@ -105,6 +117,7 @@ async function run(): Promise<void> {
       historyDays: history.length + 1
     },
     ...(trend ? { trend } : {}),
+    ...(githubTrending ? { githubTrending } : {}),
     repositories: researched
   }
 

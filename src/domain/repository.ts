@@ -87,6 +87,38 @@ export interface RepositoryResearch {
   introduction?: RepositoryIntroduction
   /** How someone starts using it, judged by Jev from the README. */
   ease?: RepositoryEase
+  /** This ranking's own memory of the repository, from the stored daily history. */
+  chart?: ChartHistory
+  /** Whether GitHub's own daily Trending page lists the repository, and who listed it first. */
+  githubTrending?: GithubTrendingStatus
+}
+
+export interface ChartHistory {
+  /** First date (Hong Kong time) the repository entered the Top 50. */
+  firstSeen: string
+  /** Distinct dates on the chart, today included. */
+  days: number
+  /** Consecutive recorded dates on the chart ending today. */
+  streak: number
+  bestRank: number
+}
+
+export interface GithubTrendingStatus {
+  listed: boolean
+  /** First date it was seen on GitHub Trending since tracking began; null if never. */
+  firstListed: string | null
+  /** Days this ranking listed it before GitHub Trending did; null when unknown or not ahead. */
+  leadDays: number | null
+}
+
+export interface GithubTrendingComparison {
+  checkedAt: string
+  /** Lead times are only claimed for repositories first charted on or after this date. */
+  trackedSince: string
+  /** Repositories on GitHub's daily Trending page when checked. */
+  size: number
+  /** Top 50 repositories that were not on it. */
+  unlisted: number
 }
 
 export const easeLevels = ['ready', 'cli', 'code', 'reading'] as const
@@ -145,6 +177,8 @@ export interface RankingDocument {
   }
   /** DeepSeek's overview of what today's Top 20 have in common. */
   trend?: TrendSummary
+  /** How today's Top 50 compares with GitHub's own daily Trending page. */
+  githubTrending?: GithubTrendingComparison
   repositories: RankedRepository[]
 }
 

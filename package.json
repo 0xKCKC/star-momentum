@@ -10,7 +10,8 @@
     "test:watch": "vitest",
     "daily": "tsx src/pipeline/run-daily.ts",
     "daily:fixtures": "tsx src/pipeline/run-daily.ts --fixtures",
-    "backtest": "tsx src/pipeline/backtest.ts"
+    "backtest": "tsx src/pipeline/backtest.ts",
+    "compare": "tsx src/pipeline/compare-raw.ts"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",

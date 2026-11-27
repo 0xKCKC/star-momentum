@@ -51,7 +51,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v5
@@ -101,6 +101,21 @@ jobs:
         with:
           path: dist
 
+      # The artifact is not always visible to the deploy API right after upload (one run failed
+      # 0.6 seconds after a successful upload), so wait before deploying and retry once.
+      - name: Wait for the artifact to be available
+        run: sleep 20
+
       - name: Deploy to GitHub Pages
         id: deployment
+        continue-on-error: true
+        uses: actions/deploy-pages@v5
+
+      - name: Wait before retrying the deployment
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 30
+
+      - name: Retry the deployment
+        id: deployment_retry
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v5
