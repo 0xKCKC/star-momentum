@@ -35,14 +35,14 @@ export function RepositoryMeta({ repository, compact = false }: RepositoryMetaPr
           連續 {chart.streak} 日
         </span>
       )}
-      {trending && (trending.leadDays || !trending.listed) && (
+      {trending && (trending.leadDays || trending.listed) && (
         <span
           className="trending-badge"
           title={trending.leadDays
             ? `本榜比 GitHub Trending 日榜早 ${trending.leadDays} 日收錄`
-            : '今日未出現在 GitHub Trending 日榜'}
+            : '今日同時在 GitHub Trending 日榜'}
         >
-          {trending.leadDays ? `早 Trending ${trending.leadDays} 日` : 'Trending 未見'}
+          {trending.leadDays ? `早 Trending ${trending.leadDays} 日` : 'Trending 同榜'}
         </span>
       )}
       {repository.research.ease && (

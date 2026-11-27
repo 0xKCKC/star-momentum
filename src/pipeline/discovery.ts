@@ -41,3 +41,33 @@ export async function discoverRepositories(
 
   return [...repositories.values()]
 }
+
+// The search queries only see the 100 most-starred matches each, so an established mid-sized
+// repository that suddenly surges is invisible to them. Repositories on GitHub Trending are
+// added to the pool by name so they compete under the same scoring.
+export async function addNamedRepositories(
+  client: Pick<GithubClient, 'getRepository'>,
+  repositories: GithubRepository[],
+  fullNames: Iterable<string>,
+  log: (message: string) => void = () => undefined
+): Promise<GithubRepository[]> {
+  const known = new Set(repositories.map(({ fullName }) => fullName.toLowerCase()))
+  const missing = [...new Set([...fullNames].map((name) => name.toLowerCase()))].filter((name) => !known.has(name))
+  const added: GithubRepository[] = []
+  let failures = 0
+
+  for (const name of missing) {
+    try {
+      const repository = await client.getRepository(name)
+      if (repository && !repository.archived && !repository.fork) added.push(repository)
+    } catch (error) {
+      failures += 1
+      if (failures === 1) log(`Trending candidate lookup failed for ${name}: ${error instanceof Error ? error.message : String(error)}`)
+      if (failures >= 3) break
+    }
+  }
+
+  log(`Candidate pool: added ${added.length} of ${missing.length} GitHub Trending repositories the searches missed.`)
+  const ids = new Set(repositories.map(({ id }) => id))
+  return [...repositories, ...added.filter(({ id }) => !ids.has(id))]
+}

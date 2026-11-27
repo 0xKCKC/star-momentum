@@ -1049,3 +1049,47 @@
   background: var(--accent-soft);
   color: var(--accent-strong);
 }
+
+.period-tabs {
+  display: inline-flex;
+  gap: 4px;
+  margin-left: auto;
+  padding: 3px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+}
+
+.period-tab {
+  padding: 4px 14px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-muted);
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.period-tab:hover {
+  color: var(--text);
+}
+
+.period-tab.is-active {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+}
+
+.period-note {
+  margin: 0;
+  padding-block: 48px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+@media (max-width: 680px) {
+  .period-tabs {
+    margin-left: 0;
+  }
+}

@@ -3,7 +3,7 @@ import { useState } from 'react'
 import type { RankedRepository } from '../domain/repository'
 
 interface RepositoryHeaderProps {
-  repository: RankedRepository
+  repository: Pick<RankedRepository, 'owner' | 'ownerAvatarUrl' | 'url' | 'fullName' | 'language' | 'license'>
 }
 
 export function RepositoryHeader({ repository }: RepositoryHeaderProps) {

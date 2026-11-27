@@ -1,12 +1,12 @@
 import { resolve } from 'node:path'
 import { scoreRepositories } from '../domain/scoring'
-import type { RankingDocument, RepositorySnapshot } from '../domain/repository'
-import { discoverRepositories } from './discovery'
+import type { GithubRepository, RankingDocument, RepositorySnapshot } from '../domain/repository'
+import { addNamedRepositories, discoverRepositories } from './discovery'
 import { fixtureRepositories } from './fixtures'
 import { GithubClient } from './github-client'
 import { addChartHistory, loadChartDays } from './chart-history'
 import { addDeepSeekIntroductions } from './deepseek-intro'
-import { addGithubTrending } from './github-trending'
+import { addGithubTrending, fetchTrendingNames } from './github-trending'
 import { addHackerNewsExposure } from './hacker-news'
 import { addEaseLabels } from './jev-ease'
 import { fetchReadmes } from './readme'
@@ -14,7 +14,8 @@ import { writeTrendSummary } from './trend-summary'
 import { researchWithJev } from './jev-research'
 import { buildMarkdownReport } from './report'
 import { auditTopStargazers } from './star-audit'
-import { loadCurrentRanking, loadSnapshotHistory, saveDailyOutputs } from './storage'
+import { buildPeriodRanking } from './period-rankings'
+import { loadCurrentRanking, loadSnapshotHistory, saveDailyOutputs, savePeriodRanking } from './storage'
 
 async function run(): Promise<void> {
   const root = resolve(process.cwd())
@@ -30,11 +31,18 @@ async function run(): Promise<void> {
   const previousDocument = await loadCurrentRanking(root)
   const history = await loadSnapshotHistory(root, dataDate)
 
-  const repositories = useFixtures
-    ? fixtureRepositories(now)
-    : await discoverRepositories(new GithubClient(), now, (completed, total) => {
-      process.stdout.write(`GitHub discovery ${completed}/${total}\n`)
-    })
+  const log = (message: string) => process.stdout.write(`${message}\n`)
+  const trending = useFixtures || process.env.GITHUB_TRENDING === 'off' ? null : await fetchTrendingNames({ log })
+  let repositories: GithubRepository[]
+  if (useFixtures) {
+    repositories = fixtureRepositories(now)
+  } else {
+    const client = new GithubClient()
+    repositories = await discoverRepositories(client, now, (completed, total) => log(`GitHub discovery ${completed}/${total}`))
+    if (trending) {
+      repositories = await addNamedRepositories(client, repositories, [...trending.daily, ...trending.weekly], log)
+    }
+  }
 
   if (repositories.length < 5) {
     throw new Error(`Candidate pool too small: ${repositories.length}`)
@@ -45,19 +53,8 @@ async function run(): Promise<void> {
     history,
     previousRanking: previousDocument?.repositories
   }).slice(0, 50)
-  const log = (message: string) => process.stdout.write(`${message}\n`)
   // Each step only adds research and warnings; scores and ranks are already final.
   let researched = ranked
-  let githubTrending: RankingDocument['githubTrending']
-  if (!useFixtures) {
-    const chartDays = await loadChartDays(root, dataDate)
-    researched = addChartHistory(researched, chartDays, dataDate)
-    if (process.env.GITHUB_TRENDING !== 'off') {
-      const compared = await addGithubTrending(researched, { now, today: dataDate, days: chartDays, previous: previousDocument, log })
-      researched = compared.repositories
-      githubTrending = compared.comparison
-    }
-  }
   if (!useFixtures && process.env.JEV !== 'off') {
     researched = await researchWithJev(researched, { apiKey: process.env.TYPESAFE_API_KEY, log })
   }
@@ -93,6 +90,17 @@ async function run(): Promise<void> {
   const trend = !useFixtures && process.env.DEEPSEEK !== 'off'
     ? await writeTrendSummary(researched, { apiKey: process.env.DEEPSEEK_API_KEY, model: process.env.DEEPSEEK_MODEL, now, log })
     : undefined
+  // Last, because earlier steps rebuild the research object.
+  let githubTrending: RankingDocument['githubTrending']
+  if (!useFixtures) {
+    const chartDays = await loadChartDays(root, dataDate)
+    researched = addChartHistory(researched, chartDays, dataDate)
+    if (trending) {
+      const compared = addGithubTrending(researched, { now, today: dataDate, days: chartDays, previous: previousDocument, listed: trending.daily, log })
+      researched = compared.repositories
+      githubTrending = compared.comparison
+    }
+  }
   const snapshot: RepositorySnapshot = {
     capturedAt: nowIso,
     repositories: repositories.map((repository) => ({
@@ -122,6 +130,14 @@ async function run(): Promise<void> {
   }
 
   await saveDailyOutputs(root, document, snapshot, buildMarkdownReport(document))
+  if (!useFixtures) {
+    const periodSnapshots = await loadSnapshotHistory(root, dataDate, 40)
+    for (const period of ['week', 'month'] as const) {
+      const ranking = buildPeriodRanking(repositories, { now: nowIso, dataDate, period, snapshots: periodSnapshots, ranked: researched })
+      await savePeriodRanking(root, ranking)
+      log(`${period} chart: ${ranking.repositories.length} repositories from ${ranking.candidateCount} with a baseline.`)
+    }
+  }
   process.stdout.write(`Saved ${researched.length} ranked repositories from ${repositories.length} candidates.\n`)
 }
 
