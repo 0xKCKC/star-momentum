@@ -83,7 +83,7 @@ export interface RepositoryResearch {
   starAudit?: StarAudit
   /** Most visible Hacker News story linking to the repository in the last 14 days. */
   hackerNews?: HackerNewsExposure
-  /** Short Chinese introduction written by DeepSeek for the top 20. */
+  /** Short Chinese introduction written by DeepSeek. */
   introduction?: RepositoryIntroduction
   /** How someone starts using it, judged by Jev from the README. */
   ease?: RepositoryEase
