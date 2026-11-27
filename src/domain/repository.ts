@@ -177,6 +177,8 @@ export interface RankingDocument {
   }
   /** DeepSeek's overview of what today's Top 20 have in common. */
   trend?: TrendSummary
+  /** Tokens DeepSeek reported for the update that produced this document. */
+  deepseekUsage?: { calls: number, promptTokens: number, completionTokens: number }
   /** How today's Top 50 compares with GitHub's own daily Trending page. */
   githubTrending?: GithubTrendingComparison
   repositories: RankedRepository[]
