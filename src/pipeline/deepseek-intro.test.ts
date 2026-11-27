@@ -41,14 +41,14 @@ describe('cleanIntroduction', () => {
 })
 
 describe('addDeepSeekIntroductions', () => {
-  it('introduces the top 20 only, from the description and README', async () => {
+  it('introduces the top 50 only, from the description and README', async () => {
     const { fetchImpl, requests } = fakeFetch(() => ok(intro))
-    const repositories = Array.from({ length: 22 }, (_, index) => rankedRepository(index + 1, `Tool ${index + 1}`))
+    const repositories = Array.from({ length: 52 }, (_, index) => rankedRepository(index + 1, `Tool ${index + 1}`))
     const result = await addDeepSeekIntroductions(repositories, { apiKey: 'key', now, fetchImpl })
 
     expect(result[0].research.introduction).toEqual({ text: intro, writtenAt: now.toISOString(), source: 'deepseek', version: 3 })
-    expect(result[19].research.introduction).toBeDefined()
-    expect(result[20].research.introduction).toBeUndefined()
+    expect(result[49].research.introduction).toBeDefined()
+    expect(result[50].research.introduction).toBeUndefined()
     const call = requests.find(({ url }) => url.includes('deepseek'))!
     expect(call.auth).toBe('Bearer key')
     expect(call.body).toContain('Tool 1')

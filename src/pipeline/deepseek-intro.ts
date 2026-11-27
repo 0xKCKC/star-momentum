@@ -4,13 +4,13 @@ import { fetchReadme } from './readme'
 
 export { readmeExcerpt } from './readme'
 
-// Writes a short Traditional Chinese introduction for the top repositories with the DeepSeek
+// Writes a short Traditional Chinese introduction for every Top 50 repository with the DeepSeek
 // chat API, summarising each repository's README; the one-line description is only context, even
 // when it is already in Chinese. Without a readable README there is no introduction. One is reused
 // for a few days while the description is unchanged, which keeps the text stable and the cost
 // low. Any failure leaves the repository without one; nothing here changes scores or ranks.
 
-const TOP = 20
+const TOP = 50
 const CONCURRENCY = 4
 const REUSE_DAYS = 3
 const MAX_INTRO_CHARS = 260
