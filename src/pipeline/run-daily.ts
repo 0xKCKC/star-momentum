@@ -49,9 +49,14 @@ async function run(): Promise<void> {
     throw new Error(`Candidate pool too small: ${repositories.length}`)
   }
 
+  const dailyGainHints = new Map(repositories.flatMap((repository) => {
+    const gain = trending?.dailyGains.get(repository.fullName.toLowerCase())
+    return gain === undefined ? [] : [[repository.id, gain] as const]
+  }))
   const ranked = scoreRepositories(repositories, {
     now: nowIso,
     history,
+    dailyGainHints,
     previousRanking: previousDocument?.repositories
   }).slice(0, 50)
   // Each step only adds research and warnings; scores and ranks are already final.

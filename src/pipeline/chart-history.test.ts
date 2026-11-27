@@ -23,9 +23,9 @@ describe('addChartHistory', () => {
       '2026-11-05'
     )
 
-    expect(first.research.chart).toEqual({ firstSeen: '2026-11-01', days: 4, streak: 3, bestRank: 1 })
-    expect(second.research.chart).toEqual({ firstSeen: '2026-11-02', days: 3, streak: 1, bestRank: 2 })
-    expect(third.research.chart).toEqual({ firstSeen: '2026-11-05', days: 1, streak: 1, bestRank: 3 })
+    expect(first.research.chart).toEqual({ firstSeen: '2026-11-01', days: 4, streak: 3, bestRank: 1, recent: [9, null, 2, 5, 1] })
+    expect(second.research.chart).toMatchObject({ firstSeen: '2026-11-02', days: 3, streak: 1, bestRank: 2 })
+    expect(third.research.chart).toMatchObject({ firstSeen: '2026-11-05', days: 1, streak: 1, bestRank: 3 })
     expect(third.research.evidence).toContain('本榜紀錄：今日首次上榜')
   })
 

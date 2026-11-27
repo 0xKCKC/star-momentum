@@ -1,6 +1,7 @@
 import { ArrowDown, ArrowUp, GitFork, Minus, Star, TrendUp, Warning } from '@phosphor-icons/react'
 import { easeLabels, riskLabels, type RankedRepository } from '../domain/repository'
 import { formatCompactNumber } from '../utils/format'
+import { RankSparkline } from './RankSparkline'
 
 interface RepositoryMetaProps {
   repository: RankedRepository
@@ -27,6 +28,7 @@ export function RepositoryMeta({ repository, compact = false }: RepositoryMetaPr
       <span title="總 forks"><GitFork size={16} />{formatCompactNumber(repository.forks)}</span>
       <span className="momentum" title="star 動能"><TrendUp size={16} />{momentum}</span>
       {!compact && <RankMovement change={repository.rankChange} />}
+      {!compact && chart?.recent && <RankSparkline ranks={chart.recent} />}
       {chart && chart.streak >= 3 && (
         <span
           className="chart-badge"

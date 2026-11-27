@@ -101,6 +101,8 @@ export interface ChartHistory {
   /** Consecutive recorded dates on the chart ending today. */
   streak: number
   bestRank: number
+  /** Rank on each of the last recorded days, oldest first and today last; null when off the chart. */
+  recent?: Array<number | null>
 }
 
 export interface GithubTrendingStatus {
