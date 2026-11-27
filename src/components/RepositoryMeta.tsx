@@ -19,12 +19,32 @@ export function RepositoryMeta({ repository, compact = false }: RepositoryMetaPr
     ? `${repository.signals.starsPerDay.toFixed(1)}/日基線`
     : `+${formatCompactNumber(repository.signals.stars24h)}/24h`
 
+  const { chart, githubTrending: trending } = repository.research
+
   return (
     <div className={compact ? 'repo-meta is-compact' : 'repo-meta'}>
       <span title="總 stars"><Star size={16} weight="fill" />{formatCompactNumber(repository.stars)}</span>
       <span title="總 forks"><GitFork size={16} />{formatCompactNumber(repository.forks)}</span>
       <span className="momentum" title="star 動能"><TrendUp size={16} />{momentum}</span>
       {!compact && <RankMovement change={repository.rankChange} />}
+      {chart && chart.streak >= 3 && (
+        <span
+          className="chart-badge"
+          title={`${chart.firstSeen} 首次上榜，累計 ${chart.days} 日，最高第 ${chart.bestRank} 名`}
+        >
+          連續 {chart.streak} 日
+        </span>
+      )}
+      {trending && (trending.leadDays || !trending.listed) && (
+        <span
+          className="trending-badge"
+          title={trending.leadDays
+            ? `本榜比 GitHub Trending 日榜早 ${trending.leadDays} 日收錄`
+            : '今日未出現在 GitHub Trending 日榜'}
+        >
+          {trending.leadDays ? `早 Trending ${trending.leadDays} 日` : 'Trending 未見'}
+        </span>
+      )}
       {repository.research.ease && (
         <span className={`ease-badge is-${repository.research.ease.level}`} title="上手難度，由 Jev 根據 README 判斷">
           {easeLabels[repository.research.ease.level]}

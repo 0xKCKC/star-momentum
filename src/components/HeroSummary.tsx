@@ -40,6 +40,11 @@ export function HeroSummary({ document }: HeroSummaryProps) {
             {isWarmup ? <Timer size={16} aria-hidden="true" /> : <Pulse size={16} aria-hidden="true" />}
             {isWarmup ? '首日暖機中，下一次快照後顯示真實增長' : '每日增長已啟用'}
           </p>
+          {document.githubTrending && (
+            <p className="hero-note">
+              今日 {document.stats.rankedCount} 個項目中，{document.githubTrending.unlisted} 個不在 GitHub Trending 日榜
+            </p>
+          )}
         </dl>
         {document.source === 'fixtures' && (
           <p className="fixture-notice">目前顯示離線示例資料，執行每日抓取後會換成 GitHub 實時資料。</p>
