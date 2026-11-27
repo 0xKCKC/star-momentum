@@ -42,7 +42,9 @@ export function HeroSummary({ document }: HeroSummaryProps) {
           </p>
           {document.githubTrending && (
             <p className="hero-note">
-              今日 {document.stats.rankedCount} 個項目中，只有 {document.stats.rankedCount - document.githubTrending.unlisted} 個同時在 GitHub Trending 日榜
+              {document.githubTrending.unlisted >= document.stats.rankedCount
+                ? `今日 ${document.stats.rankedCount} 個項目全部不在 GitHub Trending 日榜`
+                : `今日 ${document.stats.rankedCount} 個項目中，${document.stats.rankedCount - document.githubTrending.unlisted} 個同時在 GitHub Trending 日榜`}
             </p>
           )}
         </dl>

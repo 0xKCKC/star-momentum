@@ -1,7 +1,7 @@
 // @vitest-environment node
 import { describe, expect, it, vi } from 'vitest'
 import type { ChartHistory, RankedRepository } from '../domain/repository'
-import { addGithubTrending, fetchTrendingNames, parseTrending } from './github-trending'
+import { addGithubTrending, fetchTrendingNames, parseTrending, parseTrendingGains } from './github-trending'
 import { rankedRepository } from './test-repository'
 
 const now = new Date('2026-11-27T00:00:00Z')
@@ -10,7 +10,8 @@ function row(fullName: string): string {
   return `<article class="Box-row"><h2 class="h3 lh-condensed">
     <a data-hydro-click="{}" href="/${fullName}" class="Link">
       <span class="text-normal">${fullName.split('/')[0]} /</span> ${fullName.split('/')[1]}</a></h2>
-    <a href="/${fullName}/stargazers">1,234</a></article>`
+    <a href="/${fullName}/stargazers">51,234</a>
+    <span class="d-inline-block float-sm-right"><svg></svg> 1,615 stars today</span></article>`
 }
 
 function page(...names: string[]): Response {
@@ -31,6 +32,12 @@ describe('parseTrending', () => {
   })
 })
 
+describe('parseTrendingGains', () => {
+  it('reads the stars gained today for each repository', () => {
+    expect(parseTrendingGains(`${row('Owner/Repo1')}${row('x/y.js')}`)).toEqual(new Map([['owner/repo1', 1615], ['x/y.js', 1615]]))
+  })
+})
+
 describe('fetchTrendingNames', () => {
   it('reads the daily and weekly pages', async () => {
     const fetchImpl = vi.fn(async (url: string | URL | Request) =>
@@ -40,6 +47,7 @@ describe('fetchTrendingNames', () => {
 
     expect(names?.daily.has('owner/repo1')).toBe(true)
     expect(names?.weekly.has('w/one')).toBe(true)
+    expect(names?.dailyGains.get('owner/repo1')).toBe(1615)
   })
 
   it('returns null when the daily page fails or its markup changes', async () => {

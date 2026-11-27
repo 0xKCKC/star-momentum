@@ -13,6 +13,11 @@ interface ScoreRepositoriesOptions {
   now: string
   history?: RepositorySnapshot[]
   previousRanking?: RankedRepository[]
+  /**
+   * Stars gained today as reported by GitHub Trending, by repository id. Used only when a
+   * repository has no snapshot baseline, instead of the imputed velocity.
+   */
+  dailyGainHints?: Map<number, number>
 }
 
 interface PreparedRepository {
@@ -72,7 +77,8 @@ function dailyRate(
 function buildSignals(
   repository: GithubRepository,
   now: string,
-  history: IndexedSnapshot[]
+  history: IndexedSnapshot[],
+  dailyGainHint?: number
 ): RankingSignals {
   const ageDays = Math.max(daysBetween(repository.createdAt, now), 0.25)
   const starsPerDay = repository.stars / ageDays
@@ -85,6 +91,10 @@ function buildSignals(
     const days = Math.max(ageDays, 1)
     daily = { value: repository.stars / days, days }
     forkDaily = { value: repository.forks / days, days }
+  }
+  // Just added to the pool from GitHub Trending: its page states the stars gained today.
+  if (!daily && dailyGainHint !== undefined) {
+    daily = { value: Math.max(0, dailyGainHint), days: 1 }
   }
 
   const shortTerm = daily ? dailyRate(history, repository, 'stars', SHORT_WINDOW) : null
@@ -182,7 +192,7 @@ export function scoreRepositories(
     .filter((repository) => !repository.archived && !repository.fork)
     .map((repository) => ({
       repository,
-      signals: buildSignals(repository, options.now, history)
+      signals: buildSignals(repository, options.now, history, options.dailyGainHints?.get(repository.id))
     }))
   const hasDailyBaseline = prepared.some(({ signals }) => signals.stars24h !== null)
   const breakdowns = hasDailyBaseline ? liveBreakdowns(prepared) : warmupBreakdowns(prepared)

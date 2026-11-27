@@ -151,6 +151,21 @@ describe('scoreRepositories', () => {
     expect(result.research.cautions.some((caution) => caution.includes('刷星'))).toBe(true)
   })
 
+  it('uses the stars GitHub Trending reports when a repository has no baseline', () => {
+    const history: RepositorySnapshot[] = [{
+      capturedAt: '2026-09-01T00:00:00Z',
+      repositories: [snapshotEntry(1, 'known/repo', 100)]
+    }]
+    const result = scoreRepositories([
+      repository({ id: 1, fullName: 'known/repo', stars: 150 }),
+      repository({ id: 2, fullName: 'surging/repo', stars: 40_000 })
+    ], { now: '2026-09-02T00:00:00Z', history, dailyGainHints: new Map([[1, 9999], [2, 800]]) })
+
+    // A real baseline wins over the hint; the hint replaces imputation.
+    expect(result.find(({ id }) => id === 1)?.signals.stars24h).toBe(50)
+    expect(result.find(({ id }) => id === 2)?.signals.stars24h).toBe(800)
+  })
+
   it('excludes archived repositories and forks', () => {
     const result = scoreRepositories([
       repository({ id: 1, fullName: 'active/repo' }),

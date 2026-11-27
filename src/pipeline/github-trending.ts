@@ -28,17 +28,20 @@ interface GithubTrendingOptions {
 export interface TrendingNames {
   daily: Set<string>
   weekly: Set<string>
+  /** Stars gained today for the daily page's repositories, where the page states it. */
+  dailyGains: Map<string, number>
 }
 
-async function fetchPage(fetchImpl: Fetch, since: 'daily' | 'weekly'): Promise<Set<string>> {
+async function fetchPage(fetchImpl: Fetch, since: 'daily' | 'weekly'): Promise<{ names: Set<string>, gains: Map<string, number> }> {
   const response = await fetchImpl(`${TRENDING_URL}${since}`, {
     headers: { Accept: 'text/html', 'User-Agent': 'star-momentum' },
     signal: AbortSignal.timeout(20_000)
   })
   if (!response.ok) throw new Error(`HTTP ${response.status}`)
-  const parsed = parseTrending(await response.text())
+  const html = await response.text()
+  const parsed = parseTrending(html)
   if (parsed.length < MIN_PARSED) throw new Error(`only ${parsed.length} repositories parsed`)
-  return new Set(parsed)
+  return { names: new Set(parsed), gains: parseTrendingGains(html) }
 }
 
 /** Null when the daily page cannot be read; the weekly page is optional. */
@@ -49,9 +52,9 @@ export async function fetchTrendingNames(
   const fetchImpl = options.fetchImpl ?? fetch
   try {
     const daily = await fetchPage(fetchImpl, 'daily')
-    const weekly = await fetchPage(fetchImpl, 'weekly').catch(() => new Set<string>())
-    log(`GitHub Trending: ${daily.size} repositories on the daily page, ${weekly.size} on the weekly page.`)
-    return { daily, weekly }
+    const weekly = await fetchPage(fetchImpl, 'weekly').then(({ names }) => names).catch(() => new Set<string>())
+    log(`GitHub Trending: ${daily.names.size} repositories on the daily page (${daily.gains.size} with stars today), ${weekly.size} on the weekly page.`)
+    return { daily: daily.names, weekly, dailyGains: daily.gains }
   } catch (error) {
     log(`GitHub Trending skipped: ${error instanceof Error ? error.message : String(error)}`)
     return null
@@ -64,6 +67,17 @@ export function parseTrending(html: string): string[] {
     names.add(`${match[1]}/${match[2]}`.toLowerCase())
   }
   return [...names]
+}
+
+/** Stars gained today as printed on the page, by lower-cased full name. */
+export function parseTrendingGains(html: string): Map<string, number> {
+  const gains = new Map<string, number>()
+  for (const article of html.split(/<article\b/).slice(1)) {
+    const name = parseTrending(article)[0]
+    const gain = article.match(/([\d,]+)\s+stars?\s+today/)
+    if (name && gain) gains.set(name, Number.parseInt(gain[1].replace(/,/g, ''), 10))
+  }
+  return gains
 }
 
 function daysBetweenDates(from: string, to: string): number {

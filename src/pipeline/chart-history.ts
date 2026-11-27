@@ -6,6 +6,8 @@ import type { RankedRepository, RankingDocument } from '../domain/repository'
 // has stayed. The stored daily history can, so each Top 50 repository gets its chart record.
 // It never changes scores or ranks.
 
+const RECENT_DAYS = 14
+
 export interface ChartDay {
   date: string
   repositories: Array<Pick<RankedRepository, 'id' | 'rank'> & { research?: Pick<RankedRepository['research'], 'githubTrending'> }>
@@ -51,7 +53,11 @@ export function addChartHistory(
       firstSeen: appearances[0]?.date ?? today,
       days: appearances.length + 1,
       streak,
-      bestRank: Math.min(repository.rank, ...appearances.map(({ ranks }) => ranks.get(repository.id)!))
+      bestRank: Math.min(repository.rank, ...appearances.map(({ ranks }) => ranks.get(repository.id)!)),
+      recent: [
+        ...ranksByDay.slice(-(RECENT_DAYS - 1)).map(({ ranks }) => ranks.get(repository.id) ?? null),
+        repository.rank
+      ]
     }
     return {
       ...repository,
