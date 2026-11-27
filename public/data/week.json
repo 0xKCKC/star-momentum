@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T14:41:11.713Z",
+  "generatedAt": "2026-11-27T14:56:34.693Z",
   "dataDate": "2026-11-27",
   "period": "week",
   "candidateCount": 701,
@@ -16,13 +16,13 @@
       "language": "Rust",
       "license": "GPL-3.0",
       "topics": [],
-      "stars": 13661,
-      "forks": 2326,
+      "stars": 13662,
+      "forks": 2328,
       "categories": [
         "games",
         "desktop"
       ],
-      "gain": 13661,
+      "gain": 13662,
       "daysCovered": 3.7,
       "startStars": 0,
       "todayRank": 13,
@@ -45,7 +45,7 @@
         "xbox"
       ],
       "stars": 8686,
-      "forks": 1211,
+      "forks": 1210,
       "categories": [
         "games",
         "desktop"
@@ -53,7 +53,7 @@
       "gain": 8686,
       "daysCovered": 6.8,
       "startStars": 0,
-      "todayRank": 12,
+      "todayRank": 15,
       "introduction": "XCL 是把已擁有的 Xbox Series X|S（GDK）遊戲帶到 Windows PC 的相容層，x64 程式碼不經模擬、直接在電腦原生執行，主機系統函式庫由項目自行重新實作，RDNA2 著色器則重編譯成 DXIL。它只支援已解包的遊戲檔案，不會下載、解密或解包 XVC／MSIXVC 套件。"
     },
     {
@@ -67,14 +67,14 @@
       "language": "JavaScript",
       "license": null,
       "topics": [],
-      "stars": 6345,
+      "stars": 6359,
       "forks": 180,
       "categories": [
         "web",
         "games"
       ],
-      "gain": 6345,
-      "daysCovered": 5.6,
+      "gain": 6359,
+      "daysCovered": 5.7,
       "startStars": 0,
       "todayRank": 9,
       "introduction": "PortWatch VI 追蹤社群把外流的 GTA VI Xbox 版本重新編譯、模擬或移植到 PC 的進展，以統一的評分階梯和進度條比較各個項目；名為 scout 的程式每三小時自動從 GitHub、論壇及新聞更新資料，並過濾抄襲與假下載。網站不寄存或連結任何遊戲檔案或執行檔。"
@@ -111,16 +111,17 @@
         "rust",
         "typescript"
       ],
-      "stars": 4401,
+      "stars": 4404,
       "forks": 316,
       "categories": [
         "ai",
         "devtools"
       ],
-      "gain": 4401,
+      "gain": 4404,
       "daysCovered": 6,
       "startStars": 0,
-      "todayRank": 35
+      "todayRank": 35,
+      "introduction": "fast-anything 是效能優化工具，不會把整個應用改寫成 Rust，而是分析 Python、Node、Ruby 等應用的執行情況，找出最耗時的少數函數，交由 coding agent 逐個移植。它會錄製真實調用並重播驗證，確認結果一致後才啟用，亦可隨時停用還原。工具只處理頂層、確定性、接受純數據的函數，涵蓋多種語言。"
     },
     {
       "rank": 5,
@@ -133,15 +134,15 @@
       "language": "C",
       "license": null,
       "topics": [],
-      "stars": 4321,
+      "stars": 4323,
       "forks": 223,
       "categories": [
         "desktop"
       ],
-      "gain": 4211,
+      "gain": 4207,
       "daysCovered": 7,
       "startStars": 0,
-      "todayRank": 32
+      "todayRank": 31
     },
     {
       "rank": 6,
@@ -154,12 +155,12 @@
       "language": "Rust",
       "license": "GPL-3.0",
       "topics": [],
-      "stars": 4021,
-      "forks": 1205,
+      "stars": 4039,
+      "forks": 1213,
       "categories": [
         "other"
       ],
-      "gain": 4021,
+      "gain": 4039,
       "daysCovered": 2.2,
       "startStars": 0,
       "todayRank": 6,
@@ -176,16 +177,17 @@
       "language": "Rust",
       "license": "GPL-3.0",
       "topics": [],
-      "stars": 3331,
-      "forks": 1008,
+      "stars": 3335,
+      "forks": 1009,
       "categories": [
         "games",
         "desktop"
       ],
-      "gain": 3331,
+      "gain": 3335,
       "daysCovered": 2.9,
       "startStars": 0,
-      "todayRank": 46
+      "todayRank": 46,
+      "introduction": "victory-fork 是兼容层 VIctory 的進行中分支，讓某款 Xbox Series 遊戲能以用戶自備的檔案在 Windows 原生運行。它跟隨上游 main 並加入修復，使遊戲世界正確渲染和遊玩，但目前世界場景約每秒 11 幀；開啟光線追蹤結構生成器時更會降至每秒 0.2 至 3 幀，可設 VICTORY_BVH_BUILDER=0 關閉。項目不含遊戲檔案，偶有顯示卡遺失問題。"
     },
     {
       "rank": 8,
@@ -198,16 +200,17 @@
       "language": "Python",
       "license": "GPL-3.0",
       "topics": [],
-      "stars": 2595,
+      "stars": 2596,
       "forks": 590,
       "categories": [
         "games",
         "desktop"
       ],
-      "gain": 2595,
+      "gain": 2596,
       "daysCovered": 3.6,
       "startStars": 0,
-      "todayRank": 23
+      "todayRank": 25,
+      "introduction": "Leonida Continued 是 Grand Theft Auto VI（Xbox Series）的靜態重編譯項目，讓遊戲在自己的 Windows 電腦上原生運行。主機 CPU 同為 x86-64，遊戲程式碼會直接載入執行，主機系統軟件則重新實現，預編譯的 RDNA2 GPU 程式翻譯成 SPIR-V 供 Vulkan 使用，素材從自有的遊戲包讀取。項目仍屬早期、尚未可玩，倉庫不含遊戲、密鑰或可執行檔，須自備 Xbox Series 1.0.2.1 副本。"
     },
     {
       "rank": 9,
@@ -225,12 +228,12 @@
         "swift",
         "trackpad"
       ],
-      "stars": 1979,
+      "stars": 1981,
       "forks": 106,
       "categories": [
         "desktop"
       ],
-      "gain": 1979,
+      "gain": 1981,
       "daysCovered": 5.1,
       "startStars": 0,
       "todayRank": null
@@ -267,13 +270,13 @@
         "sqlite",
         "typescript"
       ],
-      "stars": 23050,
-      "forks": 8573,
+      "stars": 23069,
+      "forks": 8580,
       "categories": [
         "ai",
         "security"
       ],
-      "gain": 10141,
+      "gain": 10145,
       "daysCovered": 7,
       "startStars": 12506,
       "todayRank": 4,
@@ -291,7 +294,7 @@
       "license": "GPL-3.0",
       "topics": [],
       "stars": 1918,
-      "forks": 622,
+      "forks": 621,
       "categories": [
         "games",
         "desktop"
@@ -299,44 +302,11 @@
       "gain": 1918,
       "daysCovered": 1.7,
       "startStars": 0,
-      "todayRank": 17,
+      "todayRank": 16,
       "introduction": "VIctory-7900XTX 是 VIctory 的分支，屬兼容層，讓用戶以自備的 Xbox Series 遊戲檔案在 Windows 原生運行。它走移植而非模擬路線，修補遊戲渲染器，並預先將 shader 翻譯成可跨版本保存的版本化儲存；目標先在 RX 7900 XTX 上以 1440p 繪製輸出 4K、開啟光追並保持畫面正確，再提升至 30fps 以上。項目不含遊戲檔案，需自備，目前僅在一台機器測試，部分渲染器修補預設關閉並仍在測試。"
     },
     {
       "rank": 12,
-      "id": 1471422729,
-      "fullName": "alesha-pro/llm.asm",
-      "owner": "alesha-pro",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/68546545?v=4",
-      "url": "https://github.com/alesha-pro/llm.asm",
-      "description": "Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch Mini-GPT trainer with live Braille TUI (32 KB) in 100% pure x86-64 NASM assembly. Zero C, zero libc, zero dependencies.",
-      "language": "Assembly",
-      "license": "MIT",
-      "topics": [
-        "assembly",
-        "avx2",
-        "bare-metal",
-        "llm",
-        "machine-learning",
-        "nasm",
-        "osdev",
-        "qwen",
-        "transformer",
-        "x86-64"
-      ],
-      "stars": 1886,
-      "forks": 297,
-      "categories": [
-        "ai",
-        "desktop"
-      ],
-      "gain": 1886,
-      "daysCovered": 2.3,
-      "startStars": 0,
-      "todayRank": 21
-    },
-    {
-      "rank": 13,
       "id": 1471624301,
       "fullName": "nexu-io/opengame",
       "owner": "nexu-io",
@@ -367,16 +337,50 @@
         "vibe-coding",
         "wechat-minigame"
       ],
-      "stars": 1880,
-      "forks": 308,
+      "stars": 1894,
+      "forks": 312,
       "categories": [
         "ai",
         "games"
       ],
-      "gain": 1880,
+      "gain": 1894,
       "daysCovered": 2.2,
       "startStars": 0,
       "todayRank": null
+    },
+    {
+      "rank": 13,
+      "id": 1471422729,
+      "fullName": "alesha-pro/llm.asm",
+      "owner": "alesha-pro",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/68546545?v=4",
+      "url": "https://github.com/alesha-pro/llm.asm",
+      "description": "Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch Mini-GPT trainer with live Braille TUI (32 KB) in 100% pure x86-64 NASM assembly. Zero C, zero libc, zero dependencies.",
+      "language": "Assembly",
+      "license": "MIT",
+      "topics": [
+        "assembly",
+        "avx2",
+        "bare-metal",
+        "llm",
+        "machine-learning",
+        "nasm",
+        "osdev",
+        "qwen",
+        "transformer",
+        "x86-64"
+      ],
+      "stars": 1890,
+      "forks": 297,
+      "categories": [
+        "ai",
+        "desktop"
+      ],
+      "gain": 1890,
+      "daysCovered": 2.3,
+      "startStars": 0,
+      "todayRank": 21,
+      "introduction": "llm.asm 以純 x86-64 NASM 匯編實現三項零依賴 LLM 項目：Qwen3-0.6B 推理程序、可脫離 Linux 於裸機啟動的操作系統，以及從零訓練 Mini-GPT，體積僅 14 至 32 KB。數學內核與分詞器均手寫，須用支援 AVX2、FMA、F16C 的處理器。"
     },
     {
       "rank": 14,
@@ -410,15 +414,16 @@
       "language": "JavaScript",
       "license": null,
       "topics": [],
-      "stars": 1746,
-      "forks": 395,
+      "stars": 1748,
+      "forks": 396,
       "categories": [
         "other"
       ],
-      "gain": 1746,
+      "gain": 1748,
       "daysCovered": 5.2,
       "startStars": 0,
-      "todayRank": 29
+      "todayRank": 30,
+      "introduction": "g1-acq 是適用於 Shadowrocket（小火箭）的 Google One iOS 訂閱入口商品 ID 改寫與採集工具。它攔截 one.google.com/ai? 回應，依五套預製模板或手動規則把指定 SKU 改寫成目標 ID，並記錄原始編號與最近十次回應，可匯出 JSON。工具只處理手機實際收到的匹配回應，不主動查詢全部 SKU，改寫記錄亦不代表購買調用或 App Store 面板已出現。"
     },
     {
       "rank": 16,
@@ -452,16 +457,17 @@
         "typing-cat",
         "windows"
       ],
-      "stars": 1722,
+      "stars": 1726,
       "forks": 244,
       "categories": [
         "desktop",
         "ai"
       ],
-      "gain": 1722,
+      "gain": 1726,
       "daysCovered": 6,
       "startStars": 0,
-      "todayRank": 24
+      "todayRank": 23,
+      "introduction": "KuroCat 是免費開源的 3D／2D 桌面打字貓兼 AI 編程伴侶，以 Rust 及 Tauri v2 開發，支援 Windows、macOS、Linux 與 Android。牠會隨鍵盤及滑鼠輸入做出反應，可切換 65% 或 108 鍵視角，並提供 OBS 原生透明直播源、輸入密碼時自動閉眼，以及內置 MCP Server 讓 AI 捏貓或同步編程代理狀態。Linux 版需 glibc 2.34 或以上。"
     },
     {
       "rank": 17,
@@ -474,13 +480,13 @@
       "language": "Python",
       "license": "MIT",
       "topics": [],
-      "stars": 5807,
+      "stars": 5814,
       "forks": 1259,
       "categories": [
         "security",
         "desktop"
       ],
-      "gain": 3799,
+      "gain": 3800,
       "daysCovered": 7,
       "startStars": 1857,
       "todayRank": 11,
@@ -507,15 +513,16 @@
         "youtube",
         "youtube-client"
       ],
-      "stars": 1617,
+      "stars": 1618,
       "forks": 138,
       "categories": [
         "desktop"
       ],
-      "gain": 1617,
+      "gain": 1618,
       "daysCovered": 4.8,
       "startStars": 0,
-      "todayRank": 33
+      "todayRank": 32,
+      "introduction": "Stream Tube 是以 Rust 編寫的 Windows 與 Linux 原生 YouTube 客戶端，介面由 GPUI 在 GPU 上繪製，影片經 libmpv 播放，啟動迅速、滾動流暢，記憶體佔用亦較瀏覽器為低。它直接串流播放影片，廣告不會載入，並內建 SponsorBlock、DeArrow 和 Return YouTube Dislike。項目仍屬早期 alpha，以 Windows 為主要平台，Linux 版本較少測試，macOS 版本尚未提供。"
     },
     {
       "rank": 19,
@@ -549,19 +556,41 @@
         "plugin",
         "token-optimization"
       ],
-      "stars": 1884,
+      "stars": 1889,
       "forks": 105,
       "categories": [
         "ai",
         "devtools"
       ],
-      "gain": 1569,
+      "gain": 1571,
       "daysCovered": 7,
       "startStars": 0,
-      "todayRank": 42
+      "todayRank": 42,
+      "introduction": "INK-Q/agy-fast 是 Google Antigravity（CLI agy、Desktop 2.0 及 IDE）的零依賴本地 MCP 外掛，將高頻搜尋、符號大綱、多檔案原子編輯與構建測試檢查整合成批次呼叫，並在每次工作階段注入工作區快照，以減少延遲、token 配額及上傳流量。它不改動原生介面、diff 檢視器、修改檔案清單、檢查點或安全檢查，需 Node.js 20 或以上，主要供 Antigravity 使用。"
     },
     {
       "rank": 20,
+      "id": 1472124387,
+      "fullName": "Reukix/Reloc",
+      "owner": "Reukix",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/120629904?v=4",
+      "url": "https://github.com/Reukix/Reloc",
+      "description": "iOS accessory-level location simulator over local loopback (iAP2 / MFi-v3 / NMEA)",
+      "language": "Swift",
+      "license": "AGPL-3.0",
+      "topics": [],
+      "stars": 1306,
+      "forks": 252,
+      "categories": [
+        "mobile"
+      ],
+      "gain": 1306,
+      "daysCovered": 1.9,
+      "startStars": 0,
+      "todayRank": null
+    },
+    {
+      "rank": 21,
       "id": 1183888342,
       "fullName": "stablyai/orca",
       "owner": "stablyai",
@@ -592,19 +621,20 @@
         "worktrees",
         "yc-backed"
       ],
-      "stars": 141934,
-      "forks": 9089,
+      "stars": 141963,
+      "forks": 9091,
       "categories": [
         "ai",
-        "devtools"
+        "mobile"
       ],
-      "gain": 11240,
+      "gain": 11251,
       "daysCovered": 7,
       "startStars": 130248,
-      "todayRank": 22
+      "todayRank": 22,
+      "introduction": "Orca 是開源的 AI agent 開發環境，讓你以自己的 Claude Code 或 Codex 等訂閱運行多個 bot，並可跨桌面、手機及遠端主機使用。你可從 Slack、Linear 或 GitHub 交託任務，bots 在各自獨立的 worktree 並行工作，完成後交回已測試的 pull request 供審閱。凡能在終端運行的 CLI agent 皆可支援；手機 app 須與桌面版配對，才能在外接收通知。"
     },
     {
-      "rank": 21,
+      "rank": 22,
       "id": 1463963309,
       "fullName": "iamajmeena/neonclipping",
       "owner": "iamajmeena",
@@ -631,19 +661,64 @@
         "youtube-shorts-generator",
         "yt-dlp"
       ],
-      "stars": 2861,
-      "forks": 187,
+      "stars": 2862,
+      "forks": 189,
       "categories": [
         "ai",
         "creative"
       ],
-      "gain": 2112,
+      "gain": 2110,
       "daysCovered": 7,
       "startStars": 665,
-      "todayRank": 45
+      "todayRank": 45,
+      "introduction": "NeonClipping 是免費開源的本地剪輯工具，可把 YouTube、Twitch 長片或本機 MP4 轉成 9:16 直式字幕短片，並自動生成標題和開場引子。它只下載音訊，用 YouTube 字幕或本機 Whisper 轉錄，按音量突變等訊號挑選片段，交由本機 Ollama 模型評分及生成標題，最後只下載選中部分並進行渲染，全程毋須帳號或上載。使用前須安裝 Python 3.10 至 3.13 及 FFmpeg，Ollama 屬建議選項。"
     },
     {
-      "rank": 22,
+      "rank": 23,
+      "id": 1459971684,
+      "fullName": "erkamyaman/rust-anything",
+      "owner": "erkamyaman",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/88717125?v=4",
+      "url": "https://github.com/erkamyaman/rust-anything",
+      "description": "Rewrite your app in Rust, piece by piece, checked against the original at every step. Works with TypeScript, JavaScript, Python, Go, Ruby, Java, C, PHP, C#, Kotlin and PowerShell.",
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "topics": [
+        "agent-skills",
+        "claude-code",
+        "cli",
+        "code-migration",
+        "codex",
+        "ffi",
+        "golang",
+        "java",
+        "javascript",
+        "mcp",
+        "migration",
+        "napi",
+        "performance",
+        "porting",
+        "pyo3",
+        "python",
+        "rewrite",
+        "ruby",
+        "rust",
+        "typescript"
+      ],
+      "stars": 10619,
+      "forks": 865,
+      "categories": [
+        "ai",
+        "devtools"
+      ],
+      "gain": 4760,
+      "daysCovered": 7,
+      "startStars": 5663,
+      "todayRank": 2,
+      "introduction": "rust-anything 把現有應用逐件改寫成 Rust。它先記錄原程式（Node.js、Python 等）的實際行為，再由你或 AI 編碼代理撰寫 Rust，每件都要與記錄完全吻合才可推進，最終成為純 Rust 應用。它本身不翻譯程式碼，只能發現記錄涵蓋的差異。"
+    },
+    {
+      "rank": 24,
       "id": 1469329665,
       "fullName": "Indigo-0167/universal-game-mod-manager",
       "owner": "Indigo-0167",
@@ -686,71 +761,6 @@
       "todayRank": null
     },
     {
-      "rank": 23,
-      "id": 1459971684,
-      "fullName": "erkamyaman/rust-anything",
-      "owner": "erkamyaman",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/88717125?v=4",
-      "url": "https://github.com/erkamyaman/rust-anything",
-      "description": "Rewrite your app in Rust, piece by piece, checked against the original at every step. Works with TypeScript, JavaScript, Python, Go, Ruby, Java, C, PHP, C#, Kotlin and PowerShell.",
-      "language": "Rust",
-      "license": "Apache-2.0",
-      "topics": [
-        "agent-skills",
-        "claude-code",
-        "cli",
-        "code-migration",
-        "codex",
-        "ffi",
-        "golang",
-        "java",
-        "javascript",
-        "mcp",
-        "migration",
-        "napi",
-        "performance",
-        "porting",
-        "pyo3",
-        "python",
-        "rewrite",
-        "ruby",
-        "rust",
-        "typescript"
-      ],
-      "stars": 10612,
-      "forks": 864,
-      "categories": [
-        "ai",
-        "devtools"
-      ],
-      "gain": 4760,
-      "daysCovered": 7,
-      "startStars": 5663,
-      "todayRank": 2,
-      "introduction": "rust-anything 把現有應用逐件改寫成 Rust。它先記錄原程式（Node.js、Python 等）的實際行為，再由你或 AI 編碼代理撰寫 Rust，每件都要與記錄完全吻合才可推進，最終成為純 Rust 應用。它本身不翻譯程式碼，只能發現記錄涵蓋的差異。"
-    },
-    {
-      "rank": 24,
-      "id": 1472124387,
-      "fullName": "Reukix/Reloc",
-      "owner": "Reukix",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/120629904?v=4",
-      "url": "https://github.com/Reukix/Reloc",
-      "description": "iOS accessory-level location simulator over local loopback (iAP2 / MFi-v3 / NMEA)",
-      "language": "Swift",
-      "license": "AGPL-3.0",
-      "topics": [],
-      "stars": 1299,
-      "forks": 249,
-      "categories": [
-        "mobile"
-      ],
-      "gain": 1299,
-      "daysCovered": 1.9,
-      "startStars": 0,
-      "todayRank": null
-    },
-    {
       "rank": 25,
       "id": 1469338376,
       "fullName": "Umbra9179/clipboard-history-manager-windows",
@@ -778,12 +788,12 @@
         "windows-application",
         "winui"
       ],
-      "stars": 1266,
+      "stars": 1267,
       "forks": 1,
       "categories": [
         "desktop"
       ],
-      "gain": 1266,
+      "gain": 1267,
       "daysCovered": 3.7,
       "startStars": 0,
       "todayRank": null
@@ -810,13 +820,13 @@
         "model-provider",
         "openai-compatible"
       ],
-      "stars": 88921,
+      "stars": 88935,
       "forks": 2516,
       "categories": [
         "ai",
         "devtools"
       ],
-      "gain": 7185,
+      "gain": 7188,
       "daysCovered": 7,
       "startStars": 81451,
       "todayRank": 8,
@@ -841,12 +851,12 @@
         "xbox",
         "xbox-series-x"
       ],
-      "stars": 2030,
-      "forks": 244,
+      "stars": 2031,
+      "forks": 245,
       "categories": [
         "games"
       ],
-      "gain": 1710,
+      "gain": 1711,
       "daysCovered": 6,
       "startStars": 320,
       "todayRank": null
@@ -870,7 +880,8 @@
       "gain": 1178,
       "daysCovered": 5.4,
       "startStars": 0,
-      "todayRank": 47
+      "todayRank": 47,
+      "introduction": "deslop-please 是以 Rust 編寫的 linter，用來清除草率程式碼，理念取自 A Philosophy of Software Design 的深模組、窄介面主張。它會指出 module-cycle、field-leak 等問題，運作前須先安裝 rust-analyzer。"
     },
     {
       "rank": 29,
@@ -883,12 +894,12 @@
       "language": "Rust",
       "license": "Apache-2.0",
       "topics": [],
-      "stars": 44468,
-      "forks": 8791,
+      "stars": 44481,
+      "forks": 8793,
       "categories": [
         "learning"
       ],
-      "gain": 5373,
+      "gain": 5377,
       "daysCovered": 7,
       "startStars": 38882,
       "todayRank": 5,
@@ -926,7 +937,7 @@
         "youtube-downloader",
         "yt-dlp"
       ],
-      "stars": 18816,
+      "stars": 18823,
       "forks": 1607,
       "categories": [
         "desktop"
@@ -939,6 +950,47 @@
     },
     {
       "rank": 31,
+      "id": 1473688485,
+      "fullName": "Pixel679-cmyk/windows-titlebar-blur-customizer",
+      "owner": "Pixel679-cmyk",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/358338974?v=4",
+      "url": "https://github.com/Pixel679-cmyk/windows-titlebar-blur-customizer",
+      "description": "Customize Windows 10 and 11 title bar effects with Aero, Acrylic, Mica and advanced DWM blur effects.",
+      "language": "C++",
+      "license": "MIT",
+      "topics": [
+        "acrylic",
+        "aero",
+        "aeroglass",
+        "blur",
+        "cplusplus",
+        "cpp",
+        "desktop",
+        "desktop-customization",
+        "dwm",
+        "glassmorphism",
+        "mica",
+        "personalization",
+        "transparency",
+        "win10",
+        "win11",
+        "windows",
+        "windows-10",
+        "windows-11",
+        "windows-customization"
+      ],
+      "stars": 1154,
+      "forks": 0,
+      "categories": [
+        "desktop"
+      ],
+      "gain": 1154,
+      "daysCovered": 1,
+      "startStars": 0,
+      "todayRank": null
+    },
+    {
+      "rank": 32,
       "id": 1437869585,
       "fullName": "mdiri-ai/SoduWork",
       "owner": "mdiri-ai",
@@ -969,58 +1021,17 @@
         "self-hosted",
         "team-collaboration"
       ],
-      "stars": 8629,
-      "forks": 855,
+      "stars": 8646,
+      "forks": 856,
       "categories": [
         "ai",
         "devtools"
       ],
-      "gain": 3681,
+      "gain": 3692,
       "daysCovered": 7,
       "startStars": 4802,
-      "todayRank": 15,
+      "todayRank": 12,
       "introduction": "SoduWork 是自託管的 AI 原生團隊協作引擎，請求會連同驗收標準交給不同 harness 和 agent 執行，再由獨立 AI 逐項審核，最終由提出者簽核。它支援 Pi、OpenCode、Codex 等七種 harness，可在對話中切換，並把流程封裝成可審批、授權及版本管理的 plugin；目前屬公開測試版，生產使用前應先評估。"
-    },
-    {
-      "rank": 32,
-      "id": 1473688485,
-      "fullName": "Pixel679-cmyk/windows-titlebar-blur-customizer",
-      "owner": "Pixel679-cmyk",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/358338974?v=4",
-      "url": "https://github.com/Pixel679-cmyk/windows-titlebar-blur-customizer",
-      "description": "Customize Windows 10 and 11 title bar effects with Aero, Acrylic, Mica and advanced DWM blur effects.",
-      "language": "C++",
-      "license": "MIT",
-      "topics": [
-        "acrylic",
-        "aero",
-        "aeroglass",
-        "blur",
-        "cplusplus",
-        "cpp",
-        "desktop",
-        "desktop-customization",
-        "dwm",
-        "glassmorphism",
-        "mica",
-        "personalization",
-        "transparency",
-        "win10",
-        "win11",
-        "windows",
-        "windows-10",
-        "windows-11",
-        "windows-customization"
-      ],
-      "stars": 1138,
-      "forks": 0,
-      "categories": [
-        "desktop"
-      ],
-      "gain": 1138,
-      "daysCovered": 1,
-      "startStars": 0,
-      "todayRank": null
     },
     {
       "rank": 33,
@@ -1054,16 +1065,17 @@
         "touhou",
         "typescript"
       ],
-      "stars": 480664,
+      "stars": 480680,
       "forks": 116762,
       "categories": [
         "ai",
         "security"
       ],
-      "gain": 9772,
+      "gain": 9773,
       "daysCovered": 7,
       "startStars": 470504,
-      "todayRank": 44
+      "todayRank": 44,
+      "introduction": "REA 是透過 MCP 連接 AI agent 的逆向工程工具，可檢查原生二進位檔、JavaScript 與 Electron 應用、.NET 組件及網站，分析全程在本機進行，結論附有證據與限制。深度原生分析須配合 Hopper、Ghidra、IDA 或 Kuna，靜態 JavaScript 檢查則無需原生引擎。"
     },
     {
       "rank": 34,
@@ -1094,13 +1106,13 @@
         "widgets",
         "windows"
       ],
-      "stars": 7528,
+      "stars": 7532,
       "forks": 853,
       "categories": [
         "desktop",
         "mobile"
       ],
-      "gain": 3434,
+      "gain": 3432,
       "daysCovered": 7,
       "startStars": 3958,
       "todayRank": 1,
@@ -1137,8 +1149,8 @@
         "web-search",
         "webscraping"
       ],
-      "stars": 211400,
-      "forks": 11104,
+      "stars": 211410,
+      "forks": 11108,
       "categories": [
         "ai",
         "data"
@@ -1162,8 +1174,8 @@
         "artificial-intelligence",
         "large-language-model"
       ],
-      "stars": 72083,
-      "forks": 9389,
+      "stars": 72090,
+      "forks": 9390,
       "categories": [
         "ai"
       ],
@@ -1190,7 +1202,7 @@
         "proactive-agent",
         "proactive-ai"
       ],
-      "stars": 5043,
+      "stars": 5047,
       "forks": 473,
       "categories": [
         "ai",
@@ -1199,7 +1211,8 @@
       "gain": 2724,
       "daysCovered": 7,
       "startStars": 2211,
-      "todayRank": 25
+      "todayRank": 24,
+      "introduction": "Linger 是開源的個人 AI 代理，完全在本機運行。它的 PolyStrata 推論引擎把模型最常用的專家留在 GPU，其餘置於記憶體或 SSD，令 125B 級模型可在 12 GB 顯存的消費級電腦上運作，並會自動偵測硬件、挑選及安裝合適模型。它又把郵件、聊天與會議整理成可供所有代理搜尋的 wiki 記憶，並主動跟進工作，資料留在裝置。桌面應用仍屬 Beta。"
     },
     {
       "rank": 38,
@@ -1270,13 +1283,13 @@
         "xbox-series-s",
         "xbox-series-x"
       ],
-      "stars": 1033,
+      "stars": 1038,
       "forks": 135,
       "categories": [
         "games",
         "desktop"
       ],
-      "gain": 1033,
+      "gain": 1038,
       "daysCovered": 3.2,
       "startStars": 0,
       "todayRank": 10,
@@ -1298,7 +1311,7 @@
       "categories": [
         "ai"
       ],
-      "gain": 3494,
+      "gain": 3489,
       "daysCovered": 7,
       "startStars": 18837,
       "todayRank": null
@@ -1335,13 +1348,13 @@
         "video-encoding",
         "windows"
       ],
-      "stars": 1019,
+      "stars": 1020,
       "forks": 0,
       "categories": [
         "creative",
         "desktop"
       ],
-      "gain": 1019,
+      "gain": 1020,
       "daysCovered": 3.7,
       "startStars": 0,
       "todayRank": null
@@ -1357,15 +1370,16 @@
       "language": "Lean",
       "license": "Apache-2.0",
       "topics": [],
-      "stars": 989,
+      "stars": 992,
       "forks": 112,
       "categories": [
         "other"
       ],
-      "gain": 989,
-      "daysCovered": 1.7,
+      "gain": 992,
+      "daysCovered": 1.8,
       "startStars": 0,
-      "todayRank": 36
+      "todayRank": 37,
+      "introduction": "grh-lean 以 Lean 4 及 Mathlib 形式化證明 Riemann Hypothesis 與 Dirichlet L-functions 的 Generalized Riemann Hypothesis，只依賴三條標準公理。它分為可讀版與壓縮版兩套實作，目前僅通過機器檢查，未經數學家通讀。"
     },
     {
       "rank": 43,
@@ -1384,7 +1398,7 @@
         "ai"
       ],
       "gain": 973,
-      "daysCovered": 6.5,
+      "daysCovered": 6.6,
       "startStars": 0,
       "todayRank": null
     },
@@ -1419,12 +1433,12 @@
         "voicestudio",
         "workflow"
       ],
-      "stars": 119203,
+      "stars": 119212,
       "forks": 13309,
       "categories": [
         "ai"
       ],
-      "gain": 4273,
+      "gain": 4276,
       "daysCovered": 7,
       "startStars": 114760,
       "todayRank": null
@@ -1440,12 +1454,12 @@
       "language": "Shell",
       "license": "MIT",
       "topics": [],
-      "stars": 334052,
+      "stars": 334065,
       "forks": 28112,
       "categories": [
         "ai"
       ],
-      "gain": 5472,
+      "gain": 5476,
       "daysCovered": 7,
       "startStars": 328363,
       "todayRank": null
@@ -1502,46 +1516,20 @@
         "videomd",
         "vlm"
       ],
-      "stars": 13877,
+      "stars": 13882,
       "forks": 2016,
       "categories": [
         "ai",
         "creative"
       ],
-      "gain": 2593,
+      "gain": 2594,
       "daysCovered": 7,
       "startStars": 11181,
-      "todayRank": 30
+      "todayRank": 28,
+      "introduction": "rea-video 是開源的 Python 工具，讓 AI agent 逐鏡拆解影片，判斷每個鏡頭是實拍、AI 生成、3D 動畫還是程式碼製作，並整理字幕、剪接與音效，同時提出重製方案。分析會輸出供人閱讀的報告，以及按層次編排、方便模型按需讀取的開放格式 VIDEO.md。使用前須具備 ffmpeg 與 Python 3.10+，工具本身不負責渲染新影片。"
     },
     {
       "rank": 48,
-      "id": 1097346685,
-      "fullName": "pbakaus/impeccable",
-      "owner": "pbakaus",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/43004?v=4",
-      "url": "https://github.com/pbakaus/impeccable",
-      "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
-      "language": "Rust",
-      "license": "Apache-2.0",
-      "topics": [
-        "agent-skills",
-        "ai",
-        "anti-slop",
-        "design",
-        "slop"
-      ],
-      "stars": 117857,
-      "forks": 7065,
-      "categories": [
-        "ai"
-      ],
-      "gain": 4036,
-      "daysCovered": 7,
-      "startStars": 113661,
-      "todayRank": null
-    },
-    {
-      "rank": 49,
       "id": 1465322684,
       "fullName": "sous-labs/songe",
       "owner": "sous-labs",
@@ -1559,7 +1547,7 @@
         "lora",
         "mlx"
       ],
-      "stars": 920,
+      "stars": 921,
       "forks": 76,
       "categories": [
         "ai"
@@ -1567,6 +1555,33 @@
       "gain": 900,
       "daysCovered": 7,
       "startStars": 0,
+      "todayRank": null
+    },
+    {
+      "rank": 49,
+      "id": 1097346685,
+      "fullName": "pbakaus/impeccable",
+      "owner": "pbakaus",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/43004?v=4",
+      "url": "https://github.com/pbakaus/impeccable",
+      "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "topics": [
+        "agent-skills",
+        "ai",
+        "anti-slop",
+        "design",
+        "slop"
+      ],
+      "stars": 117864,
+      "forks": 7066,
+      "categories": [
+        "ai"
+      ],
+      "gain": 4037,
+      "daysCovered": 7,
+      "startStars": 113661,
       "todayRank": null
     },
     {
@@ -1588,13 +1603,13 @@
         "oci",
         "windows"
       ],
-      "stars": 13972,
+      "stars": 13973,
       "forks": 671,
       "categories": [
         "infra",
         "devtools"
       ],
-      "gain": 2461,
+      "gain": 2459,
       "daysCovered": 7,
       "startStars": 11413,
       "todayRank": 20,
