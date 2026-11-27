@@ -5,6 +5,7 @@ import { addNamedRepositories, discoverRepositories } from './discovery'
 import { fixtureRepositories } from './fixtures'
 import { GithubClient } from './github-client'
 import { addChartHistory, loadChartDays } from './chart-history'
+import { deepSeekUsage } from './deepseek-client'
 import { addDeepSeekIntroductions } from './deepseek-intro'
 import { addGithubTrending, fetchTrendingNames } from './github-trending'
 import { addHackerNewsExposure } from './hacker-news'
@@ -90,6 +91,10 @@ async function run(): Promise<void> {
   const trend = !useFixtures && process.env.DEEPSEEK !== 'off'
     ? await writeTrendSummary(researched, { apiKey: process.env.DEEPSEEK_API_KEY, model: process.env.DEEPSEEK_MODEL, now, log })
     : undefined
+  const deepseek = deepSeekUsage()
+  if (deepseek.calls > 0) {
+    log(`DeepSeek usage this update: ${deepseek.calls} calls, ${deepseek.promptTokens} input + ${deepseek.completionTokens} output = ${deepseek.promptTokens + deepseek.completionTokens} tokens.`)
+  }
   // Last, because earlier steps rebuild the research object.
   let githubTrending: RankingDocument['githubTrending']
   if (!useFixtures) {
@@ -125,6 +130,7 @@ async function run(): Promise<void> {
       historyDays: history.length + 1
     },
     ...(trend ? { trend } : {}),
+    ...(deepseek.calls > 0 ? { deepseekUsage: deepseek } : {}),
     ...(githubTrending ? { githubTrending } : {}),
     repositories: researched
   }

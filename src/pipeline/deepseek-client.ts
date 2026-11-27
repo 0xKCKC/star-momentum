@@ -15,6 +15,15 @@ export interface ChatMessage { role: string, content: string }
 
 export interface Completion { content: string, finishReason: string }
 
+export interface DeepSeekUsage { calls: number, promptTokens: number, completionTokens: number }
+
+const usage: DeepSeekUsage = { calls: 0, promptTokens: 0, completionTokens: 0 }
+
+/** Tokens DeepSeek reported for every call made in this process so far. */
+export function deepSeekUsage(): DeepSeekUsage {
+  return { ...usage }
+}
+
 export async function chat(settings: DeepSeekSettings, messages: ChatMessage[], maxTokens: number): Promise<Completion> {
   const fetchImpl = settings.fetchImpl ?? fetch
   const response = await fetchImpl('https://api.deepseek.com/chat/completions', {
@@ -29,7 +38,13 @@ export async function chat(settings: DeepSeekSettings, messages: ChatMessage[], 
     signal: AbortSignal.timeout(180_000)
   })
   if (!response.ok) throw new Error(`DeepSeek ${response.status}: ${(await response.text()).slice(0, 160)}`)
-  const body = await response.json() as { choices?: Array<{ message?: { content?: string | null }, finish_reason?: string }> }
+  const body = await response.json() as {
+    choices?: Array<{ message?: { content?: string | null }, finish_reason?: string }>
+    usage?: { prompt_tokens?: number, completion_tokens?: number }
+  }
+  usage.calls += 1
+  usage.promptTokens += body.usage?.prompt_tokens ?? 0
+  usage.completionTokens += body.usage?.completion_tokens ?? 0
   const choice = body.choices?.[0]
   return { content: choice?.message?.content ?? '', finishReason: choice?.finish_reason ?? 'unknown' }
 }
