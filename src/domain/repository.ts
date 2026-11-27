@@ -182,6 +182,46 @@ export interface RankingDocument {
   repositories: RankedRepository[]
 }
 
+export type RankingPeriod = 'week' | 'month'
+
+export const periodDays: Record<RankingPeriod, number> = { week: 7, month: 30 }
+
+export interface PeriodRepository {
+  rank: number
+  id: number
+  fullName: string
+  owner: string
+  ownerAvatarUrl: string
+  url: string
+  description: string
+  language: string | null
+  license: string | null
+  topics: string[]
+  stars: number
+  forks: number
+  categories: RepositoryCategory[]
+  /** Stars gained in the period, scaled to its exact length when the baseline is older. */
+  gain: number
+  /** Days of data behind the gain; shorter than the period for repositories created inside it. */
+  daysCovered: number
+  /** Stars at the start of the period; 0 for repositories created inside it. */
+  startStars: number
+  /** Rank in today's Top 50, if it is there. */
+  todayRank: number | null
+  /** Chinese introduction, reused from today's Top 50 when available. */
+  introduction?: string
+}
+
+export interface PeriodRanking {
+  schemaVersion: 1
+  generatedAt: string
+  dataDate: string
+  period: RankingPeriod
+  /** Candidates that had a baseline for this period. */
+  candidateCount: number
+  repositories: PeriodRepository[]
+}
+
 export const categoryLabels: Record<RepositoryCategory, string> = {
   ai: 'AI',
   devtools: '開發工具',

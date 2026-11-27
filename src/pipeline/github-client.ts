@@ -100,6 +100,17 @@ export class GithubClient {
     return response.items.map(toRepository)
   }
 
+  /** One repository by full name; null when it no longer exists or cannot be read. */
+  async getRepository(fullName: string): Promise<GithubRepository | null> {
+    try {
+      const item = await this.request<GithubRepositoryResponse>(new URL(`https://api.github.com/repos/${fullName}`))
+      return toRepository(item)
+    } catch (error) {
+      if (error instanceof GithubApiError && [403, 404, 451].includes(error.status)) return null
+      throw error
+    }
+  }
+
   private async request<T>(url: URL, attempt = 0): Promise<T> {
     const response = await fetch(url, {
       headers: {

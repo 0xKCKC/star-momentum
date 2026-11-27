@@ -1,10 +1,13 @@
 import { useDeferredValue, useMemo, useState } from 'react'
 import type { EaseLevel, RepositoryCategory } from './domain/repository'
+import { usePeriodRanking } from './hooks/usePeriodRanking'
 import { useRankingData } from './hooks/useRankingData'
 import { FilterBar } from './components/FilterBar'
 import { Header } from './components/Header'
 import { HeroSummary } from './components/HeroSummary'
 import { Methodology } from './components/Methodology'
+import { PeriodList } from './components/PeriodList'
+import { PeriodTabs, type ChartView } from './components/PeriodTabs'
 import { Podium } from './components/Podium'
 import { RankingList } from './components/RankingList'
 import { PageState } from './components/PageState'
@@ -14,6 +17,8 @@ export function App() {
   const [category, setCategory] = useState<RepositoryCategory | 'all'>('all')
   const [ease, setEase] = useState<EaseLevel | 'all'>('all')
   const [query, setQuery] = useState('')
+  const [view, setView] = useState<ChartView>('today')
+  const periodRanking = usePeriodRanking(view === 'today' ? null : view)
 
   const deferredQuery = useDeferredValue(query)
 
@@ -41,6 +46,22 @@ export function App() {
       })
       .map(({ repository }) => repository)
   }, [category, ease, deferredQuery, searchIndex])
+  const filteredPeriod = useMemo(() => {
+    const normalizedQuery = deferredQuery.trim().toLowerCase()
+
+    return (periodRanking.data?.repositories ?? []).filter((repository) => {
+      const matchesCategory = category === 'all' || repository.categories.includes(category)
+      const matchesQuery = !normalizedQuery || [
+        repository.fullName,
+        repository.description,
+        repository.introduction ?? '',
+        repository.language ?? '',
+        ...repository.topics
+      ].some((value) => value.toLowerCase().includes(normalizedQuery))
+
+      return matchesCategory && matchesQuery
+    })
+  }, [category, deferredQuery, periodRanking.data])
   const hasEase = useMemo(() => (data?.repositories ?? []).some(({ research }) => research.ease), [data])
 
   if (loading) return <PageState type="loading" />
@@ -53,23 +74,38 @@ export function App() {
         <HeroSummary document={data} />
         <section className="ranking-section" id="ranking" aria-labelledby="ranking-title">
           <div className="section-heading container">
-            <h2 id="ranking-title">今日排行</h2>
-            <p>排名來自 star 增長和開發活動。</p>
+            <h2 id="ranking-title">{view === 'today' ? '今日排行' : view === 'week' ? '7 日排行' : '30 日排行'}</h2>
+            <p>
+              {view === 'today'
+                ? '排名來自 star 增長和開發活動。'
+                : `按 ${view === 'week' ? 7 : 30} 日新增 stars 排名：絕對增長佔六成，相對期初規模的增幅佔四成。`}
+            </p>
+            <PeriodTabs view={view} onViewChange={setView} />
           </div>
           <FilterBar
             category={category}
             onCategoryChange={setCategory}
-            {...(hasEase ? { ease, onEaseChange: setEase } : {})}
+            {...(hasEase && view === 'today' ? { ease, onEaseChange: setEase } : {})}
             query={query}
             onQueryChange={setQuery}
-            resultCount={filteredRepositories.length}
+            resultCount={view === 'today' ? filteredRepositories.length : filteredPeriod.length}
           />
           <div className="container rankings-layout">
-            {filteredRepositories.length > 0 ? (
-              <>
-                <Podium repositories={filteredRepositories.slice(0, 3)} />
-                <RankingList repositories={filteredRepositories.slice(3)} />
-              </>
+            {view === 'today' ? (
+              filteredRepositories.length > 0 ? (
+                <>
+                  <Podium repositories={filteredRepositories.slice(0, 3)} />
+                  <RankingList repositories={filteredRepositories.slice(3)} />
+                </>
+              ) : (
+                <PageState type="empty" />
+              )
+            ) : periodRanking.loading ? (
+              <p className="period-note">正在讀取排行…</p>
+            ) : periodRanking.unavailable ? (
+              <p className="period-note">這個時段的排行會在下一次更新後提供。</p>
+            ) : filteredPeriod.length > 0 ? (
+              <PeriodList period={view} repositories={filteredPeriod} />
             ) : (
               <PageState type="empty" />
             )}

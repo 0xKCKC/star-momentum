@@ -1,13 +1,14 @@
 import type { GithubTrendingComparison, RankedRepository } from '../domain/repository'
 import type { ChartDay } from './chart-history'
 
-// Reads GitHub's own daily Trending page (public HTML, no key) and marks which Top 50
-// repositories it does not list, and which ones this ranking listed first. Lead times are only
+// Reads GitHub's own Trending pages (public HTML, no key). The names widen the candidate pool
+// (see addNamedRepositories), and the daily page marks which Top 50 repositories GitHub also
+// lists and which ones this ranking listed first. Lead times are only
 // claimed for repositories first charted after tracking began, because before that there is no
-// record of what Trending showed. It never changes scores or ranks, and any failure (network,
-// changed markup) leaves the ranking untouched.
+// record of what Trending showed. The marks never change scores or ranks, and any failure
+// (network, changed markup) leaves the ranking untouched.
 
-const TRENDING_URL = 'https://github.com/trending?since=daily'
+const TRENDING_URL = 'https://github.com/trending?since='
 // A healthy page lists up to 25 repositories; fewer than this means the markup changed.
 const MIN_PARSED = 5
 
@@ -19,8 +20,42 @@ interface GithubTrendingOptions {
   days: ChartDay[]
   /** The previous update, which may be from earlier today. */
   previous?: { dataDate: string, githubTrending?: GithubTrendingComparison, repositories: RankedRepository[] } | null
-  fetchImpl?: Fetch
+  /** Lower-cased full names on the daily Trending page. */
+  listed: Set<string>
   log?: (message: string) => void
+}
+
+export interface TrendingNames {
+  daily: Set<string>
+  weekly: Set<string>
+}
+
+async function fetchPage(fetchImpl: Fetch, since: 'daily' | 'weekly'): Promise<Set<string>> {
+  const response = await fetchImpl(`${TRENDING_URL}${since}`, {
+    headers: { Accept: 'text/html', 'User-Agent': 'star-momentum' },
+    signal: AbortSignal.timeout(20_000)
+  })
+  if (!response.ok) throw new Error(`HTTP ${response.status}`)
+  const parsed = parseTrending(await response.text())
+  if (parsed.length < MIN_PARSED) throw new Error(`only ${parsed.length} repositories parsed`)
+  return new Set(parsed)
+}
+
+/** Null when the daily page cannot be read; the weekly page is optional. */
+export async function fetchTrendingNames(
+  options: { fetchImpl?: Fetch, log?: (message: string) => void } = {}
+): Promise<TrendingNames | null> {
+  const log = options.log ?? (() => undefined)
+  const fetchImpl = options.fetchImpl ?? fetch
+  try {
+    const daily = await fetchPage(fetchImpl, 'daily')
+    const weekly = await fetchPage(fetchImpl, 'weekly').catch(() => new Set<string>())
+    log(`GitHub Trending: ${daily.size} repositories on the daily page, ${weekly.size} on the weekly page.`)
+    return { daily, weekly }
+  } catch (error) {
+    log(`GitHub Trending skipped: ${error instanceof Error ? error.message : String(error)}`)
+    return null
+  }
 }
 
 export function parseTrending(html: string): string[] {
@@ -35,25 +70,12 @@ function daysBetweenDates(from: string, to: string): number {
   return Math.round((Date.parse(`${to}T00:00:00Z`) - Date.parse(`${from}T00:00:00Z`)) / 86_400_000)
 }
 
-export async function addGithubTrending(
+export function addGithubTrending(
   repositories: RankedRepository[],
   options: GithubTrendingOptions
-): Promise<{ repositories: RankedRepository[], comparison?: GithubTrendingComparison }> {
+): { repositories: RankedRepository[], comparison: GithubTrendingComparison } {
   const log = options.log ?? (() => undefined)
-  let listedNames: Set<string>
-  try {
-    const response = await (options.fetchImpl ?? fetch)(TRENDING_URL, {
-      headers: { Accept: 'text/html', 'User-Agent': 'github-daily-research-ranking' },
-      signal: AbortSignal.timeout(20_000)
-    })
-    if (!response.ok) throw new Error(`HTTP ${response.status}`)
-    const parsed = parseTrending(await response.text())
-    if (parsed.length < MIN_PARSED) throw new Error(`only ${parsed.length} repositories parsed`)
-    listedNames = new Set(parsed)
-  } catch (error) {
-    log(`GitHub Trending comparison skipped: ${error instanceof Error ? error.message : String(error)}`)
-    return { repositories }
-  }
+  const listedNames = options.listed
 
   // Earlier sightings, from stored days and from an earlier update today.
   const records = [
@@ -92,7 +114,7 @@ export async function addGithubTrending(
     }
   })
   const unlisted = marked.filter(({ research }) => !research.githubTrending.listed).length
-  log(`GitHub Trending: ${listedNames.size} repositories listed there; ${unlisted}/${marked.length} of the Top 50 are not on it.`)
+  log(`GitHub Trending: ${marked.length - unlisted}/${marked.length} of the Top 50 are also on its daily page.`)
   return {
     repositories: marked,
     comparison: { checkedAt: options.now.toISOString(), trackedSince, size: listedNames.size, unlisted }
@@ -103,6 +125,6 @@ export function githubTrendingEvidence(status: NonNullable<RankedRepository['res
   if (status.leadDays) return `GitHub Trending 日榜：本榜早 ${status.leadDays} 日收錄`
   if (status.listed) return 'GitHub Trending 日榜：今日同樣上榜'
   return status.firstListed
-    ? `GitHub Trending 日榜：今日未見（${status.firstListed} 曾上榜）`
-    : 'GitHub Trending 日榜：未見'
+    ? `GitHub Trending 日榜：今日不在榜（${status.firstListed} 曾上榜）`
+    : 'GitHub Trending 日榜：不在榜'
 }
