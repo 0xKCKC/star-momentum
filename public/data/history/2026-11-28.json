@@ -1,0 +1,6111 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-27T16:01:00.443Z",
+  "dataDate": "2026-11-28",
+  "status": "live",
+  "source": "github-live",
+  "methodologyVersion": "1.2.0",
+  "stats": {
+    "candidateCount": 853,
+    "rankedCount": 50,
+    "historyDays": 9
+  },
+  "trend": {
+    "text": "今日榜前列以遊戲相容層最集中：VIctory 及其 AMD 分支、ScarlettPort 與 XCL 均讓玩家以自備檔案在 Windows 原生運行 Xbox 遊戲，PortWatch VI 則追蹤同類移植進展。其次，rust-anything 與 craft-anything 等工具以 AI 編碼代理重寫現有應用，先記錄或檢視原作行為再重建。安全與裝置控制亦成集群，如 ARTEX 滲透測試平台、TelemetryCleaner 及 Claude-Cage 隔離環境。",
+    "writtenAt": "2026-11-27T16:01:00.443Z",
+    "source": "deepseek"
+  },
+  "deepseekUsage": {
+    "calls": 6,
+    "promptTokens": 18757,
+    "completionTokens": 12235
+  },
+  "githubTrending": {
+    "checkedAt": "2026-11-27T16:01:00.443Z",
+    "trackedSince": "2026-11-27",
+    "size": 16,
+    "unlisted": 50
+  },
+  "repositories": [
+    {
+      "id": 1449548089,
+      "nodeId": "R_kgDOVmZZOQ",
+      "name": "phonebox",
+      "fullName": "ersinkoc/phonebox",
+      "owner": "ersinkoc",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/408479?v=4",
+      "url": "https://github.com/ersinkoc/phonebox",
+      "description": "Turn an old Android phone into a customizable desk panel and touch control deck for Windows, Linux and macOS. 124 widgets and 30 templates for system stats, AI coding, media and automation, in 13 languages. USB or paired Wi-Fi. No cloud required.",
+      "language": "JavaScript",
+      "topics": [
+        "android",
+        "claude-code",
+        "codex",
+        "dashboard",
+        "desk-panel",
+        "dotnet",
+        "home-assistant",
+        "linux",
+        "macos",
+        "old-phone",
+        "smart-stack",
+        "stream-deck",
+        "system-monitor",
+        "tailscale",
+        "webhooks",
+        "widgets",
+        "windows"
+      ],
+      "stars": 7552,
+      "forks": 853,
+      "openIssues": 12,
+      "createdAt": "2026-11-07T16:45:16Z",
+      "updatedAt": "2026-11-27T15:59:29Z",
+      "pushedAt": "2026-11-27T15:50:19Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 1,
+      "previousRank": 1,
+      "rankChange": 0,
+      "score": 95.3,
+      "categories": [
+        "desktop",
+        "mobile"
+      ],
+      "signals": {
+        "stars24h": 674,
+        "forks24h": 53,
+        "starVelocity": 632.1996653129227,
+        "relativeGrowth": 7.262825637734242,
+        "acceleration7d": 1.5013133568798043,
+        "forkRatio7d": 0.09209794101279911,
+        "ageDays": 19.969264386574075,
+        "hoursSincePush": 0.1781786111111111,
+        "starsPerDay": 378.1811815300233
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.0962441314554,
+        "relativeGrowth": 19.577464788732396,
+        "acceleration": 8.57981220657277,
+        "forkMomentum": 9.595070422535212,
+        "developmentActivity": 14.992047706429348,
+        "freshness": 8.46698562117603
+      },
+      "research": {
+        "summary": "Turn an old Android phone into a customizable desk panel and touch control deck for Windows, Linux and macOS. 124 widgets and 30 templates for system stats, AI coding, media and automation, in 13 languages. USB or paired Wi-Fi. No cloud required.",
+        "whyNow": "過去 24 小時增加 674 個 stars，同時增加 53 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
+        "evidence": [
+          "7,552 stars，853 forks",
+          "主要語言：JavaScript",
+          "授權：MIT",
+          "分類：桌面與系統、手機應用",
+          "近期加星帳戶抽樣：63 個中 5 個可疑",
+          "Hacker News：2 分、0 則評論（6 日前）",
+          "本榜紀錄：2026-11-17 首次上榜，累計 12 日（連續 12 日），最高第 1 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-25T18:12:54.314Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 63,
+          "suspicious": 5,
+          "freshHollow": 4,
+          "sharedHollow": 1,
+          "maxPerMinute": 3,
+          "flagged": false
+        },
+        "hackerNews": {
+          "points": 2,
+          "comments": 0,
+          "postedAt": "2026-11-21T10:29:11Z",
+          "url": "https://news.ycombinator.com/item?id=50587831"
+        },
+        "introduction": {
+          "text": "PhoneBox 將舊 Android 手機變成電腦的桌面面板，透過 USB 或 Wi-Fi 連接 Windows、Linux 及 macOS。桌面代理配合全屏 Android 應用，用戶可在瀏覽器可視化編輯器中以 137 個 widget 和 30 個模板自訂多頁版面，顯示系統監控、AI 編碼會話、音樂等資訊並作觸控操作。無需 root、帳號或雲端服務。應用只從項目發布版下載，Windows 代理目前尚未簽名。",
+          "writtenAt": "2026-11-27T00:00:58.037Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-17",
+          "days": 12,
+          "streak": 12,
+          "bestRank": 1,
+          "recent": [
+            null,
+            null,
+            11,
+            11,
+            15,
+            24,
+            3,
+            5,
+            22,
+            3,
+            2,
+            1,
+            1,
+            1
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1459971684,
+      "nodeId": "R_kgDOVwVmZA",
+      "name": "rust-anything",
+      "fullName": "erkamyaman/rust-anything",
+      "owner": "erkamyaman",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/88717125?v=4",
+      "url": "https://github.com/erkamyaman/rust-anything",
+      "description": "Rewrite your app in Rust, piece by piece, checked against the original at every step. Works with TypeScript, JavaScript, Python, Go, Ruby, Java, C, PHP, C#, Kotlin and PowerShell.",
+      "language": "Rust",
+      "topics": [
+        "agent-skills",
+        "claude-code",
+        "cli",
+        "code-migration",
+        "codex",
+        "ffi",
+        "golang",
+        "java",
+        "javascript",
+        "mcp",
+        "migration",
+        "napi",
+        "performance",
+        "porting",
+        "pyo3",
+        "python",
+        "rewrite",
+        "ruby",
+        "rust",
+        "typescript"
+      ],
+      "stars": 10649,
+      "forks": 870,
+      "openIssues": 28,
+      "createdAt": "2026-11-16T12:10:36Z",
+      "updatedAt": "2026-11-27T15:59:59Z",
+      "pushedAt": "2026-11-27T15:47:15Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 2,
+      "previousRank": 2,
+      "rankChange": 0,
+      "score": 93.8,
+      "categories": [
+        "ai",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 671,
+        "forks24h": 56,
+        "starVelocity": 598.4504993382648,
+        "relativeGrowth": 5.792481220360996,
+        "acceleration7d": 0.9846094100123226,
+        "forkRatio7d": 0.08343361411953469,
+        "ageDays": 11.160005127314815,
+        "hoursSincePush": 0.22928972222222221,
+        "starsPerDay": 954.2110311343766
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.97300469483568,
+        "relativeGrowth": 19.389671361502348,
+        "acceleration": 6.725352112676056,
+        "forkMomentum": 9.630281690140844,
+        "developmentActivity": 14.989767343516586,
+        "freshness": 9.111934613630087
+      },
+      "research": {
+        "summary": "Rewrite your app in Rust, piece by piece, checked against the original at every step. Works with TypeScript, JavaScript, Python, Go, Ruby, Java, C, PHP, C#, Kotlin and PowerShell.",
+        "whyNow": "過去 24 小時增加 671 個 stars，同時增加 56 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "10,649 stars，870 forks",
+          "主要語言：Rust",
+          "授權：Apache-2.0",
+          "分類：AI、開發工具",
+          "近期加星帳戶抽樣：100 個中 0 個可疑",
+          "Hacker News：1 分、0 則評論（8 日前）",
+          "本榜紀錄：2026-11-19 首次上榜，累計 10 日（連續 10 日），最高第 2 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-26T16:00:59.439Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "hackerNews": {
+          "points": 1,
+          "comments": 0,
+          "postedAt": "2026-11-19T11:01:23Z",
+          "url": "https://news.ycombinator.com/item?id=50558549"
+        },
+        "introduction": {
+          "text": "rust-anything 把現有應用逐件改寫成 Rust。它先記錄原程式（Node.js、Python 等）的實際行為，再由你或 AI 編碼代理撰寫 Rust，每件都要與記錄完全吻合才可推進，最終成為純 Rust 應用。它本身不翻譯程式碼，只能發現記錄涵蓋的差異。",
+          "writtenAt": "2026-11-26T16:00:59.439Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-19",
+          "days": 10,
+          "streak": 10,
+          "bestRank": 2,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            7,
+            9,
+            10,
+            12,
+            8,
+            15,
+            10,
+            10,
+            2,
+            2
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1453604719,
+      "nodeId": "R_kgDOVqQ_bw",
+      "name": "TelemetryCleaner",
+      "fullName": "Eynnzerr/TelemetryCleaner",
+      "owner": "Eynnzerr",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/73703990?v=4",
+      "url": "https://github.com/Eynnzerr/TelemetryCleaner",
+      "description": "基于 Shizuku 免 Root 清除国产安卓 SystemHelper、RegService 等系统预装隐私数据收集模块",
+      "language": "Kotlin",
+      "topics": [],
+      "stars": 3604,
+      "forks": 227,
+      "openIssues": 4,
+      "createdAt": "2026-11-11T06:25:10Z",
+      "updatedAt": "2026-11-27T15:58:35Z",
+      "pushedAt": "2026-11-27T08:17:27Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 3,
+      "previousRank": 3,
+      "rankChange": 0,
+      "score": 92.8,
+      "categories": [
+        "mobile",
+        "security"
+      ],
+      "signals": {
+        "stars24h": 342,
+        "forks24h": 14,
+        "starVelocity": 283.9636308164935,
+        "relativeGrowth": 4.713779207703945,
+        "acceleration7d": 1.912650185550196,
+        "forkRatio7d": 0.044473512099411375,
+        "ageDays": 16.399889386574074,
+        "hoursSincePush": 7.725956388888889,
+        "starsPerDay": 219.7575797645592
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.45305164319249,
+        "relativeGrowth": 19.31924882629108,
+        "acceleration": 9.03755868544601,
+        "forkMomentum": 8.597417840375586,
+        "developmentActivity": 14.659026415105577,
+        "freshness": 8.722617353541134
+      },
+      "research": {
+        "summary": "基于 Shizuku 免 Root 清除国产安卓 SystemHelper、RegService 等系统预装隐私数据收集模块",
+        "whyNow": "過去 24 小時增加 342 個 stars，同時增加 14 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "使用或開發 iOS、Android 應用的人",
+        "evidence": [
+          "3,604 stars，227 forks",
+          "主要語言：Kotlin",
+          "授權：MIT",
+          "分類：手機應用、安全",
+          "近期加星帳戶抽樣：100 個中 3 個可疑",
+          "本榜紀錄：2026-11-16 首次上榜，累計 10 日（連續 3 日），最高第 3 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-26T08:01:11.946Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 3,
+          "freshHollow": 3,
+          "sharedHollow": 0,
+          "maxPerMinute": 4,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "TelemetryCleaner 是 Android 10 以上的工具，可偵測國行固件預置的運營商組件，查看狀態與權限，並卸載或恢復。它預設經 Shizuku 免 Root 操作，Root 或 Dhizuku 增強可處理部分受 ROM 保護的組件。",
+          "writtenAt": "2026-11-27T00:00:58.037Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-16",
+          "days": 10,
+          "streak": 3,
+          "bestRank": 3,
+          "recent": [
+            null,
+            21,
+            38,
+            34,
+            46,
+            null,
+            null,
+            8,
+            18,
+            38,
+            null,
+            43,
+            3,
+            3
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1410961834,
+      "nodeId": "R_kgDOVBmRqg",
+      "name": "ARTEX",
+      "fullName": "BaaRai/ARTEX",
+      "owner": "BaaRai",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/130491490?v=4",
+      "url": "https://github.com/BaaRai/ARTEX",
+      "description": "Actively maintained ARTEX: AI autonomous penetration testing system. Self-hosted, model-agnostic, evidence-backed findings. Community continuation of Autumn-27/ARTEX, AGPL-3.0.",
+      "language": "Go",
+      "topics": [
+        "ai",
+        "ai-agents",
+        "artex",
+        "autonomous-agents",
+        "bug-bounty",
+        "docker",
+        "golang",
+        "linux",
+        "llm",
+        "mcp",
+        "nextjs",
+        "penetration-testing",
+        "pentest",
+        "postgresql",
+        "rea",
+        "red-team",
+        "security",
+        "security-automation",
+        "sqlite",
+        "typescript"
+      ],
+      "stars": 23126,
+      "forks": 8601,
+      "openIssues": 48,
+      "createdAt": "2026-10-08T21:14:39Z",
+      "updatedAt": "2026-11-27T16:00:45Z",
+      "pushedAt": "2026-11-27T00:50:56Z",
+      "license": "AGPL-3.0",
+      "archived": false,
+      "fork": false,
+      "rank": 4,
+      "previousRank": 4,
+      "rankChange": 0,
+      "score": 92.1,
+      "categories": [
+        "ai",
+        "security"
+      ],
+      "signals": {
+        "stars24h": 1429,
+        "forks24h": 521,
+        "starVelocity": 1456.3237067918335,
+        "relativeGrowth": 9.571346566083054,
+        "acceleration7d": 0.9837800579578116,
+        "forkRatio7d": 0.3400188323917137,
+        "ageDays": 49.782192627314814,
+        "hoursSincePush": 15.167900833333332,
+        "starsPerDay": 464.54362050961726
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.794600938967136,
+        "relativeGrowth": 19.671361502347416,
+        "acceleration": 6.690140845070422,
+        "forkMomentum": 9.988262910798122,
+        "developmentActivity": 14.337918039459751,
+        "freshness": 6.6043827902166825
+      },
+      "research": {
+        "summary": "Actively maintained ARTEX: AI autonomous penetration testing system. Self-hosted, model-agnostic, evidence-backed findings. Community continuation of Autumn-27/ARTEX, AGPL-3.0.",
+        "whyNow": "過去 24 小時增加 1,429 個 stars，同時增加 521 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "23,126 stars，8,601 forks",
+          "主要語言：Go",
+          "授權：AGPL-3.0",
+          "分類：AI、安全",
+          "近期加星帳戶抽樣：100 個中 8 個可疑",
+          "Hacker News：2 分、1 則評論（8 日前）",
+          "本榜紀錄：2026-11-21 首次上榜，累計 8 日（連續 8 日），最高第 4 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "熱門度不等於適合生產環境，採用前仍要檢查文件、測試和安全紀錄。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-25T00:00:53.728Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 8,
+          "freshHollow": 8,
+          "sharedHollow": 0,
+          "maxPerMinute": 4,
+          "flagged": false
+        },
+        "hackerNews": {
+          "points": 2,
+          "comments": 1,
+          "postedAt": "2026-11-19T15:07:22Z",
+          "url": "https://news.ycombinator.com/item?id=50561094"
+        },
+        "introduction": {
+          "text": "ARTEX 是自託管的 LLM 滲透測試平台，規劃器把目標拆成意圖，工作代理以真實工具執行，結果寫入資產圖與探索圖兩套相連圖譜，每項發現均綁定可佐證的請求與回應。另設攔截代理與瀏覽器擴充功能擷取流量，配合人工審批及預算控制；以單一 Go 執行檔運行，僅依賴 PostgreSQL。",
+          "writtenAt": "2026-11-27T00:00:58.037Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-21",
+          "days": 8,
+          "streak": 8,
+          "bestRank": 4,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            29,
+            33,
+            27,
+            27,
+            37,
+            36,
+            4,
+            4
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1440956372,
+      "nodeId": "R_kgDOVeM_1A",
+      "name": "craft-anything",
+      "fullName": "storytold/craft-anything",
+      "owner": "storytold",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/76897702?v=4",
+      "url": "https://github.com/storytold/craft-anything",
+      "description": "Craft Anything: understand how any software works, and craft your own.",
+      "language": "Rust",
+      "topics": [],
+      "stars": 44517,
+      "forks": 8804,
+      "openIssues": 478,
+      "createdAt": "2026-10-31T14:50:00Z",
+      "updatedAt": "2026-11-27T15:58:54Z",
+      "pushedAt": "2026-11-27T14:18:08Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 5,
+      "previousRank": 5,
+      "rankChange": 0,
+      "score": 91.3,
+      "categories": [
+        "learning"
+      ],
+      "signals": {
+        "stars24h": 581,
+        "forks24h": 116,
+        "starVelocity": 611.1942438078752,
+        "relativeGrowth": 2.895972267458999,
+        "acceleration7d": 0.7176882887737819,
+        "forkRatio7d": 0.1888198757763975,
+        "ageDays": 27.04931068287037,
+        "hoursSincePush": 1.7145675,
+        "starsPerDay": 1645.77206872009
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.055164319248824,
+        "relativeGrowth": 18.849765258215964,
+        "acceleration": 5.575117370892019,
+        "forkMomentum": 9.88849765258216,
+        "developmentActivity": 14.923651771610738,
+        "freshness": 7.981881580008261
+      },
+      "research": {
+        "summary": "Craft Anything: understand how any software works, and craft your own.",
+        "whyNow": "過去 24 小時增加 581 個 stars，同時增加 116 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想系統學習或查找參考資料的人",
+        "evidence": [
+          "44,517 stars，8,804 forks",
+          "主要語言：Rust",
+          "授權：Apache-2.0",
+          "分類：學習資源",
+          "本榜紀錄：2026-11-01 首次上榜，累計 28 日（連續 28 日），最高第 1 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-25T18:12:54.314Z",
+          "version": 2
+        },
+        "introduction": {
+          "text": "Craft Anything 是以純 Rust 編寫的開源引擎，指向網站、應用或遊戲後，會用內建工具檢視原作的結構與行為，再交由編碼代理按指定技術堆疊重建，並對照原版反覆檢查修正。它預設為 Clean room 模式，只憑可見畫面、文字與版面推斷，不讀取原碼，另可切換 Deep 模式深入分析。目前屬 early alpha，重建需先安裝並登入支援的編碼代理，例如 Claude Code。",
+          "writtenAt": "2026-11-26T08:01:11.946Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-01",
+          "days": 28,
+          "streak": 28,
+          "bestRank": 1,
+          "recent": [
+            3,
+            6,
+            5,
+            3,
+            1,
+            1,
+            2,
+            2,
+            2,
+            1,
+            14,
+            9,
+            5,
+            5
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1385896447,
+      "nodeId": "R_kgDOUpsZ_w",
+      "name": "dsh-our-free-model",
+      "fullName": "Ebony-Vinyl/dsh-our-free-model",
+      "owner": "Ebony-Vinyl",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/245557608?v=4",
+      "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+      "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型 - - 完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key - the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
+      "language": "JavaScript",
+      "topics": [
+        "ai-agents",
+        "deepseek",
+        "deepseek-harness",
+        "developer-tools",
+        "dsh",
+        "dsh-plugin",
+        "free-model",
+        "llm",
+        "model-provider",
+        "openai-compatible"
+      ],
+      "stars": 88976,
+      "forks": 2517,
+      "openIssues": 109,
+      "createdAt": "2026-09-24T16:17:19Z",
+      "updatedAt": "2026-11-27T16:00:11Z",
+      "pushedAt": "2026-11-27T15:30:19Z",
+      "license": null,
+      "archived": false,
+      "fork": false,
+      "rank": 6,
+      "previousRank": 8,
+      "rankChange": 2,
+      "score": 91.1,
+      "categories": [
+        "ai",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 1088,
+        "forks24h": 28,
+        "starVelocity": 1079.1379687866324,
+        "relativeGrowth": 3.617258368220168,
+        "acceleration7d": 1.0742173096484995,
+        "forkRatio7d": 0.029634551495016613,
+        "ageDays": 63.988674108796296,
+        "hoursSincePush": 0.5115119444444445,
+        "starsPerDay": 1390.4960719879768
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.671361502347416,
+        "relativeGrowth": 19.131455399061032,
+        "acceleration": 7.171361502347418,
+        "forkMomentum": 9.26056338028169,
+        "developmentActivity": 14.977182018300985,
+        "freshness": 5.867015912168591
+      },
+      "research": {
+        "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型 - - 完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key - the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
+        "whyNow": "過去 24 小時增加 1,088 個 stars，同時增加 28 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "88,976 stars，2,517 forks",
+          "主要語言：JavaScript",
+          "授權：未標示",
+          "分類：AI、開發工具",
+          "本榜紀錄：2026-10-06 首次上榜，累計 54 日（連續 54 日），最高第 1 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "可能透過共用帳號、逆向 API 等方式繞過付費服務，或會違反服務條款並導致封號。",
+          "GitHub 未標示開源授權，正式採用前要先確認使用條款。",
+          "近 7 日新增 forks 只有新增 stars 的 3.0%（一般約 10%），可能是收藏型清單，亦可能有刷星，宜先核實 stargazers。"
+        ],
+        "categorySource": "jev",
+        "risks": [
+          "serviceAbuse"
+        ],
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-25T18:12:54.314Z",
+          "version": 2
+        },
+        "introduction": {
+          "text": "dsh-our-free-model 是 dsh 的免費模型插件，毋須登入或 API Key，安裝後即可使用 DeepSeek、Kimi 等模型。以純掛載方式運作，模型清單向上游網關重新拉取，只顯示本機網絡出口實測可用的模型，並提供 OpenAI 相容轉發端口。",
+          "writtenAt": "2026-11-27T08:00:54.574Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-10-06",
+          "days": 54,
+          "streak": 54,
+          "bestRank": 1,
+          "recent": [
+            4,
+            7,
+            9,
+            13,
+            11,
+            21,
+            8,
+            13,
+            9,
+            10,
+            21,
+            15,
+            8,
+            6
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1471562910,
+      "nodeId": "R_kgDOV7ZEng",
+      "name": "VIctory-Belobug-AMD",
+      "fullName": "Belobug/VIctory-Belobug-AMD",
+      "owner": "Belobug",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/169477042?v=4",
+      "url": "https://github.com/Belobug/VIctory-Belobug-AMD",
+      "description": "",
+      "language": "Rust",
+      "topics": [],
+      "stars": 4098,
+      "forks": 1232,
+      "openIssues": 521,
+      "createdAt": "2026-11-25T09:41:37Z",
+      "updatedAt": "2026-11-27T16:00:23Z",
+      "pushedAt": "2026-11-26T22:30:21Z",
+      "license": "GPL-3.0",
+      "archived": false,
+      "fork": false,
+      "rank": 7,
+      "previousRank": 6,
+      "rankChange": -1,
+      "score": 91.1,
+      "categories": [
+        "other"
+      ],
+      "signals": {
+        "stars24h": 1805,
+        "forks24h": 695,
+        "starVelocity": 1804.6802017045156,
+        "relativeGrowth": 28.105646947770424,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 2.263465775462963,
+        "hoursSincePush": 17.51095638888889,
+        "starsPerDay": 1810.4978853333034
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.95892018779343,
+        "relativeGrowth": 19.976525821596244,
+        "acceleration": 2.095070422535211,
+        "forkMomentum": 10,
+        "developmentActivity": 14.238282097254876,
+        "freshness": 9.81314563556016
+      },
+      "research": {
+        "summary": "Belobug/VIctory-Belobug-AMD 是一個以 Rust 建立的公開 GitHub 項目。",
+        "whyNow": "過去 24 小時增加 1,805 個 stars，同時增加 695 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "正在尋找新開源工具和技術方向的開發者",
+        "evidence": [
+          "4,098 stars，1,232 forks",
+          "主要語言：Rust",
+          "授權：GPL-3.0",
+          "分類：其他",
+          "近期加星帳戶抽樣：33 個中 2 個可疑",
+          "本榜紀錄：2026-11-26 首次上榜，累計 3 日（連續 3 日），最高第 3 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。",
+          "未處理 issues 相對較多，要留意支援能力和成熟度。"
+        ],
+        "ease": {
+          "level": "code",
+          "judgedAt": "2026-11-25T18:12:54.314Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 33,
+          "suspicious": 2,
+          "freshHollow": 2,
+          "sharedHollow": 0,
+          "maxPerMinute": 4,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "Belobug/VIctory-Belobug-AMD 是 VIctory 的 AMD Radeon 分支，讓 Grand Theft Auto VI 在 Windows 上原生運行，須自備遊戲檔案。它跟隨上游並加入 AMD 修正，以恆定光取代未能運行的光線追蹤間接光；目前尚不可玩，僅在單一台 RX 9070 XT 機器上測試，幀率約 5 至 7 FPS。",
+          "writtenAt": "2026-11-25T18:12:54.314Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-26",
+          "days": 3,
+          "streak": 3,
+          "bestRank": 3,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            3,
+            6,
+            7
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1472898329,
+      "nodeId": "R_kgDOV8qlGQ",
+      "name": "cool_fox",
+      "fullName": "DoubleGhosty/cool_fox",
+      "owner": "DoubleGhosty",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/57076195?v=4",
+      "url": "https://github.com/DoubleGhosty/cool_fox",
+      "description": "cool_fox: Leading CGBJ runtime continuation for GTA VI PC - Pareto residency, Wine/Vulkan fixes, FPS unlock, Port 5 CBV",
+      "language": "Rust",
+      "topics": [],
+      "stars": 832,
+      "forks": 458,
+      "openIssues": 18,
+      "createdAt": "2026-11-26T08:48:31Z",
+      "updatedAt": "2026-11-27T15:52:57Z",
+      "pushedAt": "2026-11-27T11:03:32Z",
+      "license": "GPL-3.0",
+      "archived": false,
+      "fork": false,
+      "rank": 8,
+      "previousRank": 7,
+      "rankChange": -1,
+      "score": 90.8,
+      "categories": [
+        "games",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 640,
+        "forks24h": 352,
+        "starVelocity": 639.8322775841443,
+        "relativeGrowth": 21.856254253338946,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 1.300340775462963,
+        "hoursSincePush": 4.957900833333333,
+        "starsPerDay": 639.8322775841443
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.137323943661976,
+        "relativeGrowth": 19.929577464788732,
+        "acceleration": 2.095070422535211,
+        "forkMomentum": 9.976525821596244,
+        "developmentActivity": 14.78029010971372,
+        "freshness": 9.892223266997512
+      },
+      "research": {
+        "summary": "cool_fox: Leading CGBJ runtime continuation for GTA VI PC - Pareto residency, Wine/Vulkan fixes, FPS unlock, Port 5 CBV",
+        "whyNow": "過去 24 小時增加 640 個 stars，同時增加 352 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "玩家、遊戲開發者和 mod 作者",
+        "evidence": [
+          "832 stars，458 forks",
+          "主要語言：Rust",
+          "授權：GPL-3.0",
+          "分類：遊戲、桌面與系統",
+          "近期加星帳戶抽樣：47 個中 3 個可疑",
+          "本榜紀錄：2026-11-27 首次上榜，累計 2 日（連續 2 日），最高第 7 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-26T16:00:59.439Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 47,
+          "suspicious": 3,
+          "freshHollow": 3,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "cool_fox 是 CGBJ 執行環境的社群延續分支，整合多個 PortWatch 項目的優化，同時支援 AMD 與 NVIDIA 顯示卡。它透過記憶體駐留控制、多執行緒指令翻譯和零複製常數緩衝等方式減少卡頓，並可解鎖影格率而維持遊戲時鐘為 1.00 倍。此版本只支援 Windows 10/11 x64，需要 AVX2 處理器、支援 shader model 6.6 的 Direct3D 12 顯示卡，以及自備的合法遊戲轉儲。",
+          "writtenAt": "2026-11-26T16:00:59.439Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-27",
+          "days": 2,
+          "streak": 2,
+          "bestRank": 7,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            7,
+            8
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1467035512,
+      "nodeId": "R_kgDOV3EveA",
+      "name": "portwatch-vi",
+      "fullName": "4lwayz/portwatch-vi",
+      "owner": "4lwayz",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/359682649?v=4",
+      "url": "https://github.com/4lwayz/portwatch-vi",
+      "description": "Does GTA VI run on PC yet? A live tracker of community recompilation and emulation efforts, updated daily.",
+      "language": "JavaScript",
+      "topics": [],
+      "stars": 6416,
+      "forks": 182,
+      "openIssues": 227,
+      "createdAt": "2026-11-21T23:16:41Z",
+      "updatedAt": "2026-11-27T15:59:36Z",
+      "pushedAt": "2026-11-27T14:47:43Z",
+      "license": null,
+      "archived": false,
+      "fork": false,
+      "rank": 9,
+      "previousRank": 9,
+      "rankChange": 0,
+      "score": 90.6,
+      "categories": [
+        "web",
+        "games"
+      ],
+      "signals": {
+        "stars24h": 1376,
+        "forks24h": 30,
+        "starVelocity": 1458.870206830582,
+        "relativeGrowth": 18.17774495050112,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 5.697447256944445,
+        "hoursSincePush": 1.2215119444444444,
+        "starsPerDay": 1126.1183668141434
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.83568075117371,
+        "relativeGrowth": 19.859154929577464,
+        "acceleration": 2.095070422535211,
+        "forkMomentum": 9.289906103286384,
+        "developmentActivity": 14.945567220601054,
+        "freshness": 9.536307593693403
+      },
+      "research": {
+        "summary": "Does GTA VI run on PC yet? A live tracker of community recompilation and emulation efforts, updated daily.",
+        "whyNow": "過去 24 小時增加 1,376 個 stars，同時增加 30 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "建立網站、服務或前端產品的開發者",
+        "evidence": [
+          "6,416 stars，182 forks",
+          "主要語言：JavaScript",
+          "授權：未標示",
+          "分類：Web、遊戲",
+          "近期加星帳戶抽樣：100 個中 7 個可疑",
+          "本榜紀錄：2026-11-25 首次上榜，累計 4 日（連續 4 日），最高第 6 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "GitHub 未標示開源授權，正式採用前要先確認使用條款。",
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "code",
+          "judgedAt": "2026-11-25T00:00:53.728Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 7,
+          "freshHollow": 6,
+          "sharedHollow": 1,
+          "maxPerMinute": 4,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "PortWatch VI 追蹤社群把外流的 GTA VI Xbox 版本重新編譯、模擬或移植到 PC 的進展，以統一的評分階梯和進度條比較各個項目；名為 scout 的程式每三小時自動從 GitHub、論壇及新聞更新資料，並過濾抄襲與假下載。網站不寄存或連結任何遊戲檔案或執行檔。",
+          "writtenAt": "2026-11-25T00:00:53.728Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-25",
+          "days": 4,
+          "streak": 4,
+          "bestRank": 6,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            9,
+            6,
+            9,
+            9
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1469938415,
+      "nodeId": "R_kgDOV5167w",
+      "name": "ScarlettPort",
+      "fullName": "ZigZagBoi1/ScarlettPort",
+      "owner": "ZigZagBoi1",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/66926735?v=4",
+      "url": "https://github.com/ZigZagBoi1/ScarlettPort",
+      "description": "Native PC port layer for an Xbox Series X|S title: the game's x64 code runs on your CPU and its RDNA2 GPU code is recompiled for your graphics card. Bring your own files.",
+      "language": "Rust",
+      "topics": [
+        "amd",
+        "compatibility-layer",
+        "d3d12",
+        "directx12",
+        "dxil",
+        "game-port",
+        "native-port",
+        "nvidia",
+        "pc-port",
+        "rust",
+        "shader-recompiler",
+        "shader-translation",
+        "victory",
+        "windows",
+        "xbox",
+        "xbox-series-s",
+        "xbox-series-x"
+      ],
+      "stars": 1073,
+      "forks": 139,
+      "openIssues": 40,
+      "createdAt": "2026-11-24T09:36:26Z",
+      "updatedAt": "2026-11-27T16:00:04Z",
+      "pushedAt": "2026-11-27T15:22:22Z",
+      "license": null,
+      "archived": false,
+      "fork": false,
+      "rank": 10,
+      "previousRank": 10,
+      "rankChange": 0,
+      "score": 90.3,
+      "categories": [
+        "games",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 531,
+        "forks24h": 89,
+        "starVelocity": 531.0530269354933,
+        "relativeGrowth": 16.026427327247525,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 3.2670653125,
+        "hoursSincePush": 0.6440119444444444,
+        "starsPerDay": 328.4293080688144
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.80868544600939,
+        "relativeGrowth": 19.83568075117371,
+        "acceleration": 2.095070422535211,
+        "forkMomentum": 9.853286384976526,
+        "developmentActivity": 14.97127700227598,
+        "freshness": 9.731417302285479
+      },
+      "research": {
+        "summary": "Native PC port layer for an Xbox Series X|S title: the game's x64 code runs on your CPU and its RDNA2 GPU code is recompiled for your graphics card. Bring your own files.",
+        "whyNow": "過去 24 小時增加 531 個 stars，同時增加 89 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "玩家、遊戲開發者和 mod 作者",
+        "evidence": [
+          "1,073 stars，139 forks",
+          "主要語言：Rust",
+          "授權：未標示",
+          "分類：遊戲、桌面與系統",
+          "近期加星帳戶抽樣：100 個中 8 個可疑",
+          "本榜紀錄：2026-11-27 首次上榜，累計 2 日（連續 2 日），最高第 10 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "GitHub 未標示開源授權，正式採用前要先確認使用條款。",
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-27T00:00:58.037Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 8,
+          "freshHollow": 8,
+          "sharedHollow": 0,
+          "maxPerMinute": 3,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "ScarlettPort 是讓玩家在 Windows PC 上運行自備 Xbox Series X|S 遊戲 dump 的相容層，做法近似 Wine 與 Proton，並非模擬器或串流。遊戲的 x64 程式碼在 CPU 執行，RDNA2 GPU 程式碼即時重編譯給顯示卡，須自備合法檔案。它仍在開發，效能未達可玩水平，RTX 3060 約 3.4 fps，並要求 Windows 10/11 x64 及支援 DirectX 12 Shader Model 6.6 與 mesh shaders 的顯示卡。",
+          "writtenAt": "2026-11-27T08:00:54.574Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-27",
+          "days": 2,
+          "streak": 2,
+          "bestRank": 10,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            10,
+            10
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1437869585,
+      "nodeId": "R_kgDOVbQmEQ",
+      "name": "SoduWork",
+      "fullName": "mdiri-ai/SoduWork",
+      "owner": "mdiri-ai",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/342439292?v=4",
+      "url": "https://github.com/mdiri-ai/SoduWork",
+      "description": "The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted.",
+      "language": "JavaScript",
+      "topics": [
+        "agent-harness",
+        "agent-orchestration",
+        "agent-workflows",
+        "ai-agents",
+        "ai-workflows",
+        "anti-slop",
+        "claude-code",
+        "codex",
+        "deepseek",
+        "electron",
+        "fastapi",
+        "harness",
+        "human-in-the-loop",
+        "llm",
+        "mcp",
+        "multi-agent",
+        "opencode",
+        "plugin-system",
+        "self-hosted",
+        "team-collaboration"
+      ],
+      "stars": 8699,
+      "forks": 857,
+      "openIssues": 151,
+      "createdAt": "2026-10-29T02:43:14Z",
+      "updatedAt": "2026-11-27T16:00:52Z",
+      "pushedAt": "2026-11-27T12:01:09Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 11,
+      "previousRank": 12,
+      "rankChange": 1,
+      "score": 90.1,
+      "categories": [
+        "ai",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 365,
+        "forks24h": 58,
+        "starVelocity": 389.4869272022217,
+        "relativeGrowth": 4.169990418402937,
+        "acceleration7d": 0.6427543262266815,
+        "forkRatio7d": 0.11778290993071595,
+        "ageDays": 29.554009756944446,
+        "hoursSincePush": 3.9976230555555556,
+        "starsPerDay": 294.3424622087348
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.23356807511737,
+        "relativeGrowth": 19.225352112676056,
+        "acceleration": 5.316901408450704,
+        "forkMomentum": 9.65962441314554,
+        "developmentActivity": 14.822592149359991,
+        "freshness": 7.8170064811918945
+      },
+      "research": {
+        "summary": "The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted.",
+        "whyNow": "過去 24 小時增加 365 個 stars，同時增加 58 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "8,699 stars，857 forks",
+          "主要語言：JavaScript",
+          "授權：MIT",
+          "分類：AI、開發工具",
+          "近期加星帳戶抽樣：100 個中 7 個可疑",
+          "本榜紀錄：2026-11-19 首次上榜，累計 10 日（連續 10 日），最高第 10 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-25T18:12:54.314Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 7,
+          "freshHollow": 7,
+          "sharedHollow": 0,
+          "maxPerMinute": 3,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "SoduWork 是自託管的 AI 原生團隊協作引擎，請求會連同驗收標準交給不同 harness 和 agent 執行，再由獨立 AI 逐項審核，最終由提出者簽核。它支援 Pi、OpenCode、Codex 等七種 harness，可在對話中切換，並把流程封裝成可審批、授權及版本管理的 plugin；目前屬公開測試版，生產使用前應先評估。",
+          "writtenAt": "2026-11-27T13:33:18.423Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-19",
+          "days": 10,
+          "streak": 10,
+          "bestRank": 10,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            10,
+            18,
+            20,
+            28,
+            30,
+            30,
+            17,
+            13,
+            12,
+            11
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1458720005,
+      "nodeId": "R_kgDOVvJNBQ",
+      "name": "ung220z-tool",
+      "fullName": "Hut-hzf/ung220z-tool",
+      "owner": "Hut-hzf",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/192405006?v=4",
+      "url": "https://github.com/Hut-hzf/ung220z-tool",
+      "description": "ung220z-tool 是一个针对 UNG220Z，另含中兴/烽火/华为/九联多厂商适配、固件指纹识别与分家族排障建议的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁移宽带配置或安全自查。",
+      "language": "Python",
+      "topics": [],
+      "stars": 5834,
+      "forks": 1266,
+      "openIssues": 25,
+      "createdAt": "2026-11-15T11:16:46Z",
+      "updatedAt": "2026-11-27T15:58:21Z",
+      "pushedAt": "2026-11-22T07:06:43Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 12,
+      "previousRank": 11,
+      "rankChange": -1,
+      "score": 89.9,
+      "categories": [
+        "security",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 578,
+        "forks24h": 125,
+        "starVelocity": 583.894881069428,
+        "relativeGrowth": 7.628214891012511,
+        "acceleration7d": 1.0823339622613595,
+        "forkRatio7d": 0.21071159165199896,
+        "ageDays": 12.197389386574073,
+        "hoursSincePush": 128.90484527777778,
+        "starsPerDay": 478.29906999784794
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.93192488262911,
+        "relativeGrowth": 19.600938967136152,
+        "acceleration": 7.206572769953051,
+        "forkMomentum": 9.906103286384976,
+        "developmentActivity": 10.220595265660975,
+        "freshness": 9.033502639656087
+      },
+      "research": {
+        "summary": "ung220z-tool 是一个针对 UNG220Z，另含中兴/烽火/华为/九联多厂商适配、固件指纹识别与分家族排障建议的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁移宽带配置或安全自查。",
+        "whyNow": "過去 24 小時增加 578 個 stars，同時增加 125 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "負責程式安全、審計或防禦工作的工程師",
+        "evidence": [
+          "5,834 stars，1,266 forks",
+          "主要語言：Python",
+          "授權：MIT",
+          "分類：安全、桌面與系統",
+          "近期加星帳戶抽樣：100 個中 2 個可疑",
+          "本榜紀錄：2026-11-19 首次上榜，累計 8 日（連續 7 日），最高第 4 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-25T18:12:54.314Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 2,
+          "freshHollow": 2,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "ung220z-tool 是 Python 寫成的光貓憑據自查工具箱，針對 UNG220Z 經 Telnet 直接讀取並解密設備配置庫，取得當下有效的憑據，避開受 TR-069 定期輪換、數日即失效的 Web 口令。另設多廠商適配包 ontkit，涵蓋中興、烽火、華為及九聯，並附固件指紋識別與分家族排障建議。僅 UNG220Z 經真機驗證，其餘型號只取自公開案例，並只限用於自有設備。",
+          "writtenAt": "2026-11-26T00:00:56.607Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-19",
+          "days": 8,
+          "streak": 7,
+          "bestRank": 4,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            33,
+            null,
+            null,
+            40,
+            37,
+            23,
+            4,
+            17,
+            11,
+            12
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1440971520,
+      "nodeId": "R_kgDOVeN7AA",
+      "name": "Claude-Cage",
+      "fullName": "Lee-xeo/Claude-Cage",
+      "owner": "Lee-xeo",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/120454108?v=4",
+      "url": "https://github.com/Lee-xeo/Claude-Cage",
+      "description": "Cage：为 Claude 特化的轻量化虚拟机，彻底杜绝网络泄露。多平台适配，支持多账号管理、远程部署、移动端操控。",
+      "language": "Go",
+      "topics": [],
+      "stars": 9011,
+      "forks": 1036,
+      "openIssues": 150,
+      "createdAt": "2026-10-31T15:07:08Z",
+      "updatedAt": "2026-11-27T16:00:47Z",
+      "pushedAt": "2026-11-27T15:59:06Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 13,
+      "previousRank": 14,
+      "rankChange": 1,
+      "score": 89.8,
+      "categories": [
+        "infra",
+        "security"
+      ],
+      "signals": {
+        "stars24h": 266,
+        "forks24h": 31,
+        "starVelocity": 259.9593763689181,
+        "relativeGrowth": 2.7347483899476064,
+        "acceleration7d": 0.9366328266393318,
+        "forkRatio7d": 0.10754257907542578,
+        "ageDays": 27.037412534722222,
+        "hoursSincePush": 0.03178972222222222,
+        "starsPerDay": 333.27893297584654
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.32981220657277,
+        "relativeGrowth": 18.732394366197184,
+        "acceleration": 6.443661971830986,
+        "forkMomentum": 9.307511737089202,
+        "developmentActivity": 14.998580883106214,
+        "freshness": 7.982673032657198
+      },
+      "research": {
+        "summary": "Cage：为 Claude 特化的轻量化虚拟机，彻底杜绝网络泄露。多平台适配，支持多账号管理、远程部署、移动端操控。",
+        "whyNow": "過去 24 小時增加 266 個 stars，同時增加 31 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "負責部署、伺服器、網絡或自託管服務的工程師",
+        "evidence": [
+          "9,011 stars，1,036 forks",
+          "主要語言：Go",
+          "授權：MIT",
+          "分類：雲端與基建、安全",
+          "近期加星帳戶抽樣：100 個中 0 個可疑",
+          "本榜紀錄：2026-11-07 首次上榜，累計 18 日（連續 17 日），最高第 1 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-25T18:12:54.314Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 3,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "Claude Cage 是一個桌面程式，在輕量的 Debian 13 隔離環境中運行官方 Claude Code 與 Claude Desktop，macOS、Windows、Linux 共用同一環境。它接管環境內所有網絡流量，隔離時區、語言等指紋設定，檢查未通過時保持離線；Claude 經標準 MCP 插件受控使用本機能力，越界調用須權限聲明與確認。項目仍在快速迭代，暫不支援 Windows ARM64 與 Linux ARM64。",
+          "writtenAt": "2026-11-27T08:00:54.574Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-07",
+          "days": 18,
+          "streak": 17,
+          "bestRank": 1,
+          "recent": [
+            48,
+            32,
+            27,
+            15,
+            9,
+            12,
+            6,
+            6,
+            1,
+            4,
+            16,
+            32,
+            14,
+            13
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1473500322,
+      "nodeId": "R_kgDOV9PUog",
+      "name": "f-ck_data_brokers",
+      "fullName": "gary23w/f-ck_data_brokers",
+      "owner": "gary23w",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/61893883?v=4",
+      "url": "https://github.com/gary23w/f-ck_data_brokers",
+      "description": "fck_data_brokers.py is a free, open-source Python script that sends opt-out and deletion requests to data brokers on your behalf.",
+      "language": "Python",
+      "topics": [
+        "ccpa",
+        "cli",
+        "data-brokers",
+        "data-deletion",
+        "gdpr",
+        "lgpd",
+        "mcp",
+        "mcp-server",
+        "opt-out",
+        "personal-data",
+        "pipeda",
+        "privacy",
+        "privacy-tools",
+        "python"
+      ],
+      "stars": 522,
+      "forks": 24,
+      "openIssues": 1,
+      "createdAt": "2026-11-26T17:53:07Z",
+      "updatedAt": "2026-11-27T15:58:32Z",
+      "pushedAt": "2026-11-27T14:27:13Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 14,
+      "previousRank": 17,
+      "rankChange": 3,
+      "score": 89.8,
+      "categories": [
+        "security"
+      ],
+      "signals": {
+        "stars24h": 522,
+        "forks24h": 24,
+        "starVelocity": 522,
+        "relativeGrowth": 22.319108315030466,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 0.9221463310185185,
+        "hoursSincePush": 1.563178611111111,
+        "starsPerDay": 566.0706792851917
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.72652582159624,
+        "relativeGrowth": 19.953051643192488,
+        "acceleration": 2.095070422535211,
+        "forkMomentum": 9.160798122065728,
+        "developmentActivity": 14.93037731955197,
+        "freshness": 9.923448979303195
+      },
+      "research": {
+        "summary": "fck_data_brokers.py is a free, open-source Python script that sends opt-out and deletion requests to data brokers on your behalf.",
+        "whyNow": "過去 24 小時增加 522 個 stars，同時增加 24 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "負責程式安全、審計或防禦工作的工程師",
+        "evidence": [
+          "522 stars，24 forks",
+          "主要語言：Python",
+          "授權：MIT",
+          "分類：安全",
+          "近期加星帳戶抽樣：100 個中 0 個可疑",
+          "Hacker News：240 分、53 則評論（21 小時前）",
+          "本榜紀錄：2026-11-27 首次上榜，累計 2 日（連續 2 日），最高第 14 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-27T00:00:58.037Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "hackerNews": {
+          "points": 240,
+          "comments": 53,
+          "postedAt": "2026-11-26T18:37:21Z",
+          "url": "https://news.ycombinator.com/item?id=50658191"
+        },
+        "introduction": {
+          "text": "f*ck_data_brokers.py 是免費、無依賴的單一 Python 檔案，在本機執行並保存資料。它取得美國登記名冊上六百多家 data broker 名單，以用戶名義按當地法例撰寫刪除及 opt-out 信件，經自己的免費電郵或生成頁面寄出，並在收到回覆後辨別藉口、代寫回應，可排程定期跟進。名單源自美國登記制度，其他地區用戶須自行補充；工具不代過 CAPTCHA，也不傳送身份證。",
+          "writtenAt": "2026-11-27T13:33:18.423Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-27",
+          "days": 2,
+          "streak": 2,
+          "bestRank": 14,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            17,
+            14
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1469344551,
+      "nodeId": "R_kgDOV5RrJw",
+      "name": "VIctory",
+      "fullName": "Marvisak/VIctory",
+      "owner": "Marvisak",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/60314886?v=4",
+      "url": "https://github.com/Marvisak/VIctory",
+      "description": "An attempt at running GTA VI on PC",
+      "language": "Rust",
+      "topics": [],
+      "stars": 13682,
+      "forks": 2330,
+      "openIssues": 2222,
+      "createdAt": "2026-11-23T21:47:25Z",
+      "updatedAt": "2026-11-27T15:58:18Z",
+      "pushedAt": "2026-11-25T23:27:48Z",
+      "license": "GPL-3.0",
+      "archived": false,
+      "fork": false,
+      "rank": 15,
+      "previousRank": 13,
+      "rankChange": -2,
+      "score": 89.7,
+      "categories": [
+        "games",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 656,
+        "forks24h": 173,
+        "starVelocity": 1467.9729950708468,
+        "relativeGrowth": 12.538536829842496,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 3.7594379976851853,
+        "hoursSincePush": 40.55345638888889,
+        "starsPerDay": 3639.3737597014438
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.87676056338028,
+        "relativeGrowth": 19.788732394366196,
+        "acceleration": 2.095070422535211,
+        "forkMomentum": 9.94131455399061,
+        "developmentActivity": 13.294566134406786,
+        "freshness": 9.691570072988215
+      },
+      "research": {
+        "summary": "An attempt at running GTA VI on PC",
+        "whyNow": "過去 24 小時增加 656 個 stars，同時增加 173 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "玩家、遊戲開發者和 mod 作者",
+        "evidence": [
+          "13,682 stars，2,330 forks",
+          "主要語言：Rust",
+          "授權：GPL-3.0",
+          "分類：遊戲、桌面與系統",
+          "近期加星帳戶抽樣：64 個中 10 個可疑",
+          "Hacker News：1 分、0 則評論（4 日前）",
+          "本榜紀錄：2026-11-24 首次上榜，累計 5 日（連續 5 日），最高第 6 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。",
+          "未處理 issues 相對較多，要留意支援能力和成熟度。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "code",
+          "judgedAt": "2026-11-27T00:00:58.037Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 64,
+          "suspicious": 10,
+          "freshHollow": 9,
+          "sharedHollow": 1,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "hackerNews": {
+          "points": 1,
+          "comments": 0,
+          "postedAt": "2026-11-24T01:25:19Z",
+          "url": "https://news.ycombinator.com/item?id=50622253"
+        },
+        "introduction": {
+          "text": "VIctory 以 Rust 編寫，在 Windows 上以使用者提供的檔案，把 Grand Theft Auto VI 的 Xbox 程式碼原樣運行，並轉換其資料、著色器及管線。世界場景目前僅約每秒一格，尚未可遊玩，且需支援 Shader Model 6.6 及 mesh shaders 的 Direct3D 12 GPU。",
+          "writtenAt": "2026-11-27T00:00:58.037Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-24",
+          "days": 5,
+          "streak": 5,
+          "bestRank": 6,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            7,
+            6,
+            8,
+            13,
+            15
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1437814166,
+      "nodeId": "R_kgDOVbNNlg",
+      "name": "misterdownloadmanager",
+      "fullName": "anefzaoui/misterdownloadmanager",
+      "owner": "anefzaoui",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/1832078?v=4",
+      "url": "https://github.com/anefzaoui/misterdownloadmanager",
+      "description": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux",
+      "language": "Rust",
+      "topics": [
+        "bittorrent-client",
+        "debrid",
+        "download-accelerator",
+        "download-manager",
+        "downloadmanager",
+        "egui",
+        "file-downloader",
+        "gallery-dl",
+        "idm",
+        "idm-alternative",
+        "internet-download-manager",
+        "m3u8-downloader",
+        "magnet",
+        "playlist-downloader",
+        "real-debrid",
+        "rust",
+        "torrent-client",
+        "video-downloader",
+        "youtube-downloader",
+        "yt-dlp"
+      ],
+      "stars": 18849,
+      "forks": 1607,
+      "openIssues": 121,
+      "createdAt": "2026-10-29T01:25:19Z",
+      "updatedAt": "2026-11-27T15:55:30Z",
+      "pushedAt": "2026-11-27T15:53:03Z",
+      "license": "GPL-3.0",
+      "archived": false,
+      "fork": false,
+      "rank": 16,
+      "previousRank": 19,
+      "rankChange": 3,
+      "score": 89.6,
+      "categories": [
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 422,
+        "forks24h": 36,
+        "starVelocity": 413.9398968300363,
+        "relativeGrowth": 3.013042875621386,
+        "acceleration7d": 0.5876247357642727,
+        "forkRatio7d": 0.07876923076923076,
+        "ageDays": 29.60811855324074,
+        "hoursSincePush": 0.13262305555555556,
+        "starsPerDay": 636.6159324209033
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.35680751173709,
+        "relativeGrowth": 18.896713615023476,
+        "acceleration": 5.187793427230048,
+        "forkMomentum": 9.366197183098592,
+        "developmentActivity": 14.994080496201875,
+        "freshness": 7.813482535642338
+      },
+      "research": {
+        "summary": "misterdownloadmanager: The ultimate open-source, clean-room download manager written from scratch in pure Rust for Windows, Mac, and Linux",
+        "whyNow": "過去 24 小時增加 422 個 stars，同時增加 36 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
+        "evidence": [
+          "18,849 stars，1,607 forks",
+          "主要語言：Rust",
+          "授權：GPL-3.0",
+          "分類：桌面與系統",
+          "近期加星帳戶抽樣：100 個中 4 個可疑",
+          "本榜紀錄：2026-11-10 首次上榜，累計 19 日（連續 19 日），最高第 1 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-25T18:12:54.314Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 4,
+          "freshHollow": 3,
+          "sharedHollow": 1,
+          "maxPerMinute": 3,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "Mister Download Manager 是 Rust 編寫的開源下載管理器，以多連線分段加速、續傳和瀏覽器整合下載檔案，支援網頁影片、圖片庫、BitTorrent 及 magnet。它具備排程、VPN 綁定及手機、NAS 遙控，內建 87 種語言、免費無廣告；macOS 版仍屬實驗性質。",
+          "writtenAt": "2026-11-27T08:00:54.574Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-10",
+          "days": 19,
+          "streak": 19,
+          "bestRank": 1,
+          "recent": [
+            37,
+            5,
+            8,
+            1,
+            3,
+            4,
+            1,
+            1,
+            4,
+            6,
+            23,
+            27,
+            19,
+            16
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1465852099,
+      "nodeId": "R_kgDOV18gww",
+      "name": "xcl",
+      "fullName": "xcl-dev/xcl",
+      "owner": "xcl-dev",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/360790281?v=4",
+      "url": "https://github.com/xcl-dev/xcl",
+      "description": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
+      "language": "Rust",
+      "topics": [
+        "d3d12",
+        "gdk",
+        "rdna2",
+        "xbox"
+      ],
+      "stars": 8692,
+      "forks": 1211,
+      "openIssues": 1960,
+      "createdAt": "2026-11-20T20:03:21Z",
+      "updatedAt": "2026-11-27T15:48:46Z",
+      "pushedAt": "2026-11-27T15:11:49Z",
+      "license": "GPL-3.0",
+      "archived": false,
+      "fork": false,
+      "rank": 17,
+      "previousRank": 15,
+      "rankChange": -2,
+      "score": 89.6,
+      "categories": [
+        "games",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 227,
+        "forks24h": 37,
+        "starVelocity": 663.21958076025,
+        "relativeGrowth": 7.103523421827457,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 6.831706516203703,
+        "hoursSincePush": 0.8198452777777778,
+        "starsPerDay": 1272.3028981681196
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.178403755868544,
+        "relativeGrowth": 19.530516431924884,
+        "acceleration": 2.095070422535211,
+        "forkMomentum": 9.395539906103286,
+        "developmentActivity": 14.963444380664304,
+        "freshness": 9.446593547525808
+      },
+      "research": {
+        "summary": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
+        "whyNow": "過去 24 小時增加 227 個 stars，同時增加 37 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "玩家、遊戲開發者和 mod 作者",
+        "evidence": [
+          "8,692 stars，1,211 forks",
+          "主要語言：Rust",
+          "授權：GPL-3.0",
+          "分類：遊戲、桌面與系統",
+          "近期加星帳戶抽樣：7 個中 0 個可疑",
+          "本榜紀錄：2026-11-25 首次上榜，累計 4 日（連續 4 日），最高第 7 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。",
+          "未處理 issues 相對較多，要留意支援能力和成熟度。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "code",
+          "judgedAt": "2026-11-25T00:00:53.728Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 7,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "XCL 是把已擁有的 Xbox Series X|S（GDK）遊戲帶到 Windows PC 的相容層，x64 程式碼不經模擬、直接在電腦原生執行，主機系統函式庫由項目自行重新實作，RDNA2 著色器則重編譯成 DXIL。它只支援已解包的遊戲檔案，不會下載、解密或解包 XVC／MSIXVC 套件。",
+          "writtenAt": "2026-11-27T00:00:58.037Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-25",
+          "days": 4,
+          "streak": 4,
+          "bestRank": 7,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            7,
+            25,
+            15,
+            17
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1472396996,
+      "nodeId": "R_kgDOV8L-xA",
+      "name": "VIctory-7900XTX",
+      "fullName": "avatarmanz/VIctory-7900XTX",
+      "owner": "avatarmanz",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/64326402?v=4",
+      "url": "https://github.com/avatarmanz/VIctory-7900XTX",
+      "description": "Goal: an Xbox Series title (your own dump) on PC as the Series X version at 4K with ray tracing, picture matching the Xbox first (textures, lighting), then 30+ fps. Porting, not emulating. RX 7900 XTX first. No game files.",
+      "language": "Rust",
+      "topics": [],
+      "stars": 1922,
+      "forks": 621,
+      "openIssues": 374,
+      "createdAt": "2026-11-25T22:18:14Z",
+      "updatedAt": "2026-11-27T15:51:36Z",
+      "pushedAt": "2026-11-27T01:11:22Z",
+      "license": "GPL-3.0",
+      "archived": false,
+      "fork": false,
+      "rank": 18,
+      "previousRank": 16,
+      "rankChange": -2,
+      "score": 89.6,
+      "categories": [
+        "games",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 488,
+        "forks24h": 212,
+        "starVelocity": 488.2987578178054,
+        "relativeGrowth": 11.066305204609504,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 1.7380375347222223,
+        "hoursSincePush": 14.827345277777777,
+        "starsPerDay": 1105.84493234617
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.56220657276995,
+        "relativeGrowth": 19.765258215962444,
+        "acceleration": 2.095070422535211,
+        "forkMomentum": 9.953051643192488,
+        "developmentActivity": 14.35245772103678,
+        "freshness": 9.856207373211983
+      },
+      "research": {
+        "summary": "Goal: an Xbox Series title (your own dump) on PC as the Series X version at 4K with ray tracing, picture matching the Xbox first (textures, lighting), then 30+ fps. Porting, not emulating. RX 7900 XTX first. No game files.",
+        "whyNow": "過去 24 小時增加 488 個 stars，同時增加 212 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "玩家、遊戲開發者和 mod 作者",
+        "evidence": [
+          "1,922 stars，621 forks",
+          "主要語言：Rust",
+          "授權：GPL-3.0",
+          "分類：遊戲、桌面與系統",
+          "近期加星帳戶抽樣：74 個中 8 個可疑",
+          "本榜紀錄：2026-11-26 首次上榜，累計 3 日（連續 3 日），最高第 2 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。",
+          "未處理 issues 相對較多，要留意支援能力和成熟度。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "code",
+          "judgedAt": "2026-11-27T00:00:58.037Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 74,
+          "suspicious": 8,
+          "freshHollow": 6,
+          "sharedHollow": 2,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "VIctory-7900XTX 是 VIctory 的分支，屬兼容層，讓用戶以自備的 Xbox Series 遊戲檔案在 Windows 原生運行。它走移植而非模擬路線，修補遊戲渲染器，並預先將 shader 翻譯成可跨版本保存的版本化儲存；目標先在 RX 7900 XTX 上以 1440p 繪製輸出 4K、開啟光追並保持畫面正確，再提升至 30fps 以上。項目不含遊戲檔案，需自備，目前僅在一台機器測試，部分渲染器修補預設關閉並仍在測試。",
+          "writtenAt": "2026-11-27T00:00:58.037Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-26",
+          "days": 3,
+          "streak": 3,
+          "bestRank": 2,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            2,
+            16,
+            18
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1301657572,
+      "nodeId": "R_kgDOTZW35A",
+      "name": "treg",
+      "fullName": "superdesigndev/treg",
+      "owner": "superdesigndev",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/217153862?v=4",
+      "url": "https://github.com/superdesigndev/treg",
+      "description": "OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn",
+      "language": "Python",
+      "topics": [
+        "agents",
+        "api-keys",
+        "cli",
+        "credentials",
+        "developer-tools",
+        "dsh-plugin",
+        "mcp",
+        "proxy",
+        "python",
+        "registry",
+        "secrets"
+      ],
+      "stars": 9718,
+      "forks": 1006,
+      "openIssues": 424,
+      "createdAt": "2026-07-15T13:38:07Z",
+      "updatedAt": "2026-11-27T15:56:33Z",
+      "pushedAt": "2026-11-27T15:51:15Z",
+      "license": null,
+      "archived": false,
+      "fork": false,
+      "rank": 19,
+      "previousRank": 18,
+      "rankChange": -1,
+      "score": 89.5,
+      "categories": [
+        "ai",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 379,
+        "forks24h": 64,
+        "starVelocity": 322.7398434654498,
+        "relativeGrowth": 3.2696873927205137,
+        "acceleration7d": 3.4126171987551928,
+        "forkRatio7d": 0.14688300597779677,
+        "ageDays": 135.09922966435184,
+        "hoursSincePush": 0.16262305555555556,
+        "starsPerDay": 71.93231245021862
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.904929577464785,
+        "relativeGrowth": 18.990610328638496,
+        "acceleration": 9.65962441314554,
+        "forkMomentum": 9.730046948356808,
+        "developmentActivity": 14.992741798778882,
+        "freshness": 3.2438411869619808
+      },
+      "research": {
+        "summary": "OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn",
+        "whyNow": "過去 24 小時增加 379 個 stars，同時增加 64 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "9,718 stars，1,006 forks",
+          "主要語言：Python",
+          "授權：未標示",
+          "分類：AI、開發工具",
+          "近期加星帳戶抽樣：66 個中 0 個可疑",
+          "本榜紀錄：2026-10-07 首次上榜，累計 12 日（連續 3 日），最高第 10 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "GitHub 未標示開源授權，正式採用前要先確認使用條款。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-26T00:00:56.607Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 66,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "Treg 是面向 AI agent 的工具註冊表及代理服務，讓 agent 以單一 base URL 和 token 搜尋並按次付費調用數千個跨供應商端點，無須逐家開設帳戶。團隊亦可登記自家 API 金鑰、CLI 與技能，憑證由伺服器端注入，呼叫方不接觸密鑰。項目可自託管，惟伺服器端 CLI 執行目前停用。",
+          "writtenAt": "2026-11-26T16:00:59.439Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-10-07",
+          "days": 12,
+          "streak": 3,
+          "bestRank": 10,
+          "recent": [
+            null,
+            null,
+            null,
+            33,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            24,
+            18,
+            19
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1443186633,
+      "nodeId": "R_kgDOVgVHyQ",
+      "name": "kiri",
+      "fullName": "libracoder/kiri",
+      "owner": "libracoder",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/32944039?v=4",
+      "url": "https://github.com/libracoder/kiri",
+      "description": "A small, fast container runtime for macOS, Windows and Linux with free Ngrok alternative",
+      "language": "Rust",
+      "topics": [
+        "containers",
+        "docker",
+        "kubernetes",
+        "linux",
+        "macos",
+        "oci",
+        "windows"
+      ],
+      "stars": 13983,
+      "forks": 671,
+      "openIssues": 54,
+      "createdAt": "2026-11-02T16:11:30Z",
+      "updatedAt": "2026-11-27T16:00:32Z",
+      "pushedAt": "2026-11-27T07:23:24Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 20,
+      "previousRank": 20,
+      "rankChange": 0,
+      "score": 89.3,
+      "categories": [
+        "infra",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 318,
+        "forks24h": 12,
+        "starVelocity": 344.11023145877317,
+        "relativeGrowth": 2.9074316859993266,
+        "acceleration7d": 0.8892145599487754,
+        "forkRatio7d": 0.05525291828793774,
+        "ageDays": 24.992713460648147,
+        "hoursSincePush": 8.626789722222222,
+        "starsPerDay": 559.4830678156134
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.987089201877936,
+        "relativeGrowth": 18.873239436619716,
+        "acceleration": 6.244131455399061,
+        "forkMomentum": 8.456572769953052,
+        "developmentActivity": 14.619777446831659,
+        "freshness": 8.11985649365306
+      },
+      "research": {
+        "summary": "A small, fast container runtime for macOS, Windows and Linux with free Ngrok alternative",
+        "whyNow": "過去 24 小時增加 318 個 stars，同時增加 12 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "負責部署、伺服器、網絡或自託管服務的工程師",
+        "evidence": [
+          "13,983 stars，671 forks",
+          "主要語言：Rust",
+          "授權：Apache-2.0",
+          "分類：雲端與基建、開發工具",
+          "近期加星帳戶抽樣：100 個中 0 個可疑",
+          "本榜紀錄：2026-11-07 首次上榜，累計 18 日（連續 15 日），最高第 1 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-24T16:01:02.578Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "Kiri 是以 Rust 編寫的輕量容器執行環境，支援 macOS、Windows（經 WSL 2）及 Linux，可直接沿用現有的 docker CLI、Compose 和 buildx。它實作 Docker Engine API，在 macOS 以單一小型 Linux VM 執行容器，Linux 上則直接運行於核心，並提供本地網域與 HTTPS、單節點 Kubernetes 叢集及 Linux 機器等功能。VM 閒置後會自動休眠，USB 裝置轉接仍屬測試階段。",
+          "writtenAt": "2026-11-25T18:12:54.314Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-07",
+          "days": 18,
+          "streak": 15,
+          "bestRank": 1,
+          "recent": [
+            1,
+            1,
+            1,
+            14,
+            13,
+            11,
+            13,
+            22,
+            13,
+            19,
+            22,
+            4,
+            20,
+            20
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1471422729,
+      "nodeId": "R_kgDOV7QhCQ",
+      "name": "llm.asm",
+      "fullName": "alesha-pro/llm.asm",
+      "owner": "alesha-pro",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/68546545?v=4",
+      "url": "https://github.com/alesha-pro/llm.asm",
+      "description": "Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch Mini-GPT trainer with live Braille TUI (32 KB) in 100% pure x86-64 NASM assembly. Zero C, zero libc, zero dependencies.",
+      "language": "Assembly",
+      "topics": [
+        "assembly",
+        "avx2",
+        "bare-metal",
+        "llm",
+        "machine-learning",
+        "nasm",
+        "osdev",
+        "qwen",
+        "transformer",
+        "x86-64"
+      ],
+      "stars": 1932,
+      "forks": 303,
+      "openIssues": 18,
+      "createdAt": "2026-11-25T07:28:51Z",
+      "updatedAt": "2026-11-27T16:00:56Z",
+      "pushedAt": "2026-11-25T15:42:44Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 21,
+      "previousRank": 21,
+      "rankChange": 0,
+      "score": 89.3,
+      "categories": [
+        "ai",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 921,
+        "forks24h": 152,
+        "starVelocity": 921.0919732722964,
+        "relativeGrowth": 20.821287689916076,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 2.355664849537037,
+        "hoursSincePush": 48.3045675,
+        "starsPerDay": 820.1506255780398
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.63028169014085,
+        "relativeGrowth": 19.88262910798122,
+        "acceleration": 2.095070422535211,
+        "forkMomentum": 9.929577464788732,
+        "developmentActivity": 12.991387102993228,
+        "freshness": 9.805608840109493
+      },
+      "research": {
+        "summary": "Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch Mini-GPT trainer with live Braille TUI (32 KB) in 100% pure x86-64 NASM assembly. Zero C, zero libc, zero dependencies.",
+        "whyNow": "過去 24 小時增加 921 個 stars，同時增加 152 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "1,932 stars，303 forks",
+          "主要語言：Assembly",
+          "授權：MIT",
+          "分類：AI、桌面與系統",
+          "近期加星帳戶抽樣：100 個中 2 個可疑",
+          "Hacker News：233 分、60 則評論（42 小時前）",
+          "本榜紀錄：2026-11-27 首次上榜，累計 2 日（連續 2 日），最高第 21 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "code",
+          "judgedAt": "2026-11-27T00:00:58.037Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 2,
+          "freshHollow": 2,
+          "sharedHollow": 0,
+          "maxPerMinute": 3,
+          "flagged": false
+        },
+        "hackerNews": {
+          "points": 233,
+          "comments": 60,
+          "postedAt": "2026-11-25T22:15:34Z",
+          "url": "https://news.ycombinator.com/item?id=50648365"
+        },
+        "introduction": {
+          "text": "llm.asm 以純 x86-64 NASM 匯編實現三項零依賴 LLM 項目：Qwen3-0.6B 推理程序、可脫離 Linux 於裸機啟動的操作系統，以及從零訓練 Mini-GPT，體積僅 14 至 32 KB。數學內核與分詞器均手寫，須用支援 AVX2、FMA、F16C 的處理器。",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-27",
+          "days": 2,
+          "streak": 2,
+          "bestRank": 21,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            21,
+            21
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1183888342,
+      "nodeId": "R_kgDORpCz1g",
+      "name": "orca",
+      "fullName": "stablyai/orca",
+      "owner": "stablyai",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/127256420?v=4",
+      "url": "https://github.com/stablyai/orca",
+      "description": "Orca lets you run a fleet of bots with your own subscription (e.g. Claude Code, Grok, Agy, Codex). Available on desktop, mobile and remote runtime.",
+      "language": "TypeScript",
+      "topics": [
+        "agent-ide",
+        "ai-agents",
+        "automation",
+        "bot",
+        "claude-code",
+        "codex",
+        "ghostty",
+        "grok-bot",
+        "hermes-agent",
+        "mobile-app",
+        "muse",
+        "openclaw",
+        "opencode",
+        "orchestration",
+        "pi",
+        "runtime",
+        "swarm",
+        "terminal",
+        "worktrees",
+        "yc-backed"
+      ],
+      "stars": 142073,
+      "forks": 9096,
+      "openIssues": 10202,
+      "createdAt": "2026-03-17T03:28:57Z",
+      "updatedAt": "2026-11-27T16:01:04Z",
+      "pushedAt": "2026-11-27T15:54:36Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 22,
+      "previousRank": 22,
+      "rankChange": 0,
+      "score": 89.2,
+      "categories": [
+        "ai",
+        "mobile"
+      ],
+      "signals": {
+        "stars24h": 2330,
+        "forks24h": 149,
+        "starVelocity": 2234.633679399236,
+        "relativeGrowth": 5.928056814759686,
+        "acceleration7d": 1.6032645870407516,
+        "forkRatio7d": 0.06900634249471459,
+        "ageDays": 255.52226207175926,
+        "hoursSincePush": 0.10678972222222222,
+        "starsPerDay": 556.0102624643371
+      },
+      "scoreBreakdown": {
+        "starMomentum": 35,
+        "relativeGrowth": 19.413145539906104,
+        "acceleration": 8.673708920187794,
+        "forkMomentum": 9.917840375586856,
+        "developmentActivity": 14.995233359209141,
+        "freshness": 1.1891430350227596
+      },
+      "research": {
+        "summary": "Orca lets you run a fleet of bots with your own subscription (e.g. Claude Code, Grok, Agy, Codex). Available on desktop, mobile and remote runtime.",
+        "whyNow": "過去 24 小時增加 2,330 個 stars，同時增加 149 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "142,073 stars，9,096 forks",
+          "主要語言：TypeScript",
+          "授權：MIT",
+          "分類：AI、手機應用",
+          "本榜紀錄：2026-10-21 首次上榜，累計 36 日（連續 13 日），最高第 22 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "熱門度不等於適合生產環境，採用前仍要檢查文件、測試和安全紀錄。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-25T18:12:54.314Z",
+          "version": 2
+        },
+        "introduction": {
+          "text": "Orca 是開源的 AI agent 開發環境，讓你以自己的 Claude Code 或 Codex 等訂閱運行多個 bot，並可跨桌面、手機及遠端主機使用。你可從 Slack、Linear 或 GitHub 交託任務，bots 在各自獨立的 worktree 並行工作，完成後交回已測試的 pull request 供審閱。凡能在終端運行的 CLI agent 皆可支援；手機 app 須與桌面版配對，才能在外接收通知。",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-10-21",
+          "days": 36,
+          "streak": 13,
+          "bestRank": 22,
+          "recent": [
+            null,
+            36,
+            36,
+            26,
+            35,
+            32,
+            33,
+            37,
+            28,
+            29,
+            33,
+            26,
+            22,
+            22
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1452175380,
+      "nodeId": "R_kgDOVo5wFA",
+      "name": "linger",
+      "fullName": "simplexai-labs/linger",
+      "owner": "simplexai-labs",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/257494383?v=4",
+      "url": "https://github.com/simplexai-labs/linger",
+      "description": "Linger is An Open-Source Personal Agent That Runs Fully on Your PC. We aim to break Big Tech’s grip on AI by bringing powerful local AI to everyday computers through efficient model - harness co-design, so everyone can run their own.",
+      "language": "TypeScript",
+      "topics": [
+        "agent-teams",
+        "local-llm",
+        "memory",
+        "personal-agent",
+        "proactive-agent",
+        "proactive-ai"
+      ],
+      "stars": 5062,
+      "forks": 475,
+      "openIssues": 174,
+      "createdAt": "2026-11-10T03:50:38Z",
+      "updatedAt": "2026-11-27T15:57:17Z",
+      "pushedAt": "2026-11-27T15:42:52Z",
+      "license": null,
+      "archived": false,
+      "fork": false,
+      "rank": 23,
+      "previousRank": 24,
+      "rankChange": 1,
+      "score": 88.9,
+      "categories": [
+        "ai",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 236,
+        "forks24h": 21,
+        "starVelocity": 238.4331263727832,
+        "relativeGrowth": 3.3429949808060493,
+        "acceleration7d": 0.559025644288075,
+        "forkRatio7d": 0.09996492458786392,
+        "ageDays": 17.507204201388888,
+        "hoursSincePush": 0.30234527777777775,
+        "starsPerDay": 289.1381137599583
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.124413145539904,
+        "relativeGrowth": 19.037558685446008,
+        "acceleration": 5.035211267605634,
+        "forkMomentum": 9.072769953051644,
+        "developmentActivity": 14.986508513936787,
+        "freshness": 8.642498546638395
+      },
+      "research": {
+        "summary": "Linger is An Open-Source Personal Agent That Runs Fully on Your PC. We aim to break Big Tech’s grip on AI by bringing powerful local AI to everyday computers through efficient model - harness co-design, so everyone can run their own.",
+        "whyNow": "過去 24 小時增加 236 個 stars，同時增加 21 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "5,062 stars，475 forks",
+          "主要語言：TypeScript",
+          "授權：未標示",
+          "分類：AI、桌面與系統",
+          "近期加星帳戶抽樣：86 個中 0 個可疑",
+          "本榜紀錄：2026-11-20 首次上榜，累計 9 日（連續 9 日），最高第 13 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "GitHub 未標示開源授權，正式採用前要先確認使用條款。",
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-26T08:01:11.946Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 86,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 3,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "Linger 是開源的個人 AI 代理，完全在本機運行。它的 PolyStrata 推論引擎把模型最常用的專家留在 GPU，其餘置於記憶體或 SSD，令 125B 級模型可在 12 GB 顯存的消費級電腦上運作，並會自動偵測硬件、挑選及安裝合適模型。它又把郵件、聊天與會議整理成可供所有代理搜尋的 wiki 記憶，並主動跟進工作，資料留在裝置。桌面應用仍屬 Beta。",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-20",
+          "days": 9,
+          "streak": 9,
+          "bestRank": 13,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            16,
+            17,
+            20,
+            14,
+            13,
+            25,
+            38,
+            24,
+            23
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1466700014,
+      "nodeId": "R_kgDOV2wQ7g",
+      "name": "KuroCat",
+      "fullName": "qianyiai/KuroCat",
+      "owner": "qianyiai",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/77205788?v=4",
+      "url": "https://github.com/qianyiai/KuroCat",
+      "description": "KuroCat - Free open-source 3D/2D desktop typing cat & AI coding companion (Bongo Cat alternative · Tauri v2 + Rust + MCP · Claude/Codex/DeepSeek/OBS · Win/Mac/Linux/Android)｜开源3D桌面打字小黑猫与AI伴侣",
+      "language": "TypeScript",
+      "topics": [
+        "3d",
+        "ai-companion",
+        "android",
+        "bongo-cat",
+        "bongocat",
+        "claude-code",
+        "codex",
+        "cross-platform",
+        "desktop-pet",
+        "keyboard-visualizer",
+        "kurocat",
+        "linux",
+        "macos",
+        "mcp",
+        "obs-studio",
+        "open-source",
+        "rust",
+        "tauri",
+        "typing-cat",
+        "windows"
+      ],
+      "stars": 1738,
+      "forks": 247,
+      "openIssues": 67,
+      "createdAt": "2026-11-21T15:49:31Z",
+      "updatedAt": "2026-11-27T15:59:18Z",
+      "pushedAt": "2026-11-27T06:32:21Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 24,
+      "previousRank": 23,
+      "rankChange": -1,
+      "score": 88.8,
+      "categories": [
+        "desktop",
+        "ai"
+      ],
+      "signals": {
+        "stars24h": 425,
+        "forks24h": 56,
+        "starVelocity": 403.96534779199175,
+        "relativeGrowth": 9.620949979707186,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 6.0079796643518515,
+        "hoursSincePush": 9.477623055555556,
+        "starsPerDay": 289.2819378721212
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.274647887323944,
+        "relativeGrowth": 19.694835680751172,
+        "acceleration": 2.095070422535211,
+        "forkMomentum": 9.630281690140844,
+        "developmentActivity": 14.582803464715482,
+        "freshness": 9.511661725077015
+      },
+      "research": {
+        "summary": "KuroCat - Free open-source 3D/2D desktop typing cat & AI coding companion (Bongo Cat alternative · Tauri v2 + Rust + MCP · Claude/Codex/DeepSeek/OBS · Win/Mac/Linux/Android)｜开源3D桌面打字小黑猫与AI伴侣",
+        "whyNow": "過去 24 小時增加 425 個 stars，同時增加 56 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
+        "evidence": [
+          "1,738 stars，247 forks",
+          "主要語言：TypeScript",
+          "授權：MIT",
+          "分類：桌面與系統、AI",
+          "近期加星帳戶抽樣：100 個中 5 個可疑",
+          "本榜紀錄：2026-11-25 首次上榜，累計 4 日（連續 4 日），最高第 20 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-26T08:01:11.946Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 5,
+          "freshHollow": 4,
+          "sharedHollow": 1,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "KuroCat 是免費開源的 3D／2D 桌面打字貓兼 AI 編程伴侶，以 Rust 及 Tauri v2 開發，支援 Windows、macOS、Linux 與 Android。牠會隨鍵盤及滑鼠輸入做出反應，可切換 65% 或 108 鍵視角，並提供 OBS 原生透明直播源、輸入密碼時自動閉眼，以及內置 MCP Server 讓 AI 捏貓或同步編程代理狀態。Linux 版需 glibc 2.34 或以上。",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-25",
+          "days": 4,
+          "streak": 4,
+          "bestRank": 20,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            27,
+            20,
+            23,
+            24
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1469441675,
+      "nodeId": "R_kgDOV5Xmiw",
+      "name": "leonida",
+      "fullName": "ubiquitarianism/leonida",
+      "owner": "ubiquitarianism",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/283527159?v=4",
+      "url": "https://github.com/ubiquitarianism/leonida",
+      "description": "A continuation of Leonida, the Xbox > PC port interface for GTA VI",
+      "language": "Python",
+      "topics": [],
+      "stars": 2605,
+      "forks": 589,
+      "openIssues": 1560,
+      "createdAt": "2026-11-23T23:54:39Z",
+      "updatedAt": "2026-11-27T15:53:03Z",
+      "pushedAt": "2026-11-27T13:19:01Z",
+      "license": "GPL-3.0",
+      "archived": false,
+      "fork": false,
+      "rank": 25,
+      "previousRank": 25,
+      "rankChange": 0,
+      "score": 88.7,
+      "categories": [
+        "games",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 161,
+        "forks24h": 35,
+        "starVelocity": 365.7743526163312,
+        "relativeGrowth": 7.132394822614909,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 3.671081516203704,
+        "hoursSincePush": 2.699845277777778,
+        "starsPerDay": 709.6001514817498
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.110328638497656,
+        "relativeGrowth": 19.553990610328636,
+        "acceleration": 2.095070422535211,
+        "forkMomentum": 9.330985915492958,
+        "developmentActivity": 14.879954138338666,
+        "freshness": 9.698708642675125
+      },
+      "research": {
+        "summary": "A continuation of Leonida, the Xbox > PC port interface for GTA VI",
+        "whyNow": "過去 24 小時增加 161 個 stars，同時增加 35 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "玩家、遊戲開發者和 mod 作者",
+        "evidence": [
+          "2,605 stars，589 forks",
+          "主要語言：Python",
+          "授權：GPL-3.0",
+          "分類：遊戲、桌面與系統",
+          "近期加星帳戶抽樣：8 個中 0 個可疑",
+          "本榜紀錄：2026-11-24 首次上榜，累計 5 日（連續 5 日），最高第 8 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。",
+          "未處理 issues 相對較多，要留意支援能力和成熟度。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "code",
+          "judgedAt": "2026-11-25T00:00:53.728Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 8,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "Leonida Continued 是 Grand Theft Auto VI（Xbox Series）的靜態重編譯項目，讓遊戲在自己的 Windows 電腦上原生運行。主機 CPU 同為 x86-64，遊戲程式碼會直接載入執行，主機系統軟件則重新實現，預編譯的 RDNA2 GPU 程式翻譯成 SPIR-V 供 Vulkan 使用，素材從自有的遊戲包讀取。項目仍屬早期、尚未可玩，倉庫不含遊戲、密鑰或可執行檔，須自備 Xbox Series 1.0.2.1 副本。",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-24",
+          "days": 5,
+          "streak": 5,
+          "bestRank": 8,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            8,
+            8,
+            19,
+            25,
+            25
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1457362196,
+      "nodeId": "R_kgDOVt2VFA",
+      "name": "mdldm-maitian",
+      "fullName": "CzzzzzzJ/mdldm-maitian",
+      "owner": "CzzzzzzJ",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/110924215?v=4",
+      "url": "https://github.com/CzzzzzzJ/mdldm-maitian",
+      "description": "麦田：自媒体多平台发布中控与数据监控（B站/抖音/小红书/视频号/YouTube/X），飞书卡片通知 + 数据大屏",
+      "language": "JavaScript",
+      "topics": [
+        "automation",
+        "chrome-extension",
+        "creator-tools",
+        "dashboard",
+        "feishu",
+        "social-media"
+      ],
+      "stars": 2325,
+      "forks": 602,
+      "openIssues": 11,
+      "createdAt": "2026-11-14T03:59:22Z",
+      "updatedAt": "2026-11-27T15:57:44Z",
+      "pushedAt": "2026-11-27T15:47:41Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 26,
+      "previousRank": 26,
+      "rankChange": 0,
+      "score": 88.7,
+      "categories": [
+        "web",
+        "data"
+      ],
+      "signals": {
+        "stars24h": 110,
+        "forks24h": 10,
+        "starVelocity": 107.10387047669035,
+        "relativeGrowth": 2.209384151324167,
+        "acceleration7d": 1.2397879541870351,
+        "forkRatio7d": 0.1715976331360947,
+        "ageDays": 13.501139386574074,
+        "hoursSincePush": 0.2220675,
+        "starsPerDay": 172.20768806461237
+      },
+      "scoreBreakdown": {
+        "starMomentum": 30.316901408450704,
+        "relativeGrowth": 18.380281690140844,
+        "acceleration": 7.852112676056338,
+        "forkMomentum": 8.215962441314554,
+        "developmentActivity": 14.990089547666363,
+        "freshness": 8.93588862541963
+      },
+      "research": {
+        "summary": "麦田：自媒体多平台发布中控与数据监控（B站/抖音/小红书/视频号/YouTube/X），飞书卡片通知 + 数据大屏",
+        "whyNow": "過去 24 小時增加 110 個 stars，同時增加 10 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "建立網站、服務或前端產品的開發者",
+        "evidence": [
+          "2,325 stars，602 forks",
+          "主要語言：JavaScript",
+          "授權：MIT",
+          "分類：Web、資料",
+          "近期加星帳戶抽樣：100 個中 3 個可疑",
+          "本榜紀錄：2026-11-18 首次上榜，累計 7 日（連續 3 日），最高第 12 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-26T08:01:11.946Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 3,
+          "freshHollow": 3,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "mdldm-maitian（麥田）是 Agent 驅動的自媒體發布工作台，AI 助手生成多平台文案與發布工程，Chrome 插件在專用瀏覽器分批填表。國內平台只填寫、最終由使用者點擊，不儲存平台密碼；每日採集數據並提供大屏及飛書通知。須在常開的 Mac 或 Windows 電腦運行。",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-18",
+          "days": 7,
+          "streak": 3,
+          "bestRank": 12,
+          "recent": [
+            null,
+            null,
+            null,
+            12,
+            22,
+            25,
+            null,
+            null,
+            null,
+            46,
+            null,
+            31,
+            26,
+            26
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1440888502,
+      "nodeId": "R_kgDOVeI2tg",
+      "name": "airhand",
+      "fullName": "sqlpxc/airhand",
+      "owner": "sqlpxc",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/38583139?v=4",
+      "url": "https://github.com/sqlpxc/airhand",
+      "description": "High-performance, low-latency remote desktop QUIC transport · hardware encoding and decoding · up to 120 fps Windows · macOS · Linux · Android · iOS · browser",
+      "language": "Rust",
+      "topics": [],
+      "stars": 1868,
+      "forks": 182,
+      "openIssues": 18,
+      "createdAt": "2026-10-31T13:33:04Z",
+      "updatedAt": "2026-11-27T15:48:20Z",
+      "pushedAt": "2026-11-26T11:54:13Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 27,
+      "previousRank": 27,
+      "rankChange": 0,
+      "score": 88.4,
+      "categories": [
+        "desktop",
+        "infra"
+      ],
+      "signals": {
+        "stars24h": 89,
+        "forks24h": 14,
+        "starVelocity": 88.50883782258224,
+        "relativeGrowth": 2.034282819289361,
+        "acceleration7d": 354.03535129032895,
+        "forkRatio7d": null,
+        "ageDays": 27.102736608796295,
+        "hoursSincePush": 28.11317861111111,
+        "starsPerDay": 68.92292933229973
+      },
+      "scoreBreakdown": {
+        "starMomentum": 29.65962441314554,
+        "relativeGrowth": 18.333333333333332,
+        "acceleration": 10,
+        "forkMomentum": 8.597417840375586,
+        "developmentActivity": 13.796018370624903,
+        "freshness": 7.978328709180812
+      },
+      "research": {
+        "summary": "High-performance, low-latency remote desktop QUIC transport · hardware encoding and decoding · up to 120 fps Windows · macOS · Linux · Android · iOS · browser",
+        "whyNow": "過去 24 小時增加 89 個 stars，同時增加 14 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
+        "evidence": [
+          "1,868 stars，182 forks",
+          "主要語言：Rust",
+          "授權：MIT",
+          "分類：桌面與系統、雲端與基建",
+          "近期加星帳戶抽樣：64 個中 1 個可疑",
+          "本榜紀錄：2026-11-27 首次上榜，累計 2 日（連續 2 日），最高第 27 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-27T00:00:58.037Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 64,
+          "suspicious": 1,
+          "freshHollow": 1,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "Airhand 是低延遲遙控桌面方案，畫面由主機端 GPU 編碼成 AV1、HEVC 或 H.264，最高 120fps，經 QUIC 傳送，網絡變慢時跳至最新畫面，滑鼠指標在本地繪製。同一程式兼任受控端與控制端，經自行架設的 relay server 以 6 位控制碼配對，並會嘗試穿透 NAT 直連。現處 0.4.0 開發階段，各元件須以同一版本編譯；Windows、macOS、Linux 可作主機與控制端，iOS 僅供觀看。",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-27",
+          "days": 2,
+          "streak": 2,
+          "bestRank": 27,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            27,
+            27
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1438661890,
+      "nodeId": "R_kgDOVcA9Ag",
+      "name": "rea-video",
+      "fullName": "JuneYaooo/rea-video",
+      "owner": "JuneYaooo",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/60815510?v=4",
+      "url": "https://github.com/JuneYaooo/rea-video",
+      "description": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻；拆解结果按 VIDEO.md 格式输出。",
+      "language": "Python",
+      "topics": [
+        "agent-skills",
+        "ai-video",
+        "aigc-detection",
+        "claude-code",
+        "codex",
+        "ffmpeg",
+        "prompt-engineering",
+        "remotion",
+        "reverse-engineering",
+        "short-video",
+        "shot-detection",
+        "subtitles",
+        "video-analysis",
+        "video-breakdown",
+        "video-editing",
+        "video-generation",
+        "videomd",
+        "vlm"
+      ],
+      "stars": 13892,
+      "forks": 2016,
+      "openIssues": 15,
+      "createdAt": "2026-10-29T16:15:01Z",
+      "updatedAt": "2026-11-27T16:00:59Z",
+      "pushedAt": "2026-11-26T12:39:13Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 28,
+      "previousRank": 28,
+      "rankChange": 0,
+      "score": 88.3,
+      "categories": [
+        "ai",
+        "creative"
+      ],
+      "signals": {
+        "stars24h": 300,
+        "forks24h": 36,
+        "starVelocity": 313.65998705115067,
+        "relativeGrowth": 2.658803896548665,
+        "acceleration7d": 0.7789874699550436,
+        "forkRatio7d": 0.1316857248247879,
+        "ageDays": 28.99027133101852,
+        "hoursSincePush": 27.36317861111111,
+        "starsPerDay": 479.1952390295869
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.82276995305165,
+        "relativeGrowth": 18.661971830985916,
+        "acceleration": 5.809859154929578,
+        "forkMomentum": 9.366197183098592,
+        "developmentActivity": 13.826847449141216,
+        "freshness": 7.853815766273127
+      },
+      "research": {
+        "summary": "Reverse-engineer any video, shot by shot: filmed, AI-generated or coded, and how to remake it. Breakdowns in the open VIDEO.md format. 逆向一切视频，逐个镜头看是拍的、AI 生成的还是代码做的，再告诉你怎么复刻；拆解结果按 VIDEO.md 格式输出。",
+        "whyNow": "過去 24 小時增加 300 個 stars，同時增加 36 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "13,892 stars，2,016 forks",
+          "主要語言：Python",
+          "授權：Apache-2.0",
+          "分類：AI、設計與多媒體",
+          "近期加星帳戶抽樣：100 個中 7 個可疑",
+          "本榜紀錄：2026-11-05 首次上榜，累計 24 日（連續 24 日），最高第 2 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-25T08:00:57.437Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 7,
+          "freshHollow": 7,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "rea-video 是開源的 Python 工具，讓 AI agent 逐鏡拆解影片，判斷每個鏡頭是實拍、AI 生成、3D 動畫還是程式碼製作，並整理字幕、剪接與音效，同時提出重製方案。分析會輸出供人閱讀的報告，以及按層次編排、方便模型按需讀取的開放格式 VIDEO.md。使用前須具備 ffmpeg 與 Python 3.10+，工具本身不負責渲染新影片。",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-05",
+          "days": 24,
+          "streak": 24,
+          "bestRank": 2,
+          "recent": [
+            5,
+            3,
+            7,
+            4,
+            6,
+            7,
+            7,
+            4,
+            3,
+            2,
+            20,
+            16,
+            28,
+            28
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1455066549,
+      "nodeId": "R_kgDOVrqNtQ",
+      "name": "freebie-radar",
+      "fullName": "ZiChuanLan/freebie-radar",
+      "owner": "ZiChuanLan",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/139305401?v=4",
+      "url": "https://github.com/ZiChuanLan/freebie-radar",
+      "description": "白嫖与资讯资源聚合雷达：100+个源定时采集 + AI 二审过滤假福利 + 获取方式分级隔离抽奖/试用/推广 + Telegram 即时推送",
+      "language": "TypeScript",
+      "topics": [],
+      "stars": 3003,
+      "forks": 493,
+      "openIssues": 0,
+      "createdAt": "2026-11-12T09:08:11Z",
+      "updatedAt": "2026-11-27T15:44:14Z",
+      "pushedAt": "2026-11-27T09:41:16Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 29,
+      "previousRank": 29,
+      "rankChange": 0,
+      "score": 88.3,
+      "categories": [
+        "data"
+      ],
+      "signals": {
+        "stars24h": 140,
+        "forks24h": 17,
+        "starVelocity": 145.05466829970456,
+        "relativeGrowth": 2.6360507967445557,
+        "acceleration7d": 0.8793189285984655,
+        "forkRatio7d": 0.15992970123022845,
+        "ageDays": 15.286683368055556,
+        "hoursSincePush": 6.329011944444445,
+        "starsPerDay": 196.4454896917236
+      },
+      "scoreBreakdown": {
+        "starMomentum": 31.097417840375588,
+        "relativeGrowth": 18.63849765258216,
+        "acceleration": 6.185446009389671,
+        "forkMomentum": 8.832159624413144,
+        "developmentActivity": 14.720099253301504,
+        "freshness": 8.803911091165752
+      },
+      "research": {
+        "summary": "白嫖与资讯资源聚合雷达：100+个源定时采集 + AI 二审过滤假福利 + 获取方式分级隔离抽奖/试用/推广 + Telegram 即时推送",
+        "whyNow": "過去 24 小時增加 140 個 stars，同時增加 17 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "處理資料管線、分析、儲存或視覺化的團隊",
+        "evidence": [
+          "3,003 stars，493 forks",
+          "主要語言：TypeScript",
+          "授權：MIT",
+          "分類：資料",
+          "近期加星帳戶抽樣：100 個中 3 個可疑",
+          "本榜紀錄：2026-11-16 首次上榜，累計 12 日（連續 7 日），最高第 20 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-25T18:12:54.314Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 3,
+          "freshHollow": 2,
+          "sharedHollow": 1,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "freebie-radar（資源雷達）是自託管的資訊聚合與推送工具，從開發者社區、GitHub、Reddit 及 RSS 採集，經統一屏蔽詞過濾後由 AI 分成六種形態與二十八個領域，按頻道呈現並支援多條 Telegram 推送路由。「真福利」頻道只保留 AI 驗真的免費福利；部署須自備相容 OpenAI 的接口。",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-16",
+          "days": 12,
+          "streak": 7,
+          "bestRank": 20,
+          "recent": [
+            null,
+            20,
+            21,
+            23,
+            30,
+            42,
+            null,
+            32,
+            24,
+            21,
+            28,
+            23,
+            29,
+            29
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1467461515,
+      "nodeId": "R_kgDOV3eviw",
+      "name": "g1-acq",
+      "fullName": "crhywun/g1-acq",
+      "owner": "crhywun",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/38809664?v=4",
+      "url": "https://github.com/crhywun/g1-acq",
+      "description": "",
+      "language": "JavaScript",
+      "topics": [],
+      "stars": 1754,
+      "forks": 398,
+      "openIssues": 9,
+      "createdAt": "2026-11-22T10:53:17Z",
+      "updatedAt": "2026-11-27T16:00:43Z",
+      "pushedAt": "2026-11-26T23:51:35Z",
+      "license": null,
+      "archived": false,
+      "fork": false,
+      "rank": 30,
+      "previousRank": 30,
+      "rankChange": 0,
+      "score": 88.3,
+      "categories": [
+        "other"
+      ],
+      "signals": {
+        "stars24h": 282,
+        "forks24h": 51,
+        "starVelocity": 350.4076926394008,
+        "relativeGrowth": 8.307792824774543,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 5.213697256944444,
+        "hoursSincePush": 16.1570675,
+        "starsPerDay": 336.42152843910134
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.06924882629108,
+        "relativeGrowth": 19.647887323943664,
+        "acceleration": 2.095070422535211,
+        "forkMomentum": 9.577464788732394,
+        "developmentActivity": 14.295770019644914,
+        "freshness": 9.574828425064466
+      },
+      "research": {
+        "summary": "crhywun/g1-acq 是一個以 JavaScript 建立的公開 GitHub 項目。",
+        "whyNow": "過去 24 小時增加 282 個 stars，同時增加 51 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "正在尋找新開源工具和技術方向的開發者",
+        "evidence": [
+          "1,754 stars，398 forks",
+          "主要語言：JavaScript",
+          "授權：未標示",
+          "分類：其他",
+          "近期加星帳戶抽樣：100 個中 3 個可疑",
+          "本榜紀錄：2026-11-25 首次上榜，累計 4 日（連續 4 日），最高第 11 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "GitHub 未標示開源授權，正式採用前要先確認使用條款。",
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-25T00:00:53.728Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 3,
+          "freshHollow": 3,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "g1-acq 是適用於 Shadowrocket（小火箭）的 Google One iOS 訂閱入口商品 ID 改寫與採集工具。它攔截 one.google.com/ai? 回應，依五套預製模板或手動規則把指定 SKU 改寫成目標 ID，並記錄原始編號與最近十次回應，可匯出 JSON。工具只處理手機實際收到的匹配回應，不主動查詢全部 SKU，改寫記錄亦不代表購買調用或 App Store 面板已出現。",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-25",
+          "days": 4,
+          "streak": 4,
+          "bestRank": 11,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            19,
+            11,
+            30,
+            30
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1467880545,
+      "nodeId": "R_kgDOV34UYQ",
+      "name": "Stream-Tube-Desktop",
+      "fullName": "Avaneesh-Inamdar/Stream-Tube-Desktop",
+      "owner": "Avaneesh-Inamdar",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/104128879?v=4",
+      "url": "https://github.com/Avaneesh-Inamdar/Stream-Tube-Desktop",
+      "description": "Native YouTube client for Windows in Rust, with SponsorBlock, DeArrow and Return YouTube Dislike built in",
+      "language": "Rust",
+      "topics": [
+        "dearrow",
+        "desktop-app",
+        "gpui",
+        "mpv",
+        "rust",
+        "sponsorblock",
+        "windows",
+        "youtube",
+        "youtube-client"
+      ],
+      "stars": 1623,
+      "forks": 140,
+      "openIssues": 16,
+      "createdAt": "2026-11-22T18:50:17Z",
+      "updatedAt": "2026-11-27T15:59:45Z",
+      "pushedAt": "2026-11-27T15:55:16Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 31,
+      "previousRank": 32,
+      "rankChange": 1,
+      "score": 88.1,
+      "categories": [
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 236,
+        "forks24h": 23,
+        "starVelocity": 310.5058787636827,
+        "relativeGrowth": 7.648763334699725,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 4.882447256944444,
+        "hoursSincePush": 0.09567861111111112,
+        "starsPerDay": 332.41526525280136
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.69953051643193,
+        "relativeGrowth": 19.624413145539904,
+        "acceleration": 2.095070422535211,
+        "forkMomentum": 9.131455399061032,
+        "developmentActivity": 14.99572924152723,
+        "freshness": 9.601295454237368
+      },
+      "research": {
+        "summary": "Native YouTube client for Windows in Rust, with SponsorBlock, DeArrow and Return YouTube Dislike built in",
+        "whyNow": "過去 24 小時增加 236 個 stars，同時增加 23 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
+        "evidence": [
+          "1,623 stars，140 forks",
+          "主要語言：Rust",
+          "授權：MIT",
+          "分類：桌面與系統",
+          "近期加星帳戶抽樣：100 個中 4 個可疑",
+          "本榜紀錄：2026-11-25 首次上榜，累計 4 日（連續 4 日），最高第 18 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-25T00:00:53.728Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 4,
+          "freshHollow": 4,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "Stream Tube 是以 Rust 編寫的 Windows 與 Linux 原生 YouTube 客戶端，介面由 GPUI 在 GPU 上繪製，影片經 libmpv 播放，啟動迅速、滾動流暢，記憶體佔用亦較瀏覽器為低。它直接串流播放影片，廣告不會載入，並內建 SponsorBlock、DeArrow 和 Return YouTube Dislike。項目仍屬早期 alpha，以 Windows 為主要平台，Linux 版本較少測試，macOS 版本尚未提供。",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-25",
+          "days": 4,
+          "streak": 4,
+          "bestRank": 18,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            18,
+            29,
+            32,
+            31
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1472887718,
+      "nodeId": "R_kgDOV8p7pg",
+      "name": "ps5-fpsunlocker-gta6",
+      "fullName": "HSgod/ps5-fpsunlocker-gta6",
+      "owner": "HSgod",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/59364907?v=4",
+      "url": "https://github.com/HSgod/ps5-fpsunlocker-gta6",
+      "description": "Unlock FPS on Grand Theft Auto VI for jailbroken PS5",
+      "language": "C",
+      "topics": [],
+      "stars": 408,
+      "forks": 18,
+      "openIssues": 0,
+      "createdAt": "2026-11-26T08:38:39Z",
+      "updatedAt": "2026-11-27T16:00:24Z",
+      "pushedAt": "2026-11-27T13:14:13Z",
+      "license": null,
+      "archived": false,
+      "fork": false,
+      "rank": 32,
+      "previousRank": 34,
+      "rankChange": 2,
+      "score": 88.1,
+      "categories": [
+        "games"
+      ],
+      "signals": {
+        "stars24h": 312,
+        "forks24h": 14,
+        "starVelocity": 312.1192634310507,
+        "relativeGrowth": 14.999494572296278,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 1.307192627314815,
+        "hoursSincePush": 2.7798452777777776,
+        "starsPerDay": 312.1192634310507
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.78169014084507,
+        "relativeGrowth": 19.812206572769952,
+        "acceleration": 2.095070422535211,
+        "forkMomentum": 8.597417840375586,
+        "developmentActivity": 14.876411713849189,
+        "freshness": 9.891658449386934
+      },
+      "research": {
+        "summary": "Unlock FPS on Grand Theft Auto VI for jailbroken PS5",
+        "whyNow": "過去 24 小時增加 312 個 stars，同時增加 14 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "玩家、遊戲開發者和 mod 作者",
+        "evidence": [
+          "408 stars，18 forks",
+          "主要語言：C",
+          "授權：未標示",
+          "分類：遊戲",
+          "近期加星帳戶抽樣：100 個中 3 個可疑",
+          "本榜紀錄：2026-11-27 首次上榜，累計 2 日（連續 2 日），最高第 32 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "GitHub 未標示開源授權，正式採用前要先確認使用條款。",
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-27T13:33:18.423Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 3,
+          "freshHollow": 2,
+          "sharedHollow": 1,
+          "maxPerMinute": 3,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "GTA VI FPS Unlocker 是供已破解 PlayStation 5 及 PS5 Pro 使用的 .elf payload，在 Grand Theft Auto VI 運行時直接改寫記憶體，解除內建 30 FPS 上限、修正 30 FPS 以上的 delta-time 遊戲速度，並可調整 TAA2U（PS5）或 PSSR（PS5 Pro）的內部渲染解像度比例，無須改動磁碟上的遊戲檔案，亦不降低畫質預設。前提是主機已破解，且遊戲須為指定版本。",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-27",
+          "days": 2,
+          "streak": 2,
+          "bestRank": 32,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            34,
+            32
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1465281397,
+      "nodeId": "R_kgDOV1ZrdQ",
+      "name": "xnulinux",
+      "fullName": "AFK-surf/xnulinux",
+      "owner": "AFK-surf",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/221804798?v=4",
+      "url": "https://github.com/AFK-surf/xnulinux",
+      "description": "XNU as a loadable kernel module inside Linux (macOS personality for arm64 Linux)",
+      "language": "C",
+      "topics": [],
+      "stars": 4331,
+      "forks": 223,
+      "openIssues": 9,
+      "createdAt": "2026-11-20T10:18:31Z",
+      "updatedAt": "2026-11-27T15:59:56Z",
+      "pushedAt": "2026-11-27T13:51:28Z",
+      "license": null,
+      "archived": false,
+      "fork": false,
+      "rank": 33,
+      "previousRank": 31,
+      "rankChange": -2,
+      "score": 88,
+      "categories": [
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 212,
+        "forks24h": 21,
+        "starVelocity": 369.00252974088517,
+        "relativeGrowth": 5.590947420316442,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 7.237840775462963,
+        "hoursSincePush": 2.1590119444444444,
+        "starsPerDay": 598.3828788666564
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.151408450704224,
+        "relativeGrowth": 19.366197183098592,
+        "acceleration": 2.095070422535211,
+        "forkMomentum": 9.072769953051644,
+        "developmentActivity": 14.903924541475783,
+        "freshness": 9.41467604568024
+      },
+      "research": {
+        "summary": "XNU as a loadable kernel module inside Linux (macOS personality for arm64 Linux)",
+        "whyNow": "過去 24 小時增加 212 個 stars，同時增加 21 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
+        "evidence": [
+          "4,331 stars，223 forks",
+          "主要語言：C",
+          "授權：未標示",
+          "分類：桌面與系統",
+          "近期加星帳戶抽樣：100 個中 1 個可疑",
+          "Hacker News：629 分、268 則評論（5 日前）",
+          "本榜紀錄：2026-11-25 首次上榜，累計 4 日（連續 4 日），最高第 13 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "GitHub 未標示開源授權，正式採用前要先確認使用條款。",
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-25T00:00:53.728Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 1,
+          "freshHollow": 0,
+          "sharedHollow": 1,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "hackerNews": {
+          "points": 629,
+          "comments": 268,
+          "postedAt": "2026-11-23T03:49:24Z",
+          "url": "https://news.ycombinator.com/item?id=50607261"
+        },
+        "introduction": {
+          "text": "xnulinux 將 Apple 開源的 XNU 內核編譯成模組，載入未經改動的 arm64 Linux，讓 macOS 與 Linux 程式在同一批 CPU 上原生並行。目前僅支援 arm64 Linux，須自備 macOS 27 系統磁碟。",
+          "writtenAt": "2026-11-27T16:01:00.443Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-25",
+          "days": 4,
+          "streak": 4,
+          "bestRank": 13,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            13,
+            21,
+            31,
+            33
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1441521221,
+      "nodeId": "R_kgDOVeveRQ",
+      "name": "cicada",
+      "fullName": "wquguru/cicada",
+      "owner": "wquguru",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/209866177?v=4",
+      "url": "https://github.com/wquguru/cicada",
+      "description": "知了 Cicada · 任何会议和直播的实时字幕、同声传译、AI 会议纪要，Mac、Windows、Linux、Android 免费开源。Live subtitles, interpreting and meeting notes for any call or stream, on Mac, Windows, Linux and Android.",
+      "language": "Swift",
+      "topics": [
+        "android",
+        "linux",
+        "live-captions",
+        "macos",
+        "meeting-notes",
+        "menubar-app",
+        "simultaneous-interpretation",
+        "speech-recognition",
+        "subtitles",
+        "swift",
+        "swiftui",
+        "translation",
+        "windows"
+      ],
+      "stars": 3586,
+      "forks": 570,
+      "openIssues": 16,
+      "createdAt": "2026-11-01T05:41:23Z",
+      "updatedAt": "2026-11-27T15:29:08Z",
+      "pushedAt": "2026-11-25T06:50:11Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 34,
+      "previousRank": 33,
+      "rankChange": -1,
+      "score": 87.9,
+      "categories": [
+        "desktop",
+        "mobile"
+      ],
+      "signals": {
+        "stars24h": 167,
+        "forks24h": 25,
+        "starVelocity": 203.32969942352042,
+        "relativeGrowth": 3.383662781810238,
+        "acceleration7d": 1.0780169967877056,
+        "forkRatio7d": 0.1447140381282496,
+        "ageDays": 26.430294479166665,
+        "hoursSincePush": 57.18040083333333,
+        "starsPerDay": 135.67764077795718
+      },
+      "scoreBreakdown": {
+        "starMomentum": 31.795774647887324,
+        "relativeGrowth": 19.061032863849764,
+        "acceleration": 7.194835680751174,
+        "forkMomentum": 9.190140845070422,
+        "developmentActivity": 12.652697540105178,
+        "freshness": 8.023162244587516
+      },
+      "research": {
+        "summary": "知了 Cicada · 任何会议和直播的实时字幕、同声传译、AI 会议纪要，Mac、Windows、Linux、Android 免费开源。Live subtitles, interpreting and meeting notes for any call or stream, on Mac, Windows, Linux and Android.",
+        "whyNow": "過去 24 小時增加 167 個 stars，同時增加 25 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
+        "evidence": [
+          "3,586 stars，570 forks",
+          "主要語言：Swift",
+          "授權：Apache-2.0",
+          "分類：桌面與系統、手機應用",
+          "近期加星帳戶抽樣：100 個中 5 個可疑",
+          "本榜紀錄：2026-11-05 首次上榜，累計 10 日（連續 5 日），最高第 1 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-27T00:00:58.037Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 5,
+          "freshHollow": 5,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "Cicada 是跨 Mac、Windows、Linux 和 Android 的即時字幕及會議紀錄工具，直接讀取系統音訊，不用把機械人加入會議，可自動辨識語言、翻譯字幕、整理摘要與待辦，並按住快捷鍵把翻譯語音傳給對方。Apple silicon Mac 的語音辨識全在本機完成；其他平台及進階功能需自備 AI 服務金鑰，手機則因系統限制而要用擴音配合面對面模式。",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-05",
+          "days": 10,
+          "streak": 5,
+          "bestRank": 1,
+          "recent": [
+            null,
+            49,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            16,
+            1,
+            14,
+            33,
+            34
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1466635339,
+      "nodeId": "R_kgDOV2sUSw",
+      "name": "fast-anything",
+      "fullName": "EL4CTEO/fast-anything",
+      "owner": "EL4CTEO",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/215285446?v=4",
+      "url": "https://github.com/EL4CTEO/fast-anything",
+      "description": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same.",
+      "language": "Rust",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "claude-code",
+        "claude-code-plugin",
+        "codex",
+        "developer-tools",
+        "ffi",
+        "mcp",
+        "mcp-server",
+        "napi-rs",
+        "nodejs",
+        "optimization",
+        "performance",
+        "profiler",
+        "pyo3",
+        "python",
+        "rewrite-it-in-rust",
+        "ruby",
+        "rust",
+        "typescript"
+      ],
+      "stars": 4408,
+      "forks": 316,
+      "openIssues": 3,
+      "createdAt": "2026-11-21T14:40:27Z",
+      "updatedAt": "2026-11-27T15:32:11Z",
+      "pushedAt": "2026-11-27T15:36:19Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 35,
+      "previousRank": 35,
+      "rankChange": 0,
+      "score": 87.4,
+      "categories": [
+        "ai",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 261,
+        "forks24h": 18,
+        "starVelocity": 293.5580580379187,
+        "relativeGrowth": 4.409051183025106,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 6.055942627314815,
+        "hoursSincePush": 0.41151194444444444,
+        "starsPerDay": 727.8800793320086
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.57629107981221,
+        "relativeGrowth": 19.295774647887324,
+        "acceleration": 2.095070422535211,
+        "forkMomentum": 8.92018779342723,
+        "developmentActivity": 14.981640176332755,
+        "freshness": 9.507860755742946
+      },
+      "research": {
+        "summary": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same.",
+        "whyNow": "過去 24 小時增加 261 個 stars，同時增加 18 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "4,408 stars，316 forks",
+          "主要語言：Rust",
+          "授權：MIT",
+          "分類：AI、開發工具",
+          "近期加星帳戶抽樣：100 個中 0 個可疑",
+          "Hacker News：215 分、175 則評論（5 日前）",
+          "本榜紀錄：2026-11-23 首次上榜，累計 6 日（連續 6 日），最高第 6 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-26T08:01:11.946Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 3,
+          "flagged": false
+        },
+        "hackerNews": {
+          "points": 215,
+          "comments": 175,
+          "postedAt": "2026-11-22T04:10:09Z",
+          "url": "https://news.ycombinator.com/item?id=50596155"
+        },
+        "introduction": {
+          "text": "fast-anything 是效能優化工具，不會把整個應用改寫成 Rust，而是分析 Python、Node、Ruby 等應用的執行情況，找出最耗時的少數函數，交由 coding agent 逐個移植。它會錄製真實調用並重播驗證，確認結果一致後才啟用，亦可隨時停用還原。工具只處理頂層、確定性、接受純數據的函數，涵蓋多種語言。",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-23",
+          "days": 6,
+          "streak": 6,
+          "bestRank": 6,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            6,
+            11,
+            26,
+            28,
+            35,
+            35
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1447408881,
+      "nodeId": "R_kgDOVkW08Q",
+      "name": "chimera-vocal-synth",
+      "fullName": "jamesondh/chimera-vocal-synth",
+      "owner": "jamesondh",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/4026659?v=4",
+      "url": "https://github.com/jamesondh/chimera-vocal-synth",
+      "description": "the ultimate vocal synthesizer - sing, speak, beatbox, and more",
+      "language": "Rust",
+      "topics": [],
+      "stars": 3353,
+      "forks": 423,
+      "openIssues": 60,
+      "createdAt": "2026-11-05T19:10:42Z",
+      "updatedAt": "2026-11-27T15:40:59Z",
+      "pushedAt": "2026-11-27T13:36:41Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 36,
+      "previousRank": 39,
+      "rankChange": 3,
+      "score": 87.2,
+      "categories": [
+        "creative"
+      ],
+      "signals": {
+        "stars24h": 98,
+        "forks24h": 11,
+        "starVelocity": 95.32849636266363,
+        "relativeGrowth": 1.640185318809253,
+        "acceleration7d": 1.4850846702875304,
+        "forkRatio7d": 0.13636363636363638,
+        "ageDays": 21.868269016203705,
+        "hoursSincePush": 2.405400833333333,
+        "starsPerDay": 153.32717909751025
+      },
+      "scoreBreakdown": {
+        "starMomentum": 29.906103286384976,
+        "relativeGrowth": 17.253521126760564,
+        "acceleration": 8.427230046948356,
+        "forkMomentum": 8.339201877934272,
+        "developmentActivity": 14.892999495825675,
+        "freshness": 8.334049877962105
+      },
+      "research": {
+        "summary": "the ultimate vocal synthesizer - sing, speak, beatbox, and more",
+        "whyNow": "過去 24 小時增加 98 個 stars，同時增加 11 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "處理圖片、影片、音樂或設計工作的創作者",
+        "evidence": [
+          "3,353 stars，423 forks",
+          "主要語言：Rust",
+          "授權：MIT",
+          "分類：設計與多媒體",
+          "近期加星帳戶抽樣：66 個中 1 個可疑",
+          "本榜紀錄：2026-11-09 首次上榜，累計 14 日（連續 5 日），最高第 19 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-27T08:00:54.574Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 66,
+          "suspicious": 1,
+          "freshHollow": 1,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "CHIMERA 是瀏覽器內的物理建模語音合成器，聲音全部來自模擬氣道（肺、聲帶或鳴管、聲道、唇、鼻），並非取樣。引擎以 Rust 編寫並編譯為 WebAssembly，在 AudioWorklet 運行，同一代碼亦供原生測試及 CLI 使用。可拖動頭部剖面的舌、唇、下巴演奏，或把英文、土耳其文及 IPA 轉成語音與歌聲，另有 beatbox、動物叫聲與雙人合唱；插件版本仍在早期階段。",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-09",
+          "days": 14,
+          "streak": 5,
+          "bestRank": 19,
+          "recent": [
+            null,
+            null,
+            41,
+            null,
+            39,
+            41,
+            null,
+            null,
+            null,
+            45,
+            38,
+            45,
+            39,
+            36
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1472319077,
+      "nodeId": "R_kgDOV8HOZQ",
+      "name": "grh-lean",
+      "fullName": "lsernau/grh-lean",
+      "owner": "lsernau",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/4541943?v=4",
+      "url": "https://github.com/lsernau/grh-lean",
+      "description": "A short Lean 4 proof of the Generalized Riemann Hypothesis",
+      "language": "Lean",
+      "topics": [],
+      "stars": 1000,
+      "forks": 112,
+      "openIssues": 4,
+      "createdAt": "2026-11-25T20:42:55Z",
+      "updatedAt": "2026-11-27T16:00:10Z",
+      "pushedAt": "2026-11-25T20:45:04Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 37,
+      "previousRank": 37,
+      "rankChange": 0,
+      "score": 87.2,
+      "categories": [
+        "other"
+      ],
+      "signals": {
+        "stars24h": 319,
+        "forks24h": 44,
+        "starVelocity": 318.7818311406563,
+        "relativeGrowth": 9.957071558194938,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 1.8042296643518518,
+        "hoursSincePush": 43.26567861111111,
+        "starsPerDay": 554.2531639724692
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.863849765258216,
+        "relativeGrowth": 19.718309859154928,
+        "acceleration": 2.095070422535211,
+        "forkMomentum": 9.477699530516432,
+        "developmentActivity": 13.1876831655931,
+        "freshness": 9.850772177745439
+      },
+      "research": {
+        "summary": "A short Lean 4 proof of the Generalized Riemann Hypothesis",
+        "whyNow": "過去 24 小時增加 319 個 stars，同時增加 44 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "正在尋找新開源工具和技術方向的開發者",
+        "evidence": [
+          "1,000 stars，112 forks",
+          "主要語言：Lean",
+          "授權：Apache-2.0",
+          "分類：其他",
+          "近期加星帳戶抽樣：83 個中 2 個可疑",
+          "Hacker News：558 分、356 則評論（42 小時前）",
+          "本榜紀錄：2026-11-26 首次上榜，累計 3 日（連續 3 日），最高第 12 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "code",
+          "judgedAt": "2026-11-26T08:01:11.946Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 83,
+          "suspicious": 2,
+          "freshHollow": 2,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "hackerNews": {
+          "points": 558,
+          "comments": 356,
+          "postedAt": "2026-11-25T21:48:10Z",
+          "url": "https://news.ycombinator.com/item?id=50648050"
+        },
+        "introduction": {
+          "text": "grh-lean 以 Lean 4 及 Mathlib 形式化證明 Riemann Hypothesis 與 Dirichlet L-functions 的 Generalized Riemann Hypothesis，只依賴三條標準公理。它分為可讀版與壓縮版兩套實作，目前僅通過機器檢查，未經數學家通讀。",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-26",
+          "days": 3,
+          "streak": 3,
+          "bestRank": 12,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            12,
+            37,
+            37
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1453132706,
+      "nodeId": "R_kgDOVp0Log",
+      "name": "yogurt",
+      "fullName": "FrigadeHQ/yogurt",
+      "owner": "FrigadeHQ",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/117952255?v=4",
+      "url": "https://github.com/FrigadeHQ/yogurt",
+      "description": "Private AI meeting notes that stay on your computer. No meeting bot. Free and open source for Mac, Windows and Linux. An alternative to Granola, Otter and Fireflies.",
+      "language": "TypeScript",
+      "topics": [
+        "ai-meeting-assistant",
+        "ai-notetaker",
+        "electron",
+        "granola-alternative",
+        "linux",
+        "llama-cpp",
+        "local-ai",
+        "local-first",
+        "macos",
+        "mcp",
+        "meeting-minutes",
+        "meeting-notes",
+        "offline-first",
+        "open-source",
+        "privacy",
+        "speech-to-text",
+        "transcription",
+        "whisper",
+        "whisper-cpp",
+        "windows"
+      ],
+      "stars": 3725,
+      "forks": 331,
+      "openIssues": 91,
+      "createdAt": "2026-11-10T20:01:01Z",
+      "updatedAt": "2026-11-27T15:53:13Z",
+      "pushedAt": "2026-11-27T04:08:01Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 38,
+      "previousRank": 38,
+      "rankChange": 0,
+      "score": 86.9,
+      "categories": [
+        "ai",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 107,
+        "forks24h": 15,
+        "starVelocity": 143.85255382805946,
+        "relativeGrowth": 2.349102367166644,
+        "acceleration7d": 0.6931509927206806,
+        "forkRatio7d": 0.1193609022556391,
+        "ageDays": 16.833326886574074,
+        "hoursSincePush": 11.883178611111111,
+        "starsPerDay": 221.28721346051836
+      },
+      "scoreBreakdown": {
+        "starMomentum": 31.056338028169016,
+        "relativeGrowth": 18.450704225352112,
+        "acceleration": 5.563380281690141,
+        "forkMomentum": 8.703051643192488,
+        "developmentActivity": 14.478772309288296,
+        "freshness": 8.691168272285907
+      },
+      "research": {
+        "summary": "Private AI meeting notes that stay on your computer. No meeting bot. Free and open source for Mac, Windows and Linux. An alternative to Granola, Otter and Fireflies.",
+        "whyNow": "過去 24 小時增加 107 個 stars，同時增加 15 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "3,725 stars，331 forks",
+          "主要語言：TypeScript",
+          "授權：MIT",
+          "分類：AI、桌面與系統",
+          "近期加星帳戶抽樣：100 個中 4 個可疑",
+          "本榜紀錄：2026-11-14 首次上榜，累計 14 日（連續 13 日），最高第 3 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-25T18:12:54.314Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 4,
+          "freshHollow": 4,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "Yogurt 是免費開源的 AI 會議記錄工具，在 Mac、Windows、Linux 上錄下麥克風與通話聲音，不會有機械人加入會議。它以 whisper.cpp 在本機轉錄，摘要及問答則由 llama.cpp 運行本地模型產生，只在下載模型及檢查更新時上網。",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-14",
+          "days": 14,
+          "streak": 13,
+          "bestRank": 3,
+          "recent": [
+            null,
+            35,
+            32,
+            29,
+            18,
+            5,
+            16,
+            39,
+            31,
+            33,
+            3,
+            22,
+            38,
+            38
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1428347546,
+      "nodeId": "R_kgDOVSLamg",
+      "name": "openidea",
+      "fullName": "l0ng-ai/openidea",
+      "owner": "l0ng-ai",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/24760907?v=4",
+      "url": "https://github.com/l0ng-ai/openidea",
+      "description": "The IDE you know, rebuilt in Rust. IntelliJ IDEA - style keymap, tool windows and search-everywhere in a fast native app: editor, code insight, debugger, Git, terminal, database and HTTP clients for 60+ languages.",
+      "language": "TypeScript",
+      "topics": [
+        "code-editor",
+        "cross-platform",
+        "dap",
+        "database-client",
+        "debugger",
+        "desktop-app",
+        "developer-tools",
+        "git",
+        "http-client",
+        "ide",
+        "intellij",
+        "lsp",
+        "rust",
+        "tauri",
+        "terminal"
+      ],
+      "stars": 10451,
+      "forks": 1016,
+      "openIssues": 273,
+      "createdAt": "2026-10-21T12:23:14Z",
+      "updatedAt": "2026-11-27T15:42:57Z",
+      "pushedAt": "2026-11-27T15:55:12Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 39,
+      "previousRank": 40,
+      "rankChange": 1,
+      "score": 86.8,
+      "categories": [
+        "desktop",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 139,
+        "forks24h": 19,
+        "starVelocity": 131.48003353068594,
+        "relativeGrowth": 1.2845826774985534,
+        "acceleration7d": 1.296901900183916,
+        "forkRatio7d": 0.13301088270858524,
+        "ageDays": 37.15123197916667,
+        "hoursSincePush": 0.09678972222222222,
+        "starsPerDay": 281.3096482469442
+      },
+      "scoreBreakdown": {
+        "starMomentum": 30.768779342723004,
+        "relativeGrowth": 16.5962441314554,
+        "acceleration": 8.075117370892018,
+        "forkMomentum": 9.002347417840376,
+        "developmentActivity": 14.995679652557497,
+        "freshness": 7.337450897712927
+      },
+      "research": {
+        "summary": "The IDE you know, rebuilt in Rust. IntelliJ IDEA - style keymap, tool windows and search-everywhere in a fast native app: editor, code insight, debugger, Git, terminal, database and HTTP clients for 60+ languages.",
+        "whyNow": "過去 24 小時增加 139 個 stars，同時增加 19 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
+        "evidence": [
+          "10,451 stars，1,016 forks",
+          "主要語言：TypeScript",
+          "授權：Apache-2.0",
+          "分類：桌面與系統、開發工具",
+          "近期加星帳戶抽樣：16 個中 0 個可疑",
+          "本榜紀錄：2026-11-01 首次上榜，累計 24 日（連續 2 日），最高第 1 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "熱門度不等於適合生產環境，採用前仍要檢查文件、測試和安全紀錄。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-27T08:00:54.574Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 16,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 1,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "OpenIDEA 是以 Rust 為核心的原生 IDE，沿用 IntelliJ IDEA 的鍵位、工具窗口與全域搜尋方式，整合編輯器、程式碼洞察、除錯器、Git、終端機、資料庫和 HTTP 客戶端，支援 60 多種語言，可在 macOS、Windows、Linux 運行。插件以沙箱化 WebAssembly 組件執行，可擴充動作、補全、主題及語言，惟插件 API 仍屬預覽階段。",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-01",
+          "days": 24,
+          "streak": 2,
+          "bestRank": 1,
+          "recent": [
+            null,
+            null,
+            43,
+            32,
+            27,
+            10,
+            30,
+            null,
+            25,
+            31,
+            39,
+            null,
+            40,
+            39
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1463683138,
+      "nodeId": "R_kgDOVz4IQg",
+      "name": "agy-fast",
+      "fullName": "INK-Q/agy-fast",
+      "owner": "INK-Q",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/55076202?v=4",
+      "url": "https://github.com/INK-Q/agy-fast",
+      "description": "Non-invasive MCP accelerator plugin for Google Antigravity (CLI/Desktop/IDE): cuts LLM turns (-34%), token quota (-31%), and upload traffic (-40%) without affecting native UI or diffs.",
+      "language": "TypeScript",
+      "topics": [
+        "ai-agent",
+        "ai-coding",
+        "antigravity",
+        "antigravity-cli",
+        "antigravity-ide",
+        "antigravity-plugins",
+        "coding-agent",
+        "context-optimization",
+        "developer-productivity",
+        "developer-tools",
+        "gemini",
+        "google-antigravity",
+        "latency-optimization",
+        "mcp",
+        "mcp-plugin",
+        "mcp-server",
+        "model-context-protocol",
+        "performance",
+        "plugin",
+        "token-optimization"
+      ],
+      "stars": 1906,
+      "forks": 106,
+      "openIssues": 27,
+      "createdAt": "2026-11-19T04:58:46Z",
+      "updatedAt": "2026-11-27T15:56:07Z",
+      "pushedAt": "2026-11-27T06:04:03Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 40,
+      "previousRank": 42,
+      "rankChange": 2,
+      "score": 86.5,
+      "categories": [
+        "ai",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 240,
+        "forks24h": 14,
+        "starVelocity": 280.65708269713025,
+        "relativeGrowth": 6.386822840091265,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 8.459889386574075,
+        "hoursSincePush": 9.949289722222222,
+        "starsPerDay": 225.2984540229143
+      },
+      "scoreBreakdown": {
+        "starMomentum": 32.41197183098591,
+        "relativeGrowth": 19.48356807511737,
+        "acceleration": 2.095070422535211,
+        "forkMomentum": 8.597417840375586,
+        "developmentActivity": 14.562346926505501,
+        "freshness": 9.31928598557196
+      },
+      "research": {
+        "summary": "Non-invasive MCP accelerator plugin for Google Antigravity (CLI/Desktop/IDE): cuts LLM turns (-34%), token quota (-31%), and upload traffic (-40%) without affecting native UI or diffs.",
+        "whyNow": "過去 24 小時增加 240 個 stars，同時增加 14 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "1,906 stars，106 forks",
+          "主要語言：TypeScript",
+          "授權：MIT",
+          "分類：AI、開發工具",
+          "近期加星帳戶抽樣：100 個中 4 個可疑",
+          "本榜紀錄：2026-11-23 首次上榜，累計 6 日（連續 6 日），最高第 20 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-26T08:01:11.946Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 4,
+          "freshHollow": 4,
+          "sharedHollow": 0,
+          "maxPerMinute": 3,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "INK-Q/agy-fast 是 Google Antigravity（CLI agy、Desktop 2.0 及 IDE）的零依賴本地 MCP 外掛，將高頻搜尋、符號大綱、多檔案原子編輯與構建測試檢查整合成批次呼叫，並在每次工作階段注入工作區快照，以減少延遲、token 配額及上傳流量。它不改動原生介面、diff 檢視器、修改檔案清單、檢查點或安全檢查，需 Node.js 20 或以上，主要供 Antigravity 使用。",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-23",
+          "days": 6,
+          "streak": 6,
+          "bestRank": 20,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            20,
+            36,
+            29,
+            35,
+            42,
+            40
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1473230635,
+      "nodeId": "R_kgDOV8-3Kw",
+      "name": "focus-clock",
+      "fullName": "0x1A6C1A9Y/focus-clock",
+      "owner": "0x1A6C1A9Y",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/8345456?v=4",
+      "url": "https://github.com/0x1A6C1A9Y/focus-clock",
+      "description": "Un minuteur web minimal pour se concentrer, faire une pause et avancer une chose à la fois.",
+      "language": "HTML",
+      "topics": [],
+      "stars": 562,
+      "forks": 3,
+      "openIssues": 0,
+      "createdAt": "2026-11-26T13:54:20Z",
+      "updatedAt": "2026-11-27T16:00:29Z",
+      "pushedAt": "2026-11-26T13:57:06Z",
+      "license": null,
+      "archived": false,
+      "fork": false,
+      "rank": 41,
+      "previousRank": 41,
+      "rankChange": 0,
+      "score": 86.4,
+      "categories": [
+        "web"
+      ],
+      "signals": {
+        "stars24h": 517,
+        "forks24h": 3,
+        "starVelocity": 516.5592677047277,
+        "relativeGrowth": 21.320682708610303,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 1.0879680902777777,
+        "hoursSincePush": 26.065123055555556,
+        "starsPerDay": 516.5592677047277
+      },
+      "scoreBreakdown": {
+        "starMomentum": 33.6443661971831,
+        "relativeGrowth": 19.906103286384976,
+        "acceleration": 2.095070422535211,
+        "forkMomentum": 6.936619718309859,
+        "developmentActivity": 13.880367478209731,
+        "freshness": 9.909745751308886
+      },
+      "research": {
+        "summary": "Un minuteur web minimal pour se concentrer, faire une pause et avancer une chose à la fois.",
+        "whyNow": "過去 24 小時增加 517 個 stars，同時增加 3 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "建立網站、服務或前端產品的開發者",
+        "evidence": [
+          "562 stars，3 forks",
+          "主要語言：HTML",
+          "授權：未標示",
+          "分類：Web",
+          "近期加星帳戶抽樣：100 個中 39 個可疑",
+          "本榜紀錄：2026-11-27 首次上榜，累計 2 日（連續 2 日），最高第 41 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "最近 100 個加星帳戶中有 39 個（39%）是資料空白的新帳戶或同時為多個上榜項目加星，可能有刷星。",
+          "GitHub 未標示開源授權，正式採用前要先確認使用條款。",
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-27T00:00:58.037Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 39,
+          "freshHollow": 39,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": true
+        },
+        "risks": [
+          "starInflation"
+        ],
+        "introduction": {
+          "text": "Focus Clock 是一個以單一 HTML 檔案製成的極簡網頁計時器，開啟 index.html 即可使用，無需安裝、帳戶或任何依賴。它提供 25 分鐘專注時段、5 分鐘小休與 15 分鐘長休，支援開始、暫停、繼續及重設，並以環形進度顯示，分頁標題亦會顯示剩餘時間。介面另有自由輸入欄記錄當下任務、空白鍵快捷鍵及手機適配；計時只在瀏覽器內運作，不傳送任何資料，但須保持分頁開啟，重新載入便會重設計時器。",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-27",
+          "days": 2,
+          "streak": 2,
+          "bestRank": 41,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            41,
+            41
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1209966933,
+      "nodeId": "R_kgDOSB6hVQ",
+      "name": "rea",
+      "fullName": "morluto/rea",
+      "owner": "morluto",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/76467478?v=4",
+      "url": "https://github.com/morluto/rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "language": "TypeScript",
+      "topics": [
+        "agent-skills",
+        "ai",
+        "android",
+        "claude-code",
+        "cli",
+        "cpp",
+        "dsh-plugin",
+        "html",
+        "java",
+        "javascript",
+        "linux",
+        "mcp",
+        "nodejs",
+        "python",
+        "rea",
+        "react",
+        "rust",
+        "security",
+        "touhou",
+        "typescript"
+      ],
+      "stars": 480739,
+      "forks": 116777,
+      "openIssues": 1125,
+      "createdAt": "2026-04-14T00:51:32Z",
+      "updatedAt": "2026-11-27T16:00:55Z",
+      "pushedAt": "2026-11-27T15:58:26Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 42,
+      "previousRank": 44,
+      "rankChange": 2,
+      "score": 86.3,
+      "categories": [
+        "ai",
+        "security"
+      ],
+      "signals": {
+        "stars24h": 1393,
+        "forks24h": 231,
+        "starVelocity": 1392.8732957669235,
+        "relativeGrowth": 2.008841363371606,
+        "acceleration7d": 0.9975667701043681,
+        "forkRatio7d": 0.18163165608207132,
+        "ageDays": 227.6315792013889,
+        "hoursSincePush": 0.04290083333333333,
+        "starsPerDay": 2111.916991862906
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.75352112676056,
+        "relativeGrowth": 18.286384976525824,
+        "acceleration": 6.795774647887324,
+        "forkMomentum": 9.964788732394366,
+        "developmentActivity": 14.99808490648937,
+        "freshness": 1.5002852644332878
+      },
+      "research": {
+        "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+        "whyNow": "過去 24 小時增加 1,393 個 stars，同時增加 231 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "480,739 stars，116,777 forks",
+          "主要語言：TypeScript",
+          "授權：MIT",
+          "分類：AI、安全",
+          "本榜紀錄：2026-10-16 首次上榜，累計 42 日（連續 7 日），最高第 24 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "熱門度不等於適合生產環境，採用前仍要檢查文件、測試和安全紀錄。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-25T18:12:54.314Z",
+          "version": 2
+        },
+        "introduction": {
+          "text": "REA 是透過 MCP 連接 AI agent 的逆向工程工具，可檢查原生二進位檔、JavaScript 與 Electron 應用、.NET 組件及網站，分析全程在本機進行，結論附有證據與限制。深度原生分析須配合 Hopper、Ghidra、IDA 或 Kuna，靜態 JavaScript 檢查則無需原生引擎。",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-10-16",
+          "days": 42,
+          "streak": 7,
+          "bestRank": 24,
+          "recent": [
+            null,
+            33,
+            39,
+            36,
+            38,
+            38,
+            null,
+            45,
+            39,
+            39,
+            42,
+            44,
+            44,
+            42
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1465547415,
+      "nodeId": "R_kgDOV1p6lw",
+      "name": "riemann-hypothesis",
+      "fullName": "leanprover-community/riemann-hypothesis",
+      "owner": "leanprover-community",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/41703605?v=4",
+      "url": "https://github.com/leanprover-community/riemann-hypothesis",
+      "description": "Lean formalization of the Riemann Hypothesis (Alpöge, 2026-11-20) being cleaned up by members of the Lean community.",
+      "language": "Lean",
+      "topics": [],
+      "stars": 1512,
+      "forks": 545,
+      "openIssues": 1208,
+      "createdAt": "2026-11-20T14:47:49Z",
+      "updatedAt": "2026-11-27T15:58:57Z",
+      "pushedAt": "2026-11-27T14:07:06Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 43,
+      "previousRank": 43,
+      "rankChange": 0,
+      "score": 86.3,
+      "categories": [
+        "other"
+      ],
+      "signals": {
+        "stars24h": 144,
+        "forks24h": 30,
+        "starVelocity": 160.20449946253115,
+        "relativeGrowth": 4.086370831982059,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 7.050826886574074,
+        "hoursSincePush": 1.8984563888888888,
+        "starsPerDay": 214.44293333581837
+      },
+      "scoreBreakdown": {
+        "starMomentum": 31.384976525821596,
+        "relativeGrowth": 19.2018779342723,
+        "acceleration": 2.095070422535211,
+        "forkMomentum": 9.289906103286384,
+        "developmentActivity": 14.915486465302957,
+        "freshness": 9.429359777798757
+      },
+      "research": {
+        "summary": "Lean formalization of the Riemann Hypothesis (Alpöge, 2026-11-20) being cleaned up by members of the Lean community.",
+        "whyNow": "過去 24 小時增加 144 個 stars，同時增加 30 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "正在尋找新開源工具和技術方向的開發者",
+        "evidence": [
+          "1,512 stars，545 forks",
+          "主要語言：Lean",
+          "授權：Apache-2.0",
+          "分類：其他",
+          "近期加星帳戶抽樣：6 個中 0 個可疑",
+          "Hacker News：2 分、0 則評論（6 日前）",
+          "本榜紀錄：2026-11-21 首次上榜，累計 8 日（連續 8 日），最高第 16 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。",
+          "未處理 issues 相對較多，要留意支援能力和成熟度。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "code",
+          "judgedAt": "2026-11-25T00:00:53.728Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 6,
+          "suspicious": 0,
+          "freshHollow": 0,
+          "sharedHollow": 0,
+          "maxPerMinute": 1,
+          "flagged": false
+        },
+        "hackerNews": {
+          "points": 2,
+          "comments": 0,
+          "postedAt": "2026-11-21T10:58:39Z",
+          "url": "https://news.ycombinator.com/item?id=50587981"
+        },
+        "introduction": {
+          "text": "leanprover-community/riemann-hypothesis 整理 Riemann Hypothesis 與 GRH 的 Lean 形式化。以 Comparator 核驗陳",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-21",
+          "days": 8,
+          "streak": 8,
+          "bestRank": 16,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            18,
+            29,
+            16,
+            22,
+            35,
+            33,
+            43,
+            43
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1470579726,
+      "nodeId": "R_kgDOV6dEDg",
+      "name": "victory-fork",
+      "fullName": "fxceless/victory-fork",
+      "owner": "fxceless",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/36782933?v=4",
+      "url": "https://github.com/fxceless/victory-fork",
+      "description": "Work-in-progress fork of VIctory: getting an Xbox Series title to render and run on a Windows PC. No game files.",
+      "language": "Rust",
+      "topics": [],
+      "stars": 3339,
+      "forks": 1010,
+      "openIssues": 1245,
+      "createdAt": "2026-11-24T18:02:37Z",
+      "updatedAt": "2026-11-27T15:56:06Z",
+      "pushedAt": "2026-11-27T15:48:11Z",
+      "license": "GPL-3.0",
+      "archived": false,
+      "fork": false,
+      "rank": 44,
+      "previousRank": 46,
+      "rankChange": 2,
+      "score": 85.8,
+      "categories": [
+        "games",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 134,
+        "forks24h": 62,
+        "starVelocity": 134.26340652747643,
+        "relativeGrowth": 2.314886319439249,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 2.9155491087962964,
+        "hoursSincePush": 0.21373416666666667,
+        "starsPerDay": 1145.238812793837
+      },
+      "scoreBreakdown": {
+        "starMomentum": 30.80985915492958,
+        "relativeGrowth": 18.427230046948356,
+        "acceleration": 2.095070422535211,
+        "forkMomentum": 9.71244131455399,
+        "developmentActivity": 14.99046133029132,
+        "freshness": 9.759965352019943
+      },
+      "research": {
+        "summary": "Work-in-progress fork of VIctory: getting an Xbox Series title to render and run on a Windows PC. No game files.",
+        "whyNow": "過去 24 小時增加 134 個 stars，同時增加 62 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "玩家、遊戲開發者和 mod 作者",
+        "evidence": [
+          "3,339 stars，1,010 forks",
+          "主要語言：Rust",
+          "授權：GPL-3.0",
+          "分類：遊戲、桌面與系統",
+          "近期加星帳戶抽樣：32 個中 5 個可疑",
+          "本榜紀錄：2026-11-25 首次上榜，累計 4 日（連續 4 日），最高第 5 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。",
+          "未處理 issues 相對較多，要留意支援能力和成熟度。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "code",
+          "judgedAt": "2026-11-25T00:00:53.728Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 32,
+          "suspicious": 5,
+          "freshHollow": 4,
+          "sharedHollow": 1,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "victory-fork 是兼容层 VIctory 的進行中分支，讓某款 Xbox Series 遊戲能以用戶自備的檔案在 Windows 原生運行。它跟隨上游 main 並加入修復，使遊戲世界正確渲染和遊玩，但目前世界場景約每秒 11 幀；開啟光線追蹤結構生成器時更會降至每秒 0.2 至 3 幀，可設 VICTORY_BVH_BUILDER=0 關閉。項目不含遊戲檔案，偶有顯示卡遺失問題。",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-25",
+          "days": 4,
+          "streak": 4,
+          "bestRank": 5,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            5,
+            7,
+            46,
+            44
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1463963309,
+      "nodeId": "R_kgDOV0JOrQ",
+      "name": "neonclipping",
+      "fullName": "iamajmeena/neonclipping",
+      "owner": "iamajmeena",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/265551449?v=4",
+      "url": "https://github.com/iamajmeena/neonclipping",
+      "description": "Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM).",
+      "language": "Python",
+      "topics": [
+        "ai-video-clipper",
+        "clipping",
+        "faster-whisper",
+        "ffmpeg",
+        "gameplay-clipper",
+        "local-llm",
+        "ollama",
+        "open-source-video-editor",
+        "opusclip-alternative",
+        "shorts",
+        "twitch-clips",
+        "vertical-video",
+        "video",
+        "whisper",
+        "youtube-shorts-generator",
+        "yt-dlp"
+      ],
+      "stars": 2871,
+      "forks": 192,
+      "openIssues": 54,
+      "createdAt": "2026-11-19T10:00:43Z",
+      "updatedAt": "2026-11-27T15:59:44Z",
+      "pushedAt": "2026-11-24T13:27:46Z",
+      "license": "AGPL-3.0",
+      "archived": false,
+      "fork": false,
+      "rank": 45,
+      "previousRank": 45,
+      "rankChange": 0,
+      "score": 85.7,
+      "categories": [
+        "ai",
+        "creative"
+      ],
+      "signals": {
+        "stars24h": 170,
+        "forks24h": 19,
+        "starVelocity": 163.95604726228163,
+        "relativeGrowth": 3.046689254296942,
+        "acceleration7d": 0.5137048607739141,
+        "forkRatio7d": 0.07343608340888486,
+        "ageDays": 8.250201886574073,
+        "hoursSincePush": 74.55401194444444,
+        "starsPerDay": 347.99148426562846
+      },
+      "scoreBreakdown": {
+        "starMomentum": 31.549295774647888,
+        "relativeGrowth": 18.920187793427232,
+        "acceleration": 4.882629107981221,
+        "forkMomentum": 9.002347417840376,
+        "developmentActivity": 12.015088810437446,
+        "freshness": 9.335584703081125
+      },
+      "research": {
+        "summary": "Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM).",
+        "whyNow": "過去 24 小時增加 170 個 stars，同時增加 19 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "2,871 stars，192 forks",
+          "主要語言：Python",
+          "授權：AGPL-3.0",
+          "分類：AI、設計與多媒體",
+          "近期加星帳戶抽樣：100 個中 12 個可疑",
+          "本榜紀錄：2026-11-20 首次上榜，累計 8 日（連續 2 日），最高第 14 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-27T13:33:18.423Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 12,
+          "freshHollow": 12,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "NeonClipping 是免費開源的本地剪輯工具，可把 YouTube、Twitch 長片或本機 MP4 轉成 9:16 直式字幕短片，並自動生成標題和開場引子。它只下載音訊，用 YouTube 字幕或本機 Whisper 轉錄，按音量突變等訊號挑選片段，交由本機 Ollama 模型評分及生成標題，最後只下載選中部分並進行渲染，全程毋須帳號或上載。使用前須安裝 Python 3.10 至 3.13 及 FFmpeg，Ollama 屬建議選項。",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-20",
+          "days": 8,
+          "streak": 2,
+          "bestRank": 14,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            14,
+            14,
+            27,
+            26,
+            34,
+            50,
+            null,
+            45,
+            45
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1455879258,
+      "nodeId": "R_kgDOVsb0Wg",
+      "name": "unkernel",
+      "fullName": "pithings/unkernel",
+      "owner": "pithings",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/263128954?v=4",
+      "url": "https://github.com/pithings/unkernel",
+      "description": "A real Linux kernel, compiled to WebAssembly. It boots to a shell in less than a second.",
+      "language": "TypeScript",
+      "topics": [],
+      "stars": 2022,
+      "forks": 118,
+      "openIssues": 33,
+      "createdAt": "2026-11-12T22:06:00Z",
+      "updatedAt": "2026-11-27T15:38:17Z",
+      "pushedAt": "2026-11-27T15:51:32Z",
+      "license": "GPL-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 46,
+      "previousRank": 36,
+      "rankChange": -10,
+      "score": 85,
+      "categories": [
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 149,
+        "forks24h": 18,
+        "starVelocity": 149.26490446350732,
+        "relativeGrowth": 3.2991251156666754,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 14.746532905092593,
+        "hoursSincePush": 0.15790083333333332,
+        "starsPerDay": 137.11697610641204
+      },
+      "scoreBreakdown": {
+        "starMomentum": 31.13849765258216,
+        "relativeGrowth": 19.014084507042252,
+        "acceleration": 2.095070422535211,
+        "forkMomentum": 8.92018779342723,
+        "developmentActivity": 14.992952511743196,
+        "freshness": 8.84362905318406
+      },
+      "research": {
+        "summary": "A real Linux kernel, compiled to WebAssembly. It boots to a shell in less than a second.",
+        "whyNow": "過去 24 小時增加 149 個 stars，同時增加 18 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
+        "evidence": [
+          "2,022 stars，118 forks",
+          "主要語言：TypeScript",
+          "授權：GPL-2.0",
+          "分類：桌面與系統",
+          "近期加星帳戶抽樣：100 個中 1 個可疑",
+          "Hacker News：221 分、84 則評論（10 日前）",
+          "本榜紀錄：2026-11-27 首次上榜，累計 2 日（連續 2 日），最高第 36 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-27T00:00:58.037Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 100,
+          "suspicious": 1,
+          "freshHollow": 0,
+          "sharedHollow": 1,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "hackerNews": {
+          "points": 221,
+          "comments": 84,
+          "postedAt": "2026-11-17T16:35:46Z",
+          "url": "https://news.ycombinator.com/item?id=50533945"
+        },
+        "introduction": {
+          "text": "unkernel 把 Linux 7.x 內核編譯成單一 WebAssembly 模組，內核具備真實 MMU，系統呼叫、排程、記憶體管理、ext4 與 TCP/IP 都是編譯後的程式碼而非模擬，只有未經修改的 aarch64 使用者程式交由 Zig 編寫的 kwemu 執行，故 fork、mmap 等行為與硬件一致。它可在瀏覽器或 Node 中約 0.3 秒啟動至 shell，並提供零依賴 TypeScript SDK；CPU 密集工作仍明顯慢於原生，瀏覽器亦須支援 JSPI。",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-27",
+          "days": 2,
+          "streak": 2,
+          "bestRank": 36,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            36,
+            46
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1467247580,
+      "nodeId": "R_kgDOV3Rr3A",
+      "name": "deslop-please",
+      "fullName": "deterministic-machines/deslop-please",
+      "owner": "deterministic-machines",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/353129101?v=4",
+      "url": "https://github.com/deterministic-machines/deslop-please",
+      "description": "Bring (back) sanity to your code",
+      "language": "Rust",
+      "topics": [],
+      "stars": 1181,
+      "forks": 61,
+      "openIssues": 4,
+      "createdAt": "2026-11-22T05:36:03Z",
+      "updatedAt": "2026-11-27T15:53:37Z",
+      "pushedAt": "2026-11-27T08:06:39Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 47,
+      "previousRank": 47,
+      "rankChange": 0,
+      "score": 84.8,
+      "categories": [
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 67,
+        "forks24h": 8,
+        "starVelocity": 149.62478658356457,
+        "relativeGrowth": 4.308537627129699,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 5.43399818287037,
+        "hoursSincePush": 7.905956388888889,
+        "starsPerDay": 217.33536895961328
+      },
+      "scoreBreakdown": {
+        "starMomentum": 31.179577464788732,
+        "relativeGrowth": 19.272300469483568,
+        "acceleration": 2.095070422535211,
+        "forkMomentum": 8.004694835680752,
+        "developmentActivity": 14.651175468360266,
+        "freshness": 9.557266687212937
+      },
+      "research": {
+        "summary": "Bring (back) sanity to your code",
+        "whyNow": "過去 24 小時增加 67 個 stars，同時增加 8 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "希望改善開發、測試或部署流程的工程團隊",
+        "evidence": [
+          "1,181 stars，61 forks",
+          "主要語言：Rust",
+          "授權：MIT",
+          "分類：開發工具",
+          "近期加星帳戶抽樣：67 個中 1 個可疑",
+          "Hacker News：7 分、0 則評論（3 日前）",
+          "本榜紀錄：2026-11-25 首次上榜，累計 4 日（連續 4 日），最高第 32 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-25T00:00:53.728Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 67,
+          "suspicious": 1,
+          "freshHollow": 1,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "hackerNews": {
+          "points": 7,
+          "comments": 0,
+          "postedAt": "2026-11-24T18:56:40Z",
+          "url": "https://news.ycombinator.com/item?id=50632777"
+        },
+        "introduction": {
+          "text": "deslop-please 是以 Rust 編寫的 linter，用來清除草率程式碼，理念取自 A Philosophy of Software Design 的深模組、窄介面主張。它會指出 module-cycle、field-leak 等問題，運作前須先安裝 rust-analyzer。",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-25",
+          "days": 4,
+          "streak": 4,
+          "bestRank": 32,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            32,
+            37,
+            47,
+            47
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1468140561,
+      "nodeId": "R_kgDOV4IMEQ",
+      "name": "KuroCat",
+      "fullName": "chanke17/KuroCat",
+      "owner": "chanke17",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/153577001?v=4",
+      "url": "https://github.com/chanke17/KuroCat",
+      "description": "KuroCat - Free open-source native desktop cat pet & OBS overlay (Bongo Cat alternative, Swift/C++, 802 KB)｜开源免费原生桌面萌猫（全平台 macOS·Win·Linux·UOS / 2.5D转头捕猎 / 数位板 / OBS透明绿幕 / 在线皮肤工坊 / 零按键上传）",
+      "language": "C++",
+      "topics": [
+        "bongo-cat",
+        "bongo-cat-alternative",
+        "cpp",
+        "desktop-companion",
+        "desktop-pet",
+        "drawing-tablet",
+        "kurocat",
+        "linux",
+        "macos",
+        "mcp",
+        "mcp-server",
+        "native-app",
+        "obs",
+        "obs-overlay",
+        "open-source",
+        "streamer-tools",
+        "swift",
+        "uos",
+        "vtuber",
+        "windows"
+      ],
+      "stars": 751,
+      "forks": 80,
+      "openIssues": 21,
+      "createdAt": "2026-11-23T01:06:18Z",
+      "updatedAt": "2026-11-27T15:59:05Z",
+      "pushedAt": "2026-11-27T08:33:49Z",
+      "license": "MIT",
+      "archived": false,
+      "fork": false,
+      "rank": 48,
+      "previousRank": 48,
+      "rankChange": 0,
+      "score": 84.4,
+      "categories": [
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 104,
+        "forks24h": 14,
+        "starVelocity": 104.26041065541466,
+        "relativeGrowth": 3.7427306225445354,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 4.621324571759259,
+        "hoursSincePush": 7.453178611111111,
+        "starsPerDay": 162.50752102315704
+      },
+      "scoreBreakdown": {
+        "starMomentum": 30.23474178403756,
+        "relativeGrowth": 19.154929577464788,
+        "acceleration": 2.095070422535211,
+        "forkMomentum": 8.597417840375586,
+        "developmentActivity": 14.670932011001959,
+        "freshness": 9.622210835905866
+      },
+      "research": {
+        "summary": "KuroCat - Free open-source native desktop cat pet & OBS overlay (Bongo Cat alternative, Swift/C++, 802 KB)｜开源免费原生桌面萌猫（全平台 macOS·Win·Linux·UOS / 2.5D转头捕猎 / 数位板 / OBS透明绿幕 / 在线皮肤工坊 / 零按键上传）",
+        "whyNow": "過去 24 小時增加 104 個 stars，同時增加 14 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想改善 macOS、Windows 或 Linux 使用體驗的用戶",
+        "evidence": [
+          "751 stars，80 forks",
+          "主要語言：C++",
+          "授權：MIT",
+          "分類：桌面與系統",
+          "近期加星帳戶抽樣：56 個中 5 個可疑",
+          "本榜紀錄：2026-11-26 首次上榜，累計 3 日（連續 3 日），最高第 39 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "ready",
+          "judgedAt": "2026-11-27T08:00:54.574Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 56,
+          "suspicious": 5,
+          "freshHollow": 5,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "KuroCat 是一款超輕量的原生跨平台桌面寵物，支援 macOS、Windows、Linux 及統信 UOS，以 Swift 與 C++17 開發，Windows 版為約 802 KB 的單一檔案。它在硬件層擷取鍵盤與滑鼠訊號，驅動 2.5D 球面轉頭及捕獵瞳孔等動畫，訊號只在本地記憶體處理，不記錄按鍵，並可作 OBS 透明疊加，另設線上皮膚工坊。使用時 macOS 需授權輸入監控，Linux 純 Wayland 環境則需將用戶加入 input 組。",
+          "writtenAt": "2026-11-27T14:56:34.693Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-26",
+          "days": 3,
+          "streak": 3,
+          "bestRank": 39,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            39,
+            48,
+            48
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1466028817,
+      "nodeId": "R_kgDOV2HTEQ",
+      "name": "AnyXboxX",
+      "fullName": "LooperSalty/AnyXboxX",
+      "owner": "LooperSalty",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/106304476?v=4",
+      "url": "https://github.com/LooperSalty/AnyXboxX",
+      "description": "AnyXboxX - prototype d'émulateur Xbox Series X (HLE du GDK sur Unicorn)",
+      "language": "Rust",
+      "topics": [
+        "emulator",
+        "gdk",
+        "grand-theft-auto-vi",
+        "gta-6",
+        "gta-vi",
+        "gta6",
+        "unicorn",
+        "victory",
+        "xbox",
+        "xbox-series-x"
+      ],
+      "stars": 497,
+      "forks": 90,
+      "openIssues": 93,
+      "createdAt": "2026-11-21T00:18:13Z",
+      "updatedAt": "2026-11-27T15:59:26Z",
+      "pushedAt": "2026-11-27T15:53:38Z",
+      "license": "GPL-3.0",
+      "archived": false,
+      "fork": false,
+      "rank": 49,
+      "previousRank": null,
+      "rankChange": null,
+      "score": 84.3,
+      "categories": [
+        "games",
+        "desktop"
+      ],
+      "signals": {
+        "stars24h": 82,
+        "forks24h": 21,
+        "starVelocity": 81.75816375136833,
+        "relativeGrowth": 3.5784576131177492,
+        "acceleration7d": null,
+        "forkRatio7d": null,
+        "ageDays": 6.654715775462963,
+        "hoursSincePush": 0.12290083333333333,
+        "starsPerDay": 74.68388084018872
+      },
+      "scoreBreakdown": {
+        "starMomentum": 29.536384976525824,
+        "relativeGrowth": 19.107981220657276,
+        "acceleration": 2.095070422535211,
+        "forkMomentum": 9.072769953051644,
+        "developmentActivity": 14.994514358974634,
+        "freshness": 9.460536824205521
+      },
+      "research": {
+        "summary": "AnyXboxX - prototype d'émulateur Xbox Series X (HLE du GDK sur Unicorn)",
+        "whyNow": "過去 24 小時增加 82 個 stars，同時增加 21 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "玩家、遊戲開發者和 mod 作者",
+        "evidence": [
+          "497 stars，90 forks",
+          "主要語言：Rust",
+          "授權：GPL-3.0",
+          "分類：遊戲、桌面與系統",
+          "近期加星帳戶抽樣：22 個中 1 個可疑",
+          "本榜紀錄：今日首次上榜",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "項目仍然很新，API、文件和維護節奏可能快速改變。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-27T16:01:00.443Z",
+          "version": 2
+        },
+        "starAudit": {
+          "sampled": 22,
+          "suspicious": 1,
+          "freshHollow": 1,
+          "sharedHollow": 0,
+          "maxPerMinute": 2,
+          "flagged": false
+        },
+        "introduction": {
+          "text": "AnyXboxX 是開發中的 Xbox Series X 模擬器原型，在 Windows 上執行 GDK 遊戲，目前只支援 Grand Theft Auto VI 1.0.2.1，僅翻譯該遊戲所需的系統函數、RDNA 2 着色器與 Direct3D 12.x 呼叫。使用時須自備遊戲檔案，光線追蹤尚未啟用，建議 32 GB 記憶體。",
+          "writtenAt": "2026-11-27T16:01:00.443Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-28",
+          "days": 1,
+          "streak": 1,
+          "bestRank": 49,
+          "recent": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            49
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    },
+    {
+      "id": 1097346685,
+      "nodeId": "R_kgDOQWgufQ",
+      "name": "impeccable",
+      "fullName": "pbakaus/impeccable",
+      "owner": "pbakaus",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/43004?v=4",
+      "url": "https://github.com/pbakaus/impeccable",
+      "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+      "language": "Rust",
+      "topics": [
+        "agent-skills",
+        "ai",
+        "anti-slop",
+        "design",
+        "slop"
+      ],
+      "stars": 117895,
+      "forks": 7068,
+      "openIssues": 79,
+      "createdAt": "2025-11-16T01:52:04Z",
+      "updatedAt": "2026-11-27T15:56:48Z",
+      "pushedAt": "2026-11-27T16:01:01Z",
+      "license": "Apache-2.0",
+      "archived": false,
+      "fork": false,
+      "rank": 50,
+      "previousRank": null,
+      "rankChange": null,
+      "score": 84,
+      "categories": [
+        "ai",
+        "devtools"
+      ],
+      "signals": {
+        "stars24h": 590,
+        "forks24h": 45,
+        "starVelocity": 604.8950226536334,
+        "relativeGrowth": 1.761514715966147,
+        "acceleration7d": 1.0275521568704853,
+        "forkRatio7d": 0.06967406707605102,
+        "ageDays": 376.5895421643518,
+        "hoursSincePush": 0,
+        "starsPerDay": 313.0596758540578
+      },
+      "scoreBreakdown": {
+        "starMomentum": 34.014084507042256,
+        "relativeGrowth": 18.12206572769953,
+        "acceleration": 6.948356807511738,
+        "forkMomentum": 9.507042253521126,
+        "developmentActivity": 15,
+        "freshness": 0.4335877454004682
+      },
+      "research": {
+        "summary": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+        "whyNow": "過去 24 小時增加 590 個 stars，同時增加 45 個 forks，數據動能令它進入今日榜。",
+        "bestFor": "想試驗 AI 模型、代理或生成式工作流的開發者",
+        "evidence": [
+          "117,895 stars，7,068 forks",
+          "主要語言：Rust",
+          "授權：Apache-2.0",
+          "分類：AI、開發工具",
+          "本榜紀錄：2026-11-14 首次上榜，累計 3 日（連續 1 日），最高第 40 名",
+          "GitHub Trending 日榜：不在榜"
+        ],
+        "cautions": [
+          "熱門度不等於適合生產環境，採用前仍要檢查文件、測試和安全紀錄。"
+        ],
+        "categorySource": "jev",
+        "ease": {
+          "level": "cli",
+          "judgedAt": "2026-11-27T16:01:00.443Z",
+          "version": 2
+        },
+        "introduction": {
+          "text": "Impeccable 是給編程智能體使用的設計詞彙工具，以 bolder、critique、audit 等 24 個指令，讓代理按指定目標調整、審查及收尾介面設計。它內建 62 條確定性規則的 slop 偵測器，無須 LLM 或 API key，可經代理、命令列或瀏覽器擴充執行，對既有頁面或元件迭代效果最佳。",
+          "writtenAt": "2026-11-27T16:01:00.443Z",
+          "source": "deepseek",
+          "version": 3
+        },
+        "chart": {
+          "firstSeen": "2026-11-14",
+          "days": 3,
+          "streak": 1,
+          "bestRank": 40,
+          "recent": [
+            null,
+            null,
+            null,
+            47,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            50
+          ]
+        },
+        "githubTrending": {
+          "listed": false,
+          "firstListed": null,
+          "leadDays": null
+        }
+      }
+    }
+  ]
+}
