@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-28T08:01:04.334Z",
-  "dataDate": "2026-11-28",
+  "generatedAt": "2026-11-28T16:00:55.988Z",
+  "dataDate": "2026-11-29",
   "period": "month",
-  "candidateCount": 753,
+  "candidateCount": 750,
   "repositories": [
     {
       "rank": 1,
@@ -16,13 +16,13 @@
       "language": "Rust",
       "license": "Apache-2.0",
       "topics": [],
-      "stars": 44869,
-      "forks": 8862,
+      "stars": 45079,
+      "forks": 8910,
       "categories": [
         "learning"
       ],
-      "gain": 44389,
-      "daysCovered": 26.7,
+      "gain": 44599,
+      "daysCovered": 27.1,
       "startStars": 480,
       "todayRank": 5,
       "introduction": "Craft Anything 是以純 Rust 編寫的開源引擎，指向網站、應用或遊戲後，會用內建工具檢視原作的結構與行為，再交由編碼代理按指定技術堆疊重建，並對照原版反覆檢查修正。它預設為 Clean room 模式，只憑可見畫面、文字與版面推斷，不讀取原碼，另可切換 Deep 模式深入分析。目前屬 early alpha，重建需先安裝並登入支援的編碼代理，例如 Claude Code。"
@@ -59,50 +59,19 @@
         "youtube-downloader",
         "yt-dlp"
       ],
-      "stars": 19056,
-      "forks": 1632,
+      "stars": 19205,
+      "forks": 1644,
       "categories": [
         "desktop"
       ],
-      "gain": 18883,
+      "gain": 18823,
       "daysCovered": 30,
       "startStars": 0,
-      "todayRank": 18,
+      "todayRank": 12,
       "introduction": "Mister Download Manager 是 Rust 編寫的開源下載管理器，以多連線分段加速、續傳和瀏覽器整合下載檔案，支援網頁影片、圖片庫、BitTorrent 及 magnet。它具備排程、VPN 綁定及手機、NAS 遙控，內建 87 種語言、免費無廣告；macOS 版仍屬實驗性質。"
     },
     {
       "rank": 3,
-      "id": 1443186633,
-      "fullName": "libracoder/kiri",
-      "owner": "libracoder",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/32944039?v=4",
-      "url": "https://github.com/libracoder/kiri",
-      "description": "A small, fast container runtime for macOS, Windows and Linux with free Ngrok alternative",
-      "language": "Rust",
-      "license": "Apache-2.0",
-      "topics": [
-        "containers",
-        "docker",
-        "kubernetes",
-        "linux",
-        "macos",
-        "oci",
-        "windows"
-      ],
-      "stars": 14083,
-      "forks": 679,
-      "categories": [
-        "infra",
-        "devtools"
-      ],
-      "gain": 14083,
-      "daysCovered": 25.7,
-      "startStars": 0,
-      "todayRank": 29,
-      "introduction": "Kiri 是以 Rust 編寫的輕量容器執行環境，支援 macOS、Windows（經 WSL 2）及 Linux，可直接沿用現有的 docker CLI、Compose 和 buildx。它實作 Docker Engine API，在 macOS 以單一小型 Linux VM 執行容器，Linux 上則直接運行於核心，並提供本地網域與 HTTPS、單節點 Kubernetes 叢集及 Linux 機器等功能。VM 閒置後會自動休眠，USB 裝置轉接仍屬測試階段。"
-    },
-    {
-      "rank": 4,
       "id": 1438661890,
       "fullName": "JuneYaooo/rea-video",
       "owner": "JuneYaooo",
@@ -131,17 +100,48 @@
         "videomd",
         "vlm"
       ],
-      "stars": 14062,
-      "forks": 2040,
+      "stars": 14174,
+      "forks": 2059,
       "categories": [
         "ai",
         "creative"
       ],
-      "gain": 14062,
-      "daysCovered": 29.7,
+      "gain": 14174,
+      "daysCovered": 30,
       "startStars": 0,
-      "todayRank": 19,
+      "todayRank": 14,
       "introduction": "rea-video 是開源的 Python 工具，讓 AI agent 逐鏡拆解影片，判斷每個鏡頭是實拍、AI 生成、3D 動畫還是程式碼製作，並整理字幕、剪接與音效，同時提出重製方案。分析會輸出供人閱讀的報告，以及按層次編排、方便模型按需讀取的開放格式 VIDEO.md。使用前須具備 ffmpeg 與 Python 3.10+，工具本身不負責渲染新影片。"
+    },
+    {
+      "rank": 4,
+      "id": 1443186633,
+      "fullName": "libracoder/kiri",
+      "owner": "libracoder",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/32944039?v=4",
+      "url": "https://github.com/libracoder/kiri",
+      "description": "A small, fast container runtime for macOS, Windows and Linux with free Ngrok alternative",
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "topics": [
+        "containers",
+        "docker",
+        "kubernetes",
+        "linux",
+        "macos",
+        "oci",
+        "windows"
+      ],
+      "stars": 14134,
+      "forks": 682,
+      "categories": [
+        "infra",
+        "devtools"
+      ],
+      "gain": 14134,
+      "daysCovered": 26,
+      "startStars": 0,
+      "todayRank": 29,
+      "introduction": "Kiri 是以 Rust 編寫的輕量容器執行環境，支援 macOS、Windows（經 WSL 2）及 Linux，可直接沿用現有的 docker CLI、Compose 和 buildx。它實作 Docker Engine API，在 macOS 以單一小型 Linux VM 執行容器，Linux 上則直接運行於核心，並提供本地網域與 HTTPS、單節點 Kubernetes 叢集及 Linux 機器等功能。VM 閒置後會自動休眠，USB 裝置轉接仍屬測試階段。"
     },
     {
       "rank": 5,
@@ -154,16 +154,16 @@
       "language": "Rust",
       "license": "GPL-3.0",
       "topics": [],
-      "stars": 13896,
-      "forks": 2416,
+      "stars": 14049,
+      "forks": 2466,
       "categories": [
         "games",
         "desktop"
       ],
-      "gain": 13896,
-      "daysCovered": 4.4,
+      "gain": 14049,
+      "daysCovered": 4.8,
       "startStars": 0,
-      "todayRank": 25,
+      "todayRank": 32,
       "introduction": "VIctory 以 Rust 編寫，在 Windows 上以使用者提供的檔案，把 Grand Theft Auto VI 的 Xbox 程式碼原樣運行，並轉換其資料、著色器及管線。世界場景目前僅約每秒一格，尚未可遊玩，且需支援 Shader Model 6.6 及 mesh shaders 的 Direct3D 12 GPU。"
     },
     {
@@ -184,17 +184,16 @@
         "reels",
         "windows"
       ],
-      "stars": 12272,
-      "forks": 9297,
+      "stars": 12306,
+      "forks": 9305,
       "categories": [
         "web",
         "mobile"
       ],
-      "gain": 12272,
-      "daysCovered": 24.7,
+      "gain": 12306,
+      "daysCovered": 25.1,
       "startStars": 0,
-      "todayRank": 44,
-      "introduction": "HGhub 是一個通用影片播放器，本身不內置內容源，須自行匯入 JavaScript 插件接入不同來源，在同一介面瀏覽、搜尋、播放及管理個人片庫。它支援 HLS 與普通影片、切換線路與清晰度，也可經插件接入直播及圖文內容。程式以 Rust、Tauri 2、React 及 TypeScript 構建，目前屬早期開發階段，重點支援 Windows 與 Android。"
+      "todayRank": null
     },
     {
       "rank": 7,
@@ -207,13 +206,13 @@
       "language": null,
       "license": "MIT",
       "topics": [],
-      "stars": 12091,
-      "forks": 830,
+      "stars": 12141,
+      "forks": 836,
       "categories": [
         "ai"
       ],
-      "gain": 12091,
-      "daysCovered": 24.6,
+      "gain": 12141,
+      "daysCovered": 25,
       "startStars": 0,
       "todayRank": null
     },
@@ -249,14 +248,14 @@
         "rust",
         "typescript"
       ],
-      "stars": 10908,
-      "forks": 889,
+      "stars": 11055,
+      "forks": 902,
       "categories": [
         "ai",
         "devtools"
       ],
-      "gain": 10908,
-      "daysCovered": 11.8,
+      "gain": 11055,
+      "daysCovered": 12.2,
       "startStars": 0,
       "todayRank": 3,
       "introduction": "rust-anything 把現有應用逐件改寫成 Rust。它先記錄原程式（Node.js、Python 等）的實際行為，再由你或 AI 編碼代理撰寫 Rust，每件都要與記錄完全吻合才可推進，最終成為純 Rust 應用。它本身不翻譯程式碼，只能發現記錄涵蓋的差異。"
@@ -282,14 +281,14 @@
         "windows",
         "wsa"
       ],
-      "stars": 10134,
-      "forks": 992,
+      "stars": 10238,
+      "forks": 998,
       "categories": [
         "mobile",
         "desktop"
       ],
-      "gain": 10134,
-      "daysCovered": 29.8,
+      "gain": 10206,
+      "daysCovered": 30,
       "startStars": 0,
       "todayRank": null
     },
@@ -304,16 +303,16 @@
       "language": "Go",
       "license": "MIT",
       "topics": [],
-      "stars": 9113,
-      "forks": 1042,
+      "stars": 9221,
+      "forks": 1058,
       "categories": [
         "infra",
         "security"
       ],
-      "gain": 9113,
-      "daysCovered": 27.7,
+      "gain": 9221,
+      "daysCovered": 28,
       "startStars": 0,
-      "todayRank": 26,
+      "todayRank": 15,
       "introduction": "Claude Cage 是一個桌面程式，在輕量的 Debian 13 隔離環境中運行官方 Claude Code 與 Claude Desktop，macOS、Windows、Linux 共用同一環境。它接管環境內所有網絡流量，隔離時區、語言等指紋設定，檢查未通過時保持離線；Claude 經標準 MCP 插件受控使用本機能力，越界調用須權限聲明與確認。項目仍在快速迭代，暫不支援 Windows ARM64 與 Linux ARM64。"
     },
     {
@@ -327,18 +326,65 @@
       "language": "Swift",
       "license": "GPL-3.0",
       "topics": [],
-      "stars": 9075,
-      "forks": 2783,
+      "stars": 9091,
+      "forks": 2784,
       "categories": [
         "mobile"
       ],
-      "gain": 9075,
-      "daysCovered": 19.1,
+      "gain": 9091,
+      "daysCovered": 19.4,
       "startStars": 0,
       "todayRank": null
     },
     {
       "rank": 12,
+      "id": 1465852099,
+      "fullName": "xcl-dev/xcl",
+      "owner": "xcl-dev",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/360790281?v=4",
+      "url": "https://github.com/xcl-dev/xcl",
+      "description": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
+      "language": "Rust",
+      "license": "GPL-3.0",
+      "topics": [
+        "d3d12",
+        "gdk",
+        "rdna2",
+        "xbox"
+      ],
+      "stars": 8791,
+      "forks": 1224,
+      "categories": [
+        "games"
+      ],
+      "gain": 8791,
+      "daysCovered": 7.8,
+      "startStars": 0,
+      "todayRank": null
+    },
+    {
+      "rank": 13,
+      "id": 1438623288,
+      "fullName": "heydamir/unslop",
+      "owner": "heydamir",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/97800728?v=4",
+      "url": "https://github.com/heydamir/unslop",
+      "description": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
+      "language": "JavaScript",
+      "license": "CC-BY-4.0",
+      "topics": [],
+      "stars": 22944,
+      "forks": 1444,
+      "categories": [
+        "ai"
+      ],
+      "gain": 21194,
+      "daysCovered": 28.3,
+      "startStars": 1750,
+      "todayRank": null
+    },
+    {
+      "rank": 14,
       "id": 1437869585,
       "fullName": "mdiri-ai/SoduWork",
       "owner": "mdiri-ai",
@@ -369,63 +415,17 @@
         "self-hosted",
         "team-collaboration"
       ],
-      "stars": 8859,
-      "forks": 868,
+      "stars": 8895,
+      "forks": 882,
       "categories": [
-        "ai"
+        "ai",
+        "devtools"
       ],
-      "gain": 8794,
+      "gain": 8734,
       "daysCovered": 30,
       "startStars": 0,
-      "todayRank": 12,
+      "todayRank": 17,
       "introduction": "SoduWork 是自託管的 AI 原生團隊協作引擎，請求會連同驗收標準交給不同 harness 和 agent 執行，再由獨立 AI 逐項審核，最終由提出者簽核。它支援 Pi、OpenCode、Codex 等七種 harness，可在對話中切換，並把流程封裝成可審批、授權及版本管理的 plugin；目前屬公開測試版，生產使用前應先評估。"
-    },
-    {
-      "rank": 13,
-      "id": 1438623288,
-      "fullName": "heydamir/unslop",
-      "owner": "heydamir",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/97800728?v=4",
-      "url": "https://github.com/heydamir/unslop",
-      "description": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
-      "language": "JavaScript",
-      "license": "CC-BY-4.0",
-      "topics": [],
-      "stars": 22756,
-      "forks": 1432,
-      "categories": [
-        "ai"
-      ],
-      "gain": 21006,
-      "daysCovered": 28,
-      "startStars": 1750,
-      "todayRank": null
-    },
-    {
-      "rank": 14,
-      "id": 1465852099,
-      "fullName": "xcl-dev/xcl",
-      "owner": "xcl-dev",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/360790281?v=4",
-      "url": "https://github.com/xcl-dev/xcl",
-      "description": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
-      "language": "Rust",
-      "license": "GPL-3.0",
-      "topics": [
-        "d3d12",
-        "gdk",
-        "rdna2",
-        "xbox"
-      ],
-      "stars": 8769,
-      "forks": 1223,
-      "categories": [
-        "games"
-      ],
-      "gain": 8769,
-      "daysCovered": 7.5,
-      "startStars": 0,
-      "todayRank": null
     },
     {
       "rank": 15,
@@ -456,16 +456,16 @@
         "widgets",
         "windows"
       ],
-      "stars": 7841,
-      "forks": 884,
+      "stars": 8105,
+      "forks": 896,
       "categories": [
         "desktop",
         "mobile"
       ],
-      "gain": 7841,
-      "daysCovered": 20.6,
+      "gain": 8105,
+      "daysCovered": 21,
       "startStars": 0,
-      "todayRank": 2,
+      "todayRank": 1,
       "introduction": "PhoneBox 將舊 Android 手機變成電腦的桌面面板，透過 USB 或 Wi-Fi 連接 Windows、Linux 及 macOS。桌面代理配合全屏 Android 應用，用戶可在瀏覽器可視化編輯器中以 137 個 widget 和 30 個模板自訂多頁版面，顯示系統監控、AI 編碼會話、音樂等資訊並作觸控操作。無需 root、帳號或雲端服務。應用只從項目發布版下載，Windows 代理目前尚未簽名。"
     },
     {
@@ -479,16 +479,16 @@
       "language": "JavaScript",
       "license": null,
       "topics": [],
-      "stars": 6904,
-      "forks": 208,
+      "stars": 7125,
+      "forks": 214,
       "categories": [
         "web",
         "games"
       ],
-      "gain": 6904,
-      "daysCovered": 6.4,
+      "gain": 7125,
+      "daysCovered": 6.7,
       "startStars": 0,
-      "todayRank": 9,
+      "todayRank": 10,
       "introduction": "PortWatch VI 是一個靜態 GitHub Pages 網站，追蹤社群將洩漏的 Xbox Series 版 GTA VI 重新編譯、模擬或移植到 PC 的各項認真嘗試，並以同一套評分階梯排列。它以進度條、倒數計時及排行榜呈現各項目進展，scout 每三小時更新；網站不託管或連結遊戲檔案、金鑰或執行檔，分數屬編輯估算。"
     },
     {
@@ -514,14 +514,14 @@
         "typescript",
         "workflow"
       ],
-      "stars": 6740,
-      "forks": 1253,
+      "stars": 6764,
+      "forks": 1260,
       "categories": [
         "ai",
         "devtools"
       ],
-      "gain": 6740,
-      "daysCovered": 25,
+      "gain": 6764,
+      "daysCovered": 25.3,
       "startStars": 0,
       "todayRank": null
     },
@@ -536,13 +536,13 @@
       "language": "C++",
       "license": "GPL-3.0",
       "topics": [],
-      "stars": 10387,
-      "forks": 1635,
+      "stars": 10394,
+      "forks": 1637,
       "categories": [
         "games"
       ],
-      "gain": 10062,
-      "daysCovered": 26,
+      "gain": 10069,
+      "daysCovered": 26.3,
       "startStars": 325,
       "todayRank": null
     },
@@ -557,20 +557,50 @@
       "language": "Python",
       "license": "MIT",
       "topics": [],
-      "stars": 5944,
-      "forks": 1298,
+      "stars": 6016,
+      "forks": 1321,
       "categories": [
         "security",
         "desktop"
       ],
-      "gain": 5944,
-      "daysCovered": 12.9,
+      "gain": 6016,
+      "daysCovered": 13.2,
       "startStars": 0,
-      "todayRank": 48,
+      "todayRank": 50,
       "introduction": "ung220z-tool 是 Python 寫成的光貓憑據自查工具箱，針對 UNG220Z 經 Telnet 直接讀取並解密設備配置庫，取得當下有效的憑據，避開受 TR-069 定期輪換、數日即失效的 Web 口令。另設多廠商適配包 ontkit，涵蓋中興、烽火、華為及九聯，並附固件指紋識別與分家族排障建議。僅 UNG220Z 經真機驗證，其餘型號只取自公開案例，並只限用於自有設備。"
     },
     {
       "rank": 20,
+      "id": 1472451283,
+      "fullName": "trustno1-coder/VIctory-NVIDIA",
+      "owner": "trustno1-coder",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/361337194?v=4",
+      "url": "https://github.com/trustno1-coder/VIctory-NVIDIA",
+      "description": "VIctory (Xbox Series compatibility layer) tuned for NVIDIA RTX cards: Series X at 2560x1440 with DLSS, about 26-30 fps on an RTX 5070, DLSS frame generation 2x-6x, an F1 settings menu and F3 stats panel, open water without dark blocks. Built on many repos combined into one. No game files or NVIDIA files included.",
+      "language": "Rust",
+      "license": "GPL-3.0",
+      "topics": [
+        "compatibility-layer",
+        "directx-12",
+        "dlss",
+        "frame-generation",
+        "nvidia",
+        "rust"
+      ],
+      "stars": 5857,
+      "forks": 1993,
+      "categories": [
+        "games",
+        "desktop"
+      ],
+      "gain": 5857,
+      "daysCovered": 2.7,
+      "startStars": 0,
+      "todayRank": 4,
+      "introduction": "VIctory on NVIDIA 是 VIctory 的分支，利用玩家自備的遊戲檔案，在 Windows 上原生執行一款 Xbox Series 作品，並針對 NVIDIA RTX 顯示卡調校。它整合多項渲染修正，以 DLSS 取代遊戲原有升頻，並提供 DLSS 或 FSR 3 幀生成、F1 設定選單及 F3 效能面板。程式不含遊戲與 NVIDIA 檔案，首次啟動需自行下載，並要求 Windows 10 或 11、32 GB 記憶體及 SSD。"
+    },
+    {
+      "rank": 21,
       "id": 1455006582,
       "fullName": "deepseek-ai/chat-demo",
       "owner": "deepseek-ai",
@@ -580,18 +610,18 @@
       "language": "TypeScript",
       "license": "MIT",
       "topics": [],
-      "stars": 5530,
-      "forks": 1330,
+      "stars": 5539,
+      "forks": 1333,
       "categories": [
         "other"
       ],
-      "gain": 5530,
-      "daysCovered": 16,
+      "gain": 5539,
+      "daysCovered": 16.3,
       "startStars": 0,
       "todayRank": null
     },
     {
-      "rank": 21,
+      "rank": 22,
       "id": 1438540053,
       "fullName": "wangzan101/Mika",
       "owner": "wangzan101",
@@ -610,53 +640,15 @@
         "llm",
         "mobile-agent"
       ],
-      "stars": 10157,
-      "forks": 2261,
+      "stars": 10183,
+      "forks": 2263,
       "categories": [
         "ai",
         "mobile"
       ],
-      "gain": 9744,
-      "daysCovered": 28.7,
+      "gain": 9770,
+      "daysCovered": 29.1,
       "startStars": 413,
-      "todayRank": null
-    },
-    {
-      "rank": 22,
-      "id": 1428347546,
-      "fullName": "l0ng-ai/openidea",
-      "owner": "l0ng-ai",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/24760907?v=4",
-      "url": "https://github.com/l0ng-ai/openidea",
-      "description": "The IDE you know, rebuilt in Rust. IntelliJ IDEA - style keymap, tool windows and search-everywhere in a fast native app: editor, code insight, debugger, Git, terminal, database and HTTP clients for 60+ languages.",
-      "language": "TypeScript",
-      "license": "Apache-2.0",
-      "topics": [
-        "code-editor",
-        "cross-platform",
-        "dap",
-        "database-client",
-        "debugger",
-        "desktop-app",
-        "developer-tools",
-        "git",
-        "http-client",
-        "ide",
-        "intellij",
-        "lsp",
-        "rust",
-        "tauri",
-        "terminal"
-      ],
-      "stars": 10481,
-      "forks": 1020,
-      "categories": [
-        "devtools",
-        "desktop"
-      ],
-      "gain": 9795,
-      "daysCovered": 30,
-      "startStars": 448,
       "todayRank": null
     },
     {
@@ -691,20 +683,58 @@
         "word",
         "xlsx"
       ],
-      "stars": 5262,
-      "forks": 432,
+      "stars": 5400,
+      "forks": 437,
       "categories": [
         "ai",
         "creative"
       ],
-      "gain": 5262,
-      "daysCovered": 17.6,
+      "gain": 5400,
+      "daysCovered": 17.9,
       "startStars": 0,
-      "todayRank": 39,
+      "todayRank": 44,
       "introduction": "MROffice 把其 AI 辦公套件的五種編輯器開源：文件、試算表、簡報、PDF 及程式碼，可自建或嵌入。Copilot 直接修改 Word、Excel、PowerPoint 檔案，MCP 讓 Claude 等代理建立及編輯文件。開源版採 AGPL 須署名；Office 格式需託管嵌入或桌面版。"
     },
     {
       "rank": 24,
+      "id": 1428347546,
+      "fullName": "l0ng-ai/openidea",
+      "owner": "l0ng-ai",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/24760907?v=4",
+      "url": "https://github.com/l0ng-ai/openidea",
+      "description": "The IDE you know, rebuilt in Rust. IntelliJ IDEA - style keymap, tool windows and search-everywhere in a fast native app: editor, code insight, debugger, Git, terminal, database and HTTP clients for 60+ languages.",
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "topics": [
+        "code-editor",
+        "cross-platform",
+        "dap",
+        "database-client",
+        "debugger",
+        "desktop-app",
+        "developer-tools",
+        "git",
+        "http-client",
+        "ide",
+        "intellij",
+        "lsp",
+        "rust",
+        "tauri",
+        "terminal"
+      ],
+      "stars": 10511,
+      "forks": 1022,
+      "categories": [
+        "devtools",
+        "desktop"
+      ],
+      "gain": 9719,
+      "daysCovered": 30,
+      "startStars": 448,
+      "todayRank": null
+    },
+    {
+      "rank": 25,
       "id": 1441526188,
       "fullName": "mromidev/claude-animated-shorts",
       "owner": "mromidev",
@@ -714,18 +744,18 @@
       "language": "TypeScript",
       "license": "MIT",
       "topics": [],
-      "stars": 5249,
-      "forks": 1070,
+      "stars": 5313,
+      "forks": 1079,
       "categories": [
         "ai"
       ],
-      "gain": 5249,
-      "daysCovered": 27.1,
+      "gain": 5313,
+      "daysCovered": 27.4,
       "startStars": 0,
       "todayRank": null
     },
     {
-      "rank": 25,
+      "rank": 26,
       "id": 1442385098,
       "fullName": "expo/exact",
       "owner": "expo",
@@ -749,36 +779,15 @@
         "uikit",
         "web"
       ],
-      "stars": 5245,
+      "stars": 5252,
       "forks": 169,
       "categories": [
         "ai",
         "desktop"
       ],
-      "gain": 5245,
-      "daysCovered": 26.3,
+      "gain": 5252,
+      "daysCovered": 26.6,
       "startStars": 0,
-      "todayRank": null
-    },
-    {
-      "rank": 26,
-      "id": 1440705679,
-      "fullName": "deepseek-ai/dsh-superagent-prototype",
-      "owner": "deepseek-ai",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/148330874?v=4",
-      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
-      "description": "Towards a More Autonomous Agent System",
-      "language": "TypeScript",
-      "license": "MIT",
-      "topics": [],
-      "stars": 24759,
-      "forks": 3114,
-      "categories": [
-        "other"
-      ],
-      "gain": 18907,
-      "daysCovered": 26.7,
-      "startStars": 5852,
       "todayRank": null
     },
     {
@@ -799,58 +808,20 @@
         "proactive-agent",
         "proactive-ai"
       ],
-      "stars": 5158,
-      "forks": 480,
+      "stars": 5213,
+      "forks": 485,
       "categories": [
         "ai",
         "desktop"
       ],
-      "gain": 5158,
-      "daysCovered": 18.2,
+      "gain": 5213,
+      "daysCovered": 18.5,
       "startStars": 0,
-      "todayRank": 24,
+      "todayRank": 25,
       "introduction": "Linger 是開源的個人 AI 代理，完全在本機運行。它的 PolyStrata 推論引擎把模型最常用的專家留在 GPU，其餘置於記憶體或 SSD，令 125B 級模型可在 12 GB 顯存的消費級電腦上運作，並會自動偵測硬件、挑選及安裝合適模型。它又把郵件、聊天與會議整理成可供所有代理搜尋的 wiki 記憶，並主動跟進工作，資料留在裝置。桌面應用仍屬 Beta。"
     },
     {
       "rank": 28,
-      "id": 1368596582,
-      "fullName": "google/elephant-goldfish-model",
-      "owner": "google",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/1342004?v=4",
-      "url": "https://github.com/google/elephant-goldfish-model",
-      "description": "Open-source plugin for designing and reviewing software with agents",
-      "language": "Python",
-      "license": "Apache-2.0",
-      "topics": [
-        "agent-skills",
-        "ai-agents",
-        "antigravity",
-        "claude-code",
-        "claude-code-plugin",
-        "claude-skills",
-        "codex",
-        "codex-plugin",
-        "coding-agents",
-        "context-engineering",
-        "developer-tools",
-        "gemini",
-        "llm",
-        "multi-agent",
-        "prompt-engineering",
-        "spec-driven-development"
-      ],
-      "stars": 23457,
-      "forks": 1726,
-      "categories": [
-        "ai"
-      ],
-      "gain": 17991,
-      "daysCovered": 29.7,
-      "startStars": 5466,
-      "todayRank": null
-    },
-    {
-      "rank": 29,
       "id": 1439372976,
       "fullName": "patch-gg/pixelfx",
       "owner": "patch-gg",
@@ -869,39 +840,39 @@
         "sprite-sheet",
         "vfx"
       ],
-      "stars": 9687,
-      "forks": 1247,
+      "stars": 9726,
+      "forks": 1248,
       "categories": [
         "ai"
       ],
-      "gain": 9199,
-      "daysCovered": 28,
+      "gain": 9238,
+      "daysCovered": 28.3,
       "startStars": 488,
       "todayRank": null
     },
     {
-      "rank": 30,
-      "id": 1448068371,
-      "fullName": "JenkinWoo/sheeridVerify",
-      "owner": "JenkinWoo",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/51308528?v=4",
-      "url": "https://github.com/JenkinWoo/sheeridVerify",
-      "description": "",
-      "language": "JavaScript",
-      "license": "ISC",
+      "rank": 29,
+      "id": 1440705679,
+      "fullName": "deepseek-ai/dsh-superagent-prototype",
+      "owner": "deepseek-ai",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/148330874?v=4",
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "description": "Towards a More Autonomous Agent System",
+      "language": "TypeScript",
+      "license": "MIT",
       "topics": [],
-      "stars": 4586,
-      "forks": 1936,
+      "stars": 24765,
+      "forks": 3118,
       "categories": [
         "other"
       ],
-      "gain": 4586,
-      "daysCovered": 21.9,
-      "startStars": 0,
+      "gain": 18913,
+      "daysCovered": 27.1,
+      "startStars": 5852,
       "todayRank": null
     },
     {
-      "rank": 31,
+      "rank": 30,
       "id": 1466635339,
       "fullName": "EL4CTEO/fast-anything",
       "owner": "EL4CTEO",
@@ -932,84 +903,79 @@
         "rust",
         "typescript"
       ],
-      "stars": 4543,
-      "forks": 324,
+      "stars": 4634,
+      "forks": 330,
       "categories": [
         "ai",
         "devtools"
       ],
-      "gain": 4543,
-      "daysCovered": 6.7,
+      "gain": 4634,
+      "daysCovered": 7.1,
       "startStars": 0,
       "todayRank": 45,
       "introduction": "EL4CTEO/fast-anything 會剖析應用程式，找出最耗時的少數函數，再交由 coding agent 只把這些函數移植成 Rust，然後用錄製下來的真實呼叫重播，驗證結果一致；全部通過後才會啟用，並可逐個函數切換或還原。它支援 Python、JavaScript/TypeScript、Ruby、Java、Kotlin、Go、PHP、C/C++、C# 及 R；驗證時會保留部分呼叫，不讓代理預先看到，較慢的移植不會啟用。Android 只作排序分析，不會移植。"
     },
     {
-      "rank": 32,
-      "id": 1472451283,
-      "fullName": "trustno1-coder/VIctory-NVIDIA",
-      "owner": "trustno1-coder",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/361337194?v=4",
-      "url": "https://github.com/trustno1-coder/VIctory-NVIDIA",
-      "description": "VIctory (Xbox Series compatibility layer) tuned for NVIDIA RTX cards: Series X at 2560x1440 with DLSS, about 26-30 fps on an RTX 5070, DLSS frame generation 2x-6x, an F1 settings menu and F3 stats panel, open water without dark blocks. Built on many repos combined into one. No game files or NVIDIA files included.",
-      "language": "Rust",
-      "license": "GPL-3.0",
-      "topics": [
-        "compatibility-layer",
-        "directx-12",
-        "dlss",
-        "frame-generation",
-        "nvidia",
-        "rust"
-      ],
-      "stars": 4431,
-      "forks": 1576,
+      "rank": 31,
+      "id": 1448068371,
+      "fullName": "JenkinWoo/sheeridVerify",
+      "owner": "JenkinWoo",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/51308528?v=4",
+      "url": "https://github.com/JenkinWoo/sheeridVerify",
+      "description": "",
+      "language": "JavaScript",
+      "license": "ISC",
+      "topics": [],
+      "stars": 4622,
+      "forks": 1945,
       "categories": [
-        "games",
-        "desktop"
+        "other"
       ],
-      "gain": 4431,
-      "daysCovered": 2.4,
+      "gain": 4622,
+      "daysCovered": 22.3,
       "startStars": 0,
-      "todayRank": 4,
-      "introduction": "VIctory on NVIDIA 是 VIctory 的分支，利用玩家自備的遊戲檔案，在 Windows 上原生執行一款 Xbox Series 作品，並針對 NVIDIA RTX 顯示卡調校。它整合多項渲染修正，以 DLSS 取代遊戲原有升頻，並提供 DLSS 或 FSR 3 幀生成、F1 設定選單及 F3 效能面板。程式不含遊戲與 NVIDIA 檔案，首次啟動需自行下載，並要求 Windows 10 或 11、32 GB 記憶體及 SSD。"
+      "todayRank": null
+    },
+    {
+      "rank": 32,
+      "id": 1368596582,
+      "fullName": "google/elephant-goldfish-model",
+      "owner": "google",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/1342004?v=4",
+      "url": "https://github.com/google/elephant-goldfish-model",
+      "description": "Open-source plugin for designing and reviewing software with agents",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "antigravity",
+        "claude-code",
+        "claude-code-plugin",
+        "claude-skills",
+        "codex",
+        "codex-plugin",
+        "coding-agents",
+        "context-engineering",
+        "developer-tools",
+        "gemini",
+        "llm",
+        "multi-agent",
+        "prompt-engineering",
+        "spec-driven-development"
+      ],
+      "stars": 23589,
+      "forks": 1732,
+      "categories": [
+        "ai"
+      ],
+      "gain": 18089,
+      "daysCovered": 30,
+      "startStars": 5466,
+      "todayRank": null
     },
     {
       "rank": 33,
-      "id": 1385896447,
-      "fullName": "Ebony-Vinyl/dsh-our-free-model",
-      "owner": "Ebony-Vinyl",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/245557608?v=4",
-      "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
-      "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型 - - 完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key - the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
-      "language": "JavaScript",
-      "license": null,
-      "topics": [
-        "ai-agents",
-        "deepseek",
-        "deepseek-harness",
-        "developer-tools",
-        "dsh",
-        "dsh-plugin",
-        "free-model",
-        "llm",
-        "model-provider",
-        "openai-compatible"
-      ],
-      "stars": 89433,
-      "forks": 2531,
-      "categories": [
-        "ai",
-        "devtools"
-      ],
-      "gain": 38953,
-      "daysCovered": 29.7,
-      "startStars": 50480,
-      "todayRank": 15,
-      "introduction": "dsh-our-free-model 是 dsh 的免費模型插件，毋須登入或 API Key，安裝後即可使用 DeepSeek、Kimi 等模型。以純掛載方式運作，模型清單向上游網關重新拉取，只顯示本機網絡出口實測可用的模型，並提供 OpenAI 相容轉發端口。"
-    },
-    {
-      "rank": 34,
       "id": 1465281397,
       "fullName": "AFK-surf/xnulinux",
       "owner": "AFK-surf",
@@ -1019,39 +985,19 @@
       "language": "C",
       "license": null,
       "topics": [],
-      "stars": 4391,
-      "forks": 231,
+      "stars": 4503,
+      "forks": 234,
       "categories": [
         "desktop"
       ],
-      "gain": 4391,
-      "daysCovered": 7.9,
+      "gain": 4503,
+      "daysCovered": 8.2,
       "startStars": 0,
-      "todayRank": null
+      "todayRank": 46,
+      "introduction": "xnulinux 把 Apple 開源的 macOS 核心 XNU 編譯成可載入模組 xnu.ko，載入未經改動的 arm64 Linux 核心中運行，讓 macOS 與 Linux 程式共用同一批 CPU，毋須虛擬機層，並可開機進入 macOS 桌面；Linux 則透過 fki.ko 提供記憶體、儲存與 GPU。現時僅支援具 PAC 的 arm64 主機，須自備 macOS 系統磁碟，部分功能仍屬臨時方案。"
     },
     {
-      "rank": 35,
-      "id": 1449231124,
-      "fullName": "tangerineturtle1/NX2navi",
-      "owner": "tangerineturtle1",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/178368288?v=4",
-      "url": "https://github.com/tangerineturtle1/NX2navi",
-      "description": "",
-      "language": "C",
-      "license": "MIT",
-      "topics": [],
-      "stars": 4361,
-      "forks": 360,
-      "categories": [
-        "other"
-      ],
-      "gain": 4361,
-      "daysCovered": 20.9,
-      "startStars": 0,
-      "todayRank": null
-    },
-    {
-      "rank": 36,
+      "rank": 34,
       "id": 1209966933,
       "fullName": "morluto/rea",
       "owner": "morluto",
@@ -1082,20 +1028,41 @@
         "touhou",
         "typescript"
       ],
-      "stars": 481445,
-      "forks": 116912,
+      "stars": 481858,
+      "forks": 116966,
       "categories": [
         "ai",
         "security"
       ],
-      "gain": 75428,
-      "daysCovered": 29.7,
+      "gain": 75700,
+      "daysCovered": 30,
       "startStars": 406017,
-      "todayRank": 30,
+      "todayRank": 36,
       "introduction": "REA 是透過 MCP 連接 AI agent 的逆向工程工具，可檢查原生二進位檔、JavaScript 與 Electron 應用、.NET 組件及網站，分析全程在本機進行，結論附有證據與限制。深度原生分析須配合 Hopper、Ghidra、IDA 或 Kuna，靜態 JavaScript 檢查則無需原生引擎。"
     },
     {
-      "rank": 37,
+      "rank": 35,
+      "id": 1449231124,
+      "fullName": "tangerineturtle1/NX2navi",
+      "owner": "tangerineturtle1",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/178368288?v=4",
+      "url": "https://github.com/tangerineturtle1/NX2navi",
+      "description": "",
+      "language": "C",
+      "license": "MIT",
+      "topics": [],
+      "stars": 4358,
+      "forks": 360,
+      "categories": [
+        "other"
+      ],
+      "gain": 4358,
+      "daysCovered": 21.2,
+      "startStars": 0,
+      "todayRank": null
+    },
+    {
+      "rank": 36,
       "id": 1450012790,
       "fullName": "jhaizhou-ops/S2Arm",
       "owner": "jhaizhou-ops",
@@ -1116,19 +1083,19 @@
         "static-recompilation",
         "switch"
       ],
-      "stars": 3984,
+      "stars": 3990,
       "forks": 669,
       "categories": [
         "games",
         "mobile"
       ],
-      "gain": 3984,
-      "daysCovered": 20.1,
+      "gain": 3990,
+      "daysCovered": 20.4,
       "startStars": 0,
       "todayRank": null
     },
     {
-      "rank": 38,
+      "rank": 37,
       "id": 1443650212,
       "fullName": "shanselman/gputaskman",
       "owner": "shanselman",
@@ -1138,18 +1105,18 @@
       "language": "Python",
       "license": "MIT",
       "topics": [],
-      "stars": 3895,
+      "stars": 3898,
       "forks": 197,
       "categories": [
         "ai"
       ],
-      "gain": 3895,
-      "daysCovered": 25.3,
+      "gain": 3898,
+      "daysCovered": 25.6,
       "startStars": 0,
       "todayRank": null
     },
     {
-      "rank": 39,
+      "rank": 38,
       "id": 1453132706,
       "fullName": "FrigadeHQ/yogurt",
       "owner": "FrigadeHQ",
@@ -1180,19 +1147,19 @@
         "whisper-cpp",
         "windows"
       ],
-      "stars": 3776,
-      "forks": 336,
+      "stars": 3814,
+      "forks": 338,
       "categories": [
         "ai",
         "desktop"
       ],
-      "gain": 3776,
-      "daysCovered": 17.5,
+      "gain": 3814,
+      "daysCovered": 17.8,
       "startStars": 0,
       "todayRank": null
     },
     {
-      "rank": 40,
+      "rank": 39,
       "id": 1453604719,
       "fullName": "Eynnzerr/TelemetryCleaner",
       "owner": "Eynnzerr",
@@ -1202,20 +1169,20 @@
       "language": "Kotlin",
       "license": "MIT",
       "topics": [],
-      "stars": 3684,
-      "forks": 228,
+      "stars": 3741,
+      "forks": 232,
       "categories": [
         "mobile",
         "security"
       ],
-      "gain": 3684,
-      "daysCovered": 17.1,
+      "gain": 3741,
+      "daysCovered": 17.4,
       "startStars": 0,
-      "todayRank": 43,
+      "todayRank": 30,
       "introduction": "TelemetryCleaner 是 Android 10 以上的工具，可偵測國行固件預置的運營商組件，查看狀態與權限，並卸載或恢復。它預設經 Shizuku 免 Root 操作，Root 或 Dhizuku 增強可處理部分受 ROM 保護的組件。"
     },
     {
-      "rank": 41,
+      "rank": 40,
       "id": 1183888342,
       "fullName": "stablyai/orca",
       "owner": "stablyai",
@@ -1246,20 +1213,20 @@
         "worktrees",
         "yc-backed"
       ],
-      "stars": 142942,
-      "forks": 9144,
+      "stars": 143426,
+      "forks": 9182,
       "categories": [
         "ai",
-        "devtools"
+        "desktop"
       ],
-      "gain": 33131,
-      "daysCovered": 29.7,
+      "gain": 33553,
+      "daysCovered": 30,
       "startStars": 109811,
-      "todayRank": 22,
+      "todayRank": 24,
       "introduction": "Orca 是開源的 AI agent 開發環境，讓你以自己的 Claude Code 或 Codex 等訂閱運行多個 bot，並可跨桌面、手機及遠端主機使用。你可從 Slack、Linear 或 GitHub 交託任務，bots 在各自獨立的 worktree 並行工作，完成後交回已測試的 pull request 供審閱。凡能在終端運行的 CLI agent 皆可支援；手機 app 須與桌面版配對，才能在外接收通知。"
     },
     {
-      "rank": 42,
+      "rank": 41,
       "id": 1441521221,
       "fullName": "wquguru/cicada",
       "owner": "wquguru",
@@ -1283,19 +1250,20 @@
         "translation",
         "windows"
       ],
-      "stars": 3654,
-      "forks": 578,
+      "stars": 3694,
+      "forks": 588,
       "categories": [
         "desktop",
-        "mobile"
+        "creative"
       ],
-      "gain": 3654,
-      "daysCovered": 27.1,
+      "gain": 3694,
+      "daysCovered": 27.4,
       "startStars": 0,
-      "todayRank": null
+      "todayRank": 39,
+      "introduction": "Cicada 知了是即時字幕與會議紀要工具，涵蓋 Mac、Windows、Linux 及 Android。它直接讀取系統音訊，無須機械人加入會議，可顯示雙語字幕並整理會議重點，按住快捷鍵即把自己的說話翻譯成語音傳給對方。Apple silicon Mac 在本機完成辨識，其他平台則須自備 AI 服務金鑰。"
     },
     {
-      "rank": 43,
+      "rank": 42,
       "id": 1447408881,
       "fullName": "jamesondh/chimera-vocal-synth",
       "owner": "jamesondh",
@@ -1305,19 +1273,19 @@
       "language": "Rust",
       "license": "MIT",
       "topics": [],
-      "stars": 3408,
-      "forks": 434,
+      "stars": 3438,
+      "forks": 442,
       "categories": [
         "creative"
       ],
-      "gain": 3408,
-      "daysCovered": 22.5,
+      "gain": 3438,
+      "daysCovered": 22.9,
       "startStars": 0,
-      "todayRank": 31,
+      "todayRank": 34,
       "introduction": "CHIMERA 是瀏覽器內的物理建模語音合成器，聲音全部來自模擬氣道（肺、聲帶或鳴管、聲道、唇、鼻），並非取樣。引擎以 Rust 編寫並編譯為 WebAssembly，在 AudioWorklet 運行，同一代碼亦供原生測試及 CLI 使用。可拖動頭部剖面的舌、唇、下巴演奏，或把英文、土耳其文及 IPA 轉成語音與歌聲，另有 beatbox、動物叫聲與雙人合唱；插件版本仍在早期階段。"
     },
     {
-      "rank": 44,
+      "rank": 43,
       "id": 1470579726,
       "fullName": "fxceless/victory-fork",
       "owner": "fxceless",
@@ -1327,18 +1295,18 @@
       "language": "Rust",
       "license": "GPL-3.0",
       "topics": [],
-      "stars": 3367,
-      "forks": 1015,
+      "stars": 3378,
+      "forks": 1014,
       "categories": [
         "games"
       ],
-      "gain": 3367,
-      "daysCovered": 3.6,
+      "gain": 3378,
+      "daysCovered": 3.9,
       "startStars": 0,
       "todayRank": null
     },
     {
-      "rank": 45,
+      "rank": 44,
       "id": 1206390571,
       "fullName": "debpalash/VoiceStudio",
       "owner": "debpalash",
@@ -1368,18 +1336,18 @@
         "voicestudio",
         "workflow"
       ],
-      "stars": 119505,
-      "forks": 13344,
+      "stars": 119671,
+      "forks": 13366,
       "categories": [
         "ai"
       ],
-      "gain": 23438,
-      "daysCovered": 28,
+      "gain": 23604,
+      "daysCovered": 28.3,
       "startStars": 96067,
       "todayRank": null
     },
     {
-      "rank": 46,
+      "rank": 45,
       "id": 162998479,
       "fullName": "sherlock-project/sherlock",
       "owner": "sherlock-project",
@@ -1406,67 +1374,40 @@
         "sherlock",
         "tools"
       ],
-      "stars": 118668,
-      "forks": 13535,
+      "stars": 118796,
+      "forks": 13552,
       "categories": [
         "security"
       ],
-      "gain": 23381,
-      "daysCovered": 28,
+      "gain": 23509,
+      "daysCovered": 28.3,
       "startStars": 95287,
       "todayRank": null
     },
     {
-      "rank": 47,
-      "id": 1438394948,
-      "fullName": "valentderah/totk-pc-recomp",
-      "owner": "valentderah",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/41872026?v=4",
-      "url": "https://github.com/valentderah/totk-pc-recomp",
-      "description": "Static recompilation of The Legend of Zelda: Tears of the Kingdom to native Windows and Linux x86-64, with a Vulkan renderer. Game files not included.",
-      "language": "C",
+      "rank": 46,
+      "id": 1444112593,
+      "fullName": "sarpstar/cinecode",
+      "owner": "sarpstar",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/56429320?v=4",
+      "url": "https://github.com/sarpstar/cinecode",
+      "description": "Films made with code. Short films, long YouTube videos, ads, explainers and music videos: an AI coding agent writes the script, builds every frame in code, designs the sound and hands you an MP4.",
+      "language": "Python",
       "license": "MIT",
-      "topics": [
-        "game",
-        "linux",
-        "port",
-        "recompilation",
-        "windows"
-      ],
-      "stars": 8403,
-      "forks": 672,
-      "categories": [
-        "games",
-        "desktop"
-      ],
-      "gain": 7327,
-      "daysCovered": 28.7,
-      "startStars": 1076,
-      "todayRank": null
-    },
-    {
-      "rank": 48,
-      "id": 1453517867,
-      "fullName": "apex-compute/ANR",
-      "owner": "apex-compute",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/222723497?v=4",
-      "url": "https://github.com/apex-compute/ANR",
-      "description": "Apex Neural Rendering (ANR) by Apex Compute",
-      "language": "C++",
-      "license": null,
       "topics": [],
-      "stars": 3158,
-      "forks": 75,
+      "stars": 3179,
+      "forks": 526,
       "categories": [
-        "other"
+        "ai",
+        "devtools"
       ],
-      "gain": 3158,
-      "daysCovered": 17.1,
+      "gain": 3179,
+      "daysCovered": 25.2,
       "startStars": 0,
       "todayRank": null
     },
     {
-      "rank": 49,
+      "rank": 47,
       "id": 1097346685,
       "fullName": "pbakaus/impeccable",
       "owner": "pbakaus",
@@ -1482,35 +1423,87 @@
         "design",
         "slop"
       ],
-      "stars": 118203,
-      "forks": 7077,
+      "stars": 118371,
+      "forks": 7086,
       "categories": [
         "ai"
       ],
-      "gain": 21665,
-      "daysCovered": 28.7,
+      "gain": 21833,
+      "daysCovered": 29.1,
       "startStars": 96538,
       "todayRank": null
     },
     {
-      "rank": 50,
-      "id": 1444112593,
-      "fullName": "sarpstar/cinecode",
-      "owner": "sarpstar",
-      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/56429320?v=4",
-      "url": "https://github.com/sarpstar/cinecode",
-      "description": "Films made with code. Short films, long YouTube videos, ads, explainers and music videos: an AI coding agent writes the script, builds every frame in code, designs the sound and hands you an MP4.",
+      "rank": 48,
+      "id": 1469441675,
+      "fullName": "ProjectLeonida/mandy",
+      "owner": "ProjectLeonida",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/360438810?v=4",
+      "url": "https://github.com/ProjectLeonida/mandy",
+      "description": "A continuation of Leonida, the Xbox > PC port interface for GTA VI",
       "language": "Python",
-      "license": "MIT",
+      "license": "GPL-3.0",
       "topics": [],
-      "stars": 3149,
-      "forks": 521,
+      "stars": 3165,
+      "forks": 680,
       "categories": [
-        "ai",
-        "devtools"
+        "games",
+        "desktop"
       ],
-      "gain": 3149,
-      "daysCovered": 24.9,
+      "gain": 3165,
+      "daysCovered": 4.7,
+      "startStars": 0,
+      "todayRank": 16,
+      "introduction": "Leonida Continued 是 Grand Theft Auto VI（Xbox Series）的靜態重編譯項目，讓遊戲在自己的 Windows 電腦上原生運行。主機 CPU 同為 x86-64，遊戲程式碼會直接載入執行，主機系統軟件則重新實現，預編譯的 RDNA2 GPU 程式翻譯成 SPIR-V 供 Vulkan 使用，素材從自有的遊戲包讀取。項目仍屬早期、尚未可玩，倉庫不含遊戲、密鑰或可執行檔，須自備 Xbox Series 1.0.2.1 副本。"
+    },
+    {
+      "rank": 49,
+      "id": 1453517867,
+      "fullName": "apex-compute/ANR",
+      "owner": "apex-compute",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/222723497?v=4",
+      "url": "https://github.com/apex-compute/ANR",
+      "description": "Apex Neural Rendering (ANR) by Apex Compute",
+      "language": "C++",
+      "license": null,
+      "topics": [],
+      "stars": 3165,
+      "forks": 75,
+      "categories": [
+        "other"
+      ],
+      "gain": 3165,
+      "daysCovered": 17.5,
+      "startStars": 0,
+      "todayRank": null
+    },
+    {
+      "rank": 50,
+      "id": 1449421218,
+      "fullName": "imxieyi/Kernarium",
+      "owner": "imxieyi",
+      "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/20365903?v=4",
+      "url": "https://github.com/imxieyi/Kernarium",
+      "description": "Run real Linux kernel natively on iOS",
+      "language": "C++",
+      "license": "GPL-2.0",
+      "topics": [
+        "android",
+        "emulator",
+        "ios",
+        "linux",
+        "linux-kernel",
+        "user-mode-linux",
+        "virtualization"
+      ],
+      "stars": 3161,
+      "forks": 342,
+      "categories": [
+        "mobile",
+        "desktop"
+      ],
+      "gain": 3161,
+      "daysCovered": 21.1,
       "startStars": 0,
       "todayRank": null
     }
